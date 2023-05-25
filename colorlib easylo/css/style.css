@@ -38,6 +38,9 @@ h6 {
 .pt-14 {
   padding-top: 14px !important;
 }
+.pt-20{
+  padding-top: 20px;
+}
 .pl-30 {
   padding-left: 30px !important;
 }
@@ -73,6 +76,9 @@ h6 {
 }
 .mb-35 {
   margin-bottom: 35px;
+}
+.mb-40{
+  margin-bottom: 40px;
 }
 .mb-50 {
   margin-bottom: 50px;
@@ -969,9 +975,9 @@ outline: medium none;
   color:#2d2d2d;
   font-size: 20px;
   padding-bottom: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
-.post-cat .right-sidebar-title{
+.right-sidebar-title{
   border-bottom: 1px solid #f0e9ff;
 }
 .cat-list{
@@ -979,7 +985,9 @@ outline: medium none;
   padding-left: 0;
 }
 .cat-list li{
+  padding-top: 15px;
   padding-bottom: 12px;
+  border-bottom: 1px solid #f0e9ff;
 }
 .cat-list li a{
   color: #4C5753;
@@ -990,4 +998,51 @@ outline: medium none;
 .cat-list li a:hover{
 color:#10C98F;
 transition: .6s ease;
+}
+/* Recent posts */
+
+.side-post-short{
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  transition: all 0.3s linear;
+  font-family: "Inter",sans-serif;
+  color: #2d2d2d;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 500;
+  
+}
+.side-post-short:hover{
+  color:#10C98F;
+  transition: all 0.3s linear;
+}
+.media-body{
+  padding-left: 20px;
+}
+.media-body p{
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0px;
+  color: #4C5753;
+}
+
+/* Cloud tag */
+.recent-tag{
+  display: inline-block;
+border: 1px solid #eeeeee;
+background: #fff;
+padding: 4px 20px;
+margin-bottom: 8px;
+margin-right: 3px;
+transition: all 0.3s ease;
+color: #888888;
+font-size: 13px;
+}
+.recent-tag:hover{
+  background: #10C98F;
+color: #fff !important;
+text-decoration: none;
+transition: all 0.3s ease;
 }
