@@ -881,6 +881,9 @@ color: #fff;
   padding: 30px 0 20px 10px;
 box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
 }
+.blog-details.shadowless{
+  box-shadow: none;
+}
 .blog-head{
   font-size: 18px;
   font-weight: 600;
@@ -1059,7 +1062,8 @@ transition: all 0.3s ease;
 .form-group{
   margin-bottom: 1rem;
 }
-.side-newsletter form .form-group input{
+.side-newsletter form .form-group input,
+#commentForm div div div input{
   height: 50px;
 border-color: #f0e9ff;
 font-size: 13px;
@@ -1067,7 +1071,9 @@ color: #999999;
 padding-left: 20px;
 border-radius: 0
 }
-.side-newsletter form .form-group input::placeholder{
+.side-newsletter form .form-group input::placeholder,
+#commentForm div div div input::placeholder,
+#commentForm div div div textarea::placeholder{
   color:#999999;
 }
 .subscrib-btn{
@@ -1109,7 +1115,7 @@ color: #10C98F;
 transition: all .5s linear;
 transform: none;
 }
-
+/* left and right button/link */
 .icon-go-1{
   background-image: url('../img/blog/preview.jpg'); 
   height: 60px;
@@ -1141,4 +1147,96 @@ transform: none;
   background: linear-gradient(rgba(12, 12, 11, 0.1), rgba(12, 12, 11, 0.1)),
     url(../img/blog/next.jpg);
   
+}
+/* Author's information */
+.blog-author{padding: 40px 30px;
+background: #fbf9ff;
+margin-top: 50px;}
+.author-name{
+  transition: .4s;
+}
+.blog-author-name h4{
+  font-size: 16px;
+}
+.blog-author-name:hover,
+.comments-area div div h5 a:hover,
+.btn-reply:hover{
+  color: #10C98F;
+
+}
+.blog-auther .media-body p{
+  margin-bottom: 0;
+font-size: 15px;
+line-height: 1.6;
+}
+/* Comment Area  */
+
+.comments-area{
+  border-top: 1px solid #eee;
+padding: 45px 0;
+margin-top: 50px;
+}
+.comments-area h4{
+  margin-bottom: 35px;
+font-size: 18px
+}
+.comment-list{
+  padding-bottom: 48px;
+}
+
+.user .thumb{
+  margin-right: 20px;
+}
+.comment{
+  margin-bottom: 10px;
+  color: #777777;
+  font-size: 15px;
+}
+.comments-area div div h5 a {
+  font-weight: inherit;
+  font-size: 16px;
+  margin-bottom: 0px;
+  transition: .4s;
+}
+.comment-date{
+  font-size: 14px;
+color: #999999;
+margin-bottom: 0;
+margin-left: 20px;
+}
+.btn-reply{
+  background-color: transparent;
+color: #888888;
+padding: 5px 18px;
+font-size: 14px;
+display: block;
+font-weight: 400;
+transition: 0.4s;
+}
+/* Comment form section  */
+.comment-form {
+  border-top: 1px solid #eee;
+  padding-top: 45px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.comment-form h4{
+  margin-bottom: 40px;
+font-size: 18px;
+line-height: 22px;
+}
+#commentForm div div div textarea{
+border-color: #f0e9ff;
+font-size: 13px;
+color: #999999;
+padding-left: 20px;
+border-radius: 0
+}
+.comment-form textarea {
+  padding-top:18px;
+  border-radius:12px;
+  height:100% !important
+ }
+ #commentForm .row div .form-group {
+  margin-bottom: 30px;
 }

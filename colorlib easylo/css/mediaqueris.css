@@ -115,6 +115,9 @@
   .mt-about-hero-heading h1.primary-heading {
     font-size: 38px !important;
   }
+  .navbar-toggler {
+    margin-left: -92px;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header-area {
