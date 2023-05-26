@@ -854,19 +854,16 @@ h5 a {
     background-color: #10C98F;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: .5s;
+    transition: .5s ease-in;
 }
 .blog-item-date:hover{
-  background: transparent;
-    background-clip: text;
-    color: #10C98F;
-    text-decoration: none;
-    
+  background: transparent;   
+    color: #10C98F;    
 }
 .blog-item-date h3 {
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color:inherit;
   margin-bottom: 0;
   line-height: 1.2;
   font-family: "Inter",sans-serif;
@@ -875,7 +872,7 @@ margin-top: 0px;
 .blog-item-date p{
   font-size: 18px;
 margin-bottom: 0;
-color: #fff;
+color: inherit;
 }
 .blog-details{
   padding: 30px 0 20px 10px;
