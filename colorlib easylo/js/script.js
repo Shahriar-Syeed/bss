@@ -1,6 +1,6 @@
 $(window).scroll(function () {
   var top = $(window).scrollTop();
-  if (top >= 200) {
+  if (top >= 400) {
     $(".header-sticky").addClass("sticky-bar");
   } else if ($(".header-sticky").hasClass("sticky-bar")) {
     $(".header-sticky").removeClass("sticky-bar");
@@ -75,14 +75,36 @@ $(window).onResize = function () {
 };
 
 // nav diown icon add
-const amount = document.querySelector("#amount");
-const bi = document.querySelector(".bi");
-amount.addEventListener("click", () => {
-  bi.classList.add("rotat-downup");
+var amount = document.getElementById("amount");
+var bi = document.querySelector(".bi");
+const rotatDownup = document.querySelector("rotat-downup");
+var boxopen = document.getElementById('boxopen'); // you were missing this code
+amount.addEventListener("click", function(){
+  var.style.animation = "rotate 180deg";
+  boxopen.style.webkitAnimation = "rotate 180deg";
 });
-amount.addEventListener("click", () => {
-  bi.classList.remove("rotat-downup");
-});
+// .rot {
+//   -ms-transform: rotate(180deg);
+//   -webkit-transform: rotate(180deg);
+//   transform: rotate(180deg);
+// }
+// div {
+//   -webkit-transition: transform 1s ease-in-out;
+//   transition: transform 1s ease-in-out;
+//   width: 30px;
+// }
+
+// on click down up icon
+
+// const amount = document.querySelector("#amount");
+// const bi = document.querySelector(".bi");
+// const rotatDownup= document.querySelector('rotat-downup');
+// amount.addEventListener("click", () => {
+//   bi.classList.add("rotat-downup");
+// });
+// amount.addEventListener("click", () => {
+//   bi.classList.remove("rotat-downup");
+// });
 
 // Get the button
 let mybutton = document.getElementById("btn-to-top");

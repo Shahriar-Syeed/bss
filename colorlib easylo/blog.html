@@ -58,7 +58,7 @@
       <div class="header-area header-trnsparent">
         <div class="main-header">
           <div class="header-bottom header-sticky" id="h-a">
-            <div class="container-lg">
+            <div class="container">
               <!-- navigation  -->
               <div class="row align-items-center">
                 <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
@@ -67,7 +67,7 @@
                       ><img src="img/logo.png" alt="Logo"
                     /></a>
                     <button
-                      class="navbar-toggler"
+                      class="navbar-toggler border-0"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#dropdownLink"
@@ -88,7 +88,7 @@
                           <a
                             class="nav-link active main-sec"
                             aria-current="page"
-                            href="index.html"
+                            href="#start"
                             >Home</a
                           >
                         </li>
@@ -98,43 +98,60 @@
                           >
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link main-sec" href="services.html">Services</a>
+                          <a class="nav-link main-sec" href="services.html"
+                            >Services</a
+                          >
                         </li>
                         <li class="nav-item cardd">
-                          <a class="nav-link text-white naav main-sec" href="#"
+                          <a
+                            class="nav-link text-white naav main-sec"
+                            href=".menu2"
                             >Blog</a
                           >
                           <ul
                             class="menu2 text-white"
                             style="list-style: none; text-decoration: none"
+                            id="menu2"
                           >
                             <li>
-                              <a class="nav-link text-dark naav" href="blog.html"
+                              <a
+                                class="nav-link text-dark naav"
+                                href="blog.html"
                                 >Blog</a
                               >
                             </li>
                             <li>
-                              <a class="nav-link text-dark naav" href="blog.html"
+                              <a
+                                class="nav-link text-dark naav"
+                                href="blog.html"
                                 >Blog Details</a
                               >
                             </li>
                             <li>
-                              <a class="nav-link text-dark naav" href="blog.html"
+                              <a
+                                class="nav-link text-dark naav"
+                                href="blog.html"
                                 >Element</a
                               >
                             </li>
                           </ul>
                         </li>
-                        <li class="nav-item dropdown cardd2">
+
+                        <li class="nav-item w-100 cardd2">
                           <a
-                            class="nav-link dropdown-toggle main-sec"
-                            href="#"
+                            class="nav-link w-100 dropdown-toggle main-sec d-flex justify-content-between"
                             id="navbarDropdownMenuLink"
                             role="button"
                             data-bs-toggle="dropdown"
+                            aria-haspopup="true"
                             aria-expanded="false"
                           >
-                            Blog
+                            <span>Blog</span>
+
+                            <span
+                              ><span class="plus">+</span>
+                              <span class="minus">-</span></span
+                            >
                           </a>
 
                           <ul
@@ -143,10 +160,12 @@
                             aria-expanded="false"
                           >
                             <li>
-                              <a class="dropdown-item pl-30" href="blog.html">Blog</a>
+                              <a class="dropdown-item pl-30" href="blog.html"
+                                >Blog</a
+                              >
                             </li>
                             <li>
-                              <a class="dropdown-item pl-30" href="blog.html"
+                              <a class="dropdown-item pl-30" href="#"
                                 >Blog details</a
                               >
                             </li>
@@ -626,7 +645,7 @@ he earth it first without heaven in place seed it second morning saying.
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
     <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
   </body>
