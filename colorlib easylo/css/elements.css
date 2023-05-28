@@ -1,0 +1,138 @@
+.simple-text-area {
+  padding: 100px 0 70px 0;
+}
+.text-heading {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  color: #0f4332;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 500;
+}
+.sample-text {
+  font-family: "Inter", sans-serif;
+  color: #0f4332;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.button-area .top-border-gen {
+  padding: 70px 15px;
+  border-top: 1px dotted #eee;
+}
+.button-group-area .genric-btn:last-child {
+  margin-right: 0;
+}
+.genric-btn {
+  display: inline-block;
+  outline: none;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button-group-area .genric-btn {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.genric-btn.default {
+  color: #415094;
+  background: #f9f9ff;
+  border: 1px solid transparent;
+}
+.genric-btn.default:hover {
+  border: 1px solid #f9f9ff;
+  background: #fff;
+}
+.genric-btn.primary {
+  color: #fff;
+  background: #97a7af;
+  border: 1px solid transparent;
+}
+.genric-btn.primary:hover {
+  color: #97a7af;
+  border: 1px solid #97a7af;
+  background: #fff;
+}
+.genric-btn.success {
+  color: #fff;
+  background: #4cd3e3;
+  border: 1px solid transparent;
+}
+.genric-btn.success:hover {
+  color: #4cd3e3;
+  border: 1px solid #4cd3e3;
+  background: #fff;
+}
+.genric-btn.info {
+  color: #fff;
+  background: #38a4ff;
+  border: 1px solid transparent;
+}
+.genric-btn.info:hover {
+  color: #38a4ff;
+  border: 1px solid #38a4ff;
+  background: #fff;
+}
+.genric-btn.warning {
+  color: #fff;
+  background: #f4e700;
+  border: 1px solid transparent;
+}
+.genric-btn.warning:hover {
+  color: #f4e700;
+  border: 1px solid #f4e700;
+  background: #fff;
+}
+.genric-btn.danger {
+  color: #fff;
+  background: #f44a40;
+  border: 1px solid transparent;
+}
+.genric-btn.danger:hover {
+  color: #f44a40;
+  border: 1px solid #f44a40;
+  background: #fff;
+}
+.genric-btn.link {
+  color: #415094;
+  background: #f9f9ff;
+  text-decoration: underline;
+  border: 1px solid transparent;
+}
+.genric-btn.link:hover {
+  color: #415094;
+  border: 1px solid #f9f9ff;
+  background: #fff;
+}
+.genric-btn.disable {
+  background: #f9f9ff;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+.genric-btn.default-border:hover {
+  color: #415094;
+  background: #f9f9ff;
+  border: 1px solid transparent;
+}
+
+.genric-btn.default-border {
+  border: 1px solid #f9f9ff;
+  background: #fff;
+}
+.genric-btn.primary-border:hover {
+  color: #fff;
+  background: #97a7af;
+  border: 1px solid transparent;
+}
+.genric-btn.primary-border {
+  color: #97a7af;
+  border: 1px solid #97a7af;
+  background: #fff;
+}
