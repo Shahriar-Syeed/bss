@@ -1,4 +1,4 @@
-@media (min-width: 991.9px) {
+@media (min-width: 991.8px) {
   .cardd2 {
     display: none;
   }
@@ -9,10 +9,14 @@
     padding: 28px 5px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991.9px) {
   .main-nav-list-e {
     background: #0f4332;
-    padding: 19px;
+    /* padding: 19px; */
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; */
   }
   .dropdown .shows .dropdown-item:hover {
     background-color: #0f4332;
@@ -31,6 +35,9 @@
   }
   .cardd {
     display: none;
+  }
+  .main-nav-list-e {
+    margin: 10px 0;
   }
 }
 @media (max-width: 575px) {
@@ -115,23 +122,34 @@
   .mt-about-hero-heading h1.primary-heading {
     font-size: 38px !important;
   }
-  .navbar-toggler {
-    margin-left: -92px;
+  .main-nav-list-e {
+    padding: 10px 0;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header-area {
     padding: 10px 10px 20px 10px;
   }
-  .navbar-brand img {
+  /* .navbar-brand img {
     margin-left: 13px;
+  } */
+  .row .navbar.navbar-dark {
+    padding-left: 0;
   }
   .sticky-bar {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .navbar-brand {
+    margin: 0 auto;
+    width: 470px;
+  }
+  .main-nav-list-e {
+    padding: 10px 0;
+  }
   .hero-section {
-    margin-top: 80px;
+    margin-top: 27px;
   }
   .hero-content h1.primary-heading {
     font-size: 48px;
@@ -192,9 +210,7 @@
   .mt-about-hero-heading {
     margin-top: 0;
   }
-  .navbar-toggler {
-    margin-right: -94px;
-  }
+
   .hero-section.pb-about-hero-section {
     margin-top: 50px;
     padding-bottom: 62px;
@@ -218,20 +234,32 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
   .header-area {
     padding: 10px 10px 20px 10px;
   }
-  .navbar-brand img {
-    margin-left: 13px;
-  }
+
   .sticky-bar {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .container1-left-pad,
+  .container2-left-pad {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .navbar-brand {
+    margin: 0 auto;
+    width: 527px;
+  }
+  .main-nav-list-e {
+    padding: 10px 0;
+  }
   .hero-section {
     margin-top: 80px;
   }
+
   .hero-content h1.primary-heading {
     font-size: 48px;
   }
@@ -271,9 +299,6 @@
   .customer-satisfaction {
     right: 0;
   }
-  /* .about-caption {
-    margin-top: 90px;
-  } */
 
   .row .navbar .navbar-nav .nav-item .main-sec {
     padding: 28px 0px;
@@ -289,6 +314,12 @@
     padding-right: 5px !important;
     padding-left: 11px !important;
   }
+  .container1-left-pad,
+  .container2 -left-pad {
+    padding-left: 5.5px;
+    padding-right: 0;
+  }
+
   .hero-content h1.primary-heading {
     font-size: 48px;
   }

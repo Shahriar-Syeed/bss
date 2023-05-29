@@ -75,14 +75,14 @@ $(window).onResize = function () {
 };
 
 // nav diown icon add
-var amount = document.getElementById("amount");
-var bi = document.querySelector(".bi");
-const rotatDownup = document.querySelector("rotat-downup");
-var boxopen = document.getElementById("boxopen"); // you were missing this code
-amount.addEventListener("click", function () {
-  amount.style.animation = "rotate 180deg";
-  boxopen.style.webkitAnimation = "rotate 180deg";
-});
+// var amount = document.getElementById("amount");
+// var bi = document.querySelector(".bi");
+// const rotatDownup = document.querySelector("rotat-downup");
+// var boxopen = document.getElementById("boxopen"); // you were missing this code
+// amount.addEventListener("click", function () {
+//   amount.style.animation = "rotate 180deg";
+//   boxopen.style.webkitAnimation = "rotate 180deg";
+// });
 // .rot {
 //   -ms-transform: rotate(180deg);
 //   -webkit-transform: rotate(180deg);

@@ -140,8 +140,11 @@ h6 {
 /* ******************* */
 /* Navigation Section  */
 /* ******************* */
-.row .navbar.navbar-dark {
+/* .row .navbar.navbar-dark {
   padding: 0 12px;
+} */
+.row .navbar {
+  padding: 0;
 }
 .row .navbar .navbar-nav .nav-item a {
   font-family: "Inter", sans-serif;
@@ -161,6 +164,9 @@ h6 {
   background-color: transparent;
   border: none;
   color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
 }
 /* Navbar button  */
 .header-btn-e .header-btn-e-2 {
@@ -172,17 +178,23 @@ h6 {
   color: #fff !important;
   border-radius: 0px !important;
   line-height: 1;
-  margin: 0 !important;
+  margin: 0;
 }
 /* Navebar List  */
 .main-nav-list-e {
   font-family: "Inter", sans-serif;
   column-gap: 0;
-  padding-left: -10px;
+  /* padding-left: -10px; */
 }
 .navbar-brand {
   display: block;
-  padding-left: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.container1-left-pad,
+.container2-left-pad {
+  padding-left: 6px;
 }
 .navbar-toggler-icon {
   -webkit-text-stroke: 100px;
@@ -223,6 +235,10 @@ h6 {
   li
   .naav:visited {
   padding: 6px 10px 6px 13px;
+}
+#navbarDropdownMenuLink {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .row .navbar .container .collapse .navbar-nav .cardd .menu2 li .naav:hover {
   color: #10c98f !important;
