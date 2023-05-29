@@ -1,3 +1,12 @@
+p {
+  font-family: "Chivo", sans-serif;
+  color: #4c5753;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
 .simple-text-area {
   padding: 100px 0 70px 0;
 }
@@ -193,4 +202,30 @@
 }
 .genric-btn.circle {
   border-radius: 20px;
+}
+.genric-btn.arrow {
+  display: inline-flex;
+  align-items: center;
+}
+.genric-btn.e-large {
+  padding: 0 40px;
+  line-height: 50px;
+}
+.genric-btn.large {
+  line-height: 45px;
+}
+.genric-btn.medium {
+  line-height: 30px;
+}
+.genric-btn.small {
+  line-height: 25px;
+}
+.section-top-border {
+  padding: 50px 0;
+  border-top: 1px dotted #eee;
+}
+.generic-blockquote {
+  padding: 30px 50px 30px 30px;
+  background: #f9f9ff;
+  border-left: 2px solid #97a7af;
 }
