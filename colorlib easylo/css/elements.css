@@ -230,22 +230,82 @@ p {
   border-left: 2px solid #97a7af;
 }
 .progress-table-wrap {
+  overflow-x: scroll;
 }
 .progress-table {
+  background: #f9f9ff;
+  padding: 15px 0px 30px 0px;
+  min-width: 800px;
 }
 .table-head {
+  display: flex;
 }
 .table-row {
+  padding: 15px 0;
+  border-top: 1px solid #edf3fd;
+  display: flex;
 }
-.serial {
+.table-head .serial,
+.table-head .country,
+.table-head .visit,
+.table-head .percentage {
+  color: #415094;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
-.country {
+.table-head .serial,
+.table-row .serial {
+  width: 11.83%;
+  padding-left: 30px;
 }
-.visit {
+.table-head .country,
+.table-row .country {
+  width: 28.07%;
+  padding-left: 30px;
 }
-.percentage {
+.table-head .visit,
+.table-row .visit {
+  width: 19.74%;
 }
-.progress-bar {
+.table-head .percentage,
+.table-row .percentage {
+  width: 40.36%;
 }
-.color-1 {
+.progress-table .table-row .percentage .progress {
+  width: 80%;
+  border-radius: 0px;
+  background: transparent;
+}
+
+.progress-table .table-row .percentage .progress .progress-bar {
+  height: 5px;
+  line-height: 5px;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-1 {
+  background-color: #6382e6;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-2 {
+  background-color: #e66686;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-3 {
+  background-color: #f09359;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-4 {
+  background-color: #73fbaf;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-5 {
+  background-color: #73fbaf;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-6 {
+  background-color: #6382e6;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-7 {
+  background-color: #a367e7;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-8 {
+  background-color: #e66686;
 }
