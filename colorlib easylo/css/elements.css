@@ -378,3 +378,6 @@ p {
   font-weight: 300;
   color: #828bb2;
 }
+ul {
+  list-style: none;
+}

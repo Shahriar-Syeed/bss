@@ -56,6 +56,9 @@ h6 {
 .pl-30 {
   padding-left: 30px !important;
 }
+.mt-10 {
+  margin-top: 10px;
+}
 .mt-20 {
   margin-top: 20px;
 }
@@ -236,10 +239,18 @@ h6 {
   padding: 17px 0;
   z-index: 1;
 }
-.row .navbar .container .collapse .navbar-nav .cardd .menu2 li .naav:link,
 .row
   .navbar
-  .container-fluid
+  .container2-left-pad
+  .collapse
+  .navbar-nav
+  .cardd
+  .menu2
+  li
+  .naav:link,
+.row
+  .navbar
+  .container2-left-pad
   .collapse
   .navbar-nav
   .cardd
@@ -252,7 +263,15 @@ h6 {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.row .navbar .container .collapse .navbar-nav .cardd .menu2 li .naav:hover {
+.row
+  .navbar
+  .container2-left-pad
+  .collapse
+  .navbar-nav
+  .cardd
+  .menu2
+  li
+  .naav:hover {
   color: #10c98f !important;
 
   padding-left: 16px !important;
