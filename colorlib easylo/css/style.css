@@ -440,7 +440,8 @@ select + i.bi {
   transition: transform 1s ease-in-out;
   width: 30px;
 }
-select option {
+select .op-from {
+  height: 100px;
   background-color: #10c98f;
   color: #071112;
   cursor: pointer;

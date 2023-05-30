@@ -381,3 +381,6 @@ p {
 ul {
   list-style: none;
 }
+.icon-group-icon .icon {
+  position: absolute;
+}

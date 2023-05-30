@@ -526,11 +526,14 @@
               <div class="blog-right-sidebar">
                 <aside class="single-sidebar-s sarch-s">
                   <form action="#" method="post">
+                    
                     <div class="input-group rounded-0">
                       <input
                         type="text"
                         class="keyword-input form-control rounded-0"
-                        placeholder="Search keyword"
+                        placeholder="Search keyword" 
+                        onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='Search keyword'"
                       />
                       <button class="search-btn" type="button">Search</button>
                     </div>

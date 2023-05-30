@@ -380,7 +380,13 @@ he earth it first without heaven in place seed it second morning saying.
                 <aside class="single-sidebar-s sarch-s">
                   <form action="#" method="post">
                     <div class="input-group rounded-0">
-                      <input type="text" class="keyword-input form-control rounded-0" placeholder="Search keyword">
+                      <input 
+                      type="text" 
+                      class="keyword-input form-control rounded-0" 
+                      placeholder="Search keyword"
+                      onfocus="this.placeholder=''" 
+                      onblur="this.placeholder='Search keyword'"
+                      >
                       <button class="search-btn" type="button">Search</button>
                     </div>
                   </form>
