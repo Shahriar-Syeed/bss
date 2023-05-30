@@ -19,6 +19,18 @@ a {
   outline: medium none;
   color: #071112;
 }
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
 h1,
 h2,
 h3,

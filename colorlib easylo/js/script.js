@@ -130,3 +130,14 @@ function scrollFunction() {
 //   document.body.scrollTop = 0;
 //   document.documentElement.scrollTop = 0;
 // }
+
+// ELEMENT POP UP JAVASCRIPT
+$(document).ready(function () {
+  $(".gallery-items").magnificPopup({
+    type: "image",
+    delegate: "a",
+    gallery: {
+      enabled: true,
+    },
+  });
+});

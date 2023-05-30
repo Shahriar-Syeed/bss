@@ -309,3 +309,72 @@ p {
 .progress-table .table-row .percentage .progress .progress-bar.color-8 {
   background-color: #e66686;
 }
+.single-gallery-image {
+  margin-top: 30px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 200px;
+}
+.single-gallery-image.img-1 {
+  background: url(../img/elements/g1.jpg);
+}
+.single-gallery-image.img-2 {
+  background: url(../img/elements/g2.jpg);
+}
+.single-gallery-image.img-3 {
+  background: url(../img/elements/g3.jpg);
+}
+.single-gallery-image.img-4 {
+  background: url(../img/elements/g4.jpg);
+}
+.single-gallery-image.img-5 {
+  background: url(../img/elements/g5.jpg);
+}
+.single-gallery-image.img-6 {
+  background: url(../img/elements/g6.jpg);
+}
+.single-gallery-image.img-7 {
+  background: url(../img/elements/g7.jpg);
+}
+.single-gallery-image.img-8 {
+  background: url(../img/elements/g8.jpg);
+}
+
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  color: #828bb2;
+}
+.unordered-list li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.82em !important;
+}
+.unordered-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border: 3px solid #97a7af;
+  border-radius: 50%;
+  background: #fff;
+}
+.ordered-list {
+  margin-left: 30px;
+}
+.ordered-list li {
+  list-style-type: decimal-eading-zero;
+  color: #97a7af;
+  font-weight: 500;
+  line-height: 1.82em !important;
+}
+.ordered-list li span {
+  font-weight: 300;
+  color: #828bb2;
+}
