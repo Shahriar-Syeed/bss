@@ -44,6 +44,13 @@ h6 {
   font-weight: 500;
   text-transform: normal;
 }
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
 .pt-10 {
   padding-top: 10px !important;
 }

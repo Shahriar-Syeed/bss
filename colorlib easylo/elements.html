@@ -833,7 +833,7 @@
           <div class="section-top-border">
             <h3 class="mb-20">Form Element</h3>
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-md-8 col-lg-9">
                 <form action="#" method="post">
                   <div class="mt-10">
                     <input
@@ -882,7 +882,7 @@
 
                   <div class="input-group-icon mt-10">
                     <div class="icon">
-                      <i class="fa-solid fa-thumbtack" area-hidden="true"></i>
+                      <i class="fa-solid fa-thumbtack"></i>
                     </div>
                     <input
                       type="text"
@@ -897,7 +897,7 @@
 
                   <div class="input-group-icon mt-10">
                     <div class="icon">
-                      <i class="fa fa-plane" aria-hidden="true"></i>
+                      <i class="fa fa-plane"></i>
                     </div>
                     <select class="nice-select wide element-select">
                       <option data-display="City" disabled selected>
@@ -909,26 +909,121 @@
                       <option value="4">Islamabad</option>
                     </select>
                   </div>
-
-                  <div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon-g">
-                        <i class="fa fa-globe" aria-hidden="true"></i>
-                      </div>
-                      <select class="nice-select wide element-select">
-                        <option data-display="Country" disabled selected>
-                          Country
-                        </option>
-                        <option value="1">Bangladesh</option>
-                        <option value="2">India</option>
-                        <option value="3">England</option>
-                        <option value="4">Srilnaka</option>
-                      </select>
+                  <div class="input-group-icon mt-10">
+                    <div class="icon">
+                      <i class="fa fa-globe"></i>
                     </div>
+                    <select class="nice-select wide element-select">
+                      <option data-display="Country" disabled selected>
+                        Country
+                      </option>
+                      <option value="1">Bangladesh</option>
+                      <option value="2">India</option>
+                      <option value="3">England</option>
+                      <option value="4">Srilnaka</option>
+                    </select>
+                  </div>
+                  <div class="mt-10">
+                    <textarea
+                      class="form-control single-textarea"
+                      rows="3"
+                      placeholder="Massage"
+                      onfocus="this.placeholder=''"
+                      onblur="this.placeholder='Massage'"
+                    ></textarea>
+                  </div>
+                  <div class="mt-10">
+                    <input
+                      type="text"
+                      name="primary-color"
+                      placeholder="Primary Color"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Primary Color'"
+                      required
+                      class="single-input form-control"
+                    />
+                  </div>
+                  <div class="mt-10">
+                    <input
+                      type="text"
+                      name="accent-color"
+                      placeholder="Accent Color"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Accent Color'"
+                      required
+                      class="single-input form-control"
+                    />
+                  </div>
+                  <div class="mt-10">
+                    <input
+                      type="text"
+                      name="secondary-color"
+                      placeholder="Secondary Color"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Secondary Color'"
+                      required
+                      class="single-input form-control"
+                    />
                   </div>
                 </form>
               </div>
-              <div class="col-md-4"></div>
+              <div class="col-md-4 col-lg-3">
+                <div class="single-element-widget">
+                  <h3 class="mb-30">Switches</h3>
+                  <div class="switch-wrap d-flex justify-content-between">
+                    <p>01. Sample Switch</p>
+                    <div class="primary-switch">
+                      <input
+                        type="checkbox"
+                        name="switch"
+                        id="default-switch"
+                        class="form-check-input"
+                        role="switch"
+                      />
+                      <label for="default-switch"></label>
+                    </div>
+                  </div>
+                  <div class="switch-wrap d-flex justify-content-between">
+                    <p>02. Primary Color Switch</p>
+                    <div class="primary-switch">
+                      <input
+                        type="checkbox"
+                        name="switch"
+                        id="primary-switch"
+                        class="form-check-input"
+                        role="switch"
+                      />
+                      <label for="primary-switch"></label>
+                    </div>
+                  </div>
+                  <div class="switch-wrap d-flex justify-content-between">
+                    <p>02. Primary Color Switch</p>
+                    <div class="confirm-switch">
+                      <input
+                        type="checkbox"
+                        name="switch"
+                        id="confirm-switch"
+                        class="form-check-input"
+                        role="switch"
+                      />
+                      <label for="confirm-switch"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-element-widget mt-30">
+                  <h3 class="mb-30">Selectboxes</h3>
+                  <select
+                    name="language"
+                    id="language"
+                    class="nice-select wide element-select"
+                  >
+                    <option data-display="English" disabled selected>
+                      English
+                    </option>
+                    <option value="1">Select Language</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         </div>
