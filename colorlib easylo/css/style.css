@@ -50,6 +50,9 @@ h6 {
 .pt-14 {
   padding-top: 14px !important;
 }
+.pt-15 {
+  padding-top: 15px;
+}
 .pt-20 {
   padding-top: 20px;
 }
@@ -207,17 +210,16 @@ h6 {
   margin-bottom: 0;
   padding: 0;
 }
-.container1-left-pad,
+/* .container1-left-pad,
 .container2-left-pad {
   padding-left: 6px;
-}
+} */
 .navbar-toggler-icon {
   -webkit-text-stroke: 100px;
 }
 
 .main-nav-list-e .main-sec {
-  margin: 0 17px;
-  transform: 5s;
+  margin: 0 15.9px;
 }
 .navback {
   background-color: #2ce8d5;
@@ -398,64 +400,28 @@ h6 {
   color: #4c5753;
   margin-bottom: 15px;
 }
-
-.hero-select {
-  line-height: 1.2;
+.hero-select.nice-select {
+  line-height: 30px;
   border: 1px solid #c9d6cb;
-  height: 49px;
+  height: 50px;
   color: #071112;
   font-weight: 500;
-  cursor: pointer;
-  font-size: 14px;
-  font-family: inherit;
-  padding: 10px 10px 10px 19px;
+  padding-top: 10px;
 }
-.hero-select:focus {
-  border: 1px solid #c9d6cb;
-  box-shadow: 0 0 0;
-}
-
-/* remove the original arrow */
-select.form-control {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-
-  /* no standardized syntax available, no ie-friendly solution available */
+.hero-select.nice-select::after {
+  border-bottom: 2px solid #0f4332;
+  border-right: 2px solid #0f4332;
+  height: 7px;
+  right: 20px;
+  width: 7px;
 }
 
-select + i.bi {
-  float: right;
-  margin-top: -41px;
-  margin-right: 4px;
-  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
-  pointer-events: none;
-  /* everything after this is just to cover up the original arrow */
-  /* (for browsers that don't support the syntax used above) */
-  background-color: #fff;
-  color: #0f4332;
-  -webkit-text-stroke: 3px;
-  padding-right: 5px;
-  -webkit-transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  width: 30px;
-}
-select .op-from {
-  height: 100px;
+.hero-select.nice-select.open .list {
   background-color: #10c98f;
-  color: #071112;
-  cursor: pointer;
+  border-radius: 0;
   font-weight: 600;
   line-height: 40px;
-  list-style: none;
-  min-height: 40px;
   outline: none;
-  padding: 60px 29px 40px 18px;
-}
-
-option:hover,
-option:checked {
-  background-color: #f6f6f6;
 }
 
 .from-wrapper form label span {

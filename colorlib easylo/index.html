@@ -34,7 +34,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
 
-    <!-- css  -->
+    <!-- font-awsom cnd  -->
 
     <link
       rel="stylesheet"
@@ -43,19 +43,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
+    <!-- owl carousel cnd  -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
       integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
+    <!-- animation cnd  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       referrerpolicy="no-referrer"
     />
+    <!-- css  -->
 
+    <link rel="stylesheet" href="./css/nice-select.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mediaqueris.css" />
 
@@ -69,7 +73,10 @@
             <div class="container-lg container1-left-pad">
               <!-- navigation  -->
               <div class="row align-items-center">
-                <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+                <nav
+                  class="navbar navbar-expand-lg navbar-dark gutter-none"
+                  id="navbar"
+                >
                   <div class="container-lg container2-left-pad">
                     <a class="navbar-brand" href="index.html"
                       ><img src="img/logo.png" alt="Logo"
@@ -241,61 +248,58 @@
                 <div class="mb-2">
                   <label
                     for="amount"
-                    class="form-label text-uppercase hero-label pt-14"
+                    class="form-label text-uppercase hero-label pt-15"
                     >Amount you want</label
                   >
                   <select
                     name="amount"
-                    class="rounded-0 form-control hero-select"
+                    class="hero-select nice-select wide rounded-0"
                     id="amount"
                   >
-                    <option class="text-capitalize">Select Amount</option>
                     <option
-                      value="catagory-1 pt-2 "
-                      class="text-capitalize focus op-from"
+                      data-diaplay="Select Amount"
+                      disabled
+                      selected
+                      class="text-capitalize"
                     >
+                      Select Amount
+                    </option>
+                    <option value="catagory-1 " class="text-capitalize">
                       Catagory-1
                     </option>
-                    <option value="catagory-2" class="text-capitalize op-from">
+                    <option value="catagory-2" class="text-capitalize">
                       Catagory-2
                     </option>
-                    <option value="catagory-3" class="text-capitalize op-from">
+                    <option value="catagory-3" class="text-capitalize">
                       Catagory-3
                     </option>
                   </select>
-                  <i class="bi bi-chevron-down"></i>
                 </div>
                 <div class="mb-3">
                   <label
                     for="time"
-                    class="form-label text-uppercase hero-label pt-10"
+                    class="form-label text-uppercase hero-label pt-15"
                     >month</label
                   >
                   <select
                     name="time"
                     id="time"
-                    class="rounded-0 form-control hero-select"
+                    class="hero-select nice-select wide"
                   >
                     <option
                       value="month"
-                      class="text-capitalize op-from"
+                      class="text-capitalize"
                       selected
+                      style="color: blue"
                     >
                       Select month
                     </option>
-                    <option value="year" class="text-capitalize op-from">
-                      Year
-                    </option>
-                    <option value="week" class="text-capitalize op-from">
-                      Week
-                    </option>
-                    <option value="day-3" class="text-capitalize op-from">
-                      Day-3
-                    </option>
+                    <option value="year" class="text-capitalize">Year</option>
+                    <option value="week" class="text-capitalize">Week</option>
+                    <option value="day-3" class="text-capitalize">Day-3</option>
                   </select>
-                  <i class="bi bi-chevron-down"></i>
                 </div>
-                <label class="text-uppercase form-lable hero-label pt-0"
+                <label class="text-uppercase form-lable hero-label pt-15"
                   >You have to pay: <span>$0</span></label
                 >
                 <div class="submit-info text-center">
@@ -938,18 +942,19 @@
     </footer>
 
     <!-- JS files -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.nice-select.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
+
     <!-- <script src="./js/bootstrap.min.js"></script> -->
-    <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

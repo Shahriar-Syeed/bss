@@ -381,6 +381,29 @@ p {
 ul {
   list-style: none;
 }
-.icon-group-icon .icon {
+.input-group-icon {
+  position: relative;
+}
+.input-group-icon .icon {
   position: absolute;
+  left: 16px;
+  top: 8px;
+  z-index: 3;
+}
+.input-group-icon .icon i,
+.input-group-icon .icon-g i {
+  color: #797979;
+}
+.input-group-icon .single-input {
+  padding-left: 45px;
+}
+.nice-select.element-select {
+  padding-left: 45px;
+}
+
+.input-group-icon .icon-g {
+  position: absolute;
+  left: 16px;
+  top: 52px;
+  z-index: 3;
 }

@@ -47,9 +47,15 @@ $(window).scroll(function () {
 //     $("#h-a").removeClass("sticky-bar");
 //   }
 // });
-// $(document).readyState(function () {
-//   $("select").niceSelect();
-// });
+$(document).ready(function () {
+  $("select").niceSelect();
+});
+// $("select").niceSelect("update");
+// var nice_Select = $("select");
+// if (nice_Select.length) {
+//   nice_Select.niceSelect();
+// }
+
 // $("#amount").on("click", function () {
 //   $(".bi").addClass("b");
 //   $(this).removeClass("b");
@@ -113,6 +119,13 @@ let mybutton = document.getElementById("btn-to-top");
 window.onscroll = function () {
   scrollFunction();
 };
+
+function newFunction() {
+  var nice_Select = $("select");
+  if (nice_Select.length) {
+    nice_Select.niceSelect();
+  }
+}
 
 function scrollFunction() {
   if (
