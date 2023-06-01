@@ -66,6 +66,9 @@ textarea:focus {
 .pl-30 {
   padding-left: 30px !important;
 }
+.pb-15 {
+  padding-bottom: 15px;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -1289,4 +1292,46 @@ h5 a {
 .simple-text-aria {
   background: #fff;
   padding: 100px 0 70px 0;
+}
+
+/* ************ */
+/* Contact page */
+/* ************ */
+.contact-page {
+  margin: 130px 0 100px 0;
+}
+.media {
+  display: flex;
+}
+.media .contact-info-icon {
+  flex-shrink: 0;
+}
+.media.contact-info .media-body {
+  flex-grow: 1;
+  padding-left: 10px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: start;
+}
+.contact-info .media-body h5 {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #2a2a2a;
+}
+.contact-info .media-body p {
+  color: #8a8a8a;
+}
+.contact-info-icon .bi {
+  font-size: 1.5rem;
+  color: #8a8a8a;
+}
+.contact-info {
+  margin-bottom: 25px;
+}
+/* ************** */
+/*  Apply   Page  */
+/* ************** */
+.apply-area {
+  padding-top: 110px;
+  padding-bottom: 90px;
 }
