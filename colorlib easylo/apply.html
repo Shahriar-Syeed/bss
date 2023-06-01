@@ -223,7 +223,7 @@
          
         </div>
       </section>
-      <section class="apply-aria">
+      <section class="apply-area">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -232,8 +232,8 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="single-form">
-                        <label for="apply-name" class="form-label">* LOAN AMOUNT ($) </label>
-                        <input type="text" name="apply-name" id="apply-name" class="form-control" placeholder="Enter name" onblur="this.placeholder=''" onfocus="this.placeholder='Enter name'">
+                        <label for="loan-name" class="form-label">* LOAN AMOUNT ($) </label>
+                        <input type="text" name="lone-name" id="loan-name" class="form-control" placeholder="Enter name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter name'" required>
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -241,7 +241,8 @@
                         <label for="apply-name" class="form-label">* PURPOSE OF LOAN  </label>
                           <select
                             name="Catagory"
-                            class="nice-select wide rounded-0"
+                            class="nice-select wide"
+                            required
                           >
                           <option
                            data-diaplay="Choose Catagory"
@@ -264,8 +265,173 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      
+                      <div class="single-form d-flex gap-3">
+                        <label>*Select Gender:</label>
+                        <div class="form-check">
+                          <input type="radio" name="gender" id="male" class="form-check-input" required>
+                          <label for="male" class="form-check-label" >Male</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="radio" name="gender" id="female" class="form-check-input">
+                          <label for="female" class="form-check-label" >female</label>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="first-name-apply" class="form-label">* FIRST NAME ($) </label>
+                        <input type="text" name="first-name-apply" id="first-name-apply" class="form-control" placeholder="Enter name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter name'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="last-name-apply" class="form-label">* LAST NAME ($) </label>
+                        <input type="text" name="last-name-apply" id="last-name-apply" class="form-control" placeholder="Enter name" onfocus="this.placeholder=''"  onblur="this.placeholder='Enter name'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="single-form">
+                        <label class="form-label">*NUMBER OF DEPENDANTS  </label>
+                          <select
+                            name="Catagory"
+                            class="nice-select wide"
+                            required
+                          >
+                          <option
+                           data-diaplay="Choose Catagory"
+                           disabled
+                           selected
+                           class="text-capitalize"
+                          >
+                            Choose option
+                          </option>
+                          <option value="catagory-1 " class="text-capitalize">
+                            Catagory-1
+                          </option>
+                          <option value="catagory-2" class="text-capitalize">
+                            Catagory-2
+                          </option>
+                          <option value="catagory-3" class="text-capitalize">
+                            Catagory-3
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="email-apply" class="form-label">* EMAIL ADDRESS </label>
+                        <input type="email" name="email-apply" id="email-apply" class="form-control" placeholder="Enter email" onfocus="this.placeholder=''" onblur="this.placeholder='Enter email'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="phone-apply" class="form-label">* PHONE NUMBER </label>
+                        <input type="tel" name="phone-apply" id="phone-apply" class="form-control" placeholder="Enter Number" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Number'" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="single-form">
+                        <label for="marital-apply" class="form-label">* MARITAL STATUS </label>
+                        <select
+                            name="Marital"
+                            class="nice-select wide rounded-0"
+                          >
+                          <option
+                           data-diaplay="Choose Catagory"
+                           disabled
+                           selected
+                           class="text-capitalize"
+                          >
+                            Choose option
+                          </option>
+                          <option value="m " class="text-capitalize">
+                            Married
+                          </option>
+                          <option value="u" class="text-capitalize">
+                            Unmarried
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="first-name-apply" class="form-label">* FIRST NAME </label>
+                        <input type="text" name="first-name-apply" id="first-name-apply" class="form-control" placeholder="Enter name" onfocus="this.placeholder=''" onfocus="this.placeholder='Enter name'" required>
+                      </div>onblur
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="last-name-apply" class="form-label">* TOWN/CITY </label>
+                        <input type="text" name="last-name-apply" id="last-name-apply" class="form-control" placeholder="Enter city" onfocus="this.placeholder=''" onblur="this.placeholder='Enter city'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="street-apply" class="form-label">* STREET </label>
+                        <input type="text" name="street-apply" id="street-apply" class="form-control" placeholder="Enter Street Address" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Street Address'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="house-apply" class="form-label">* HOUSE NAME/NUMBER </label>
+                        <input type="text" name="house-apply" id="house-apply" class="form-control" placeholder="Enter House Name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter House Name'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="single-form">
+                        <label class="form-label">*HOMEOWNER STATUS  </label>
+                          <select
+                            name="Catagory"
+                            class="nice-select wide"
+                            required
+                          >
+                          <option
+                           data-diaplay="Enter Houseowner Status"
+                           disabled
+                           selected
+                           class="text-capitalize"
+                          >
+                            Choose option
+                          </option>
+                          <option value="catagory-1 " class="text-capitalize">
+                            Catagory-1
+                          </option>
+                          <option value="catagory-2" class="text-capitalize">
+                            Catagory-2
+                          </option>
+                          <option value="catagory-3" class="text-capitalize">
+                            Catagory-3
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="industry-apply" class="form-label">*EMPLOYMENT INDUSTRY </label>
+                        <input type="text" name="industry-apply" id="industry-apply" class="form-control" placeholder="Enter Street Address" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Street Address'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="employer-apply" class="form-label">*EMPLOYER NAME </label>
+                        <input type="text" name="employer-apply" id="employer-apply" class="form-control" placeholder="Enter name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter name'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="work-phone-apply" class="form-label">*WORK PHONE NUMBER </label>
+                        <input type="tel" name="work-phone-apply" id="work-phone-apply" class="form-control" placeholder="Phone Number" onfocus="this.placeholder=''" onblur="this.placeholder='Phone Number'" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form">
+                        <label for="income-apply" class="form-label">*MONTHLY INCOME </label>
+                        <input type="text" name="income-apply" id="income-apply" class="form-control" placeholder="Enter income" onfocus="this.placeholder=''" onblur="this.placeholder='Enter income'" required>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn submit-form-btn mb-15">
+                      Apply Now
+                    </button>
                   </div>
                 </form>
               </div>
