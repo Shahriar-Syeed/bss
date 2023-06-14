@@ -42,9 +42,6 @@
 @media (max-width: 567px) {
 }
 @media screen and (min-width: 300px) {
-  .container-head {
-    max-width: 300px;
-  }
 }
 @media screen and (min-width: 567px) {
   .container-head {
@@ -60,12 +57,24 @@
   .container-head {
     max-width: 992px;
   }
-  .contaier-hero {
-    padding: 0;
+  .container-hero {
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-head {
     max-width: 1200px;
+  }
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+  .col-tab-6 {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .col-es-12 {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
