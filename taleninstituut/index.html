@@ -19,13 +19,147 @@
       href="./img/favicon-4-150x150.png"
     />
   </head>
-  <body>
-    <header class="fixed-top">
-      <div class="nav-top-part">
-        <div class="container">
-          <div class="first-head">
-            <a href="index.html">
-              <div class="logo d-flex">
+  <body class="position-relative">
+    <header class="sticky-top">
+      <div class="nav-top-part-head">
+        <div class="container-head">
+          <div class="first-head d-flex align-items-center">
+            <div class="navbar">
+              <div class="container-fluid p-0">
+                <button
+                  class="navbar-toggler offcanvas-toggler-icon border-0 d-none p-0 pe-4"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span
+                    class="nav-toggler-icon d-flex flex-column justify-content-around"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-start"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <!-- <div class="offcanvas-header offcanvas-tale-header">
+                    <button
+                      type="button"
+                      class="border-0 close-button"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="close"
+                    >
+                      <span
+                        class="nav-toggler-icon offcanvas-close position-relative"
+                      >
+                        <span class="close-1 position-absolute"></span>
+                        <span class="close-2 position-absolute"></span>
+                      </span>
+                    </button>
+                  </div> -->
+
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a
+                          href="index.html"
+                          class="nav-link active"
+                          aria-current="page"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="business-language-courses.html"
+                          class="nav-link"
+                          >Business Language Courses</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="native-speakers.html"
+                          class="nav-link"
+                          aria-current="page"
+                          >Why us?</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="language-courses.html"
+                          class="nav-link"
+                          aria-current="page"
+                          >Course types</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="clients.html"
+                          class="nav-link"
+                          aria-current="page"
+                          >Clients</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a href="blog.html" class="nav-link" aria-current="page"
+                          >Blog</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="contact.html"
+                          class="nav-link"
+                          aria-current="page"
+                          ><svg
+                            class="ico fal svg-inline--fa d-inline-block"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z"
+                            ></path>
+                          </svg>
+                          Contact
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="request-quotation.html"
+                          class="nav-link"
+                          aria-current="page"
+                          ><svg
+                            class="ico fas svg-inline--fa d-inline-block"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"
+                          >
+                            <path
+                              d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                            ></path>
+                          </svg>
+                          Quotation
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="?force_desktop=1"
+                          class="nav-link"
+                          aria-current="page"
+                          >Desktop Verson</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="index.html" class="me-auto">
+              <div class="logo-head d-flex align-items-center">
                 <svg
                   id="logo-tin"
                   xmlns="http://www.w3.org/2000/svg"
@@ -36,68 +170,172 @@
                     d="M332.53,364C294,336.51,257.2,311.76,218.71,311.76A112.89,112.89,0,0,0,161,329.36a14.21,14.21,0,0,1-19.25-4.95,13.75,13.75,0,0,1,3.3-18.15c32.45-25.29,64.34-35.19,94.58-35.19,79.74,1.65,143.52,61.59,207.86,60.49a88.64,88.64,0,0,0,26.94-3.85C518.94,200.14,451.86,61,324.84,16.48S58.14,39.57,13.6,166.59A231,231,0,0,0,1.5,217.73a115.6,115.6,0,0,0,23.65,2.75c68.18,1.65,133.07-63.23,217.2-64.88,29.7,0,61.59,9.34,94,33,6.05,4.95,7.7,13.75,2.75,19.8A14.35,14.35,0,0,1,321,212.23a118.7,118.7,0,0,0-57.19-16.49c-40.69,0-78.08,25.84-118.23,55S64.19,310.66,10.85,310.66H8.1C42.75,441,176.37,518.52,306.69,483.88c44.54-11.55,84.13-35.75,115.47-69.29-33-10.45-61.58-30.79-89.63-50.59"
                   ></path>
                 </svg>
-                <div class="main-title">Taleninstituut Nederland</div>
+                <div class="main-title-head">Taleninstituut Nederland</div>
               </div>
             </a>
-            <ul class="header-social d-flex justify-content-around">
-              <li>
-                <a
-                  href="https://www.linkedin.com/school/taleninstituut-nederland"
-                  class="social-btn"
-                >
-                  <svg
-                    class="ico far svg-inline--fa"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
+            <div class="header-social-container">
+              <ul class="header-social">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/school/taleninstituut-nederland"
+                    class="social-btn-head"
                   >
-                    <path
-                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/Taleninstituut.Nederland/?sk=wall"
-                  class="social-btn"
-                >
-                  <svg
-                    class="ico far svg-inline--fa"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 320 512"
+                    <svg
+                      class="ico far svg-inline--fa"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/Taleninstituut.Nederland/?sk=wall"
+                    class="social-btn-head"
                   >
-                    <path
-                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/taleninstituut"
-                  class="social-btn"
-                >
-                  <svg
-                    class="ico far svg-inline--fa"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
+                    <svg
+                      class="ico far svg-inline--fa"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/taleninstituut"
+                    class="social-btn-head"
                   >
-                    <path
-                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+                    <svg
+                      class="ico far svg-inline--fa"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown lang-menu-head ml-30">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="english-flag-head flag-head">&nbsp;</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item"
+                    ><div class="netherland-flag flag-head">&nbsp;</div></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"
+                    ><div class="duch-flag flag-head">&nbsp;</div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-head">
+        <div class="container-head">
+          <div class="navbar">
+            <div class="container-fluid">
+              <div class="nav-brand">
+                <a href="request-quotation.html" class="btn header-btn"
+                  >Quotation</a
+                >
+                <a href="contact.html" class="btn header-btn">Contact</a>
+              </div>
+              <ul class="nav second-head-nav">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link active"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="business-language-courses.html" class="nav-link"
+                    >Business Language Courses</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="native-speakers.html"
+                    class="nav-link"
+                    aria-current="page"
+                    >Why us?</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="language-courses.html"
+                    class="nav-link"
+                    aria-current="page"
+                    >Course types</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="clients.html" class="nav-link" aria-current="page"
+                    >Clients</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link" aria-current="page"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero-section">
+        <div class="container-head container-hero">
+          <div class="pt-24">
+            <div class="row">
+              <div class="hero-img">
+                <div class="hero-details">
+                  <h1 class="hero-title">Business languse Courses</h1>
+                  <a
+                    href="https://taleninstituut.nl/wp-content/uploads/2019/06/Talentinstituut-Nederland-We-make-sure-you-speak-the-right-language..mp4"
+                    class="btn header-btn hero-btn"
+                    >Watch the video</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <!-- js files -->
-    <script src="./js/main.js"></script>
-    <script src="/js/jquery.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/jquery.nice-select.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

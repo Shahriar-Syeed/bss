@@ -30,7 +30,7 @@
       >
         Link with href
       </a>
-      <button
+      <!-- <button
         class="btn btn-primary"
         type="button"
         data-bs-toggle="offcanvas"
@@ -38,16 +38,15 @@
         aria-controls="offcanvasExample"
       >
         Button with data-bs-target
-      </button>
+      </button> -->
 
-      <div
+      <!-- <div
         class="offcanvas offcanvas-start"
         tabindex="-1"
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
           <button
             type="button"
             class="btn-close text-reset"
@@ -76,11 +75,10 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
       <br />
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -92,15 +90,15 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="offcanvas offcanvas-end"
+            class="offcanvas offcanvas-start"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 Offcanvas
-              </h5>
+              </h5> -->
               <button
                 type="button"
                 class="btn-close"
@@ -161,9 +159,14 @@
     <main class="text-bg-dark" style="height: 1600px"></main>
     <footer></footer>
     <!-- js files -->
-    <script src="./js/main.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
     <script src="/js/jquery.js"></script>
     <script src="./js/jquery.nice-select.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

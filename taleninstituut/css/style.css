@@ -12,29 +12,102 @@ primary color: #18a3ba;
 body {
   font-family: "Calibri", sans-serif;
 }
+
 a {
   text-decoration: none;
   display: inline-block;
 }
-
+.ml-30 {
+  margin-left: 30px;
+}
+.pt-24 {
+  padding-top: 24px;
+}
 /* ************************ */
 /*     HEADER SECTIION      */
 /* ************************ */
-.nav-top-part {
+.nav-top-part-head {
   background-color: #18a3ba;
 }
-.logo svg {
+.container-head {
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.first-head {
+  height: 81px;
+}
+/* OFFCANVAS SECTION */
+/* Nav toggler button */
+.nav-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 24px;
+  color: #fff;
+  border: none;
+}
+.navbar-toggler.offcanvas-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.nav-toggler-icon span {
+  display: block;
+
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  border-radius: 2px;
+  opacity: 1;
+}
+.nav-toggler-icon span {
+  height: 2px;
+}
+.close-button {
+  background-color: #18a3ba;
+}
+.offcanvas-start.show {
+  top: 81px;
+}
+.offcanvas-tale-header {
+  background-color: transparent;
+  position: fixed;
+  top: 9px;
+  border: none;
+}
+.offcanvas-body ul li a .svg-inline--fa {
+  height: 1em;
+}
+.close-1 {
+  top: 50%;
+  left: 0%;
+
+  transform: rotate(45deg);
+}
+.close-2 {
+  top: 50%;
+  left: 0%;
+
+  transform: rotate(135deg);
+}
+.offcanvas-backdrop {
+  background-color: transparent;
+}
+.logo-head svg {
   fill: #fff;
   height: 48px;
   margin-right: 12px;
 }
-.main-title {
+.main-title-head {
   font-size: 1.75rem;
   line-height: 1.7142857143;
   color: #fff;
   font-weight: 600;
 }
 .header-social {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
   list-style-type: none;
@@ -60,7 +133,140 @@ a {
 .header-social li:last-child a::after {
   display: none;
 }
-.social-btn svg {
+.btn-secondary {
+  background-color: #18a3ba;
+  border: none;
+  padding: 15px 6px 15px 25px;
+}
+.btn-secondary:hover {
+  background: #18a3ba;
+}
+.lang-menu-head.show {
+  padding: 15px 25px;
+  background-color: #0094ad;
+}
+.social-btn-head svg {
   fill: #fff;
   height: 16px;
+  /* display: inline-block; */
+}
+.lang-menu-head .btn.btn-secondary:active,
+.lang-menu-head .btn.btn-secondary:active:focus-visible,
+.lang-menu-head .btn.btn-secondary.show,
+.lang-menu-head .btn.btn-secondary.show:active,
+.lang-menu-head .btn.btn-secondary.show:focus-visible,
+.lang-menu-head .btn.btn-secondary.show:active:focus-visible {
+  background-color: #0094ad;
+}
+.lang-menu-head .dropdown-toggle::after {
+  margin-left: 0.5rem;
+}
+.flag-head {
+  width: 28.01px;
+  height: 28.01px;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+}
+.english-flag-head {
+  background: url("../img/flag-en.svg") no-repeat center center/cover;
+}
+.netherland-flag {
+  background: url("../img/flag-nl.svg") no-repeat center center/cover;
+}
+.duch-flag {
+  background: url("../img/flag-de.svg") no-repeat center center/cover;
+}
+.lang-menu-head .dropdown-menu {
+  min-width: 28px !important;
+  padding: 0;
+  background-color: #18a3ba;
+}
+
+.lang-menu-head ul li a {
+  padding: 15px 25px;
+  background-color: #0094ad;
+}
+.lang-menu-head ul li a:hover {
+  background-color: #18a3ba;
+  /* 208c9e; */
+}
+
+/* 2nd header */
+.second-head {
+  background-color: #fffffe;
+}
+.header-btn {
+  color: #de115f;
+  font-weight: 700;
+  border: 3px solid #de115f;
+  padding: 6px 1.2rem;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.header-btn:hover {
+  background: #de115f;
+  color: #fff;
+}
+.second-head-nav .nav-link {
+  color: #333;
+  font-weight: 600;
+}
+.second-head-nav .nav-link:hover,
+.second-head-nav .nav-link:active {
+  color: #de115f;
+}
+/* ************************ */
+/*     HEADER SECTIION      */
+/* ************************ */
+
+.hero-section {
+  background-color: #d9eef2;
+  padding-top: 140px;
+}
+.container-hero {
+  max-width: 1370px;
+}
+.hero-img {
+  background: url("../img/taleninstituut-nederland-amsterdam.jpg") no-repeat
+    center center/cover;
+  height: 342px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-img::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #de115f;
+  width: 500px;
+  opacity: 0.8;
+  transform: skew(27deg);
+}
+.hero-details {
+  display: inline-block;
+  position: relative;
+  max-width: 376px;
+  margin: auto auto auto 85px;
+  z-index: 1;
+}
+.hero-title {
+  color: #fff;
+  font-size: 60px;
+  max-width: 0.76px;
+
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+.hero-btn {
+  color: #fff;
+  background-color: #18a3ba;
+  border: #18a3ba;
+}
+.hero-btn:hover {
+  background-color: #138294;
+  border: #138294;
 }
