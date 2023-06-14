@@ -42,32 +42,30 @@
 @media (max-width: 567px) {
 }
 @media screen and (min-width: 300px) {
-  .container-head,
-  .container-hero {
+  .container-head {
     max-width: 300px;
   }
 }
 @media screen and (min-width: 567px) {
-  .container-head,
-  .container-hero {
+  .container-head {
     max-width: 567px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container-head,
-  .container-hero {
+  .container-head {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 992px) {
-  .container-head,
-  .container-hero {
+  .container-head {
     max-width: 992px;
+  }
+  .contaier-hero {
+    padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container-head,
-  .container-hero {
+  .container-head {
     max-width: 1200px;
   }
 }

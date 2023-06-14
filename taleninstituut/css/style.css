@@ -222,10 +222,19 @@ a {
 
 .hero-section {
   background-color: #d9eef2;
-  padding-top: 140px;
 }
 .container-hero {
   max-width: 1370px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.o-wrapper:after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important;
 }
 .hero-img {
   background: url("../img/taleninstituut-nederland-amsterdam.jpg") no-repeat
