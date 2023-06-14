@@ -38,8 +38,18 @@
   }
 }
 @media (max-width: 768px) {
+  /* for course-section */
+  .col-mob-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
-@media (max-width: 567px) {
+@media (max-width: 576px) {
+  /* for hero icon and course-section */
+  .col-es-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 300px) {
 }
@@ -66,15 +76,23 @@
   .container-head {
     max-width: 1200px;
   }
+  /* for course-section */
+  .callout {
+    display: none;
+  }
 }
 @media (min-width: 720px) and (max-width: 1023px) {
+  /* for hero icon */
   .col-tab-6 {
+    flex: 0 0 auto;
     width: 50%;
   }
 }
-@media (max-width: 576px) {
-  .col-es-12 {
+
+@media (min-width: 768px) and (max-width: 1260px) {
+  /* for course-section */
+  .col-sm-desk-4 {
     flex: 0 0 auto;
-    width: 100%;
+    width: 33.333333333%;
   }
 }

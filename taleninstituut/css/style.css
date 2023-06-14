@@ -168,13 +168,13 @@ a {
   border-radius: 50%;
   display: inline-block;
 }
-.english-flag-head {
+.english-flag {
   background: url("../img/flag-en.svg") no-repeat center center/cover;
 }
 .netherland-flag {
   background: url("../img/flag-nl.svg") no-repeat center center/cover;
 }
-.duch-flag {
+.german-flag {
   background: url("../img/flag-de.svg") no-repeat center center/cover;
 }
 .lang-menu-head .dropdown-menu {
@@ -302,4 +302,74 @@ a {
 .hero-icon-text {
   font-size: 14px;
   letter-spacing: -0.017rem;
+}
+
+/* ************************ */
+/*     COURSE SECTIION      */
+/* ************************ */
+.cources-section {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background-color: #e7f4f8;
+}
+.container-course {
+  padding-right: 12px;
+  padding-left: 12px;
+  max-width: 1370px;
+  margin: 0 auto;
+}
+.cources-section .container-course .row .col {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.course-wrapper {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+
+  border-radius: 20px;
+  padding: 12px;
+  max-height: 400px;
+}
+
+.course-flag {
+  position: absolute;
+  top: -60.35px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.french-flag {
+  background: url("../img/flag-fr.svg") no-repeat center center/cover;
+}
+.spanish-flag {
+  background: url("../img/flag-sp.svg") no-repeat center center/cover;
+}
+.e-learning {
+  background: url("../img/Icoon-e-learning_TIN-150x150.png") no-repeat center
+    center/cover;
+}
+
+.course-title {
+  text-align: center;
+  color: #18a3ba;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 30px;
+}
+.course-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.course-wrapper .btn {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-50%);
+
+  width: 121px;
 }
