@@ -448,3 +448,18 @@ a {
   background-color: #d9eef2;
   padding: 54px 0;
 }
+
+.e-learning-img {
+  display: inline-block;
+  border-radius: 20px;
+}
+.course-type-text h2 {
+  color: #18a3ba;
+  font-size: 28px;
+  font-weight: 700;
+}
+.course-type-text h3 {
+  color: #de115f;
+  font-weight: 300;
+  font-size: 24px;
+}
