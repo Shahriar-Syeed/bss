@@ -373,3 +373,78 @@ a {
 
   width: 121px;
 }
+
+/* ************************ */
+/*     SUCCESS SECTIION      */
+/* ************************ */
+.success-section {
+  background-color: #d9eef2;
+  padding-top: 54px;
+}
+.success-box {
+  position: relative;
+  padding: 48px 0;
+}
+.success-box::before {
+  content: "";
+  height: 100%;
+  width: 97.6%;
+  position: absolute;
+  right: 104px;
+  bottom: 14px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: inherit;
+}
+.success-text {
+  position: relative;
+  z-index: 1;
+}
+
+.success-text h2 {
+  color: #18a3ba;
+  font-weight: 700;
+}
+.success-text p {
+  margin-bottom: 24px;
+}
+
+.video-play {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+.video-play::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  width: 45px;
+  height: 45px;
+  background: url("../img/play-btn.svg") no-repeat center center/cover;
+}
+
+/* modal pop up video style */
+.modal {
+  --bs-modal-width: 870px;
+}
+.modal-header {
+  background-color: #de115f;
+  color: #fff;
+}
+
+.btn.video-close-btn {
+  border: 1px solid #de115f;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px 19.2px;
+}
+.modal-footer {
+  background-color: #eeeeee;
+}
+.course-type-section {
+  background-color: #d9eef2;
+  padding: 54px 0;
+}
