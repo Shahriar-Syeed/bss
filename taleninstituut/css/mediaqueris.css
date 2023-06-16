@@ -37,6 +37,11 @@
     left: 11.9%;
   }
 }
+@media screen and (max-width: 790px) {
+  .site-footer {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   /* for course-section */
   .col-mob-6 {
@@ -58,6 +63,11 @@
     max-width: 567px;
   }
 }
+@media screen and (min-width: 720px) {
+  .footer-call-to-action-text {
+    width: 70%;
+  }
+}
 @media screen and (min-width: 768px) {
   .container-head {
     max-width: 768px;
@@ -70,6 +80,9 @@
   .container-hero {
     padding-right: 24px;
     padding-left: 24px;
+  }
+  .footer-call-to-action-text {
+    width: 55%;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -16,6 +16,7 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
+  color: #000;
 }
 .ml-30 {
   margin-left: 30px;
@@ -462,4 +463,89 @@ a {
   color: #de115f;
   font-weight: 300;
   font-size: 24px;
+}
+/* ************************ */
+/*     FOOTER SECTIION      */
+/* ************************ */
+.footer-call-to-action {
+  background-color: #18a3ba;
+  position: relative;
+  padding: 32px;
+}
+.footer-call-to-action::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/footer-bg-logo.svg") no-repeat right 8% center;
+  opacity: 0.1;
+  z-index: 1;
+}
+.container-footer {
+}
+.footer-call-to-action-text {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+}
+.footer-call-to-action-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.footer-call-to-action-text p {
+  font-size: 18px;
+}
+.footer-call-to-action-button {
+}
+.footer-call-to-action-button .btn.header-btn {
+  background-color: #de115f;
+  color: #fff;
+  border: none;
+}
+.footer-call-to-action-button .btn.header-btn:hover {
+  background-color: #b10d4c;
+}
+
+/* SITE FOOTER */
+.site-footer {
+  background-color: #e7f4f8;
+  padding-top: 48px;
+  padding-bottom: 72px;
+}
+.site-footer > div .row {
+  margin: 0;
+  row-gap: 24px;
+}
+.footer-praimary-text,
+.site-footer > div > div > div > p > a {
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #002a32;
+}
+.site-footer > div > div > div > p > a:hover {
+  color: #18a3ba;
+  text-decoration: underline;
+}
+.site-footer > div > div > div > p {
+  margin: 0;
+}
+
+/* COPPYRIGHT SECTION */
+.coppyright-section {
+  background-color: #d9eef2;
+}
+.site-disclaimer {
+  padding: 12px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  display: block;
+  text-align: center;
+  color: #002a32;
+  opacity: 0.5;
+  font-style: italic;
 }
