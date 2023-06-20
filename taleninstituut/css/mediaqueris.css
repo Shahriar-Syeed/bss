@@ -36,6 +36,15 @@
     top: 6.2px;
     left: 11.9%;
   }
+  .hero-title {
+    font-size: 45px;
+    line-height: 1;
+    max-width: 330px;
+  }
+  .hero-img::before {
+    opacity: 0.8;
+    max-width: 435px;
+  }
 }
 @media screen and (max-width: 790px) {
   .site-footer {
@@ -47,6 +56,14 @@
   .col-mob-6 {
     flex: 0 0 auto;
     width: 50%;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 1;
+    max-width: 330px;
+  }
+  .hero-img::before {
+    opacity: 0;
   }
 }
 @media (max-width: 576px) {
@@ -81,6 +98,7 @@
     padding-right: 24px;
     padding-left: 24px;
   }
+
   .footer-call-to-action-text {
     width: 55%;
   }
