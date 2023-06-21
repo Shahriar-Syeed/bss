@@ -11,6 +11,7 @@ primary color: #18a3ba;
 }
 body {
   font-family: "Calibri", sans-serif;
+  letter-spacing: 0.01rem;
 }
 
 a {
@@ -548,4 +549,84 @@ a {
   color: #002a32;
   opacity: 0.5;
   font-style: italic;
+}
+
+/* ******************************* */
+/* ------------------------------- */
+/*  BUSINESS LANGUAGE COURCES PAGE */
+/* ------------------------------- */
+/* ******************************* */
+
+.site-content {
+  background-color: #d9eef2;
+  padding: 48px 0;
+}
+/* left hand side */
+
+.left-hand-sidebar {
+  background-color: #fff;
+  padding: 48px;
+  border-radius: 20px;
+}
+.left-side-heading {
+  color: #de115f;
+  font-size: 2.625rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.left-side-secondary-heading {
+  color: #18a3ba;
+  font-weight: 900;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.left-hand-sidebar p {
+  margin-bottom: 1.5rem;
+}
+.left-hand-sidebar ul {
+  margin-bottom: 1.5rem;
+}
+.last-para a {
+  color: #de115f;
+}
+.last-para a:hover {
+  text-decoration: underline;
+}
+/* Right hand side */
+.right-sidbar-container {
+  margin-bottom: 24px;
+}
+.right-sidebar-img {
+  border-radius: 20px;
+}
+/* right siede video */
+.right-video-img {
+  background: linear-gradient(rgba(3, 3, 3, 0.2), rgba(3, 3, 3, 0.2)),
+    url("../img/videothumb-make-your-words-count.jpg") no-repeat center
+      center/cover;
+  width: 100%;
+  position: relative;
+  padding-top: 54%;
+}
+.video-play.right-video-play::after {
+  top: 34%;
+}
+.right-video-footer {
+  color: #fff;
+  background-color: #286779;
+  font-size: 16px;
+  padding: 10px 24px;
+  text-align: center;
+}
+/* right side action part */
+.right-side-action-container {
+  padding: 20px;
+}
+.right-side-action-title {
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+  color: #de115f;
+  font-weight: 600;
 }
