@@ -45,6 +45,12 @@
     opacity: 0.8;
     max-width: 435px;
   }
+  .client-list li {
+    width: 100%;
+  }
+  .right-img-mt {
+    margin-top: 24px;
+  }
 }
 @media screen and (max-width: 790px) {
   .site-footer {
