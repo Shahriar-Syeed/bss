@@ -1,0 +1,335 @@
+@media (min-width: 991.8px) {
+  .cardd2 {
+    display: none;
+  }
+  .hero-section {
+    margin-top: 76px;
+  }
+  .row .navbar .navbar-nav .nav-item .main-sec {
+    padding: 28px 5px;
+  }
+}
+@media (max-width: 991.9px) {
+  .main-nav-list-e {
+    background: #0f4332;
+    /* padding: 19px; */
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; */
+  }
+  .dropdown .shows .dropdown-item:hover {
+    background-color: #0f4332;
+    border: none;
+    color: #10c98f;
+  }
+  .row .navbar .navbar-nav .nav-item a:hover {
+    color: #10c98f;
+  }
+  .row .navbar .navbar-nav .nav-item a {
+    font-size: 15px;
+    padding: 7px 10px;
+    margin: 2px 5px;
+    font-weight: 400;
+    gap: 0;
+  }
+  .cardd {
+    display: none;
+  }
+  .main-nav-list-e {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 575px) {
+  .header-area .header-bottom {
+    padding: 10px 0px 7px 10px;
+  }
+  .hero-section {
+    padding-top: 74px;
+  }
+  .feature-section {
+    padding-top: 70px;
+  }
+  .hero-content h1.primary-heading {
+    font-size: 41px;
+  }
+
+  .customer-satisfaction {
+    right: 0;
+    padding: 22.5px 16px;
+  }
+  .section-title h2,
+  .our-service-title h2 {
+    font-size: 24px;
+  }
+  .hero-content .hero-text {
+    font-size: 16px;
+  }
+  .card-e .from-wrapper {
+    padding: 43px 14px 40px 14px;
+    margin-bottom: 87px;
+    margin-top: 30px;
+  }
+  /* testimonial section start  */
+  .testimonial-caption p {
+    margin-bottom: 33px;
+    font-size: 17px;
+  }
+  .founder-text {
+    font-size: 12px;
+  }
+  .founder-text span {
+    font-size: 18px;
+  }
+
+  .btn-slide-1,
+  .btn-slide-2,
+  .dash-m,
+  .testimonial-caption img {
+    display: none;
+  }
+  .footer-area {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .home-blog {
+    padding-top: 80px;
+    padding-bottom: 29px;
+  }
+  .slide-1,
+  .slide-2 {
+    padding-left: 18px;
+    padding-right: 16px;
+    padding-top: 80px;
+  }
+  /* testimonial section end  */
+
+  .about-section {
+    padding: 70px 0;
+  }
+  .about-caption {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .mt-about-hero-heading {
+    margin-top: 0;
+  }
+  .hero-section.pb-about-hero-section {
+    margin-top: 0px;
+    padding-bottom: 62px;
+    padding-top: 54px;
+  }
+  .mt-about-hero-heading h1.primary-heading {
+    font-size: 38px !important;
+  }
+  .main-nav-list-e {
+    padding: 10px 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .header-area {
+    padding: 10px 10px 20px 10px;
+  }
+  /* .navbar-brand img {
+    margin-left: 13px;
+  } */
+  .row .navbar.navbar-dark {
+    padding-left: 0;
+  }
+  .sticky-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+    width: 470px;
+  }
+  .main-nav-list-e {
+    padding: 10px 0;
+  }
+  .hero-section {
+    margin-top: 27px;
+  }
+  .hero-content h1.primary-heading {
+    font-size: 48px;
+  }
+  .form-tittle h2 {
+    font-size: 24px !important;
+  }
+  .card-e {
+    margin-top: -20px;
+  }
+  .card-e .from-wrapper {
+    margin-top: 50px;
+  }
+  .title-form h2 {
+    font-size: 24px;
+  }
+  .feature-section {
+    padding: 100px 0 100px 0;
+  }
+  .about-section,
+  .about-section-2 {
+    padding: 70px 0 70px 0;
+  }
+
+  .about-section .about-caption {
+    margin-top: 80px;
+  }
+  .about-section-2 .about-caption {
+    margin-bottom: 50px;
+  }
+  .about-caption h2 {
+    font-size: 31px;
+  }
+  .our-service {
+    padding: 70px 0 70px;
+  }
+  .our-service-title h2 {
+    font-size: 31px;
+  }
+  /* testimonial section */
+  .testimonial-caption p {
+    width: 93%;
+    font-size: 19px;
+  }
+
+  .home-blog {
+    padding: 80px 0 29px 0;
+  }
+  .card h5 a {
+    font-size: 20px;
+  }
+  .footer-area {
+    padding: 80px 0 20px 0;
+  }
+  .mt-about-hero-heading h1.primary-heading {
+    font-size: 44px !important;
+  }
+  .mt-about-hero-heading {
+    margin-top: 0;
+  }
+
+  .hero-section.pb-about-hero-section {
+    margin-top: 50px;
+    padding-bottom: 62px;
+  }
+}
+@media (min-width: 768px) {
+  .blog-item-date {
+    bottom: -20px;
+    left: 40px;
+    padding: 13px 30px;
+  }
+  .blog-item-date h3 {
+    font-size: 30px;
+  }
+  .blog-details {
+    padding: 60px 30px 35px 35px;
+  }
+  .block-head {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .header-area {
+    padding: 10px 10px 20px 10px;
+  }
+
+  .sticky-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container1-left-pad,
+  .container2-left-pad {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .navbar-brand {
+    margin: 0 auto;
+    width: 527px;
+  }
+  .main-nav-list-e {
+    padding: 10px 0;
+  }
+  .hero-section {
+    margin-top: 80px;
+  }
+
+  .hero-content h1.primary-heading {
+    font-size: 48px;
+  }
+  .form-tittle h2 {
+    font-size: 24px !important;
+  }
+  .card-e {
+    margin-top: -20px;
+  }
+  .title-form h2 {
+    font-size: 24px;
+  }
+  .feature-section {
+    padding: 100px 0 100px 0;
+  }
+  .about-section-2 {
+    padding: 20px 0 90px 0;
+  }
+  .about-caption {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .our-service {
+    margin: 100px 0 100px;
+  }
+  .home-blog {
+    padding: 80px 0 29px;
+  }
+  .footer-area {
+    padding: 80px 0 20px;
+  }
+  .mt-about-hero-heading {
+    margin-top: 17px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .customer-satisfaction {
+    right: 0;
+  }
+
+  .row .navbar .navbar-nav .nav-item .main-sec {
+    padding: 28px 0px;
+  }
+  .main-nav-list-e .main-sec {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  .main-nav-list-e {
+    column-gap: 0.5px;
+  }
+  .row .navbar {
+    padding-right: 5px !important;
+    padding-left: 11px !important;
+  }
+  .container1-left-pad,
+  .container2 -left-pad {
+    padding-left: 5.5px;
+    padding-right: 0;
+  }
+
+  .hero-content h1.primary-heading {
+    font-size: 48px;
+  }
+  .hero-section {
+    margin-top: 60px;
+  }
+  .hero-content {
+    margin-top: 75px;
+  }
+  .about-section .about-img {
+    margin-top: 38px;
+  }
+}
