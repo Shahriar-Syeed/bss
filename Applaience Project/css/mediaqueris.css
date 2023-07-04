@@ -5,6 +5,9 @@
   blockquote {
     font-size: 48px;
   }
+  .swiper {
+    height: 500px;
+  }
 }
 @media (max-width: 768px) {
   .navbar .navbar-social-icon {
@@ -12,6 +15,9 @@
   }
   blockquote {
     font-size: 32px;
+  }
+  .swiper {
+    height: 400px;
   }
 }
 @media (max-width: 554px) {

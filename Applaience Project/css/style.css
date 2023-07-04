@@ -424,9 +424,9 @@ a:hover {
   .swiper-slide {
     background-color: #ccc;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 60px;
+    align-items: flex-start;
   }
 }
 blockquote {
@@ -443,11 +443,7 @@ blockquote::before {
 blockquote::after {
   content: "\201d";
 }
-.swiper-slide {
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start !important;
-}
+
 .swiper-slide span {
   padding-left: 10%;
   color: #fff;
