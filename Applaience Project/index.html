@@ -28,14 +28,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mediaqueris.css" />
 
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-gradient bg-dark">
+    <header class="sticky-top">
+      <nav
+        id="topNavbar"
+        class="navbar navbar-expand-lg navbar-dark bg-gradient bg-dark px-md-3"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img src="./img/logo.png" class="logo-img" alt="" /><span
@@ -57,19 +61,21 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#feature">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Offer</a>
+                <a class="nav-link" href="#offer">Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link btn btn-light btn-login" href="#">Log in</a>
@@ -78,7 +84,7 @@
           </div>
         </div>
       </nav>
-      <nav class="navbar bg-info-subtle">
+      <nav id="navBar" class="navbar bg-info-subtle bg-gradient">
         <div class="container">
           <div class="navbar-button">
             <button type="button" class="btn btn-outline-secondary">
@@ -183,7 +189,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero-section-ap">
+      <section class="hero-section-ap" id="home">
         <div class="home-slider">
           <div
             id="Slides"
@@ -214,7 +220,7 @@
                       class="col-lg-6 col-md-7 slider-text animate__animated animate__fadeInUp align-middle"
                     >
                       <div class="hero-text">
-                        <h1 class="mb-4 mt-5" style="padding-top: 20%">
+                        <h1 class="mb-4" style="padding-top: 20%">
                           Make your home sparkle with moonlight applience
                         </h1>
                         <p class="mt-3">
@@ -291,7 +297,7 @@
           </div>
         </div>
       </section>
-      <section class="feature-section text-bg-dark">
+      <section class="feature-section text-bg-dark" id="feature">
         <div class="container">
           <div class="py-5 text-center" id="featured-3">
             <h2 class="pb-2 border-bottom feature-title">
@@ -535,14 +541,21 @@
           </div>
         </div>
       </section>
-      <section class="section-products">
+      <section class="section-products" id="offer">
         <div class="container">
           <div class="row justify-content-center text-center">
             <div class="col-md-8 col-lg-6">
               <div class="header">
                 <h3>Featured Product</h3>
-                <h2>Popular Products</h2>
+                <h2 class="secondary-title">Popular Products</h2>
               </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="price-toggler-container">
+              <sapn class="dollar">Dolllar</sapn>
+              <div class="price-toggler"></div>
+              <sapn class="taka">Taka</sapn>
             </div>
           </div>
           <div class="row">
@@ -623,9 +636,17 @@
                   </ul>
                 </div>
                 <div class="part-2">
-                  <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-old-price">$79.99</h4>
-                  <h4 class="product-price">$49.99</h4>
+                  <h3 class="product-title">Wall Oven</h3>
+                  <h4 class="product-old-price">
+                    <span class="currency"><del>$</del></span
+                    ><span class="price"><del>79.99</del></span>
+                  </h4>
+                  <h4 class="product-price">
+                    <strong
+                      ><span class="currency">$</span
+                      ><span class="price">49.99</span></strong
+                    >
+                  </h4>
                 </div>
               </div>
             </div>
@@ -707,8 +728,11 @@
                   </ul>
                 </div>
                 <div class="part-2">
-                  <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-price">$49.99</h4>
+                  <h3 class="product-title">Smart Fridge</h3>
+                  <h4 class="product-price">
+                    <span class="currency">$</span
+                    ><span class="price">49.99</span>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -787,8 +811,14 @@
                 </div>
                 <div class="part-2">
                   <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-old-price">$79.99</h4>
-                  <h4 class="product-price">$49.99</h4>
+                  <h4 class="product-old-price">
+                    <span class="currency"><del>$</del></span
+                    ><span class="price"><del>79.99</del></span>
+                  </h4>
+                  <h4 class="product-price">
+                    <span class="currency">$</span
+                    ><span class="price">49.99</span>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -871,7 +901,10 @@
                 </div>
                 <div class="part-2">
                   <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-price">$49.99</h4>
+                  <h4 class="product-price">
+                    <span class="currency">$</span
+                    ><span class="price">49.99</span>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -950,8 +983,14 @@
                 </div>
                 <div class="part-2">
                   <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-old-price">$79.99</h4>
-                  <h4 class="product-price">$49.99</h4>
+                  <h4 class="product-old-price">
+                    <span class="currency"><del>$</del></span
+                    ><span class="price"><del>79.99</del></span>
+                  </h4>
+                  <h4 class="product-price">
+                    <span class="currency">$</span
+                    ><span class="price">49.99</span>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -1031,7 +1070,10 @@
                 </div>
                 <div class="part-2">
                   <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-price">$49.99</h4>
+                  <h4 class="product-price">
+                    <span class="currency">$</span
+                    ><span class="price">49.99</span>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -1110,8 +1152,14 @@
                 </div>
                 <div class="part-2">
                   <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-old-price">$79.99</h4>
-                  <h4 class="product-price">$49.99</h4>
+                  <h4 class="product-old-price">
+                    <span class="currency"><del>$</del></span
+                    ><span class="price"><del>79.99</del></span>
+                  </h4>
+                  <h4 class="product-price">
+                    <span class="currency">$</span
+                    ><span class="price">49.99</span>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -1191,118 +1239,155 @@
                 </div>
                 <div class="part-2">
                   <h3 class="product-title">Here Product Title</h3>
-                  <h4 class="product-price">$49.99</h4>
+                  <h4 class="product-price">
+                    <span class="currency">$</span
+                    ><span class="price">49.99</span>
+                  </h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="testimonial-section">
+      <section class="testimonial-section" id="testimonial">
         <div class="container">
+          <h2 class="secondary-title text-center d-none">What pepole say</h2>
+
           <!-- Slider main container -->
           <div class="swiper">
+            <div class="position-absolute top-0 left-0 swiper-heading">
+              <h2 class="secondary-title">What</h2>
+              <h2 class="secondary-title">pepole</h2>
+              <h2 class="secondary-title">say</h2>
+            </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div
-                class="swiper-slide"
-                style="
-                  background: linear-gradient(
-                      rgba(29, 27, 26, 0.4),
-                      rgba(0, 110, 253, 0.4)
-                    ),
-                    url('./img/testimonial/17202724_Bosch-RNA-Customer-Testimonials-1600x11002.jpg')
-                      center center/cover;
-                "
-              >
-                <blockquote>
-                  I'm finding everything's been very fresh since I bought this
-                  refrigerator.
-                </blockquote>
-                <span><strong>-Keema</strong></span>
+              <div class="swiper-slide swiper-slide-1">
+                <div class="testi-img">
+                  <img
+                    src="./img/testimonial/17202724_Bosch-RNA-Customer-Testimonials-1600x11002.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="commant">
+                  <blockquote>
+                    I'm finding everything's been very fresh since I bought this
+                    refrigerator.
+                  </blockquote>
+                  <span><strong>-Keema</strong></span>
+                </div>
               </div>
-              <div
-                class="swiper-slide"
-                style="
-                  background: linear-gradient(
-                      rgba(29, 27, 26, 0.4),
-                      rgba(0, 110, 253, 0.4)
-                    ),
-                    url('./img/testimonial/17202726_Bosch-RNA-Customer-Testimonials-1600x1100.jpg')
-                      center center/cover;
-                "
-              >
-                <blockquote>
-                  I like things that are engineered purely, and the dishwasher
-                  does its job perfectly every day.
-                </blockquote>
-                <span><strong>-Daniel</strong></span>
+              <div class="swiper-slide swiper-slide-2">
+                <div class="testi-img">
+                  <img
+                    src="./img/testimonial/17202726_Bosch-RNA-Customer-Testimonials-1600x1100.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="commant">
+                  <blockquote>
+                    I like things that are engineered purely, and the dishwasher
+                    does its job perfectly every day.
+                  </blockquote>
+                  <span><strong>-Daniel</strong></span>
+                </div>
               </div>
-              <div
-                class="swiper-slide"
-                style="
-                  background: linear-gradient(
-                      rgba(29, 27, 26, 0.4),
-                      rgba(0, 110, 253, 0.4)
-                    ),
-                    url('./img/testimonial/17547156_Bosch-RNA-Customer-Testimonial-DawnSlaven_2.jpg')
-                      center center/cover;
-                "
-              >
-                <blockquote>
-                  If somebody asked my opinion, I would absolutely recommend the
-                  Bosch. The quality speaks for itself.
-                </blockquote>
-                <span><strong>-Dawn</strong></span>
+              <div class="swiper-slide swiper-slide-3">
+                <div class="testi-img">
+                  <img
+                    src="./img/testimonial/17547156_Bosch-RNA-Customer-Testimonial-DawnSlaven_2.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="commant">
+                  <blockquote>
+                    If somebody asked my opinion, I would absolutely recommend
+                    the moonlight. The quality speaks for itself.
+                  </blockquote>
+                  <span><strong>-Dawn</strong></span>
+                </div>
               </div>
-              <div
-                class="swiper-slide"
-                style="
-                  background: linear-gradient(
-                      rgba(29, 27, 26, 0.4),
-                      rgba(0, 110, 253, 0.4)
-                    ),
-                    url('./img/testimonial/17547157_Bosch-RNA-Customer-Testimonial-ChelseaWhitman_1.jpg')
-                      center center/cover;
-                "
-              >
-                <blockquote>
-                  Just unwrapping it...you could tell that the craftsmanship on
-                  it was so much better than any other refrigerator we've had.
-                </blockquote>
-                <span><strong>-Chelsea</strong></span>
+              <div class="swiper-slide swiper-slide-4">
+                <div class="testi-img">
+                  <img
+                    src="./img/testimonial/17547157_Bosch-RNA-Customer-Testimonial-ChelseaWhitman_1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="commant">
+                  <blockquote>
+                    Just unwrapping it...you could tell that the craftsmanship
+                    on it was so much better than any other refrigerator we've
+                    had.
+                  </blockquote>
+                  <span><strong>-Chelsea</strong></span>
+                </div>
               </div>
-              <div
-                class="swiper-slide"
-                style="
-                  background: linear-gradient(
-                      rgba(29, 27, 26, 0.4),
-                      rgba(0, 110, 253, 0.4)
-                    ),
-                    url('./img/testimonial/17547159_Bosch-RNA-Customer-Testimonial-DeniseMacDonald_1.jpg')
-                      center center/cover;
-                "
-              >
-                <blockquote>
-                  With the moonlight, you just do not hear it. There is no noise
-                  with the Bosch refrigerator. It is amazing.
-                </blockquote>
-                <span><strong>-Denise</strong></span>
+              <div class="swiper-slide">
+                <div class="testi-img">
+                  <img
+                    src="./img/testimonial/17547157_Bosch-RNA-Customer-Testimonial-ChelseaWhitman_1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="commant">
+                  <blockquote>
+                    With the moonlight, you just do not hear it. There is no
+                    noise with the moonlight refrigerator. It is amazing.
+                  </blockquote>
+                  <span><strong>-Denise</strong></span>
+                </div>
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
+            <div class="swiper-btns-sec">
+              <div class="btn btn-outline-secondary btn-sm prev-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="btn btn-outline-secondary btn-sm next-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
       </section>
+      <section class="team-section"></section>
     </main>
     <!-- JAVASCRIPT  -->
     <!-- JQUERY -->
@@ -1330,41 +1415,26 @@
         type: "image",
       });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- SLICK SLIDER -->
+
     <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        loop: true,
-        effect: "cube",
-        grabCursor: true,
-        cubeEffect: {
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        },
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
 
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-      });
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     </script>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

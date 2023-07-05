@@ -2,8 +2,8 @@
   .hero-text h1 {
     font-size: 44px;
   }
-  blockquote {
-    font-size: 48px;
+  .commant blockquote {
+    font-size: 18px;
   }
   .swiper {
     height: 500px;
@@ -13,11 +13,45 @@
   .navbar .navbar-social-icon {
     display: none !important;
   }
-  blockquote {
-    font-size: 32px;
+  .commant blockquote {
+    font-size: 16px;
   }
   .swiper {
     height: 400px;
+  }
+  .swiper .swiper-heading {
+    display: none;
+  }
+  .testi-img,
+  .commant {
+    position: unset;
+    width: 100%;
+    clip-path: none;
+  }
+  .commant {
+    padding: 0 10px 20px 10px;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 50px;
+  }
+  .swiper-slide {
+    flex-direction: column;
+  }
+  .testimonial-section .container .secondary-title {
+    display: block !important;
+    font-size: 24px;
+  }
+  .swiper-btns-sec {
+    display: none;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+  .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #2980b9;
   }
 }
 @media (max-width: 554px) {

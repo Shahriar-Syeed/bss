@@ -71,6 +71,8 @@ Default:9px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -92,6 +94,12 @@ body {
 /* ************** */
 .fixed-wideth-search-container {
   width: 242px;
+}
+.sticky-top {
+  z-index: 9999;
+}
+.navbar.sticky-top {
+  background: #333333cc;
 }
 .search-container {
   border-radius: 3rem;
@@ -221,9 +229,7 @@ body {
 .feature-titel,
 .feature .text-body-emphasis,
 .feature p {
-  background: radial-gradient(#adb5bd 50%, #fff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #adb5bd;
 }
 .feature {
   /* height: 100%; */
@@ -259,15 +265,58 @@ body {
 /*    PRODUCT SECTION  */
 /* }****************** */
 
-a,
-a:hover {
+a {
   text-decoration: none;
   color: inherit;
 }
-
 .section-products,
 .testimonial-section {
-  padding: 80px 0 54px;
+  padding: 80px 0 54px 0;
+}
+.section-products {
+  background-color: #cff4fc;
+  position: inherit;
+  /* z-index: -2; */
+}
+.price-toggler-container {
+  margin: 10px 10px 10px auto;
+  background: #000;
+  color: #adb5bd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+.price-toggler-container span {
+  font-weight: bolder;
+  color: #adb5bd;
+  font-size: 16px;
+}
+.price-toggler-container .price-toggler {
+  height: 25px;
+  width: 75px;
+  border-radius: 10px;
+  background: #2980b9;
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+  z-index: 1;
+}
+.price-toggler-container .price-toggler:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #adb5bd;
+
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  transition: 0.3s ease-out;
+}
+.price-toggler-container .price-toggler.active:before {
+  left: 50px;
 }
 
 .section-products .header {
@@ -296,6 +345,7 @@ a:hover {
   max-height: 290px;
   margin-bottom: 20px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .section-products .single-product .part-1::before {
@@ -386,7 +436,7 @@ a:hover {
 }
 
 .section-products .single-product .part-1 ul li a:hover {
-  color: #fe302f;
+  color: #bae6fd;
 }
 
 .section-products .single-product .part-2 .product-title {
@@ -404,38 +454,140 @@ a:hover {
   margin-right: 2px;
   opacity: 0.6;
 }
-
-.section-products .single-product .part-2 .product-old-price::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #444444;
-  transform: translateY(-50%);
+.price,
+.currency {
+  font-size: 28px;
 }
+
 /* }****************** *****/
 /*    TESTIMONIAL SECTION  */
 /* }********************** */
-
+.testimonial-section {
+  background-color: #f5f3f3ee;
+  padding-bottom: 85px;
+}
+.secondary-title {
+  font-size: 52px;
+  padding: 10px;
+  border-bottom: 2px solid #bae6fd;
+  margin-bottom: 12px;
+  font-size: 600;
+}
+.swiper .secondary-title {
+  border: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+.swiper-heading {
+  z-index: 15;
+}
 .swiper {
-  height: 600px;
+  height: 500px;
+  width: 100%;
   .swiper-slide {
-    background-color: #ccc;
+    background-color: transparent;
     display: flex;
-    flex-direction: column;
+    position: relative;
     justify-content: center;
     align-items: flex-start;
   }
 }
-blockquote {
-  font-style: normal;
-  margin-bottom: 10px;
-  padding-right: 30%;
-  padding-left: 10%;
-  color: #fff;
-  font-size: 52px;
+.swiper::before {
+  content: url("../img/testimonial/background-image.svg");
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 170px;
+  margin: auto;
+
+  width: max-content;
+}
+/* .swiper-slide-1 {
+  background: linear-gradient(rgba(29, 27, 26, 0.4), rgba(0, 110, 253, 0.4)),
+    url("../img/testimonial/17202724_Bosch-RNA-Customer-Testimonials-1600x11002.jpg")
+      center center/cover;
+}
+.swiper-slide-2 {
+  background: linear-gradient(rgba(29, 27, 26, 0.4), rgba(0, 110, 253, 0.4)),
+    url("../img/testimonial/17202726_Bosch-RNA-Customer-Testimonials-1600x1100.jpg")
+      center center/cover;
+}
+.swiper-slide-3 {
+  background: linear-gradient(rgba(29, 27, 26, 0.4), rgba(0, 110, 253, 0.4)),
+    url("../img/testimonial/17547156_Bosch-RNA-Customer-Testimonial-DawnSlaven_2.jpg")
+      center center/cover;
+}
+.swiper-slide-4 {
+  background: linear-gradient(rgba(29, 27, 26, 0.4), rgba(0, 110, 253, 0.4)),
+    url("../img/testimonial/17547157_Bosch-RNA-Customer-Testimonial-ChelseaWhitman_1.jpg")
+      center center/cover;
+} */
+
+.testi-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 50%;
+  display: block;
+  clip-path: polygon(
+    100% 0,
+    133.33333px 0px,
+    131.41333px 0.10667px,
+    129.49333px 0.37333px,
+    127.62667px 0.85333px,
+    125.76px 1.54667px,
+    123.94667px 2.34667px,
+    122.29333px 3.41333px,
+    120.64px 4.58667px,
+    4.58667px 120.64px,
+    3.41333px 122.29333px,
+    2.34667px 123.94667px,
+    1.54667px 125.76px,
+    0.85333px 127.62667px,
+    0.37333px 129.49333px,
+    0.10667px 131.41333px,
+    0px 133.33333px,
+    0 100%,
+    100% 100%
+  );
+}
+
+.commant {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 12;
+  width: 60%;
+  clip-path: polygon(
+    0 100%,
+    calc(100% - 83.33333px) calc(100% - 0px),
+    calc(100% - 82.13333px) calc(100% - 0.06667px),
+    calc(100% - 80.93333px) calc(100% - 0.23333px),
+    calc(100% - 79.76667px) calc(100% - 0.53333px),
+    calc(100% - 78.6px) calc(100% - 0.96667px),
+    calc(100% - 77.46667px) calc(100% - 1.46667px),
+    calc(100% - 76.43333px) calc(100% - 2.13333px),
+    calc(100% - 75.4px) calc(100% - 2.86667px),
+    calc(100% - 2.86667px) calc(100% - 75.4px),
+    calc(100% - 2.13333px) calc(100% - 76.43333px),
+    calc(100% - 1.46667px) calc(100% - 77.46667px),
+    calc(100% - 0.96667px) calc(100% - 78.6px),
+    calc(100% - 0.53333px) calc(100% - 79.76667px),
+    calc(100% - 0.23333px) calc(100% - 80.93333px),
+    calc(100% - 0.06667px) calc(100% - 82.13333px),
+    calc(100% - 0px) calc(100% - 83.33333px),
+    100% 0,
+    0 0
+  );
+  background-color: #000;
+  padding: 72px 99px 53px 102px;
+  color: #adb5bd;
+  border-top-right-radius: 10px;
+}
+.commant blockquote {
+  font-size: 22px;
 }
 blockquote::before {
   content: "\201c";
@@ -443,9 +595,22 @@ blockquote::before {
 blockquote::after {
   content: "\201d";
 }
-
-.swiper-slide span {
-  padding-left: 10%;
-  color: #fff;
-  font-size: 28px;
+.commant span {
+  font-size: 16px;
 }
+.swiper-btns-sec {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: 17;
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-pagination {
+  display: none;
+  margin-top: 30px;
+}
+/* }****************** *****/
+/*    TEAM SECTION  */
+/* }********************** */
