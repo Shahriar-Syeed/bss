@@ -22,39 +22,58 @@
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
 
     <title>Document</title>
+    <style>
+      .tab {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+      }
+      .tab.active {
+        border-bottom: 2px solid black;
+      }
+      .images {
+        display: none;
+      }
+      .images.active {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .images img {
+        flex: 1;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div class="slider demo">
-      <div>
-        <div class="inner">
-          <blockquote>
-            Just unwrapping it...you could tell that the craftsmanship on it was
-            so much better than any other refrigerator we've had.
-          </blockquote>
-          <span><strong>-Chelsea</strong></span>
-          <img
-            src="./img/testimonial/17547157_Bosch-RNA-Customer-Testimonial-ChelseaWhitman_1.jpg"
-            alt="Fridge"
-            class="img-fluid d-flex"
-          />
-        </div>
+    <div id="tabbed-nav">
+      <div class="tab active" data-target="tab-1">Tab 1</div>
+      <div class="tab" data-target="tab-2">Tab 2</div>
+      <div class="tab" data-target="tab-3">Tab 3</div>
+    </div>
+    <div id="tabbed-content">
+      <div id="tab-1" class="images active">
+        <img src="https://picsum.photos/id/110/200/300" alt="image 1" />
+        <img src="https://picsum.photos/id/156/200/300" alt="image 2" />
+        <img src="https://picsum.photos/id/10/200/300" alt="image 3" />
+        <img src="https://picsum.photos/id/110/200/300" alt="image 1" />
       </div>
-      <div>
-        <div class="inner">
-          <blockquote>
-            I'm finding everything's been very fresh since I bought this
-            refrigerator.
-          </blockquote>
-          <span><strong>-Keema</strong></span>
-          <img
-            src="./img/testimonial/17202724_Bosch-RNA-Customer-Testimonials-1600x11002.jpg"
-            alt="Fridge"
-            class=""
-          />
-        </div>
+      <div id="tab-2" class="images">
+        <img src="https://picsum.photos/id/114/200/300" alt="image 1" />
+        <img src="https://picsum.photos/id/158/200/300" alt="image 2" />
+        <img src="https://picsum.photos/id/100/200/300" alt="image 3" />
+        <img src="https://picsum.photos/id/110/200/300" alt="image 1" />
+      </div>
+      <div id="tab-3" class="images">
+        <img src="https://picsum.photos/id/12/200/300" alt="image 1" />
+        <img src="https://picsum.photos/id/15/200/300" alt="image 2" />
+        <img src="https://picsum.photos/id/107/200/300" alt="image 3" />
+        <img src="https://picsum.photos/id/110/200/300" alt="image 1" />
       </div>
     </div>
-
+    
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
       integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
@@ -70,5 +89,25 @@
     <script>
       $(".slider").slick({});
     </script>
+    <script>
+      // JavaScript to handle tabbed navigation
+      const tabs = document.querySelectorAll(".tab");
+      const images = document.querySelectorAll(".images");
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all tabs
+          tabs.forEach((tab) => tab.classList.remove("active"));
+
+          // Add active class to clicked tab
+          tab.classList.add("active");
+
+          // Hide all image galleries
+          images.forEach((image) => image.classList.remove("active"));
+
+          // Show image gallery associated with clicked tab
+          const target = tab.getAttribute("data-target");
+          document.getElementById(target).classList.add("active");
+        });
+      });
   </body>
 </html>
