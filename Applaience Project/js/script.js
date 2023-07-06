@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper1", {
   // Optional parameters
   loop: true,
 
@@ -25,6 +25,15 @@ const swiper = new Swiper(".swiper", {
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
+  },
+});
+const swiper2 = new Swiper(".swiper2", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".next-btn",
+    prevEl: ".prev-btn",
   },
 });
 
