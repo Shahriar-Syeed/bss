@@ -278,46 +278,6 @@ a {
   position: inherit;
   /* z-index: -2; */
 }
-.price-toggler-container {
-  margin: 10px 10px 10px auto;
-  background: #000;
-  color: #adb5bd;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-}
-.price-toggler-container span {
-  font-weight: bolder;
-  color: #adb5bd;
-  font-size: 16px;
-}
-.price-toggler-container .price-toggler {
-  height: 25px;
-  width: 75px;
-  border-radius: 10px;
-  background: #2980b9;
-  position: relative;
-  cursor: pointer;
-  margin: 0 10px;
-  z-index: 1;
-}
-.price-toggler-container .price-toggler:before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #adb5bd;
-
-  position: absolute;
-  top: 3px;
-  left: 7px;
-  transition: 0.3s ease-out;
-}
-.price-toggler-container .price-toggler.active:before {
-  left: 50px;
-}
 
 .section-products .header {
   margin-bottom: 50px;
@@ -335,8 +295,83 @@ a {
   color: #444444;
 }
 
+/* dollar to taka */
+.price-toggler-container {
+  margin: 10px 10px 20px auto;
+  /* background: #000; */
+  /* color: #adb5bd;
+  padding: 10px;
+  border-radius: 5px; */
+  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); */
+  display: flex;
+  align-items: center;
+}
+.price-toggler-container span {
+  font-weight: bolder;
+  color: #adb5bd;
+  font-size: 16px;
+}
+.price-toggler-container .price-toggler {
+  height: 25px;
+  width: 75px;
+  border-radius: 10px;
+  background: #2980b9;
+  position: relative;
+
+  margin: 0 10px;
+  border: 2px solid transparent;
+  z-index: 1;
+}
+.price-toggler-container .price-toggler:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #adb5bd;
+
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  transition: 0.3s ease-out;
+}
+.price-toggler-container .price-toggler.active:before {
+  left: 50px;
+}
+.price-toggler-container .price-toggler.active {
+  border: 2px solid #777;
+  background-color: #fff;
+}
+/* product slider */
+.swiper2 {
+  height: 500px;
+  width: 100%;
+  .swiper-slide {
+    background-color: transparent;
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+.prev-btn2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 41%;
+  transform: translate(32%, -308%);
+  z-index: 100;
+}
+.next-btn2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 41%;
+  transform: translate(-50%, -308%);
+  z-index: 100;
+}
 .section-products .single-product {
   margin-bottom: 26px;
+  width: 100%;
 }
 
 .section-products .single-product .part-1 {
@@ -344,7 +379,8 @@ a {
   height: 290px;
   max-height: 290px;
   margin-bottom: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
+
   z-index: 1;
 }
 
@@ -360,7 +396,7 @@ a {
 }
 
 .section-products .single-product:hover .part-1::before {
-  transform: scale(1.2, 1.2) rotate(2deg);
+  transform: scale(1.1, 1.1) rotate(1deg);
 }
 
 .section-products #product-1 .part-1::before {
@@ -405,8 +441,8 @@ a {
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 62px;
+  left: -8px;
   color: #ffffff;
   background-color: #fe302f;
   padding: 2px 8px;
@@ -624,7 +660,7 @@ blockquote::after {
   bottom: 0;
   right: 5%;
   z-index: 17;
-  width: 12%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
 }
@@ -643,6 +679,11 @@ blockquote::after {
   padding-top: 63px;
   padding-bottom: 60px;
 }
+.subscribe-area .subscribe-padding {
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
 .subscribe-area .subscribe-caption h3 {
   color: #fff;
   font-size: 24px;
@@ -655,50 +696,9 @@ blockquote::after {
   font-size: 15px;
 }
 
-.subscribe-area .subscribe-caption form input {
-  width: 74%;
-  height: 60px;
-  border: 0;
-  color: #000;
-  background: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0;
-  padding: 15px 24px;
-  font-size: 16px;
-}
-
 .subscribe-area .subscribe-caption form input::placeholder {
   color: #000;
   font-size: 16px;
-}
-
-@media (max-width: 575px) {
-  .subscribe-area .subscribe-caption form input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-.subscribe-area .subscribe-caption form button.subscribe-btn {
-  width: 24%;
-  height: 60px;
-  border: 0;
-  background: #ff2020;
-  border-radius: 0;
-  padding: 13px 24px;
-  color: #fff;
-  margin-left: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-@media (max-width: 575px) {
-  .subscribe-area .subscribe-caption form button.subscribe-btn {
-    width: 100%;
-    margin-bottom: 20px;
-    margin-left: 0px;
-  }
 }
 
 .footer-wrapper {
@@ -762,23 +762,10 @@ blockquote::after {
 .footer-bottom-area .footer-copy-right p a {
   color: #ff2020;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer-social {
-    padding-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .footer-social {
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 575px) {
-  .footer-social {
-    padding-top: 20px;
-  }
+.footer-social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-social a {
@@ -786,10 +773,9 @@ blockquote::after {
   font-size: 24px;
   display: inline-block;
   text-align: center;
-  margin-left: 23px;
 }
 
-.footer-social a i {
+.footer-social a svg {
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -804,13 +790,60 @@ blockquote::after {
 }
 
 .footer-social a:hover {
-  color: #ff2020;
+  color: #2980b9;
 }
 
-.footer-social a:hover i {
+.footer-social a:hover svg {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+}
+.for-rounddiv {
+  background-color: red;
+  border-radius: 100px;
+}
+/* }****************** *****/
+/*   countdown SECTION  */
+/* }********************** */
+
+.countdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+  background-color: transparent;
+  color: #0e517e;
+  padding: 8px 0;
+  margin: 2px auto;
+}
+.countdown-container .countdown-timer {
+  display: flex;
+  gap: 10px;
+}
+.countdown-timer .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.countdown-timer .value {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 5px;
+  text-align: center;
+  background-image: radial-gradient(
+    circle 610px at 5.2% 51%,
+    #2980b9 0%,
+    #0e517e 97%
+  );
+}
+.countdown-timer .unit-s {
+  font-size: 12px;
+}
+.learn-btn {
+  font-size: 12px;
 }

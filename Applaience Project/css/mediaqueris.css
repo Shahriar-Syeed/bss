@@ -8,6 +8,11 @@
   .swiper {
     height: 500px;
   }
+  .footer-social {
+    padding-top: 20px;
+    width: 30%;
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 768px) {
   .navbar .navbar-social-icon {
@@ -57,5 +62,13 @@
 @media (max-width: 554px) {
   .hero-text h1 {
     font-size: 38px;
+  }
+  .prev-btn2,
+  .next-btn2 {
+    display: none;
+  }
+  .footer-social a svg {
+    width: 16px;
+    height: 16px;
   }
 }

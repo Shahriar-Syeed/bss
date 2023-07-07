@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .countdown {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .countdown span {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+      </head>
+      <body>
+        <div class="countdown" data-date="2023-12-31T00:00:00"></div>
+        <div class="countdown" data-date="2023-12-31T00:00:00"></div>
+        <div class="countdown" data-date="2023-12-31T00:00:00"></div>
+
+        <script src="script.js"></script>
+      </body>
+    </html>
+    <script>
+      function countdown() {
+        const countdownElements = document.getElementsByClassName("countdown");
+
+        for (let i = 0; i < countdownElements.length; i++) {
+          const countdownDate = new Date(
+            countdownElements[i].getAttribute("data-date")
+          ).getTime();
+          const now = new Date().getTime();
+          const distance = countdownDate - now;
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          countdownElements[i].innerHTML =
+            `
+      <span>${days.toString().padStart(2, "0")}</span>
+      <span>${hours.toString().padStart(2, "0")}</span>
+      <span>${minutes.toString().padStart(2, "0")}</span>
+      <span>${seconds.toString().padStart(2, "0")}</span>
+    ` +
+            `<div class="group">
+                          <div class="value days">${days
+                            .toString()
+                            .padStart(2, "0")}</div>
+                          <div class="unit-s">Days</div>
+                        </div>
+                        <div class="group">
+                          <div class="value hours">${minutes
+                            .toString()
+                            .padStart(2, "0")}</div>
+                          <div class="unit-s">Hrs</div>
+                        </div>
+                        <div class="group">
+                          <div class="value minutes">${minutes
+                            .toString()
+                            .padStart(2, "0")}</div>
+                          <div class="unit-s">Min</div>
+                        </div>
+                        <div class="group">
+                          <div class="value seconds">${seconds
+                            .toString()
+                            .padStart(2, "0")}</div>
+                          <div class="unit-s">Sec</div>
+                        </div>`;
+          if (distance < 0) {
+            clearInterval(t);
+            countdownContainer.style.display = "none";
+          }
+        }
+      }
+
+      // Update the countdown every second
+      setInterval(countdown, 1000);
+
+      // Update the countdown every second
+      setInterval(countdown, 1000);
+    </script>
+  </body>
+</html>
