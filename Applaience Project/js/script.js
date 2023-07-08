@@ -202,3 +202,48 @@ function countdown() {
 
 // Update the countdown every second
 setInterval(countdown, 1000);
+
+let mediaContainer = document.getElementById("mediaContainer");
+let galleryItems = document.querySelectorAll(".gallery-item");
+
+//  The var modalImage = document.getElementById('modalImage'); line
+//  retrieves the DOM element with the ID modalImage. This element
+//  represents the <img> tag inside the modal body, where the selected
+//  image will be displayed.
+// // The var images = document.querySelectorAll('.img-thumbnail');
+// line selects all elements with the class img-thumbnail. These
+// elements represent the images or thumbnails in your gallery.
+
+galleryItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    let type = this.getAttribute("data-type");
+    let src = this.getAttribute("src");
+    mediaContainer.innerHTML = "";
+
+    if (type === "image") {
+      let image = document.createElement("img");
+      image.setAttribute("src", src);
+      image.classList.add("img-fluid");
+      mediaContainer.appendChild(image);
+    } else if (type === "video") {
+      let video = document.createElement("video");
+      video.setAttribute("src", src);
+      video.setAttribute("controls", "");
+      video.classList.add("img-fluid");
+      mediaContainer.appendChild(video);
+    }
+  });
+});
+// The images.forEach(function(image) { ... })loop iterates over each
+// image or thumbnail element in the images NodeList.
+// Inside the loop, image.addEventListener('click', function() { ... })
+//  attaches a click event listener to each image or thumbnail.
+// When an image or thumbnail is clicked, the event listener's callback
+//  function is executed. It performs the following steps:
+// var src = this.getAttribute('src'); retrieves the value of the src
+//  attribute of the clicked image or thumbnail.
+// modalImage.setAttribute('src', src); sets the src attribute of
+//  the modalImage element (the image element inside the modal) to the
+//   value obtained from the clicked image or thumbnail. This
+//   effectively updates the source of the image inside the modal,
+//    displaying the selected image.

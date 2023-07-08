@@ -5,18 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SLICK SLIDER -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
 
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
@@ -72,42 +63,133 @@
         <img src="https://picsum.photos/id/110/200/300" alt="image 1" />
       </div>
     </div>
-    
-    </script>
+    <br />
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img
+            src="./img/download/laptop .jpg"
+            class="img-thumbnail"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          />
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Popup Gallery
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Your image goes here -->
+                  <img
+                    src="./img/download/laptop .jpg"
+                    class="img-fluid"
+                    id="modalImage"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img
+            src="./img/download/smart-house.jpg"
+            class="img-thumbnail"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          />
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Popup Gallery
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Your image goes here -->
+                  <img
+                    src="./img/download/smart-house.jpg"
+                    class="img-fluid"
+                    id="modalImage"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more images or thumbnails as needed -->
+      </div>
+    </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
       integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
     <script>
-      $(".slider").slick({});
-    </script>
-    <script>
-      // JavaScript to handle tabbed navigation
-      const tabs = document.querySelectorAll(".tab");
-      const images = document.querySelectorAll(".images");
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          // Remove active class from all tabs
-          tabs.forEach((tab) => tab.classList.remove("active"));
+      // // JavaScript to handle tabbed navigation
+      // const tabs = document.querySelectorAll(".tab");
+      // const images = document.querySelectorAll(".images");
+      // tabs.forEach((tab) => {
+      //   tab.addEventListener("click", () => {
+      //     // Remove active class from all tabs
+      //     tabs.forEach((tab) => tab.classList.remove("active"));
 
-          // Add active class to clicked tab
-          tab.classList.add("active");
+      //     // Add active class to clicked tab
+      //     tab.classList.add("active");
 
-          // Hide all image galleries
-          images.forEach((image) => image.classList.remove("active"));
+      //     // Hide all image galleries
+      //     images.forEach((image) => image.classList.remove("active"));
 
-          // Show image gallery associated with clicked tab
-          const target = tab.getAttribute("data-target");
-          document.getElementById(target).classList.add("active");
+      //     // Show image gallery associated with clicked tab
+      //     const target = tab.getAttribute("data-target");
+      //     document.getElementById(target).classList.add("active");
+      //   });
+      // });
+
+      var modalImage = document.getElementById("modalImage");
+      var images = document.querySelectorAll(".img-thumbnail");
+
+      images.forEach(function (image) {
+        image.addEventListener("click", function () {
+          var src = this.getAttribute("src");
+          modalImage.setAttribute("src", src);
         });
       });
+    </script>
   </body>
 </html>
