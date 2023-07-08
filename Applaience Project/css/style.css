@@ -223,13 +223,17 @@ body {
   letter-spacing: 1px;
   font-size: 20px;
 }
+/* |||||||||||||||||||||| */
+/* |||FEATURE SECTION|||| */
+/* |||||||||||||||||||||| */
 .feature-section {
   padding: 48px 0;
 }
 .feature-titel,
 .feature .text-body-emphasis,
-.feature p {
-  color: #adb5bd;
+.feature p,
+.feature h3 {
+  color: #adb5bd !important;
 }
 .feature {
   /* height: 100%; */
@@ -520,7 +524,7 @@ a {
 /*    TESTIMONIAL SECTION  */
 /* }********************** */
 .testimonial-section {
-  background-color: #f5f3f3ee;
+  background: linear-gradient(#d6f2f9, #f5f3f3ee);
   padding-bottom: 85px;
 }
 .secondary-title {
@@ -669,8 +673,45 @@ blockquote::after {
   margin-top: 30px;
 }
 /* }****************** *****/
-/*    TEAM SECTION  */
+/*       TEAM SECTION      */
 /* }********************** */
+.team-section {
+  padding: 50px 0;
+  background-image: linear-gradient(#f5f3f3ee, #cff4fc, #444);
+}
+.gallery-item {
+  height: 200px; /* Set the desired height for the gallery items */
+  width: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  cursor: pointer;
+  border-radius: 20px;
+}
+.modal-content {
+  margin-top: 20%;
+}
+
+.custom-tab {
+  background-color: #546e7a;
+  border: 1px solid #adb5bd;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+.nav-item .nav-link {
+  color: #adb5bd;
+  font-size: 24px;
+  font-weight: 600;
+}
+.radial-gradient-text {
+  --gradient-colors: #adb5bd, #fff, #cff4fc; /* Define your gradient colors */
+  --gradient-angle: 45deg; /* Define the angle of the gradient */
+  background: radial-gradient(var(--gradient-angle), var(--gradient-colors));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background: radial-gradient(#546e7a, #adb5bd);
+}
 
 /* }****************** *****/
 /*    FOOTER SECTION  */
@@ -846,25 +887,4 @@ blockquote::after {
 }
 .learn-btn {
   font-size: 12px;
-}
-
-/* }****************** *****/
-/*       TEAM SECTION      */
-/* }********************** */
-
-.gallery-item {
-  height: 200px; /* Set the desired height for the gallery items */
-  width: 100%;
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
-  cursor: pointer;
-  border-radius: 20px;
-}
-.modal-content {
-  margin-top: 20%;
-}
-
-.custom-tab {
-  background-color: #546e7a;
-  border: 1px solid #adb5bd;
-  border-radius: 20px;
 }
