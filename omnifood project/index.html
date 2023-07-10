@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      contest="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal test and nurtitional needs"
+    />
 
     <!-- Always include this line of code  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- favicon icon -->
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <!-- ------font family------ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +26,9 @@
 
     <!-- ---------css link---------- -->
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="queries.css" />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Naver cooke again</title>
   </head>
   <body>
     <header class="header--omni">
@@ -85,11 +92,15 @@
             </div>
           </div>
           <div class="omin-box-image">
-            <img
-              src="img/hero.png"
-              class="omni-hero-img"
-              alt="Woman enjoying food, meals in lstogage container and food bowls on a table."
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.png" type="image/png" />
+              <img
+                src="./img/hero.webp"
+                class="omni-hero-img"
+                alt="Woman enjoying food, meals in lstogage container and food bowls on a table."
+              />
+            </picture>
           </div>
         </div>
       </section>

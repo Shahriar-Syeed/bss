@@ -1,4 +1,4 @@
-auto
+/* auto
 
 ----01 TYPOGRAPHY SYSTEM-----
 -FONT SIZE SYSTEM (px)
@@ -60,6 +60,18 @@ Default:9px;
   padding: 0 4.8rem;
   position: relative;
 }
+.sticky-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
 .omnifood-logo {
   /* 16 / 24 / 32 */
   height: 2.2rem;
@@ -70,6 +82,7 @@ Default:9px;
 /* *********************************/
 .nav-omni {
 }
+
 .nav-omni-list {
   display: flex;
   align-items: center;
@@ -130,7 +143,9 @@ Default:9px;
   padding: 4.8rem 0 9.6rem 0;
   background-color: #fdf2e9;
 }
-
+.header--omni.sticky-bar + main .omin-section-hero {
+  margin-top: 9.6rem;
+}
 .hero-container {
   max-width: 130rem;
   margin: 0 auto;

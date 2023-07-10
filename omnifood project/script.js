@@ -44,7 +44,31 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+//////////////////////////////////////////////////
+// STICKY NAVIGATION
 
+const sectionHeroEl = document.querySelector(".omin-section-hero");
+
+const observerOmni = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === false) {
+      document.querySelector(".header--omni").classList.add("sticky-bar");
+    } else {
+      document.querySelector(".header--omni").classList.remove("sticky-bar");
+    }
+  },
+  {
+    //In the viewport
+    root: null,
+    // 1% hero section in viewport
+    threshold: 0,
+    rootMargin: "-90px",
+  }
+);
+
+observerOmni.observe(sectionHeroEl);
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*

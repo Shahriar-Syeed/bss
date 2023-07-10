@@ -63,7 +63,7 @@ window.onscroll = function () {
   if (window.pageYOffset > 100) {
     navBar.classList.add("d-none");
     if (!scrolled) {
-      topNavbar.style.transform = "translateY(-70px)";
+      topNavbar.style.transform = "translateY(-74px)";
     }
     setTimeout(function () {
       topNavbar.style.transform = "translateY(0)";
