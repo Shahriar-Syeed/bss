@@ -247,3 +247,39 @@ galleryItems.forEach(function (item) {
 //   value obtained from the clicked image or thumbnail. This
 //   effectively updates the source of the image inside the modal,
 //    displaying the selected image.
+
+// $(document).ready(function () {
+//   $("#wave-container").wavify({
+//     height: 200, // Adjust the height of the wave
+//     bones: 4, // Number of wave curves
+//     amplitude: 100, // Adjust the intensity of the wave
+//     color: "rgba(25, 90, 90 )", // Color of the wave
+//     speed: 0.15, // Speed of the wave animation
+//   });
+// });
+// $(document).ready(function () {
+//   let wave = $("#wave-path");
+//   let wavePath = Snap("#wave-path");
+//   let waveSVG = Snap("#wave-svg");
+
+//   wave.wavify({
+//     height: 200,
+//     bones: 4,
+//     amplitude: 100,
+//     color: "rgba(152, 33, 7, 1)",
+//     speed: 0.15,
+//   });
+
+//   // Get the generated wave path data and set it in the SVG path
+//   wavePath.attr("d", wave.wavify("generate", { height: 200 }));
+
+//   // Set the SVG height to match the wave height
+//   waveSVG.attr("height", wave.outerHeight());
+// });
+$("#wave").wavify({
+  height: 10,
+  bones: 10,
+  amplitude: 35,
+  color: "#0bd",
+  speed: 0.25,
+});
