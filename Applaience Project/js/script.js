@@ -52,7 +52,7 @@ const swiper2 = new Swiper(".swiper2", {
 });
 
 /////////////////////////////
-////  SLICK CAROUSOL    /////
+////  STICKY CAROUSOL    /////
 /////////////////////////////
 
 const navBar = document.getElementById("navBar");
@@ -60,10 +60,12 @@ const topNavbar = document.getElementById("topNavbar");
 let scrolled = false;
 
 window.onscroll = function () {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 400) {
     navBar.classList.add("d-none");
     if (!scrolled) {
       topNavbar.style.transform = "translateY(-74px)";
+      topNavbar.style.background = "rgba(0, 0, 0, 0.8)"; // Added this line
+      topNavbar.classList.remove("bg-dark");
     }
     setTimeout(function () {
       topNavbar.style.transform = "translateY(0)";
@@ -71,9 +73,12 @@ window.onscroll = function () {
     }, 200);
   } else {
     navBar.classList.remove("d-none");
+    topNavbar.style.background = ""; // Reset the background color
+    topNavbar.classList.add("bg-dark");
     scrolled = false;
   }
 };
+
 // dollar to taka
 const priceTogglerContainer = document.querySelector(
   ".price-toggler-container"
@@ -280,6 +285,6 @@ $("#wave").wavify({
   height: 10,
   bones: 10,
   amplitude: 35,
-  color: "#0bd",
+  color: "rgba(84, 110, 122, 0.45)",
   speed: 0.25,
 });

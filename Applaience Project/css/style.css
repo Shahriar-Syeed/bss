@@ -101,6 +101,9 @@ body {
 .navbar.sticky-top {
   background: #333333cc;
 }
+#topNavbar .navbar-container {
+  max-width: 1550px;
+}
 .search-container {
   border-radius: 3rem;
   /* padding: 10px 20px; */
@@ -118,15 +121,16 @@ body {
 }
 .search-container form input:focus,
 .search-container form input:focus + .search {
-  box-shadow: none;
+  box-shadow: 0.001rem 0.001rem 0.2rem #adb5bd;
   border: none;
-  background: radial-gradient(#adb5bd, #c8e0f7);
+  background-color: #adb5bd;
 }
 .search {
   background-color: #bae6fd;
   /* position: absolute;
   right: 0px;
   top: 0.5px; */
+  box-shadow: 0.01rem 0.01rem 0.2rem #bae6fd;
   border-radius: 50%;
 }
 @keyframes hoverShake {
@@ -134,16 +138,20 @@ body {
     transform: skew(0deg, 0deg);
   }
   25% {
-    transform: skew(2deg, 2deg);
+    transform: skew(1deg, 1deg);
   }
   75% {
-    transform: skew(-2deg, -2deg);
+    transform: skew(-1deg, -1deg);
   }
   100% {
     transform: skew(0deg, 0deg);
   }
 }
-.search-container form input:focus,
+.search-container form input:focus {
+  width: 200px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .search-container:hover input {
   background-color: #bae6fd;
   border-radius: 30px 0% 0% 30px;
@@ -301,12 +309,12 @@ a {
 
 .section-products .header h2 {
   font-size: 2.2rem;
-  font-weight: 400;
-  color: #444444;
+  font-weight: 600;
+  color: #000;
 }
 
 .wave-product {
-  width: 60%;
+  width: 70%;
   height: 50%;
   bottom: 0;
   left: 50%;
@@ -315,7 +323,8 @@ a {
 .wave-product span {
   display: inline-block;
   width: 0.5%;
-  background-color: #0bd;
+  background-color: rgba(84, 110, 122, 0.45);
+  box-shadow: 0 -0.001rem 0.01rem #bae6fd;
 
   animation: /*name*/ waveProd /*duration*/ 2s /*timing-function*/ ease-in-out
     /*iteration-count*/ infinite /*direction*/ /*fill-mode*/;
@@ -1284,8 +1293,6 @@ a {
   background: url("../img/product/smart-washer-dryer.jpg") no-repeat center;
   background-size: cover;
 }
-.part-1::before {
-}
 
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
@@ -1377,7 +1384,7 @@ a {
   padding: 10px;
   border-bottom: 2px solid #bae6fd;
   margin-bottom: 12px;
-  font-size: 600;
+  font-weight: 600;
 }
 .swiper1 .secondary-title {
   border: none;
@@ -1522,13 +1529,13 @@ blockquote::after {
 /* }********************** */
 .team-section {
   padding: 50px 0;
-  background-image: linear-gradient(#f5f3f3ee, #cff4fc, #444);
+  background-image: linear-gradient(#f5f3f3ee, #cff4fc, #888);
 }
 .team-section-title .wave-background {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 48%;
   border-radius: 20px 20px 5px 5px;
   height: 60%;
 }
@@ -1566,6 +1573,50 @@ blockquote::after {
   background: radial-gradient(#546e7a, #adb5bd);
 }
 
+/* }****************** *****/
+/*    Contact SECTION  */
+/* }********************** */
+.contact-section {
+  padding: 90px 0;
+  background-image: linear-gradient(#999, #171613);
+}
+.contact-title-2 {
+  display: none;
+}
+#contactForm .form-control {
+  color: #fcfbf4;
+  background-color: transparent;
+  border: 1px #000;
+  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-bottom: 1px solid #fcfbf4;
+  margin-bottom: 3.75rem;
+
+  font-size: 1.5rem;
+}
+#contactForm .form-control::selection {
+  background: var(--highlight-color);
+  color: #fcfbf4;
+}
+#contactForm .form-control::placeholder {
+  color: rgba(252, 251, 244, 1);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#contactForm .btn-primary {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.ifram-facebook-col {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 72%;
+  height: 0;
+}
 /* }****************** *****/
 /*    FOOTER SECTION  */
 /* }********************** */
@@ -1630,6 +1681,9 @@ blockquote::after {
 .footer-wrapper .footer-area .footer-tittle p {
   color: #bbb9b5;
   font-size: 16px;
+}
+.footer-tittle ul {
+  list-style: none;
 }
 
 .footer-wrapper .footer-area .info.error {

@@ -34,14 +34,14 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#topNavbar" data-bs-offset="50">
     <header class="sticky-top">
       <nav
         id="topNavbar"
         class="navbar navbar-expand-lg navbar-dark bg-gradient bg-dark px-md-3"
       >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
+        <div class="container-fluid navbar-container">
+          <a class="navbar-brand" href="index.html"
             ><img src="./img/logo.png" class="logo-img" alt="" /><span
               class="company-name ms-1"
               >moonlight</span
@@ -61,9 +61,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Home</a
-                >
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#feature">Features</a>
@@ -75,10 +73,17 @@
                 <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#aboutUs">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn btn-light btn-login" href="#">Log in</a>
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-secondary btn-login"
+                  href="login.html"
+                  >Log in</a
+                >
               </li>
             </ul>
           </div>
@@ -231,7 +236,7 @@
                           <a
                             href="#"
                             class="btn btn-outline-secondary hero-button px-4 py-3 mt-5 rounded-50"
-                            >Slhop now</a
+                            >Shop now</a
                           >
                         </p>
                       </div>
@@ -550,7 +555,7 @@
                 <h2 class="secondary-title position-relative z-1">
                   Discover our Bestseller
                 </h2>
-                <div class="wave-product position-absolute">
+                <div class="wave-product position-absolute rounded-2">
                   <span class="wave-delay"></span
                   ><span class="wave-delay"></span
                   ><span class="wave-delay"></span
@@ -1714,7 +1719,7 @@
           </div>
         </div>
       </section>
-      <section class="team-section">
+      <section class="team-section" id="aboutUs">
         <div class="container">
           <div class="team-section-title position-relative">
             <h2 class="secondary-title text-center position-relative z-1">
@@ -1959,8 +1964,102 @@
           </div>
         </div>
       </section>
-      <section class="customer-login-section">
-        <div class="container"></div>
+      <section id="contact-section" class="contact-section">
+        <div class="container">
+          <h2 class="secondary-title text-white contact-title-2 mb-3">
+            Let's Start Conversation
+          </h2>
+          <div class="row">
+            <div class="col-md-6 order-md-1 mb-3">
+              <form id="contactForm" method="POST" action="process.php">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email address"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Say Hello to us."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary btn-lg">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h2
+                class="secondary-title text-white border-0 contact-title-1 mb-0 pb-0"
+              >
+                Let's Start
+              </h2>
+              <h2 class="secondary-title text-white contact-title-1 mb-4 pt-0">
+                Conversation
+              </h2>
+
+              <div class="ifram-facebook-col">
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/bssoln/L&amp;tabs=timeline&amp;width=500&amp;height=700&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                  width="500"
+                  height="700"
+                  style="border: none; overflow: hidden"
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+              <!-- <div id="fb-root"></div>
+              <script
+                async="1"
+                defer="1"
+                crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
+                nonce="DOxMz8IU"
+              ></script>
+              <div
+                class="fb-page w-100"
+                data-href="https://www.facebook.com/bssoln/"
+                data-height="500"
+                data-small-header=""
+                data-adapt-container-width="1"
+                data-hide-cover=""
+                data-show-facepile=""
+                data-show-posts="true"
+                data-width="600"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/bssoln/"
+                  class="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/bssoln/"
+                    >Bangladesh Software Solution</a
+                  >
+                </blockquote>
+              </div> -->
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
