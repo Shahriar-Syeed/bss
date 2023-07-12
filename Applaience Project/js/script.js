@@ -288,3 +288,98 @@ $("#wave").wavify({
   color: "rgba(84, 110, 122, 0.45)",
   speed: 0.25,
 });
+
+/////////////////////////////
+////  LOG IN PAGE    /////
+/////////////////////////////
+
+// let forgotEmail = document.getElementById("forgotEmailLink");
+// let forgotPass = document.getElementById("forgotPasswordLink");
+// let signLink = document.getElementById("signupLink");
+// let backToLogin = document.getElementById("backToLoginLink");
+// let backToLogin2 = document.getElementById("backToLoginLink2");
+
+// forgotEmail.onclick = () => {
+//   document.getElementById("loginForm").classList.add("hidden");
+//   document.getElementById("recoverEmailForm").classList.remove("hidden");
+// };
+
+// forgotPass.onclick = () => {
+//   document.getElementById("loginForm").classList.add("hidden");
+//   document.getElementById("recoverPasswordForm").classList.remove("hidden");
+// };
+
+// signLink.onclick = () => {
+//   document.getElementById("loginForm").classList.add("hidden");
+//   document.getElementById("signupForm").classList.remove("hidden");
+// };
+
+// backToLogin.onclick = () => {
+//   document.getElementById("recoverEmailForm").classList.add("hidden");
+//   document.getElementById("loginForm").classList.remove("hidden");
+// };
+
+// backToLogin2.onclick = () => {
+//   document.getElementById("recoverPasswordForm").classList.add("hidden");
+//   document.getElementById("loginForm").classList.remove("hidden");
+// };
+
+// let backToLogin3 = document.getElementById("backToLoginLink3");
+// backToLogin3.addEventListener("click", function (event) {
+//   event.preventDefault();
+//   document.getElementById("signupForm").classList.add("hidden");
+//   document.getElementById("loginForm").classList.remove("hidden");
+// });
+// function submitSignupForm() {
+//   // Access the form elements and perform form validation here
+//   // You can add your validation logic and form submission code
+
+//   alert("Signup form submitted successfully!");
+// }
+// document
+//   .getElementById("forgotEmailLink")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("loginForm").classList.add("hidden");
+//     document.getElementById("recoverEmailForm").classList.remove("hidden");
+//   });
+
+// document
+//   .getElementById("forgotPasswordLink")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("loginForm").classList.add("hidden");
+//     document.getElementById("recoverPasswordForm").classList.remove("hidden");
+//   });
+
+// document
+//   .getElementById("signupLink")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("loginForm").classList.add("hidden");
+//     document.getElementById("signupForm").classList.remove("hidden");
+//   });
+
+// document
+//   .getElementById("backToLoginLink")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("signupForm").classList.add("hidden");
+//     document.getElementById("loginForm").classList.remove("hidden");
+//   });
+
+// document
+//   .getElementById("backToLoginLink2")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("recoverEmailForm").classList.add("hidden");
+//     document.getElementById("loginForm").classList.remove("hidden");
+//   });
+
+// document
+//   .getElementById("backToLoginLink3")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("recoverPasswordForm").classList.add("hidden");
+//     document.getElementById("loginForm").classList.remove("hidden");
+//   });

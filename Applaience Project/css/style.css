@@ -86,9 +86,7 @@ body {
   font-weight: 300px;
   font-size: 24px;
 }
-.btn-login {
-  background: linear-gradient();
-}
+
 /* ************** */
 /* navbar section */
 /* ************** */
@@ -1583,6 +1581,11 @@ blockquote::after {
 .contact-title-2 {
   display: none;
 }
+
+#signupForm .form-control,
+#recoverPasswordForm .form-control,
+#recoverEmailForm .form-control,
+#loginForm .form-control,
 #contactForm .form-control {
   color: #fcfbf4;
   background-color: transparent;
@@ -1595,10 +1598,18 @@ blockquote::after {
 
   font-size: 1.5rem;
 }
+#signupForm .form-control::selection,
+#recoverPasswordForm .form-control::selection,
+#recoverEmailForm .form-control::selection,
+#loginForm .form-control::selection,
 #contactForm .form-control::selection {
-  background: var(--highlight-color);
+  background: #151515;
   color: #fcfbf4;
 }
+#signupForm .form-control::placeholder,
+#recoverPasswordForm .form-control::placeholder,
+#recoverEmailForm .form-control::placeholder,
+#loginForm .form-control::placeholder,
 #contactForm .form-control::placeholder {
   color: rgba(252, 251, 244, 1);
   font-weight: 400;
@@ -1794,4 +1805,25 @@ blockquote::after {
 }
 .learn-btn {
   font-size: 12px;
+}
+/* }****************** *****/
+/*        LOGIN PAGE        */
+/* }********************** */
+.hidden {
+  display: none;
+}
+#login-section h2,
+#login-section p,
+#login-section label {
+  color: #fff;
+}
+#login-section a:link,
+#login-section a:visited {
+  color: #bae6fd;
+}
+#login-section a:hover {
+  color: #fdf2e9;
+}
+#login-section a:active {
+  color: #bbc6d1;
 }
