@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mediaqueris.css" />
 
-    <title>Document</title>
+    <title>moonlight | Login/Signup page</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#topNavbar" data-bs-offset="50">
     <header class="sticky-top">
@@ -317,11 +317,15 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <form id="signupForm" class="hidden" method="post" action="#">
-                <h2 class="text-center mb-4 secondary-title">Sign Up</h2>
+                <h2
+                  class="text-center mb-4 secondary-title animate__animated animate__fadeInUp"
+                >
+                  Sign Up
+                </h2>
                 <div class="mb-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="fullName"
                     name="fullName"
                     placeholder="Full Name"
@@ -331,11 +335,15 @@
                 <div class="mb-3 form-check">
                   <input
                     type="checkbox"
-                    class="form-check-input"
+                    class="form-check-input animate__animated animate__fadeInUp"
                     id="male"
                     name="gender"
                   />
-                  <label class="form-check-label" for="male">Male</label>
+                  <label
+                    class="form-check-label animate__animated animate__fadeInUp"
+                    for="male"
+                    >Male</label
+                  >
                 </div>
                 <div class="mb-3 form-check">
                   <input
@@ -349,7 +357,7 @@
                 <div class="mb-3">
                   <input
                     type="number"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="age"
                     name="age"
                     placeholder="Age"
@@ -359,7 +367,7 @@
                 <div class="mb-3">
                   <input
                     type="tel"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="phoneNumber"
                     name="phoneNumber"
                     placeholder="Phone Number"
@@ -369,7 +377,7 @@
                 <div class="mb-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="address"
                     name="address"
                     placeholder="Address"
@@ -379,7 +387,7 @@
                 <div class="mb-3">
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="signupEmail"
                     name="signupEmail"
                     placeholder="Email address"
@@ -389,7 +397,7 @@
                 <div class="mb-3">
                   <input
                     type="password"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="signupPassword"
                     name="signupPassword"
                     placeholder="Password"
@@ -399,7 +407,7 @@
                 <div class="mb-3">
                   <input
                     type="password"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="confirmPassword"
                     name="confirmPassword"
                     placeholder="Confirm Password"
@@ -411,7 +419,12 @@
                   Signing in will agreeing user agreement automatically.
                 </p>
                 <div class="text-center mt-3">
-                  <a href="#loginForm" id="backToLoginLink">Back to Login</a>
+                  <a
+                    href="#loginForm"
+                    id="backToLoginLink"
+                    onclick="visibleLoginHideSignup()"
+                    >Back to Login</a
+                  >
                 </div>
               </form>
 
@@ -449,35 +462,49 @@
                 </div>
                 <button type="submit" class="btn btn-secondary">Login</button>
                 <div class="text-center mt-3">
-                  <a href="#recoverEmailForm" id="forgotEmailLink"
+                  <a
+                    href="#recoverEmailForm"
+                    id="forgotEmailLink"
+                    onclick="visibleRecoverEmailHideLogin()"
                     >Forgot Email</a
                   >
                   <span class="text-white">|</span>
-                  <a href="#recoverPasswordForm" id="forgotPasswordLink"
+                  <a
+                    href="#recoverPasswordForm"
+                    id="forgotPasswordLink"
+                    onclick="visibleRecoverPasswordHideLogin()"
                     >Forgot Password</a
                   >
                 </div>
                 <div class="text-center mt-3">
                   <p>
                     Don't have an account?
-                    <a href="#signupForm" id="signupLink">Sign Up</a>
+                    <a
+                      href="#signupForm"
+                      id="signupLink"
+                      onclick="visibleSignup()"
+                      >Sign Up</a
+                    >
                   </p>
                 </div>
               </form>
 
               <form
                 id="recoverEmailForm"
-                class="hidden"
-                class="hidden"
+                class="hidden animate__animated animate__fadeInUp"
                 method="post"
                 action="#"
               >
-                <h2 class="text-center mb-4 secondary-title">Recover Email</h2>
-                <p class="text-center">
+                <h2
+                  class="text-center mb-4 secondary-title animate__animated animate__fadeInUp"
+                >
+                  Recover Email
+                </h2>
+                <p class="text-center animate__animated animate__fadeInUp">
                   Please enter your registered email address to recover your
                   account.
                 </p>
-                <div class="mb-3">
+                <div class="mb-3 animate__animated animate__fadeInUp">
                   <input
                     type="email"
                     class="form-control"
@@ -487,43 +514,64 @@
                     required
                   />
                 </div>
-                <button type="submit" class="btn btn-secondary">
+                <button
+                  type="submit"
+                  class="btn btn-secondary animate__animated animate__fadeInUp"
+                >
                   Recover Email
                 </button>
-                <div class="text-center mt-3">
-                  <a href="#loginForm" id="backToLoginLink2">Back to Login</a>
+                <div
+                  class="text-center mt-3 animate__animated animate__fadeInUp"
+                >
+                  <a
+                    href="#loginForm"
+                    id="backToLoginLink2"
+                    onclick="visibleLoginHideRecoverEmail()"
+                    >Back to Login</a
+                  >
                 </div>
               </form>
 
               <form
                 id="recoverPasswordForm"
-                class="hidden"
-                class="hidden"
+                class="hidden animate__animated animate__fadeInUp"
                 method="post"
                 action="#"
               >
-                <h2 class="text-center mb-4 secondary-title">
+                <h2
+                  class="text-center mb-4 secondary-title animate__animated animate__fadeInUp"
+                >
                   Recover Password
                 </h2>
-                <p class="text-center">
+                <p class="text-center animate__animated animate__fadeInUp">
                   Please enter your registered email address to recover your
                   password.
                 </p>
                 <div class="mb-3">
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control animate__animated animate__fadeInUp"
                     id="recoverPasswordEmail"
                     name="recoverPasswordEmail"
                     placeholder="Email address"
                     required
                   />
                 </div>
-                <button type="submit" class="btn btn-secondary">
+                <button
+                  type="submit"
+                  class="btn btn-secondary animate__animated animate__fadeInUp"
+                >
                   Recover Password
                 </button>
-                <div class="text-center mt-3">
-                  <a href="#loginForm" id="backToLoginLink3">Back to Login</a>
+                <div
+                  class="text-center mt-3 animate__animated animate__fadeInUp"
+                >
+                  <a
+                    href="#loginForm"
+                    id="backToLoginLink3"
+                    onclick="visibleLoginHideRecoverPassword()"
+                    >Back to Login</a
+                  >
                 </div>
               </form>
             </div>
@@ -534,7 +582,7 @@
     <footer>
       <div class="footer-wrapper gray-bg">
         <div class="footer-area footer-padding">
-          <section class="subscribe-area">
+          <section class="subscribe-area animate__animated animate__fadeInUp">
             <div class="container">
               <div class="row justify-content-between subscribe-padding">
                 <div class="col-xxl-3 col-xl-3 col-lg-4">
@@ -564,7 +612,9 @@
                   </div>
                 </div>
                 <div class="col-xxl-2 col-xl-2 col-lg-4">
-                  <div class="footer-social">
+                  <div
+                    class="footer-social animate__animated animate__fadeInUp"
+                  >
                     <a href="https://www.fb.com/sai4ull"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -756,59 +806,59 @@
 
         alert("Signup form submitted successfully!");
       }
-      document
-        .getElementById("forgotEmailLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document.getElementById("loginForm").classList.add("hidden");
-          document
-            .getElementById("recoverEmailForm")
-            .classList.remove("hidden");
-        });
+      // document
+      //   .getElementById("forgotEmailLink")
+      //   .addEventListener("click", function (event) {
+      //     event.preventDefault();
+      //     document.getElementById("loginForm").classList.add("hidden");
+      //     document
+      //       .getElementById("recoverEmailForm")
+      //       .classList.remove("hidden");
+      //   });
 
-      document
-        .getElementById("forgotPasswordLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document.getElementById("loginForm").classList.add("hidden");
-          document
-            .getElementById("recoverPasswordForm")
-            .classList.remove("hidden");
-        });
+      // document
+      //   .getElementById("forgotPasswordLink")
+      //   .addEventListener("click", function (event) {
+      //     event.preventDefault();
+      //     document.getElementById("loginForm").classList.add("hidden");
+      //     document
+      //       .getElementById("recoverPasswordForm")
+      //       .classList.remove("hidden");
+      //   });
 
-      document
-        .getElementById("signupLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document.getElementById("loginForm").classList.add("hidden");
-          document.getElementById("signupForm").classList.remove("hidden");
-        });
+      // document
+      //   .getElementById("signupLink")
+      //   .addEventListener("click", function (event) {
+      //     event.preventDefault();
+      //     document.getElementById("loginForm").classList.add("hidden");
+      //     document.getElementById("signupForm").classList.remove("hidden");
+      //   });
 
-      document
-        .getElementById("backToLoginLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document.getElementById("signupForm").classList.add("hidden");
-          document.getElementById("loginForm").classList.remove("hidden");
-        });
+      // document
+      //   .getElementById("backToLoginLink")
+      //   .addEventListener("click", function (event) {
+      //     event.preventDefault();
+      //     document.getElementById("signupForm").classList.add("hidden");
+      //     document.getElementById("loginForm").classList.remove("hidden");
+      //   });
 
-      document
-        .getElementById("backToLoginLink2")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document.getElementById("recoverEmailForm").classList.add("hidden");
-          document.getElementById("loginForm").classList.remove("hidden");
-        });
+      // document
+      //   .getElementById("backToLoginLink2")
+      //   .addEventListener("click", function (event) {
+      //     event.preventDefault();
+      //     document.getElementById("recoverEmailForm").classList.add("hidden");
+      //     document.getElementById("loginForm").classList.remove("hidden");
+      //   });
 
-      document
-        .getElementById("backToLoginLink3")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document
-            .getElementById("recoverPasswordForm")
-            .classList.add("hidden");
-          document.getElementById("loginForm").classList.remove("hidden");
-        });
+      // document
+      //   .getElementById("backToLoginLink3")
+      //   .addEventListener("click", function (event) {
+      //     event.preventDefault();
+      //     document
+      //       .getElementById("recoverPasswordForm")
+      //       .classList.add("hidden");
+      //     document.getElementById("loginForm").classList.remove("hidden");
+      //   });
     </script>
   </body>
 </html>

@@ -41,9 +41,6 @@ Larg: 1.8;
 
 #ff4500
 
-#cf711f
-#eb984e
-#45260a
 
 -Accents: 
 
@@ -1809,6 +1806,9 @@ blockquote::after {
 /* }****************** *****/
 /*        LOGIN PAGE        */
 /* }********************** */
+.login-section {
+  background-image: linear-gradient(#546e7a, #171613);
+}
 .hidden {
   display: none;
 }

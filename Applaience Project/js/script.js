@@ -383,3 +383,29 @@ $("#wave").wavify({
 //     document.getElementById("recoverPasswordForm").classList.add("hidden");
 //     document.getElementById("loginForm").classList.remove("hidden");
 //   });
+
+function visibleSignup() {
+  document.getElementById("loginForm").classList.add("hidden");
+  document.getElementById("signupForm").classList.remove("hidden");
+}
+
+function visibleLoginHideSignup() {
+  document.getElementById("signupForm").classList.add("hidden");
+  document.getElementById("loginForm").classList.remove("hidden");
+}
+function visibleLoginHideRecoverEmail() {
+  document.getElementById("recoverEmailForm").classList.add("hidden");
+  document.getElementById("loginForm").classList.remove("hidden");
+}
+function visibleLoginHideRecoverPassword() {
+  document.getElementById("recoverPasswordForm").classList.add("hidden");
+  document.getElementById("loginForm").classList.remove("hidden");
+}
+function visibleRecoverEmailHideLogin() {
+  document.getElementById("loginForm").classList.add("hidden");
+  document.getElementById("recoverEmailForm").classList.remove("hidden");
+}
+function visibleRecoverPasswordHideLogin() {
+  document.getElementById("loginForm").classList.add("hidden");
+  document.getElementById("recoverPasswordForm").classList.remove("hidden");
+}
