@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image Zoom Effect</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .background-zoom {
+        background-image: url("./img/download/hero-img-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        animation: zoom-animation 25s infinite alternate;
+      }
+
+      @keyframes zoom-animation {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .content {
+        position: relative;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background-container">
+      <div class="background-zoom"></div>
+    </div>
+    <div class="content">
+      <h1>Background Image Zoom Effect</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        deleniti sit sed veniam, amet sapiente tempora fuga? Omnis doloremque
+        rerum reiciendis asperiores, eum aspernatur ipsa esse quidem dolor illum
+        debitis odio rem iste, temporibus ratione suscipit dignissimos quam
+        ullam perferendis quia deleniti, laboriosam porro. Cupiditate animi
+        velit recusandae nulla enim quis et quia consequatur mollitia, autem
+        magnam beatae vitae dolorum delectus explicabo magni ipsam illum
+        quaerat, officiis, est nam. Eius reprehenderit officiis aut impedit,
+        itaque aperiam error quasi voluptatum libero at laudantium sed,
+        necessitatibus, iste ratione dolores ullam delectus voluptates cum id.
+        Fugit obcaecati quod fuga in dolor, placeat nemo, facilis laboriosam
+        corrupti necessitatibus, enim atque illum impedit at porro eius nisi
+        quidem! Repellendus aut nisi cupiditate quaerat cumque esse ea fugiat
+        possimus laudantium, beatae, praesentium optio id provident architecto
+        dignissimos, atque neque minima accusamus accusantium maiores quidem
+        error quisquam dolorum? Dignissimos dolorem quia possimus et est
+        cupiditate blanditiis, suscipit asperiores eius exercitationem harum nam
+        esse vel aliquam, ad, aliquid totam. Eius qui totam quas doloribus
+        fugiat labore vero, consectetur placeat maxime optio quis fuga modi hic
+        voluptates iusto eveniet et. Omnis assumenda enim eligendi laborum
+        tempore? Eveniet quam perferendis eligendi animi sapiente natus eum
+        necessitatibus quod debitis sunt dolorum numquam ea placeat voluptatem
+        dolorem iusto aperiam corrupti atque, blanditiis molestiae. Eius
+        aspernatur porro quis asperiores, reiciendis architecto deserunt velit
+        autem necessitatibus harum nostrum eaque rem neque praesentium, ipsum
+        molestias iusto, nihil quia fuga error itaque quod provident. Quod id
+        eum est dolorem modi ipsum assumenda veniam inventore voluptas vitae, ex
+        vel, nostrum, harum minus commodi officia. Magnam voluptas consectetur
+        amet iusto aut ratione odio inventore sunt itaque, debitis voluptates
+        minus quo facere reprehenderit eos? Tenetur quisquam itaque praesentium,
+        porro aspernatur consequatur iusto corrupti reprehenderit libero
+        corporis inventore vero quod quas maxime dolores voluptatibus nemo culpa
+        deserunt fugit neque eveniet placeat ab? Numquam ipsum obcaecati, eaque
+        assumenda dolore molestias voluptatem! Modi qui exercitationem officiis
+        quibusdam, laborum similique, quisquam quod commodi culpa, officia
+        facere. Praesentium explicabo illum earum eligendi rem est vero officiis
+        distinctio, repudiandae laboriosam illo tenetur, repellat, iusto iure.
+        Nulla, tenetur saepe ratione corrupti aspernatur accusamus dolorem hic
+        vero suscipit facere ipsum adipisci? Suscipit maiores dolores aspernatur
+        omnis nam placeat sit rerum itaque odit sequi laboriosam, veritatis
+        enim, aperiam voluptate quidem expedita hic culpa et. Possimus
+        reprehenderit facilis necessitatibus blanditiis. Delectus enim vitae,
+        voluptate commodi porro assumenda dolores voluptatem facere rem minus
+        aperiam, unde, distinctio dignissimos eveniet aliquid esse. Libero
+        expedita, perspiciatis maxime unde dolor rem. Repellat sit accusantium
+        ab mollitia reprehenderit, ad earum asperiores ipsam debitis facilis
+        aperiam, enim perspiciatis porro. Sapiente libero omnis sed maxime alias
+        obcaecati magni, quod quae labore, perspiciatis nobis similique! Rerum
+        quibusdam, sint suscipit quaerat odit pariatur? Consequuntur minus
+        recusandae nesciunt quidem veritatis, nostrum optio quia rem et magni
+        iste libero fuga ea corrupti quam temporibus? Aperiam ut cum itaque
+        officiis ducimus odit dicta neque, fugiat sapiente omnis laborum rem
+        totam autem nemo nobis magnam quia vel accusantium aut sit maiores
+        vitae? Aut cupiditate, aspernatur dicta qui necessitatibus ipsa minima
+        fugit vero corrupti?
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
