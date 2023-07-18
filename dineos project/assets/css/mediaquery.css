@@ -1,0 +1,16 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .pages ul li {
+    margin-right: 40px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 554px) {
+}
