@@ -1,7 +1,15 @@
 @media (max-width: 1200px) {
+  @keyframes zoom-inout {
+    0% {
+      background-size: 111%;
+    }
+    100% {
+      background-size: 131%;
+    }
+  }
 }
 @media (max-width: 991px) {
-  .navbar-nav {
+  .navbar-expand-md.navbar-nav {
     display: none;
   }
 
@@ -9,8 +17,44 @@
     margin-right: 40px;
     margin-left: 0;
   }
+  @keyframes zoom-inout {
+    0% {
+      background-size: 143%;
+    }
+    100% {
+      background-size: 163%;
+    }
+  }
+  .resarvation-location-title {
+    font-size: 40px;
+
+    line-height: 50px;
+  }
 }
 @media (max-width: 768px) {
+  .hero-section {
+    animation: none;
+  }
+  .resarvation-location-title {
+    font-size: 42px;
+
+    line-height: 56px;
+  }
 }
 @media (max-width: 554px) {
+  .resarvation-location-title {
+    font-size: 40px;
+
+    line-height: 45px;
+  }
+}
+@media (max-width: 400px) {
+  .resarvation-location-title {
+    font-size: 24px;
+
+    line-height: 35px;
+  }
+  .resarvation-time {
+    font-size: 14px;
+  }
 }

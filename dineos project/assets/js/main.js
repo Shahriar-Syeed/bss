@@ -46,32 +46,31 @@ window.addEventListener("scroll", function () {
   }
 });
 // side bar navigation
-let sidBar = document.getElementById("side-bar");
-let closeBtn = document.getElementsByClassName("close-icon-menu");
-let sideBack = document.getElementById("sideBack");
-let sideBackToggle = document.querySelector(".side-back.show");
-function shoSidebar() {
-  shoSidebar.classList.add("show");
-  sideBack.classList.add("show");
-}
-closeBtn.addEventListener("click", function () {
-  sideBack.classList.remove("show");
-  shoSidebar.classList.remove("show");
-});
-sideBackToggle.addEventListener("click", function () {
-  sideBack.classList.remove("show");
-  shoSidebar.classList.remove("show");
-});
-// Footer Gellary Bootstrap popup image
-let galleryItems = document.querySelectorAll(".gallery-item");
-let modalImage = document.getElementById("modalImage");
+var sidebar = document.getElementById("side-bar");
+var closeBtn = document.getElementsByClassName("close-icon-menu")[0];
+var sidebarBack = document.getElementById("sidebarBack");
+var sidebarBackToggle = document.querySelector(".side-back.show");
 
-galleryItems.forEach(function (item) {
-  item.addEventListener("click", function () {
-    let src = this.getAttribute("data-src");
-    modalImage.setAttribute("src", src);
-  });
-});
+function showSidebar() {
+  sidebar.classList.add("show");
+  sidebarBack.classList.add("show");
+}
+
+function removeShow() {
+  sidebarBack.classList.remove("show");
+  sidebar.classList.remove("show");
+}
+
+// Footer Gellary Bootstrap popup image
+// let galleryItems = document.querySelectorAll(".gallery-item");
+// let modalImage = document.getElementById("modalImage");
+
+// galleryItems.forEach(function (item) {
+//   item.addEventListener("click", function () {
+//     let src = this.getAttribute("data-bs-src");
+//     modalImage.setAttribute("src", src);
+//   });
+// });
 
 // PROGRESS BACK TO TOP
 var progressPath = document.querySelector(".progress-wrap path");
@@ -110,4 +109,27 @@ jQuery(".progress-wrap").on("click", function (event) {
   event.preventDefault();
   jQuery("html, body").animate({ scrollTop: 0 }, duration);
   return false;
+});
+
+// Testimonial Swiper skuder
+
+let swiper = new Swiper(".testimonial-slider", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  parallax: true,
+  speed: 1600,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-paginations",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

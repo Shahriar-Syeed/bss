@@ -6046,3 +6046,10 @@ ol {
   list-style-image: none;
   list-style-image: none;
 }
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+  color: var(--color-primary);
+}

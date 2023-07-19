@@ -29,6 +29,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--  METISMENU CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins/metismenu.css" />
+
     <!-- BOOTSTRRAP 5.3 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -37,8 +40,15 @@
       crossorigin="anonymous"
     />
     <!-- sal animation -->
-    <!-- <link rel="stylesheet" href="./assets/css/vendor/sal.css" /> -->
+    <link rel="stylesheet" href="./assets/css/vendor/sal.css" />
+    <!-- SWIPER Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <!-- MY CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="./assets/css/my-animation.css" />
     <link rel="stylesheet" href="./assets/css/genaral.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/general-mediaquery.css" />
@@ -49,8 +59,8 @@
   </head>
   <body>
     <header class="header-section" id="header">
-      <nav class="navbar navbar-expand-md">
-        <div class="container position-relative">
+      <div class="container">
+        <nav class="navbar navbar-expand-md justify-content-between pt-0 pb-0">
           <a class="navbar-brand" href="#"
             ><img src="./img/logo/01.svg" alt=""
           /></a>
@@ -59,7 +69,7 @@
             class="collapse navbar-collapse justify-content-center"
             id="navbarNav"
           >
-            <ul class="navbar-nav gap-5">
+            <ul class="navbar-nav">
               <li class="nav-item dropdown dropdown-hover">
                 <a
                   class="nav-link dropdown-toggle hover-dropdown-toggle"
@@ -87,7 +97,7 @@
                 <a
                   class="nav-link dropdown-toggle hover-dropdown-toggle"
                   href="#"
-                  id="navbarDropdown3"
+                  id="navbarDropdown2"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -203,24 +213,34 @@
               </li>
             </ul>
           </div>
-          <div class="menue-area">
-            <a
-              href="#"
-              class="nav-menu-link menu-button"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              role="button"
-            >
-              <span class="dot1"></span>
-              <span class="dot2"></span>
-              <span class="dot3"></span>
-              <span class="dot4"></span>
-            </a>
+          <div
+            class="header-right-area d-flex align-items-center justify-content-center h-100"
+          >
+            <div class="btn-aria">
+              <a href="reservation.html" class="rts-btn btn-primary"
+                >FIND A TABLE</a
+              >
+            </div>
+            <div class="menu-area">
+              <a
+                href="#"
+                class="nav-menu-link menu-button"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                role="button"
+                onclick="showSidebar()"
+              >
+                <span class="dot1"></span>
+                <span class="dot2"></span>
+                <span class="dot3"></span>
+                <span class="dot4"></span>
+              </a>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           var dropdowns = document.getElementsByClassName("dropdown");
@@ -250,14 +270,16 @@
     <!-- side bar for desktop -->
     <aside id="side-bar" class="side-bar">
       <div class="inner">
-        <button class="close-icon-menu"><i class="far fa-times"></i></button>
-        <!-- inner menu area desktop start -->
+        <a class="close-icon-menu d-block" onclick="removeShow()">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+        <!-- side menu area desktop start -->
         <div class="inner-main-wrapper-desk d-none d-lg-block">
           <div class="thumbnail">
-            <img src="assets/images/logo/01.svg" alt="dinenos" />
+            <img src="./img/logo/01.svg" alt="dinenos" />
           </div>
           <div
-            class="banner-shape-area d-flex align-items-center justify-content-center mt-40 mb-20"
+            class="hero-shape-area d-flex align-items-center justify-content-center mt-40 mb-20"
           >
             <span class="shape"></span>
             <span class="shape"></span>
@@ -277,8 +299,10 @@
                 <p class="time">Fri - Sun: 10 AM - 02 AM</p>
               </li>
             </ul>
-            <div class="footer">
-              <ul class="social-area">
+            <div class="sidebar-footer text-center">
+              <ul
+                class="social-area d-flex align-items-center justify-content-center"
+              >
                 <li>
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 </li>
@@ -298,156 +322,158 @@
             </div>
           </div>
         </div>
-        <!-- mobile menu area start -->
+        <!-- 992px menu area start -->
         <div class="mobile-menu d-block d-lg-none">
-          <nav class="nav-main mainmenu-nav mt--30">
-            <ul class="mainmenu metismenu" id="mobile-menu-active">
-              <li class="has-droupdown">
-                <a href="#" class="main">Home</a>
-                <ul class="submenu mm-collapse">
+          <nav class="nav-main mainmenu-nav mt-30">
+            <ul class="metismenu side-mainmenu" id="sidemenu-active">
+              <li class="nav-side-item">
+                <a href="#" class="" role="button" aria-expanded="false"
+                  >Home</a
+                >
+                <ul class="dropdown-side-menu">
                   <li>
-                    <a class="mobile-menu-link" href="index.html">Home One</a>
+                    <a class="dropdown-side-item" href="#">Home One</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="index-two.html"
-                      >Home Two</a
-                    >
+                    <a class="dropdown-side-item" href="#">Home Two</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="index-three.html"
-                      >Home Three</a
-                    >
+                    <a class="dropdown-side-item" href="#">Home Three</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="index-four.html"
-                      >Burger Home</a
-                    >
+                    <a class="dropdown-side-item" href="#">Burger Home</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="index-five.html"
+                    <a class="dropdown-side-item" href="index-five.html"
                       >Seafood Home</a
                     >
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="index-six.html"
+                    <a class="dropdown-side-item" href="index-six.html"
                       >Restaurant Home (Dark)</a
                     >
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="index-seven.html"
+                    <a class="dropdown-side-item" href="index-seven.html"
                       >Pizza Home</a
                     >
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="index-eight.html"
+                    <a class="dropdown-side-item" href="index-eight.html"
                       >Coffee House</a
                     >
                   </li>
                 </ul>
               </li>
-              <li class="has-droupdown">
-                <a href="#" class="main">Pages</a>
-                <ul class="submenu mm-collapse">
+              <li class="nav-side-item">
+                <a
+                  href="#"
+                  class="nav-side-link"
+                  role="button"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <ul class="dropdown-side-dropdown-side-itemmenu">
                   <li>
-                    <a class="mobile-menu-link" href="about.html">About</a>
+                    <a class="dropdown-side-item" href="#">About</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="our-chef.html"
-                      >Our Chef</a
-                    >
+                    <a class="dropdown-side-item" href="#">Our Chef</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="meet-the-chef.html"
-                      >Meet The Chef</a
-                    >
+                    <a class="dropdown-side-item" href="#">Meet The Chef</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="reservation.html"
-                      >Reservation</a
-                    >
+                    <a class="dropdown-side-item" href="#">Reservation</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="has-droupdown">
-                <a href="#" class="main">Menus</a>
-                <ul class="submenu mm-collapse">
-                  <li>
-                    <a class="mobile-menu-link" href="menu.html">MenuTab</a>
-                  </li>
-                  <li>
-                    <a class="mobile-menu-link" href="menu-list.html"
-                      >MenuList</a
-                    >
-                  </li>
-                  <li>
-                    <a class="mobile-menu-link" href="menu-list2.html"
-                      >MenuList2</a
-                    >
-                  </li>
-                  <li>
-                    <a class="mobile-menu-link" href="menu-section.html"
-                      >Menusection</a
-                    >
+                    <a class="dropdown-side-item" href="#">Contact</a>
                   </li>
                 </ul>
               </li>
-              <li class="has-droupdown">
-                <a href="#" class="main">Portfolio</a>
-                <ul class="submenu mm-collapse">
-                  <li><a class="mobile-menu-link" href="shop.html">Shop</a></li>
+              <li class="nav-side-item">
+                <a
+                  href="#"
+                  class="nav-side-link"
+                  role="button"
+                  aria-expanded="false"
+                  >Menus</a
+                >
+                <ul class="dropdown-side-menu">
                   <li>
-                    <a class="mobile-menu-link" href="shop-details.html"
-                      >Shop Details</a
-                    >
-                  </li>
-                  <li><a class="mobile-menu-link" href="cart.html">Cart</a></li>
-                  <li>
-                    <a class="mobile-menu-link" href="checkout.html"
-                      >Checkout</a
-                    >
+                    <a class="dropdown-side-item" href="#">MenuTab</a>
                   </li>
                   <li>
-                    <a class="mobile-menu-link" href="account.html"
-                      >My Account</a
-                    >
+                    <a class="dropdown-side-item" href="#">MenuList</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-side-item" href="#">MenuList2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-side-item" href="#">Menusection</a>
                   </li>
                 </ul>
               </li>
-              <li class="has-droupdown">
-                <a href="#" class="main">Blog</a>
-                <ul class="submenu mm-collapse">
-                  <li><a class="mobile-menu-link" href="blog.html">Blog</a></li>
+              <li class="dropdown-side-item">
+                <a
+                  href="#"
+                  class="nav-side-link"
+                  role="button"
+                  aria-expanded="false"
+                  >Portfolio</a
+                >
+                <ul class="dropdown-side-menu">
+                  <li><a class="dropdown-side-item" href="#">Shop</a></li>
                   <li>
-                    <a class="mobile-menu-link" href="blog-details.html"
-                      >Blog Details</a
-                    >
+                    <a class="dropdown-side-item" href="#">Shop Details</a>
+                  </li>
+                  <li><a class="dropdown-side-item" href="#">Cart</a></li>
+                  <li>
+                    <a class="dropdown-side-item" href="#">Checkout</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-side-item" href="#">My Account</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-side-item">
+                <a
+                  href="#"
+                  class="nav-side-link"
+                  role="button"
+                  aria-expanded="false"
+                  >Blog</a
+                >
+                <ul class="dropdown-side-menu">
+                  <li>
+                    <a class="dropdown-side-item" href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-side-item" href="#">Blog Details</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </nav>
 
-          <div class="social-wrapper-one">
-            <ul>
-              <li>
+          <div class="social-side-menu mt-50">
+            <ul class="d-flex align-items-center ps-0 m-0">
+              <li class="mr-10 mt-0 mb-0">
                 <a href="#">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
-              <li>
+              <li class="mr-10 mt-0 mb-0">
                 <a href="#">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
-              <li>
+              <li class="mr-10 mt-0 mb-0">
                 <a href="#">
                   <i class="fa-brands fa-youtube"></i>
                 </a>
               </li>
-              <li>
+              <li class="mr-10 mt-0 mb-0">
                 <a href="#">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
@@ -458,26 +484,520 @@
       </div>
       <!-- mobile menu area end -->
     </aside>
-    <div id="sidebarBack" class="side-back"></div>
-    <main></main>
+    <div id="sidebarBack" class="side-back" onclick="removeShow()"></div>
+    <main>
+      <section class="hero-section pt-170 pb-170 m-0">
+        <div class="container">
+          <div class="hero-wrapper text-center">
+            <div class="pre-sm-title text-uppercase text-white">
+              Cofee eats & teats
+            </div>
+            <div
+              class="hero-shape-area d-flex align-items-center justify-content-center mt-40 mb-20"
+            >
+              <span class="shape"></span>
+              <span class="shape"></span>
+              <span class="shape"></span>
+            </div>
+            <h1 class="hero-title mt-20 text-white mb-50">
+              Welcome to Dinenos
+              <br />
+              Cafe House
+            </h1>
+            <div
+              class="hero-button-area d-flex align-items-center justify-content-center"
+            >
+              <a href="#" class="rts-btn btn-primary"> View more</a>
+              <a href="#" class="rts-btn btn-secondary">Food menu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reservation-area-section">
+        <div class="container">
+          <div
+            class="reservation-wrapper d-md-flex justify-content-between align-items-center pt-50 pb-50"
+          >
+            <div class="reservation-text-area">
+              <h2 class="resarvation-location-title text-white">
+                12 Creek Street, Brisband CBD
+              </h2>
+              <p class="resarvation-time text-uppercase m-md-0">
+                We are open 7 days a week - 7:00am - 4:00pm
+              </p>
+            </div>
+            <div class="reservation-button-area">
+              <a href="#" class="rts-btn btn-primary">Book your seat</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section pt-120 pb-120 pb-md-80 pb-sm-60 bg-white">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="about-content-wrapper">
+                <div
+                  class="title-img sal-animate text-center"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  <img src="./img/title-shape.png" alt="about" />
+                </div>
+                <h2
+                  class="secondary-title mt-30 mr-55 mb-0 ml-55 text-center sal-animate"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  More About
+                  <br />
+                  Dinenos Cafe
+                </h2>
+                <div
+                  class="hero-shape-area about-shape-arie d-flex align-items-center justify-content-center mt-40 mb-20"
+                >
+                  <span class="shape"></span>
+                  <span class="shape"></span>
+                  <span class="shape"></span>
+                </div>
+                <p
+                  class="about-text text-center sal-animate"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  It’s the story of an everlasting love affair, Dieter
+                  <br />
+                  Delicioz and the Atlantic Ocean. Our proximity of the
+                  <br />
+                  sea and Portugal’s excellent produce.
+                </p>
+                <div
+                  class="about-btn-area d-flex justify-content-center sal-animate"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  <a href="#" class="rts-btn btn-primary d-block">
+                    Book your seat
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="counter-up-area pt-120 pb-60">
+                <div class="container">
+                  <div class="counter-up-inner-area">
+                    <div
+                      class="single-service mb-50 text-center sal-animate"
+                      data-sal="'slide-up"
+                      data-sal-delay="120"
+                      data-sal-duraton="800"
+                    >
+                      <h2 class="service-title mb-10 text-center">
+                        <span class="counter animated fadeInDownBig">11</span>
+                        <span class="prefix">+</span>
+                      </h2>
+                      <p class="service-text">Years Served</p>
+                    </div>
+                    <div
+                      class="single-service mb-50 text-center sal-animate"
+                      data-sal="'slide-up"
+                      data-sal-delay="120"
+                      data-sal-duraton="800"
+                    >
+                      <h2 class="service-title mb-10 text-center">
+                        <span class="counter animated fadeInDownBig">99</span>
+                        <span class="prefix">+</span>
+                      </h2>
+                      <p class="service-text">Coffee Items</p>
+                    </div>
+                    <div
+                      class="single-service mb-50 text-center sal-animate"
+                      data-sal="'slide-up"
+                      data-sal-delay="120"
+                      data-sal-duraton="800"
+                    >
+                      <h2 class="service-title mb-10 text-center">
+                        <span class="counter animated fadeInDownBig">20</span>
+                        <span class="prefix">+</span>
+                      </h2>
+                      <p class="service-text">Expert Chefs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="right-side-image">
+                <div class="reveal-item overflow-hidden aos-init">
+                  <div
+                    class="reveal-animation reveal-end reveal-primary aos aos-init aos-animate"
+                    data-aos="reveal-end"
+                  ></div>
+                  <img src="./img/about/about7.webp" alt="contact" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tea-menu-section pt-120 pb-120">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-7 col-lg-6">
+              <div class="tea-menu-img-section d-flex align-items-center mr-80">
+                <div class="first-img">
+                  <img src="./img/menu/09.webp" alt="" srcset="" />
+                </div>
+                <div class="second-img">
+                  <img src="./img/menu/10.jpg" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+              <div class="tea-menu-content-wrapper">
+                <div
+                  class="title-img sal-animate text-left"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  <img src="./img/title-shape.png" alt="about" />
+                </div>
+                <h2
+                  class="secondary-title mt-30 mr-55 mb-0 ml-55 text-left sal-animate"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  Coffee & Tea
+                </h2>
+              </div>
+              <div class="menu-links">
+                <div
+                  class="single-menu-container sal-animate"
+                  data-sal="zoom-in"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                >
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-22.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Latte</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$10</a></div>
+                  </div>
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-23.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Cappuccino</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$7</a></div>
+                  </div>
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-24.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Americano</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$7</a></div>
+                  </div>
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-25.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Espresso</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$15</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="coffee-menu-section pt-120 pb-120">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-7 col-lg-6 order-2">
+              <div
+                class="coffee-menu-img-section d-flex align-items-center ml-80 me-0"
+              >
+                <img src="./img/menu/11.webp" alt="menu image" />
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+              <div class="tea-menu-content-wrapper">
+                <div
+                  class="title-img sal-animate text-left"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  <img src="./img/title-shape.png" alt="about" />
+                </div>
+                <h2
+                  class="secondary-title mt-30 mr-55 mb-0 ml-55 text-left sal-animate"
+                  data-sal="'slide-up"
+                  data-sal-delay="120"
+                  data-sal-duraton="800"
+                >
+                  Coffee & Tea
+                </h2>
+              </div>
+              <div class="menu-links">
+                <div
+                  class="single-menu-container sal-animate"
+                  data-sal="zoom-in"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                >
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-22.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Latte</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$10</a></div>
+                  </div>
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-23.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Cappuccino</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$7</a></div>
+                  </div>
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-24.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Americano</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$7</a></div>
+                  </div>
+                  <div
+                    class="single-menu-img d-flex pt-40 pb-40 align-items-center justify-content-between"
+                  >
+                    <a href="#"
+                      ><img
+                        src="./img/menu/sm-25.jpg"
+                        alt="item"
+                        class="mr-30 rounded-50 w-100"
+                    /></a>
+                    <div class="content p-0">
+                      <h4 class="menu-title">
+                        <a href="#">Espresso</a>
+                      </h4>
+                      <p class="menu-text">
+                        beetroot and datterini, goat cheese, Ricotta
+                      </p>
+                    </div>
+                    <div class="menu-price"><a href="#">$15</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-section pt-8">
+        <video autoplay="" loop="" muted="" width="1000">
+          <source
+            src="./img/Video/Coffee-Video.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+      <section class="testimonial-section pb-120">
+        <div class="container">
+          <div class="testimonial-area">
+            <div class="testimonial-wrapper">
+              <div class="swiper testimonial-slider">
+                <div
+                  class="hero-shape-area d-flex align-items-center justify-content-center mt-40 mb-20 sal-animate"
+                  data-sal="slide-up"
+                  data-sal-delay="200"
+                  data-sal-duration="800"
+                >
+                  <span class="shape"></span>
+                  <span class="shape"></span>
+                  <span class="shape"></span>
+                </div>
+                <div class="left-quote">
+                  <img src="./img/testimonial/quote-3.webp" alt="testimonial" />
+                </div>
+                <div class="swiper-wrapper m-0">
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                      <div class="testimonial-text pt-120 text-center mt-0">
+                        <h3 class="animated fadeIn">
+                          <em
+                            >“ Customer feedback is the information, insights,
+                            issues, &amp; input shared by your community about
+                            their experiences with your company, product, or
+                            services. ”</em
+                          >
+                        </h3>
+                      </div>
+                      <div class="author pr-50 pb-80 mt-100 mb-100 text-center">
+                        <h5 class="author-tiltle">Alonso D. Dowson</h5>
+                        <p class="author-sub-title mb-0">ceo of Alonso co.</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="swiper-wrapper m-0">
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                      <div class="testimonial-text pt-120 text-center mt-0">
+                        <h3 class="animated fadeIn">
+                          <em
+                            >“ Customer feedback is the information, insights,
+                            issues, &amp; input shared by your community about
+                            their experiences with your company, product, or
+                            services. ”</em
+                          >
+                        </h3>
+                      </div>
+                      <div class="author pr-50 pb-80 mt-100 mb-100 text-center">
+                        <h5 class="author-tiltle">Alonso D. Dowson</h5>
+                        <p class="author-sub-title mb-0">ceo of Alonso co.</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="swiper-wrapper m-0">
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                      <div class="testimonial-text pt-120 text-center mt-0">
+                        <h3 class="animated fadeIn">
+                          <em
+                            >“ Customer feedback is the information, insights,
+                            issues, &amp; input shared by your community about
+                            their experiences with your company, product, or
+                            services. ”</em
+                          >
+                        </h3>
+                      </div>
+                      <div class="author pr-50 pb-80 mt-100 mb-100 text-center">
+                        <h5 class="author-tiltle">Alonso D. Dowson</h5>
+                        <p class="author-sub-title mb-0">ceo of Alonso co.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="right-quote">
+                  <img src="./img/testimonial/quote-4.webp" alt="testimonial" />
+                </div>
+              </div>
+              <div class="next-prev-btn">
+                <div class="swiper-button-prevs">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+                <div class="swiper-button-nexts">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="top-footer-section pt-130">
         <div class="shap-1">
-          <img src="./img/footer-background/vector5.webp" alt="" srcset="" />
+          <img src="./img/footer-background/vector5.webp" alt="" />
         </div>
         <div class="shap-2">
-          <img src="./img/footer-background/vector6.webp" alt="" srcset="" />
+          <img src="./img/footer-background/vector6.webp" alt="" />
         </div>
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <a href="index.html" class="footer-logo">
-                <img
-                  src="./img/logo/Asset 3.svg"
-                  alt="Logo"
-                  srcset=""
-                  class="mb-25"
-                />
+                <img src="./img/logo/Asset 3.svg" alt="Logo" class="mb-25" />
               </a>
 
               <p class="footer-text">
@@ -559,7 +1079,6 @@
                       alt=""
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      data-src="./img/footer-gellary/sm-01.jpg"
                       class="gallery-item img-fluid position-relative z-1"
                     />
                   </div>
@@ -569,7 +1088,6 @@
                       alt=""
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      data-src="./img/footer-gellary/sm-02.jpg"
                       class="gallery-item img-fluid position-relative z-1"
                     />
                   </div>
@@ -579,7 +1097,6 @@
                       alt=""
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      data-src="./img/footer-gellary/sm-03.jpg"
                       class="gallery-item img-fluid position-relative z-1"
                     />
                   </div>
@@ -591,7 +1108,6 @@
                       alt=""
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      data-src="./img/footer-gellary/sm-04.jpg"
                       class="gallery-item img-fluid position-relative z-1"
                     />
                   </div>
@@ -601,7 +1117,6 @@
                       alt=""
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      data-src="./img/footer-gellary/sm-05.jpg"
                       class="gallery-item img-fluid position-relative z-1"
                     />
                   </div>
@@ -611,7 +1126,6 @@
                       alt=""
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      data-src="./img/footer-gellary/sm-06.jpg"
                       class="gallery-item img-fluid position-relative z-1"
                     />
                   </div>
@@ -629,7 +1143,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">
-                          Popup Image Gallery
+                          Image Gallery
                         </h5>
                         <button
                           type="button"
@@ -639,8 +1153,25 @@
                         ></button>
                       </div>
                       <div class="modal-body ms-auto me-auto">
-                        <img src="" alt="" id="modalImage" class="img-fluid" />
+                        <img
+                          src=""
+                          alt=""
+                          id="modalImage"
+                          style="height: 100%; width: 100%"
+                        />
                       </div>
+                      <script>
+                        let galleryItems =
+                          document.querySelectorAll(".gallery-item");
+                        let modalImage = document.getElementById("modalImage");
+
+                        galleryItems.forEach(function (item) {
+                          item.addEventListener("click", function () {
+                            let mainSrc = this.getAttribute("src");
+                            modalImage.setAttribute("src", mainSrc);
+                          });
+                        });
+                      </script>
                     </div>
                   </div>
                 </div>
@@ -678,6 +1209,10 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <script src="./assets/js/plugins/metisMenu.min.js"></script>
+    <script>
+      $("#sidemenu-active").metisMenu();
+    </script>
     <!-- BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -691,7 +1226,37 @@
     ></script>
     <!-- sal animation -->
     <script src="./assets/js/vandor/sal.min.js"></script>
-
+    <!-- counter up -->
+    <script src="./assets/js/plugins/waypoint.js"></script>
+    <script src="./assets/js/plugins/counter-up.js"></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 10,
+        time: 1000,
+      });
+    </script>
+    <!-- aos -->
+    <script src="./assets/js/vandor/aos.js"></script>
+    <script>
+      $(document).on("ready", function () {
+        // initialization of aos
+        AOS.init({
+          duration: 650,
+          once: true,
+        });
+      });
+    </script>
+    <!-- manitic popup -->
+    <script src="./assets/js/plugins/magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".image-link").magnificPopup({
+          type: "image",
+        });
+      });
+    </script>
+    <!-- Swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- my JavaScript -->
     <script src="./assets/js/main.js"></script>
   </body>
