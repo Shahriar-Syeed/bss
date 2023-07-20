@@ -885,19 +885,16 @@
       </section>
       <section class="video-section pt-8">
         <video autoplay="" loop="" muted="" width="1000">
-          <source
-            src="./img/Video/Coffee-Video.mp4"
-            type="video/mp4"
-          />
+          <source src="./img/Video/Coffee-Video.mp4" type="video/mp4" />
         </video>
       </section>
       <section class="testimonial-section pb-120">
         <div class="container">
           <div class="testimonial-area">
-            <div class="testimonial-wrapper">
+            <div class="testimonial-main-wrapper">
               <div class="swiper testimonial-slider">
                 <div
-                  class="hero-shape-area d-flex align-items-center justify-content-center mt-40 mb-20 sal-animate"
+                  class="hero-shape-area d-flex align-items-center justify-content-center mt-40 mb-20 sal-animate testimonial-shape-area"
                   data-sal="slide-up"
                   data-sal-delay="200"
                   data-sal-duration="800"
@@ -909,10 +906,12 @@
                 <div class="left-quote">
                   <img src="./img/testimonial/quote-3.webp" alt="testimonial" />
                 </div>
-                <div class="swiper-wrapper m-0">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="testimonial-wrapper">
-                      <div class="testimonial-text pt-120 text-center mt-0">
+                    <div class="testimonial-content pl-120 pr-120 m-0">
+                      <div
+                        class="testimonial-text pt-120 pl-50 pr-50 text-center mt-0 ml-100 mr-100 mb-20"
+                      >
                         <h3 class="animated fadeIn">
                           <em
                             >“ Customer feedback is the information, insights,
@@ -922,16 +921,20 @@
                           >
                         </h3>
                       </div>
-                      <div class="author pr-50 pb-80 mt-100 mb-100 text-center">
-                        <h5 class="author-tiltle">Alonso D. Dowson</h5>
+                      <div
+                        class="author pr-50 pl-50 pb-80 ml-100 mr-100 text-center"
+                      >
+                        <h5 class="author-tiltle mb-0">Alonso D. Dowson</h5>
                         <p class="author-sub-title mb-0">ceo of Alonso co.</p>
                       </div>
                     </div>
                   </div>
-                <div class="swiper-wrapper m-0">
+
                   <div class="swiper-slide">
-                    <div class="testimonial-wrapper">
-                      <div class="testimonial-text pt-120 text-center mt-0">
+                    <div class="testimonial-content pl-120 pr-120 m-0">
+                      <div
+                        class="testimonial-text pt-120 pl-50 pr-50 text-center mt-0 ml-100 mr-100 mb-20"
+                      >
                         <h3 class="animated fadeIn">
                           <em
                             >“ Customer feedback is the information, insights,
@@ -941,32 +944,14 @@
                           >
                         </h3>
                       </div>
-                      <div class="author pr-50 pb-80 mt-100 mb-100 text-center">
-                        <h5 class="author-tiltle">Alonso D. Dowson</h5>
+                      <div
+                        class="author pr-50 pl-50 pb-80 ml-100 mr-100 text-center"
+                      >
+                        <h5 class="author-tiltle mb-0">Alonso D. Dowson</h5>
                         <p class="author-sub-title mb-0">ceo of Alonso co.</p>
                       </div>
                     </div>
                   </div>
-                <div class="swiper-wrapper m-0">
-                  <div class="swiper-slide">
-                    <div class="testimonial-wrapper">
-                      <div class="testimonial-text pt-120 text-center mt-0">
-                        <h3 class="animated fadeIn">
-                          <em
-                            >“ Customer feedback is the information, insights,
-                            issues, &amp; input shared by your community about
-                            their experiences with your company, product, or
-                            services. ”</em
-                          >
-                        </h3>
-                      </div>
-                      <div class="author pr-50 pb-80 mt-100 mb-100 text-center">
-                        <h5 class="author-tiltle">Alonso D. Dowson</h5>
-                        <p class="author-sub-title mb-0">ceo of Alonso co.</p>
-                      </div>
-                    </div>
-                  </div>
-                  
                 </div>
                 <div class="right-quote">
                   <img src="./img/testimonial/quote-4.webp" alt="testimonial" />
@@ -974,10 +959,10 @@
               </div>
               <div class="next-prev-btn">
                 <div class="swiper-button-prevs">
-                  <i class="fa-solid fa-arrow-left-long"></i>
+                  <i class="fa fa-arrow-left"></i>
                 </div>
                 <div class="swiper-button-nexts">
-                  <i class="fa-solid fa-arrow-right-long"></i>
+                  <i class="fa fa-arrow-right"></i>
                 </div>
               </div>
             </div>
@@ -1257,6 +1242,12 @@
     </script>
     <!-- Swiper slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/44b7d695c3.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- my JavaScript -->
     <script src="./assets/js/main.js"></script>
   </body>
