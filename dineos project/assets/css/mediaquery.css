@@ -1,3 +1,13 @@
+@media (max-width: 1400px) {
+  .testimonial-text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .author {
+    padding-left: 0 !important;
+  }
+}
+
 @media (max-width: 1200px) {
   @keyframes zoom-inout {
     0% {
@@ -6,6 +16,22 @@
     100% {
       background-size: 131%;
     }
+  }
+  .left-quote {
+    left: 75px;
+  }
+  .right-quote {
+    right: 75px;
+  }
+  .left-quote img {
+    width: 50px;
+  }
+  .right-quote img {
+    width: 50px;
+  }
+  .testimonial-text {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 @media (max-width: 991px) {
@@ -30,15 +56,61 @@
 
     line-height: 50px;
   }
+  .left-quote {
+    left: 20pxpx;
+  }
+  .left-quote img {
+    width: 40px;
+  }
+  .right-quote {
+    right: 20px;
+  }
+  .right-quote img {
+    width: 40px;
+  }
+  .testimonial-text {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .testimonial-text h3 {
+    font-size: 26px;
+    line-height: 1.1;
+  }
 }
 @media (max-width: 768px) {
   .hero-section {
     animation: none;
   }
+  .hero-button-area .rts-btn {
+    padding: 15px 20px;
+  }
   .resarvation-location-title {
     font-size: 42px;
 
     line-height: 56px;
+  }
+  .left-quote img {
+    width: 20px;
+  }
+  .right-quote img {
+    width: 20px;
+  }
+  .left-quote {
+    left: 10px;
+  }
+  .right-quote {
+    right: 10px;
+  }
+  .testimonial-text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .testimonial-text h3 {
+    font-size: 23px;
+    line-height: 1.1;
+  }
+  .author {
+    margin: 0 !important;
   }
 }
 @media (max-width: 554px) {
@@ -46,6 +118,16 @@
     font-size: 40px;
 
     line-height: 45px;
+  }
+  .left-quote {
+    display: none;
+  }
+  .right-quote {
+    display: none;
+  }
+  .testimonial-text h3 {
+    font-size: 20px;
+    line-height: 1.1;
   }
 }
 @media (max-width: 400px) {
