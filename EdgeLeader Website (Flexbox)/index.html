@@ -336,19 +336,43 @@
         }
       };
       // Smooth Scrolling
-      $("#navbar a").on("click", function (e) {
-        if (this.hash !== "") {
-          e.preventDefault();
+      // $("#navbar a").on("click", function (e) {
+      //   if (this.hash !== "") {
+      //     e.preventDefault();
 
-          const hash = this.hash;
+      //     const hash = this.hash;
 
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top - 100,
-            },
-            800
-          );
-        }
+      //     $("html, body").animate(
+      //       {
+      //         scrollTop: $(hash).offset().top - 100,
+      //       },
+      //       800
+      //     );
+      //   }
+      // });
+      // JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("#navbar a");
+
+        links.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            if (this.hash !== "") {
+              e.preventDefault();
+
+              const hash = this.hash;
+              const targetElement = document.querySelector(hash);
+
+              if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 100;
+
+                window.scrollTo({
+                  top: offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }
+          });
+        });
       });
     </script>
   </body>

@@ -63,7 +63,7 @@ header {
   right: -443px;
 }
 .nav-item {
-  padding: 32px 8px;
+  padding: 32px 16px;
   margin: 0 10px 0 0;
 }
 .nav-link {
@@ -292,6 +292,9 @@ a.nav-link::before {
 }
 .sidebar-footer ul li a:hover {
   color: var(--color-primary);
+}
+.sidebar-footer ul li a .fa-brands {
+  font-size: 16px;
 }
 .social-side-menu ul li {
   font-size: var(--font-size-b1);
@@ -767,7 +770,7 @@ footer {
   margin-bottom: 30px;
 }
 .query-list .sub-text {
-  color: var(--color-primary);
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -873,10 +876,12 @@ footer {
 }
 .copy-right-text {
   color: #949494;
+  font-size: 16px;
 }
 .copy-right-text a {
   color: #ffffff;
   font-weight: 700;
+  font-size: 16px;
 }
 /* PROGRESS BACK TO TOP */
 .progress-wrap {
