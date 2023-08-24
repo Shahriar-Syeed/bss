@@ -179,50 +179,52 @@ img {
 
 /* line 84, scss/main.scss */
 #header-inner {
-  border: none; }
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
 
-/* line 92, scss/main.scss */
+/* line 94, scss/main.scss */
 #home-a .specials {
   margin-top: 3rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
-  /* line 97, scss/main.scss */
+  /* line 99, scss/main.scss */
   #home-a .specials .fas {
     color: #ffbc00;
     padding-bottom: 0.4rem; }
 
-/* line 105, scss/main.scss */
+/* line 107, scss/main.scss */
 #home-b .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
-  /* line 108, scss/main.scss */
+  /* line 110, scss/main.scss */
   #home-b .stats li {
     line-height: 2; }
-    /* line 110, scss/main.scss */
+    /* line 112, scss/main.scss */
     #home-b .stats li.stats-title {
       font-size: 1.5rem; }
-    /* line 113, scss/main.scss */
+    /* line 115, scss/main.scss */
     #home-b .stats li.stats-number {
       font-size: 2rem;
       font-weight: bold; }
-  /* line 118, scss/main.scss */
+  /* line 120, scss/main.scss */
   #home-b .stats div {
     padding: 3rem 0; }
-    /* line 121, scss/main.scss */
+    /* line 123, scss/main.scss */
     #home-b .stats div:nth-child(odd) {
       background-color: #f4f4f4; }
-    /* line 124, scss/main.scss */
+    /* line 126, scss/main.scss */
     #home-b .stats div:nth-child(even) {
       background-color: #cccccc; }
 
-/* line 132, scss/main.scss */
+/* line 134, scss/main.scss */
 #home-c .process {
   text-align: center;
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: repeat(4, 1fr); }
-  /* line 138, scss/main.scss */
+  /* line 140, scss/main.scss */
   #home-c .process-step {
     position: absolute;
     top: 0;
@@ -236,7 +238,7 @@ img {
     line-height: 15px;
     padding: 1rem;
     transition: all 1s; }
-  /* line 153, scss/main.scss */
+  /* line 155, scss/main.scss */
   #home-c .process-icon {
     border-radius: 50%;
     background-color: #333333;
@@ -248,29 +250,29 @@ img {
     text-align: center;
     position: relative;
     transition: all 1s; }
-    /* line 164, scss/main.scss */
+    /* line 166, scss/main.scss */
     #home-c .process-icon:hover {
       background-color: #ffbc00;
       width: 90px;
       height: 90px;
       line-height: 90px; }
-      /* line 169, scss/main.scss */
+      /* line 171, scss/main.scss */
       #home-c .process-icon:hover .process-step {
         background-color: #333333;
         color: #fff; }
 
-/* line 181, scss/main.scss */
+/* line 183, scss/main.scss */
 #main-footer {
   background: #333333;
   color: #fff;
   height: 5rem; }
-  /* line 186, scss/main.scss */
+  /* line 188, scss/main.scss */
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
     height: 5rem;
     align-items: center; }
-    /* line 192, scss/main.scss */
+    /* line 194, scss/main.scss */
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -280,6 +282,6 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem; }
-      /* line 201, scss/main.scss */
+      /* line 203, scss/main.scss */
       #main-footer .footer-content .social .fab:hover {
         background-color: #ffbc00; }
