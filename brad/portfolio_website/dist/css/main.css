@@ -98,7 +98,7 @@ input[class^="btn-"]:hover {
   width: 3rem;
   background: #ffbc00;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   padding: 1rem auto; }
 
 /* line 6, scss/main.scss */
@@ -200,10 +200,10 @@ img {
   #home-b .stats li {
     line-height: 2; }
     /* line 110, scss/main.scss */
-    #home-b .stats li.state-title {
+    #home-b .stats li.stats-title {
       font-size: 1.5rem; }
     /* line 113, scss/main.scss */
-    #home-b .stats li.state-number {
+    #home-b .stats li.stats-number {
       font-size: 2rem;
       font-weight: bold; }
   /* line 118, scss/main.scss */
