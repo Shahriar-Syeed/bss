@@ -530,7 +530,7 @@ img {
     flex-direction: column;
     align-items: center; }
     /* line 19, scss/_media.scss */
-    #main-nav li {
+    #main-nav ul li {
       padding: 1rem; }
   /* line 24, scss/_media.scss */
   #header-home {
