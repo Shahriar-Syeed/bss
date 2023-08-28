@@ -517,3 +517,89 @@ img {
       /* line 347, scss/main.scss */
       #main-footer .footer-content .social .fab:hover {
         background-color: #ffbc00; }
+
+@media (max-width: 800px) {
+  /* line 4, scss/_media.scss */
+  #header-home {
+    height: 30rem; }
+    /* line 6, scss/_media.scss */
+    #header-home .header-content {
+      padding-top: 5rem; } }
+
+@media (max-width: 500px) {
+  /* line 15, scss/_media.scss */
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    /* line 19, scss/_media.scss */
+    #main-nav li {
+      padding: 1rem; }
+  /* line 24, scss/_media.scss */
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #ffbc00;
+    background-position: 20% 30%; }
+    /* line 28, scss/_media.scss */
+    #header-home .header-content {
+      display: none; }
+  /* line 32, scss/_media.scss */
+  #header-inner {
+    height: 10rem; }
+  /* line 38, scss/_media.scss */
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr; }
+  /* line 48, scss/_media.scss */
+  #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem; }
+    /* line 51, scss/_media.scss */
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  /* line 59, scss/_media.scss */
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0; }
+  /* line 69, scss/_media.scss */
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
+  /* line 78, scss/_media.scss */
+  #about-c {
+    display: none; }
+  /* line 87, scss/_media.scss */
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  /* line 98, scss/_media.scss */
+  #contact-b .contact-info div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid; }
+    /* line 103, scss/_media.scss */
+    #contact-b .contact-info div:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: 0; }
+  /* line 112, scss/_media.scss */
+  #contact-c h1 {
+    font-size: 2rem; }
+  /* line 120, scss/_media.scss */
+  #main-footer {
+    height: 7rem; }
+    /* line 123, scss/_media.scss */
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem; } }
+
+@media (max-height: 580px) {
+  /* line 133, scss/_media.scss */
+  #header-home .header-content {
+    padding-top: 3rem; } }
+
+@media (max-height: 320px) {
+  /* line 140, scss/_media.scss */
+  #header-home .header-content {
+    padding-top: 3rem; } }
