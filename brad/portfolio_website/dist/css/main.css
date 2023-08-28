@@ -380,131 +380,129 @@ img {
 /* line 198, scss/main.scss */
 #about-a .bio {
   grid-area: bio;
-  border-left: 3px solid #ffbc00; }
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem; }
 
-/* line 202, scss/main.scss */
+/* line 203, scss/main.scss */
 #about-a .award-1 {
   grid-area: aw1; }
 
-/* line 205, scss/main.scss */
+/* line 206, scss/main.scss */
 #about-a .award-2 {
   grid-area: aw2; }
 
-/* line 208, scss/main.scss */
+/* line 209, scss/main.scss */
 #about-a .award-3 {
   grid-area: aw3; }
 
-/* line 212, scss/main.scss */
+/* line 213, scss/main.scss */
 #about-a .award-1 .fas,
 #about-a .award-2 .fas,
 #about-a .award-3 .fas {
   color: #ffbc00;
   margin: 1rem; }
 
-/* line 220, scss/main.scss */
+/* line 221, scss/main.scss */
 #about-b .progress {
   overflow: hidden;
   height: 20px;
   background: #cccccc;
   border-radius: 5px;
   margin-bottom: 0.6rem; }
-  /* line 226, scss/main.scss */
+  /* line 227, scss/main.scss */
   #about-b .progress div {
     height: 100%;
     color: #fff;
     text-align: center;
     background: #ffbc00; }
 
-/* line 236, scss/main.scss */
+/* line 237, scss/main.scss */
 #about-c .about-logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
 
-/* line 241, scss/main.scss */
+/* line 242, scss/main.scss */
 #about-c img {
   width: 70%; }
 
-/* line 246, scss/main.scss */
+/* line 247, scss/main.scss */
 #about-d .testimonials {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.5rem; }
+  /* line 251, scss/main.scss */
+  #about-d .testimonials ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  /* line 258, scss/main.scss */
+  #about-d .testimonials p {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  /* line 263, scss/main.scss */
+  #about-d .testimonials img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
 
-/* line 251, scss/main.scss */
-#about-d ul {
-  list-style: none;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center; }
-
-/* line 258, scss/main.scss */
-#about-d p {
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  padding: 0.5rem; }
-
-/* line 263, scss/main.scss */
-#about-d img {
-  width: 50px;
-  border-radius: 50%;
-  margin-right: 0.5rem; }
-
-/* line 275, scss/main.scss */
+/* line 276, scss/main.scss */
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
-  /* line 285, scss/main.scss */
+  /* line 286, scss/main.scss */
   #contact-a .text-fields .name-input {
     grid-area: name; }
-  /* line 288, scss/main.scss */
+  /* line 289, scss/main.scss */
   #contact-a .text-fields .subject-input {
     grid-area: subject; }
-  /* line 291, scss/main.scss */
+  /* line 292, scss/main.scss */
   #contact-a .text-fields .email-input {
     grid-area: email; }
-  /* line 294, scss/main.scss */
+  /* line 295, scss/main.scss */
   #contact-a .text-fields .phone-input {
     grid-area: phone; }
-  /* line 297, scss/main.scss */
+  /* line 298, scss/main.scss */
   #contact-a .text-fields .message-input {
     grid-area: message;
     height: 100px; }
-  /* line 301, scss/main.scss */
+  /* line 302, scss/main.scss */
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
-/* line 305, scss/main.scss */
+/* line 306, scss/main.scss */
 #contact-a button[type="submit"] {
   width: 50%; }
 
-/* line 310, scss/main.scss */
+/* line 311, scss/main.scss */
 #contact-b .contact-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center; }
 
-/* line 317, scss/main.scss */
+/* line 318, scss/main.scss */
 #contact-c {
   text-align: center; }
-  /* line 319, scss/main.scss */
+  /* line 320, scss/main.scss */
   #contact-c h1 {
     font-size: 4rem; }
 
-/* line 327, scss/main.scss */
+/* line 328, scss/main.scss */
 #main-footer {
   background: #333333;
   color: #fff;
   height: 5rem; }
-  /* line 332, scss/main.scss */
+  /* line 333, scss/main.scss */
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
     height: 5rem;
     align-items: center; }
-    /* line 338, scss/main.scss */
+    /* line 339, scss/main.scss */
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -514,7 +512,7 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem; }
-      /* line 347, scss/main.scss */
+      /* line 348, scss/main.scss */
       #main-footer .footer-content .social .fab:hover {
         background-color: #ffbc00; }
 
