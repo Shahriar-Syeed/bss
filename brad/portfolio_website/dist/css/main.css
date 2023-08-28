@@ -450,18 +450,61 @@ img {
   border-radius: 50%;
   margin-right: 0.5rem; }
 
-/* line 273, scss/main.scss */
+/* line 275, scss/main.scss */
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  /* line 285, scss/main.scss */
+  #contact-a .text-fields .name-input {
+    grid-area: name; }
+  /* line 288, scss/main.scss */
+  #contact-a .text-fields .subject-input {
+    grid-area: subject; }
+  /* line 291, scss/main.scss */
+  #contact-a .text-fields .email-input {
+    grid-area: email; }
+  /* line 294, scss/main.scss */
+  #contact-a .text-fields .phone-input {
+    grid-area: phone; }
+  /* line 297, scss/main.scss */
+  #contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  /* line 301, scss/main.scss */
+  #contact-a .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+
+/* line 305, scss/main.scss */
+#contact-a button[type="submit"] {
+  width: 50%; }
+
+/* line 310, scss/main.scss */
+#contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center; }
+
+/* line 317, scss/main.scss */
+#contact-c {
+  text-align: center; }
+  /* line 319, scss/main.scss */
+  #contact-c h1 {
+    font-size: 4rem; }
+
+/* line 327, scss/main.scss */
 #main-footer {
   background: #333333;
   color: #fff;
   height: 5rem; }
-  /* line 278, scss/main.scss */
+  /* line 332, scss/main.scss */
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
     height: 5rem;
     align-items: center; }
-    /* line 284, scss/main.scss */
+    /* line 338, scss/main.scss */
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -471,6 +514,6 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem; }
-      /* line 293, scss/main.scss */
+      /* line 347, scss/main.scss */
       #main-footer .footer-content .social .fab:hover {
         background-color: #ffbc00; }
