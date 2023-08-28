@@ -600,6 +600,6 @@ img {
     padding-top: 3rem; } }
 
 @media (max-height: 320px) {
-  /* line 140, scss/_media.scss */
-  #header-home .header-content {
-    padding-top: 3rem; } }
+  /* line 141, scss/_media.scss */
+  #header-home .header-content h1 {
+    font-size: 2rem; } }
