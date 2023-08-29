@@ -47,7 +47,70 @@ h6 {
   padding: 0 2rem;
   overflow: hidden;
 }
+.bg-dark {
+  background: var(--dark-color) !important;
+  color: #fff !important;
+}
+.bg-primary {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
+.bg-secondary {
+  background: var(--secondary-color) !important;
+  color: #fff !important;
+}
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark a,
+.bg-dark h6,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
+.bg-primary a,
+.bg-primary h6,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary h4,
+.bg-secondary h5,
+.bg-secondary a,
+.bg-secondary h6 {
+  color: #fff;
+}
+.py-1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.p-1 {
+  padding: 1.5rem;
+}
 
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
 .category {
   display: inline-block;
   color: #fff;
@@ -85,6 +148,10 @@ h6 {
 }
 .btn:hover {
   opacity: 0.9;
+}
+.card {
+  background: #fff;
+  padding: 1rem;
 }
 
 /* Navigation */
@@ -156,4 +223,19 @@ h6 {
 }
 #showcase .showcase-content p {
   margin-bottom: 1rem;
+}
+
+/* Home Article */
+#home-article .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+#home-article .articles-container > *:first-child,
+#home-article .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: span 2;
 }
