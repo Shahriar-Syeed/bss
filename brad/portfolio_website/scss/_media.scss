@@ -10,7 +10,15 @@
 }
 
 // Smartphone
-
+@media (max-width: 660px) {
+  #home {
+    &-c {
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
@@ -126,6 +134,7 @@
     }
   }
 }
+
 // Landscape
 
 @media (max-height: 580px) {
