@@ -370,7 +370,8 @@ img {
 /* line 186, scss/main.scss */
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-template-areas: "bioimage bio bio"
+ "aw1 aw2 aw3";
   grid-gap: 1.2rem; }
 
 /* line 195, scss/main.scss */
@@ -451,7 +452,9 @@ img {
 /* line 276, scss/main.scss */
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: "name email"
+ "subject phone"
+ "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   /* line 286, scss/main.scss */
@@ -527,7 +530,7 @@ img {
 @media (max-width: 660px) {
   /* line 16, scss/_media.scss */
   #home-c .process {
-    grid-template-columns: repeat(2, 1fr); } }
+    /* grid-template-columns: repeat(2, 1fr); } } */
 
 @media (max-width: 500px) {
   /* line 23, scss/_media.scss */
@@ -569,13 +572,21 @@ img {
     padding: 2rem 0 1rem 0; }
   /* line 77, scss/_media.scss */
   #about-a .about-info {
-    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
+    grid-template-areas: "bioimage"
+ "bio"
+ "aw1"
+ "aw2"
+ "aw3"; }
   /* line 86, scss/_media.scss */
   #about-c {
     display: none; }
   /* line 95, scss/_media.scss */
   #contact-a .text-fields {
-    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+    grid-template-areas: "name"
+ "subject"
+ "email"
+ "phone"
+ "message"; }
   /* line 106, scss/_media.scss */
   #contact-b .contact-info div {
     margin-bottom: 1rem;
