@@ -147,4 +147,5 @@
 
 .hero.blog {
   background: url("../img/home/blog.jpg");
+  height: 30vh;
 }
