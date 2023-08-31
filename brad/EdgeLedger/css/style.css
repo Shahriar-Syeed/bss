@@ -6,6 +6,7 @@
   --light-color: #f4f4f4;
   --dark-color: #333;
   --white-color: #fff;
+  --gray-shade-color: #ccc;
 }
 
 * {
@@ -54,6 +55,11 @@ img {
   height: 7rem;
   position: fixed;
   top: 0;
+  padding: 0 3rem;
+  transition: 0.5s;
+}
+.navbar.top {
+  background: transparent;
 }
 .navbar a {
   color: var(--white-color);
@@ -126,11 +132,16 @@ img {
 .cases img:hover {
   opacity: 0.7;
 }
-
+.casses-last-img {
+  /* aspect-ratio: 3/2; */
+}
 /* team */
 
 .team img {
   border-radius: 50%;
+
+  /* object-fit: cover; */
+  /* aspect-ratio: 1/1; */
 }
 /* contact */
 /* callback form */
@@ -158,6 +169,7 @@ img {
 .callback-form input:focus {
   outline-color: var(--primary-color);
 }
+/* Footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -173,4 +185,29 @@ img {
 }
 .footer .social > * {
   margin-right: 3rem;
+}
+/* Blog page */
+
+.hero.blog {
+  background: url("../img/home/blog.jpg");
+  height: 30vh;
+}
+/* post page */
+.post {
+  padding: 5rem 3rem;
+}
+.post h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-shade-color);
+}
+.post .meta {
+  margin-bottom: 3rem;
+}
+.post img {
+  width: 30rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }

@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     />
     <!-- CSS Files -->
-    <link rel="stylesheet" href="./css/lightbox.min.css" />
+
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -33,7 +33,7 @@
   </head>
   <body id="home">
     <header class="hero blog">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1 class="logo">
           <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
           >Ledger
@@ -149,49 +149,6 @@
         </div>
       </article>
       <!-- About: contact -->
-      <section class="contact flex-columns">
-        <div class="row">
-          <div class="column">
-            <div class="column-1">
-              <img src="./img/home/contact.jpg" alt="office pepole" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="column-2 bg-light">
-              <form action="post" class="callback-form">
-                <div class="form-control">
-                  <label for="name"></label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter name"
-                  />
-                </div>
-                <div class="form-control">
-                  <label for="email"></label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="form-control">
-                  <label for="phome"></label>
-                  <input
-                    type="number"
-                    id="phome"
-                    name="phome"
-                    placeholder="Enter phome"
-                  />
-                </div>
-                <input type="submit" value="Send" class="btn" />
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="footer bg-dark">
       <div class="social">
@@ -210,7 +167,7 @@
       ;
       crossorigin="anonymous"
     ></script>
-    <script src="js/lightbox.min.js"></script>
+
     <script>
       const navbar = document.getElementById("navbar");
       let scrolled = false;

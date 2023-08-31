@@ -142,10 +142,3 @@
   max-width: 25%;
   padding: 0 0.4rem;
 }
-
-/* Blog page */
-
-.hero.blog {
-  background: url("../img/home/blog.jpg");
-  height: 30vh;
-}
