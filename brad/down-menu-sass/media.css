@@ -1,0 +1,7 @@
+#navbar ul li {
+  display: block;
+}
+#navbar ul li:hover ul {
+  width: 100%;
+  position: relative;
+}
