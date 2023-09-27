@@ -1,0 +1,127 @@
+/* Navebar */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/hero-img-2.jpg") no-repeat center center/cover;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 10px;
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo a h2 {
+  /* display: block; */
+  width: 100%;
+  color: var(--white-color);
+}
+
+nav .nav-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav li {
+  display: inline;
+}
+nav li a {
+  padding: 8px 16px;
+  margin: 0 5px;
+  color: var(--white-color);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+nav li a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+nav .btn {
+  margin: 0 10px;
+}
+
+.menu-wrap {
+  display: none;
+}
+/* Hero Section */
+.hero-section {
+  position: relative;
+}
+.hero-content {
+  max-width: 400px;
+  color: var(--white-color);
+  padding: 170px 10px 170px;
+  /* text-align: center; */
+}
+.hero-title {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.hero-content .text-area a {
+  display: inline-block;
+}
+.hero-content .sub-title {
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 700;
+}
+.hero-content .btn {
+  margin: 20px 0;
+}
+.hero-content p {
+  margin-bottom: 10px;
+}
+.hero-content .small-text {
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  word-spacing: 1.2px;
+}
+.hero-cta {
+  position: absolute;
+  bottom: -120px;
+  right: calc(50% - 400px);
+  max-width: 400px;
+}
+.hero-form-wrap {
+  background-color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--dark-color);
+}
+.hero-form-title {
+  /* color: var(--white-color); */
+}
+/* .form-text {
+  color: var(--white-color);
+} */
+.hero-form-wrap .form-group {
+  margin-bottom: 10px;
+}
+
+.hero-form-wrap .form-group input {
+  width: 100%;
+  padding: 8px;
+}
+.hero-form-wrap form .form-group input[type="checkbox"] {
+  width: autpl;
+}
+.hero-form-wrap form input[type="submit"] {
+  width: 100%;
+}
+input::placeholder {
+  color: var(--secondary-color);
+  opacity: 0.6;
+}
