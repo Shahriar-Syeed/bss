@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .showcase {
+        background: url("./hero-img-4.jpg") no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 500px 0; /* Adjust padding as needed */
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Navbar background color */
+        color: #fff; /* Text color */
+        z-index: 1; /* Ensure the navbar is above the showcase */
+      }
+
+      .container {
+        max-width: 1200px; /* Adjust this as needed */
+        margin: 0 auto; /* Center the container */
+        padding: 10px; /* Add padding for spacing */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: #fff; /* Text color for the logo */
+        font-size: 24px; /* Adjust the font size as needed */
+      }
+
+      ul.nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul.nav-links li {
+        display: inline;
+        margin-right: 20px; /* Adjust the spacing between navbar items */
+      }
+
+      ul.nav-links li a {
+        text-decoration: none;
+        color: #fff; /* Text color for links */
+      }
+
+      button.btn {
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        padding: 10px 20px; /* Adjust button padding as needed */
+        border-radius: 5px; /* Round the button corners */
+        cursor: pointer;
+      }
+    </style>
+    <title>Fixed Navbar with Showcase</title>
+  </head>
+  <body>
+    <header class="showcase">
+      <div class="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="#">Your Logo</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="btn">Button</button>
+        </div>
+      </div>
+      <!-- Showcase content goes here -->
+    </header>
+    <!-- Rest of your page content -->
+  </body>
+</html>

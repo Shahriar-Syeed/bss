@@ -99,7 +99,7 @@ nav .btn {
   background-color: var(--white-color);
   padding: 16px 24px;
   border-radius: 5px;
-  box-shadow: 0 0 10px 1px var(--dark-color);
+  box-shadow: 0 0 8px var(--dark-color);
 }
 .hero-form-title {
   font-size: 26px;
