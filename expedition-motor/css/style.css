@@ -111,6 +111,7 @@ nav .btn {
   opacity: 0.7;
   margin-bottom: 16px;
   line-height: 1.2;
+  letter-spacing: 1px;
 }
 .hero-form-wrap .form-group {
   margin-bottom: 20px;
