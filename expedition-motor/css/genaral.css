@@ -4,6 +4,7 @@
   --primary-color: #969b02;
   --secondary-color: #113261;
   --dark-color: #333;
+  --dark-tint-color: #8d8b62;
   --tint-primary-color: #a1a51b;
   --shade-primary-color: #5a5d01;
   --light-color: #f5f5e6;
@@ -18,7 +19,7 @@
 html,
 body {
   font-family: "roboto", sans-serif;
-  line-height: 1.75;
+  line-height: 1.4;
   /* background-color: aqua; */
 }
 a {
@@ -27,6 +28,9 @@ a {
 }
 ul {
   list-style: none;
+}
+img {
+  width: 100%;
 }
 /* utility */
 .btn {
@@ -61,7 +65,7 @@ ul {
 }
 .container {
   max-width: 1100px;
-  padding: 0 10px;
+  padding: 0 12px;
   margin: 0 auto;
 }
 .text-praimary {
@@ -69,4 +73,10 @@ ul {
 }
 .text-secondary {
   color: var(--secondary-color);
+}
+.text-dark {
+  color: var(--dark-color);
+}
+.text-dark-tint {
+  color: var(--dark-tint-color);
 }
