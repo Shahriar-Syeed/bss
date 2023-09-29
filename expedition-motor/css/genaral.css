@@ -4,6 +4,7 @@
   --primary-color: #969b02;
   --secondary-color: #113261;
   --dark-color: #333;
+  --dark-shade-color: #4e4e4e;
   --dark-tint-color: #8d8b62;
   --tint-primary-color: #a1a51b;
   --shade-primary-color: #5a5d01;
@@ -19,12 +20,13 @@
 html,
 body {
   font-family: "roboto", sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   /* background-color: aqua; */
 }
 a {
   color: #333;
   text-decoration: none;
+  display: inline-block;
 }
 ul {
   list-style: none;
@@ -74,9 +76,21 @@ img {
 .text-secondary {
   color: var(--secondary-color);
 }
+.text-white {
+  color: var(--white-color);
+}
 .text-dark {
   color: var(--dark-color);
 }
+.text-dark-shade {
+  color: var(--dark-shade-color);
+}
 .text-dark-tint {
   color: var(--dark-tint-color);
+}
+.detail-text {
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  margin-bottom: 24px;
 }
