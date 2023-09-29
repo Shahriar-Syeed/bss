@@ -12,7 +12,7 @@ nav {
   padding: 10px;
 }
 #navbar.top {
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: var(--dark-color);
   opacity: 0.8;
