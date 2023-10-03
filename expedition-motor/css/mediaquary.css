@@ -25,6 +25,12 @@
   footer:after {
     display: none;
   }
+  .history-wrapper {
+    gap: 0;
+  }
+  .history-content-container {
+    margin-left: -62px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -40,6 +46,29 @@
   }
   .footer-wrapper div:last-child {
     flex-basis: 40%;
+  }
+  .history-section {
+    margin-top: 0;
+  }
+  .history-wrapper {
+    display: block;
+  }
+  .history-content-container {
+    margin: 24px auto;
+  }
+  .history-img-container-1,
+  .history-img-container-2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .history-img-container-1 {
+    bottom: -110px;
+    right: 70px;
+  }
+  .history-img-container-2 {
+    right: 0;
+    left: 70px;
+    bottom: 110px;
   }
 }
 @media (max-width: 578px) {

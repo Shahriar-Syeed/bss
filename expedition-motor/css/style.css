@@ -246,7 +246,7 @@ input::placeholder {
 }
 .history-img-container-1,
 .history-img-container-2 {
-  flex-basis: 24%;
+  width: 256px;
   position: relative;
 }
 .history-img-container-1 {
@@ -265,8 +265,8 @@ input::placeholder {
 }
 .history-img-container-1 img {
 }
-.history-content {
-  max-width: 552px;
+.history-content-container {
+  flex-basis: 552px;
 }
 /* Feature Section */
 .feature-section {
