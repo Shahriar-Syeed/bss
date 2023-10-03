@@ -72,7 +72,7 @@
 /* Show menu */
 
 .menu-wrap .toggler:checked ~ .menu {
-  /* visibility: visible; */
+  visibility: visible;
 }
 .menu-wrap .toggler:checked ~ .menu > div {
   transform: scale(1);
@@ -106,13 +106,13 @@
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
-  /* transform: scale(0); */
+  transform: scale(0);
 }
 .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.4s ease;
 }
 .menu-wrap .menu > div > div > ul > li {

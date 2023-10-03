@@ -21,7 +21,7 @@ html,
 body {
   font-family: "roboto", sans-serif;
   line-height: 1.5;
-  /* background-color: aqua; */
+  overflow-x: hidden;
 }
 a {
   color: #333;
@@ -89,7 +89,7 @@ img {
   color: var(--dark-tint-color);
 }
 .tartiary-title {
-  font-size: 39px;
+  font-size: 40px;
   line-height: 1.2;
   margin-bottom: 20px;
 }

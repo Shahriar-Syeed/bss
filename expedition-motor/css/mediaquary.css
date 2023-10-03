@@ -16,6 +16,12 @@
     margin: 0 auto;
     order: -1;
   }
+  .best-part-section {
+    padding-bottom: 20px;
+  }
+  .best-part-wrapper {
+    gap: 32px;
+  }
   .best-part-content {
     margin: auto;
   }
@@ -34,21 +40,8 @@
 }
 
 @media (max-width: 768px) {
-  .footer-wrapper div:first-child {
-    flex-basis: 60%;
-  }
-
-  .footer-wrapper div:nth-child(2) {
-    flex-basis: 40%;
-  }
-  .footer-wrapper div:nth-child(3) {
-    flex-basis: 60%;
-  }
-  .footer-wrapper div:last-child {
-    flex-basis: 40%;
-  }
   .history-section {
-    margin-top: 0;
+    padding-top: 0;
   }
   .history-wrapper {
     display: block;
@@ -70,8 +63,42 @@
     left: 70px;
     bottom: 110px;
   }
+  .feature-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .feature-container {
+    max-width: 400px;
+  }
+  .logo-wrapper {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .client-logo {
+    width: 50%;
+  }
+  .footer-wrapper div:first-child {
+    flex-basis: 60%;
+  }
+
+  .footer-wrapper div:nth-child(2) {
+    flex-basis: 40%;
+  }
+  .footer-wrapper div:nth-child(3) {
+    flex-basis: 60%;
+  }
+  .footer-wrapper div:last-child {
+    flex-basis: 40%;
+  }
 }
 @media (max-width: 578px) {
+  .hero-content {
+    padding: 70px 0 70px;
+  }
   .footer-wrapper {
     display: block;
     text-align: center;
@@ -81,5 +108,24 @@
   }
   .footer-social-logo {
     justify-content: center;
+  }
+  .expertise-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tartiary-title {
+    font-size: 33px;
+  }
+  .experience-wrapper {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+  }
+  .experience-wrapper figure:after {
+    top: 20px;
+    left: 30px;
   }
 }

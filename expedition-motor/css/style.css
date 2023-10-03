@@ -201,7 +201,7 @@ input::placeholder {
   content: "";
   position: absolute;
   border-radius: 2px 30% 2px 2px;
-  top: 12px;
+  top: 8px;
   left: -16px;
   width: 80%;
   height: 100%;
