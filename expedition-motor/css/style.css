@@ -33,7 +33,7 @@ nav .logo a h2 {
   color: var(--white-color);
 }
 
-nav .nav-content {
+nav .nav-content div {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -59,6 +59,7 @@ nav .btn {
 
 .menu-wrap {
   display: none;
+  position: relative;
 }
 /* Hero Section */
 .hero-section {
