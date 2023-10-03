@@ -99,16 +99,7 @@
   .hero-content {
     padding: 70px 0 70px;
   }
-  .footer-wrapper {
-    display: block;
-    text-align: center;
-  }
-  .footer-wrapper > div {
-    margin-bottom: 24px;
-  }
-  .footer-social-logo {
-    justify-content: center;
-  }
+
   .expertise-wrapper {
     flex-direction: column;
     justify-content: center;
@@ -127,5 +118,20 @@
   .experience-wrapper figure:after {
     top: 20px;
     left: 30px;
+  }
+  .footer-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrapper > div {
+    margin-bottom: 24px;
+  }
+  .footer-social-logo {
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .experience-wrapper figure:after {
+    left: 1%;
   }
 }
