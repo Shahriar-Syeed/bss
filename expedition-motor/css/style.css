@@ -97,10 +97,12 @@ nav .btn {
   letter-spacing: 2.4px;
 }
 .hero-cta {
-  position: absolute;
+  /* position: absolute;
   bottom: -230px;
-  right: 13px;
+  right: 13px; */
   max-width: 400px;
+  margin-left: auto;
+  margin-top: -478px;
 }
 .hero-form-wrap {
   background-color: var(--white-color);
@@ -157,6 +159,10 @@ input::placeholder {
 /* best part section */
 .best-part-section {
   padding: 50px 0 100px;
+}
+.best-part-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 .best-part-content {
   max-width: 470px;
@@ -280,4 +286,56 @@ input::placeholder {
 .feature-container p {
   text-align: center;
   margin-bottom: 24px;
+}
+/* footer */
+footer {
+  background-color: var(--dark-color);
+  padding: 120px 0 120px;
+  position: relative;
+  overflow-x: hidden;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 9%;
+  z-index: 1;
+  height: 300px;
+  width: 300px;
+  background: url("../img/hero-img-1.jpg") no-repeat center center/cover;
+  border-radius: 50%;
+}
+footer:after {
+  content: "";
+  position: absolute;
+  right: -1%;
+  top: 0;
+  z-index: 1;
+  height: 500px;
+  width: 250px;
+  background: url("../img/footer-img-2.jpg") no-repeat center center/cover;
+  border-radius: 120% 0 0 10%;
+  /* clip-path: polygon(
+    33% 50%,
+    27% 56%,
+    20% 62%,
+    14% 70%,
+    12% 75%,
+    9% 81%,
+    11% 87%,
+    14% 92%,
+    19% 95%,
+    27% 97%,
+    38% 98%,
+    54% 100%,
+    100% 100%,
+    100% 0%
+  ); */
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
 }

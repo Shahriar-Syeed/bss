@@ -73,7 +73,7 @@
             </a>
           </div>
         </div>
-        <div class="hero-cta">
+        <!-- <div class="hero-cta">
           <div class="hero-form-wrap">
             <h1 class="hero-form-title">Apply Now</h1>
             <p class="form-text text-dark">
@@ -140,7 +140,7 @@
             </div>
             <p>Check the status of your applicatian hare</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </header>
     <!-- ----------------- -->
@@ -148,13 +148,84 @@
     <!-- ----------------- -->
     <section class="best-part-section">
       <div class="container">
-        <div class="best-part-content">
-          <h1 class="best-part-title text-dark-tint">And The Best Part?</h1>
-          <p class="best-part-text detail-text text-dark">
-            Your Wolf Will Be <span class="text-praimary">100%</span> UNIQUE. Oh
-            and unlike a defender or branco it has side hooks, which allows it
-            to be dropped from a helicopter. If you are into that kind of stuff.
-          </p>
+        <div class="best-part-wrapper">
+          <div class="best-part-content">
+            <h1 class="best-part-title text-dark-tint">And The Best Part?</h1>
+            <p class="best-part-text detail-text text-dark">
+              Your Wolf Will Be <span class="text-praimary">100%</span> UNIQUE.
+              Oh and unlike a defender or branco it has side hooks, which allows
+              it to be dropped from a helicopter. If you are into that kind of
+              stuff.
+            </p>
+          </div>
+          <div class="hero-cta">
+            <div class="hero-form-wrap">
+              <h1 class="hero-form-title">Apply Now</h1>
+              <p class="form-text text-dark">
+                Enter your info, and get book this limited<br />
+                time action merc now and get a discount of
+                <span class="text-praimary">10%</span>
+              </p>
+              <form action="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="FirstName"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="LastName"
+                    id="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="city" id="city" placeholder="City" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  id="agreement"
+                  velue="1"
+                />
+                <label for="agreement">I agree to the terms</label>
+
+                <input
+                  type="submit"
+                  value="BECOME A MEMBER"
+                  class="btn primary-btn"
+                />
+              </form>
+              <div>
+                <a href="#">Already applied?</a>
+              </div>
+              <p>Check the status of your applicatian hare</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -326,6 +397,41 @@
         </h3>
       </div>
     </section>
+    <footer>
+      <div class="container text-white text-center">
+        <h3 class="text-white tartiary-title text-center">
+          The Moment
+          <br />
+          <span class="text-dark-tint">Of Truth</span>
+        </h3>
+        <p class="detail-text">
+          Made for the pioneers, the troll-blazers, the go-getters of the world,
+          your custom D-Wogan is waiting to discover the world with you
+        </p>
+        <p class="detail-text">
+          The driving force behind every EMC-restored vehicle. We are
+          off-roaders, hunters, outdoorsmen, explorers, and above all,
+          metarheath, just like you
+        </p>
+        <a type="button" class="btn primary-btn footer-btn">
+          <i class="fa-solid fa-circle-arrow-right fa-lg"></i>
+          <span>
+            Shed the Sheep
+            <br />
+            Build Your Wolf Today!
+          </span>
+        </a>
+      </div>
+      <svg width="0" height="0" style="position: absolute">
+        <defs>
+          <clipPath id="tearDropClip" clipPathUnits="objectBoundingBox">
+            <path
+              d="M0.5,0 C0.75,0 1,0.25 1,0.5 C1,0.75 0.75,1 0.5,1 C0.25,1 0,0.75 0,0.5 C0,0.25 0.25,0 0.5,0"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
