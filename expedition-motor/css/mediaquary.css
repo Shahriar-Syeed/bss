@@ -6,6 +6,16 @@
   .history-wrapper {
     gap: 0;
   }
+  .history-img-container-1,
+  .history-img-container-2 {
+    width: 220px;
+  }
+  .history-img-container-1 {
+    bottom: 70px;
+  }
+  .history-img-container-2 {
+    top: 70px;
+  }
   footer::before {
     left: 1%;
     bottom: 2%;
@@ -45,9 +55,10 @@
   .history-section {
     padding: 100px 0px;
   }
-  .history-content-container {
-    max-width: 570px;
-    margin-left: -32px;
+
+  .history-img-container-1,
+  .history-img-container-2 {
+    width: 257 px;
   }
   .truth-section {
     padding: 90px 0;
@@ -219,10 +230,11 @@
   .footer-wrapper {
     display: block;
     text-align: center;
+    padding-bottom: 0;
   }
   .footer-wrapper > div {
     padding-bottom: 28px;
-    border-bottom: 1px dotted #7f7f7f;
+    border-bottom: 1px dotted #9c9c9c;
   }
 
   .footer-logo {
@@ -235,6 +247,9 @@
   .footer-heading {
     margin: 20px 0;
     font-size: 16px;
+  }
+  .copy-hr {
+    display: none;
   }
 }
 @media (max-width: 460px) {
