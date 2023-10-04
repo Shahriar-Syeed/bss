@@ -175,6 +175,7 @@
   .footer-wrapper {
     grid-template-columns: 2fr 1fr;
   }
+
   .footer-heading {
     margin: 20px 0;
     font-size: 18px;

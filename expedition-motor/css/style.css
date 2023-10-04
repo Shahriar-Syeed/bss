@@ -329,7 +329,7 @@ input::placeholder {
 }
 /* truth section */
 .truth-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/hero-img-1.jpg") no-repeat center center/cover;
   padding: 110px 0 100px;
   position: relative;
