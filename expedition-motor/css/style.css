@@ -107,7 +107,7 @@ nav .btn {
 .hero-form-wrap {
   background-color: var(--white-color);
   padding: 16px 24px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0px 8px 24px #959da533;
   /* box-shadow: 0 8px 24px var(--dark-shade-color); */
 }
@@ -131,7 +131,7 @@ nav .btn {
   width: 100%;
   padding: 12px;
   border: 1px solid rgba(51, 51, 51, 0.3);
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .hero-form-wrap form input[type="checkbox"] {
   margin-bottom: 24px;
@@ -159,7 +159,7 @@ input::placeholder {
 }
 /* best part section */
 .best-part-section {
-  padding: 50px 0 100px;
+  padding: 50px 0;
 }
 .best-part-wrapper {
   display: flex;
@@ -175,11 +175,9 @@ input::placeholder {
 
 /* experience section */
 .experience-section {
-  padding: 100px 0 120px;
+  padding: 100px 0 110px;
 }
-.expertise-heading {
-  margin-bottom: 40px;
-}
+
 .experience-wrapper {
   display: flex;
   justify-content: space-between;
@@ -187,7 +185,7 @@ input::placeholder {
   align-items: center;
 }
 .experience-wrapper figure img {
-  border-radius: 2px 30% 2px 2px;
+  border-radius: 4px 30% 4px 4px;
   position: relative;
   z-index: 2;
 
@@ -200,7 +198,7 @@ input::placeholder {
 .experience-wrapper figure:after {
   content: "";
   position: absolute;
-  border-radius: 2px 30% 2px 2px;
+  border-radius: 4px 30% 4px 4px;
   top: 8px;
   left: -16px;
   width: 80%;
@@ -216,7 +214,7 @@ input::placeholder {
 }
 /* expertise section */
 .expertise-section {
-  padding: 120px 0;
+  padding: 90px 0;
   background-color: var(--dark-tint-color);
   text-align: center;
 }
@@ -232,11 +230,20 @@ input::placeholder {
   object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   max-width: 177px;
 }
+.expertise-card.img-1 img {
+  border-radius: 2px 30% 2px 2px;
+}
+.expertise-card.img-2 img {
+  border-radius: 30% 2px 2px 2px;
+}
+.expertise-card.img-3 img {
+  border-radius: 2px 30% 30% 2px;
+}
 .expertise-card-content h3 {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 /* history-section */
 .history-section {
@@ -259,14 +266,12 @@ input::placeholder {
 .history-img-container-2 {
   width: 257px;
   position: relative;
-  flex-shrink: 0;
-  flex-grow: 1;
 }
 .history-img-container-1 {
   bottom: 80px;
 }
 .history-img-container-2 {
-  right: 26%;
+  right: 12%;
   top: 80px;
 }
 .history-img-container-1 img,
@@ -283,12 +288,13 @@ input::placeholder {
 }
 /* Feature Section */
 .feature-section {
-  padding: 90px 0;
+  padding: 90px 0 80px;
   background-color: var(--dark-tint-color);
 }
 .feature-wrapper {
   display: flex;
   gap: 40px;
+  text-align: center;
 }
 .feature-logo {
   padding: 10%;
@@ -296,9 +302,10 @@ input::placeholder {
   border: 1px solid var(--white-color);
   margin: 0 30% 24px;
 }
-.feature-container h3,
+.feature-container h3 {
+  margin-bottom: 16px;
+}
 .feature-container p {
-  text-align: center;
   margin-bottom: 24px;
 }
 /* logo section */
@@ -307,10 +314,9 @@ input::placeholder {
 }
 .logo-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 12px;
-  padding: 50px 0;
+  gap: 20px;
 }
 .client-logo {
   padding: 12px;
@@ -327,7 +333,7 @@ input::placeholder {
 .truth-section {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/hero-img-1.jpg") no-repeat center center/cover;
-  padding: 120px 0 120px;
+  padding: 110px 0 100px;
   position: relative;
   overflow-x: hidden;
 }

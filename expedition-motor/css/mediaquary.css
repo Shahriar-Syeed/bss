@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 40px;
+  }
   .history-wrapper {
     gap: 0;
   }
@@ -15,6 +19,10 @@
 }
 
 @media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 40px;
+  }
   .hero-cta {
     margin: 0 auto;
     order: -1;
@@ -23,7 +31,7 @@
     padding-bottom: 20px;
   }
   .best-part-wrapper {
-    gap: 32px;
+    gap: 60px;
   }
   .best-part-content {
     margin: auto;
@@ -39,10 +47,10 @@
   }
   .history-content-container {
     max-width: 570px;
-    margin-left: -90px;
+    margin-left: -32px;
   }
   .truth-section {
-    padding: 90px 0 90px;
+    padding: 90px 0;
   }
   .footer-wrapper {
     gap: 1%;
@@ -50,6 +58,10 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 30px;
+  }
   .hero-content {
     max-width: 100%;
   }
@@ -86,26 +98,30 @@
     margin-bottom: 20px;
   }
   .expertise-section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   .history-section {
-    padding: 70px 0;
+    padding: 50px 0 70px;
   }
   .history-wrapper {
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
     text-align: center;
   }
   .history-content-container {
     margin: 0;
     flex-basis: auto;
   }
+  .history-content-container .history-content .tartiary-title {
+    margin-bottom: 24px;
+  }
+
   .history-wrapper .img-part {
     gap: 2%;
   }
   .history-img-container-1,
   .history-img-container-2 {
-    width: 40%;
+    width: 100%;
     position: static;
     flex-shrink: 1;
   }
@@ -142,6 +158,9 @@
   .truth-section {
     padding: 40px 0;
   }
+  footer {
+    padding-top: 60px;
+  }
   .footer-wrapper {
     grid-template-columns: 2fr 1fr;
   }
@@ -149,11 +168,18 @@
     margin: 20px 0;
     font-size: 18px;
   }
+  footer .footer-logo {
+    margin-bottom: 12px;
+  }
 }
 @media (max-width: 578px) {
   html,
   body {
     font-size: 14px;
+  }
+  .container {
+    max-width: 540px;
+    padding: 0 20px;
   }
   .hero-content {
     padding: 70px 0 70px;
@@ -177,6 +203,7 @@
   }
   .tartiary-title {
     font-size: 28px;
+    margin-bottom: 20px;
   }
   .experience-wrapper figure {
     margin: 0;
@@ -185,10 +212,7 @@
   .expertise-card {
     width: 70%;
   }
-  .history-img-container-1,
-  .history-img-container-2 {
-    width: 50%;
-  }
+
   .client-logo {
     width: 70%;
   }
@@ -197,8 +221,10 @@
     text-align: center;
   }
   .footer-wrapper > div {
-    margin-bottom: 24px;
+    padding-bottom: 28px;
+    border-bottom: 1px dotted #7f7f7f;
   }
+
   .footer-logo {
     display: block;
     text-align: center;
