@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+  .history-wrapper {
+    gap: 0;
+  }
   footer::before {
     left: 1%;
     bottom: 2%;
@@ -25,18 +28,24 @@
   .best-part-content {
     margin: auto;
   }
-
-  .history-wrapper {
-    gap: 0;
+  .experience-section {
+    padding: 70px 0;
+  }
+  .expertise-section {
+    padding: 70px 0;
+  }
+  .history-section {
+    padding: 100px 0px;
   }
   .history-content-container {
-    margin-left: -62px;
+    max-width: 570px;
+    margin-left: -90px;
   }
-  footer::before {
-    display: none;
+  .truth-section {
+    padding: 90px 0 90px;
   }
-  footer:after {
-    display: none;
+  .footer-wrapper {
+    gap: 1%;
   }
 }
 
@@ -55,7 +64,7 @@
     text-align: center;
   }
   .experience-section {
-    padding: 50px 0 60px;
+    padding: 50px 0;
   }
   .experience-wrapper {
     flex-direction: column;
@@ -68,33 +77,47 @@
   }
   .experience-wrapper figure {
     margin: 0;
+    width: 70%;
   }
   .experience-wrapper figure:after {
     display: none;
   }
+  .experience-wrapper .experience-content p {
+    margin-bottom: 20px;
+  }
+  .expertise-section {
+    padding: 60px 0;
+  }
   .history-section {
-    padding: 0 0 70px 0;
+    padding: 70px 0;
   }
   .history-wrapper {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
     text-align: center;
   }
   .history-content-container {
     margin: 0;
     flex-basis: auto;
   }
-
-  .history-img-container-1 {
-    right: 11.2%;
-    bottom: -129px;
+  .history-wrapper .img-part {
+    gap: 2%;
   }
+  .history-img-container-1,
   .history-img-container-2 {
-    left: 11.2%;
-    top: -129px;
+    width: 40%;
+    position: static;
+    flex-shrink: 1;
   }
-
+  .history-img-container-1 img,
+  .history-img-container-2 img {
+    border: none;
+    object-fit: cover;
+    aspect-ratio: 89 / 116;
+  }
+  .feature-section {
+    padding: 50px 0;
+  }
   .feature-wrapper {
     flex-direction: column;
     justify-content: center;
@@ -104,7 +127,9 @@
   .feature-container {
     max-width: 400px;
   }
-
+  .logo-section {
+    padding: 50px 0;
+  }
   .logo-wrapper {
     flex-direction: column;
     justify-content: center;
@@ -114,18 +139,15 @@
   .client-logo {
     width: 50%;
   }
-  .footer-wrapper div:first-child {
-    flex-basis: 60%;
+  .truth-section {
+    padding: 40px 0;
   }
-
-  .footer-wrapper div:nth-child(2) {
-    flex-basis: 40%;
+  .footer-wrapper {
+    grid-template-columns: 2fr 1fr;
   }
-  .footer-wrapper div:nth-child(3) {
-    flex-basis: 60%;
-  }
-  .footer-wrapper div:last-child {
-    flex-basis: 40%;
+  .footer-heading {
+    margin: 20px 0;
+    font-size: 18px;
   }
 }
 @media (max-width: 578px) {
@@ -156,7 +178,10 @@
   .tartiary-title {
     font-size: 28px;
   }
-
+  .experience-wrapper figure {
+    margin: 0;
+    width: 98%;
+  }
   .expertise-card {
     width: 70%;
   }
@@ -180,6 +205,10 @@
   }
   .footer-social-logo {
     justify-content: center;
+  }
+  .footer-heading {
+    margin: 20px 0;
+    font-size: 16px;
   }
 }
 @media (max-width: 460px) {
