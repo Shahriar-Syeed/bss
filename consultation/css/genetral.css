@@ -70,7 +70,10 @@ img {
   color: var(--dark-color);
   border: 1px solid var(--dark-color);
 }
-
+.dr-card-btn {
+  font-size: 13px;
+  padding: 12px 24px;
+}
 .light-btn {
   background: var(--light-color);
   color: var(--dark-color);

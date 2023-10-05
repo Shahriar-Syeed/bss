@@ -175,8 +175,58 @@ nav .btn {
   font-weight: 700;
   font-size: 69px;
 }
-.work-card h3 {
-  margin-top: -52px;
+.third-title {
   font-size: 23px;
   font-weight: 500;
+}
+.work-card .third-title {
+  margin-top: -52px;
+}
+/* ///////////// */
+/* doctor Section */
+/* ///////////// */
+.doctor-section {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #fff 50%, #f8f8f8 50%);
+}
+.doctor-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.doctor-card {
+  width: 400px;
+  padding: 16px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-bottom: 4px solid #aaa;
+}
+.doctor-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+.doctor-card-content {
+}
+.doctor-id {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.rating-logo {
+  display: flex;
+  gap: 4px;
+}
+.rating-logo i {
+  color: gold;
+}
+.doctor-card .btn-container {
+  gap: 0;
+  justify-content: space-between;
+}
+
+.doctor-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
