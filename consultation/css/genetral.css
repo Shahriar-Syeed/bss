@@ -65,7 +65,8 @@ img {
   background: var(--primary-color);
   color: var(--white-color);
 }
-.primary-btn:hover {
+.primary-btn:hover,
+.cta-btn:hover {
   background: var(--light-color);
   color: var(--dark-color);
   border: 1px solid var(--dark-color);
@@ -98,6 +99,10 @@ img {
 }
 .text-dark {
   color: var(--dark-color);
+}
+.bg-praimary {
+  background: var(--primary-color);
+  color: var(--white-color);
 }
 .btn-container {
   display: flex;

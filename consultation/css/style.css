@@ -215,6 +215,8 @@ nav .btn {
 }
 .doctor-img-container img {
   border-radius: 4px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 .doctor-id {
   display: flex;
@@ -244,11 +246,12 @@ nav .btn {
 /* ///////////// */
 .testimonial-section {
   padding: 100px 0;
-  background-color: var(--light-shade-color);
 }
 .testimonnial-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .testimonnial-card {
   padding: 40px 24px 40px 40px;
@@ -260,5 +263,68 @@ nav .btn {
   box-shadow: 0 0 15px 1px rgba(51, 51, 51, 0.019);
 }
 .testimonnial-card.active {
-  background: var(--light-color);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+}
+
+/* ///////////// */
+/* cta Section */
+/* ///////////// */
+.cta-section {
+  padding: 100px 0;
+}
+.cta-wrapper {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+.newsletter {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cta-btn {
+  border-color: var(--white-color);
+}
+
+/* ///////////// */
+/* footer Section */
+/* ///////////// */
+
+footer {
+  padding-top: 100px;
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-col {
+}
+.footer-heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.footer-social-logo {
+  display: flex;
+  gap: 3%;
+}
+.footer-heading img {
+  width: 70%;
+}
+.footer-social-logo i:hover {
+  color: var(--primary-color);
+}
+.footer-wrapper div:first-child .footer-heading {
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.copy-section {
+  padding: 12px;
 }
