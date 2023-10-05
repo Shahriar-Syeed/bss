@@ -15,8 +15,7 @@ nav {
 #navbar.top {
   position: fixed;
   top: 0;
-  background-color: var(--light-color);
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 nav div {
   display: flex;
@@ -300,6 +299,7 @@ footer {
 .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 20px;
 }
 .footer-col {
 }
