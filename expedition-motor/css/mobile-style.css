@@ -30,7 +30,7 @@ nav .nav-content {
 .hamburger > div {
   height: 2px;
   width: 100%;
-  background: var(--white-color);
+  background: var(--dark-color);
   transition: all 0.4s ease;
   position: relative;
 }
