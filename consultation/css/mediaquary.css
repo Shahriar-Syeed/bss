@@ -140,6 +140,9 @@
   .hero-content .text-area {
     gap: 4px;
   }
+  .work-title {
+    margin-bottom: 0;
+  }
   .doctor-card {
     flex-direction: column;
     align-items: center;
