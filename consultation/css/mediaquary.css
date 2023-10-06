@@ -122,10 +122,23 @@
     padding-right: 0;
     display: flex;
     justify-content: center;
-    font: 12px;
+    font-size: 12px;
   }
   .tartiary-title {
     font-size: 33px;
+  }
+  .hero-content {
+    align-items: end;
+  }
+  .hero-content .text-area .btn-container {
+    gap: 4px;
+  }
+  .hero-img,
+  header {
+    height: 120vh;
+  }
+  .hero-content .text-area {
+    gap: 4px;
   }
   .doctor-card {
     flex-direction: column;

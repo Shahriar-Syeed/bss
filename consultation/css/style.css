@@ -366,3 +366,6 @@ footer {
 .copy-section {
   padding: 12px;
 }
+.footer-heading.footer-logo {
+  max-width: 300px;
+}
