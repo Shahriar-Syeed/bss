@@ -72,8 +72,10 @@ img {
   border: 1px solid var(--dark-color);
 }
 .dr-card-btn {
-  font-size: 13px;
-  padding: 12px 24px;
+  font-size: 10px;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
 }
 .light-btn {
   background: var(--light-color);
@@ -114,7 +116,7 @@ img {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 .detail-text {
   font-weight: 400;
@@ -127,4 +129,7 @@ img {
 }
 .text-left {
   text-align: left !important;
+}
+.section-padding {
+  padding: 68px 0;
 }
