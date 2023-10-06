@@ -108,6 +108,8 @@ nav .btn {
 .achive-wrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .achive-item .tartiary-title {
   margin-bottom: 12px;
