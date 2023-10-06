@@ -40,26 +40,26 @@
   .hero-title .hero-title-small-font {
     font-size: 48px;
   }
+  .newsletter {
+    max-width: 100%;
+  }
+  .newsletter .tartiary-title {
+    margin-bottom: 16px;
+  }
   .testimonnial-wrapper > div:last-child,
   .doctor-wrapper > div:last-child {
     display: none;
-  }
-  .footer-wrapper {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    column-gap: 70px;
-    row-gap: 48px;
   }
   .cta-wrapper {
     flex-direction: column;
     align-items: baseline;
     gap: 20px;
   }
-  .newsletter {
-    max-width: 100%;
-  }
-  .newsletter .tartiary-title {
-    margin-bottom: 16px;
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 70px;
+    row-gap: 48px;
   }
 }
 @media (max-width: 768px) {
@@ -117,15 +117,18 @@
     padding: 54px 0;
   }
   .btn {
-    width: 100%;
+    /* width: 100%;
     padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    justify-content: center;
+    padding-right: 0; */
+    /* display: flex;
+    justify-content: center; */
     font-size: 12px;
   }
   .tartiary-title {
     font-size: 33px;
+  }
+  .hero-img {
+    background: url(../img/hero-img.webp) no-repeat right bottom/content;
   }
   .hero-content {
     align-items: end;
