@@ -150,7 +150,7 @@ img {
   display: flex;
   /* flex-wrap: wrap; */
   /* gap: 32px; */
-  height: 200px;
+
   justify-content: space-between;
   align-items: center;
 }

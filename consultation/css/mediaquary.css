@@ -162,7 +162,6 @@
     gap: 16px;
   }
   .footer-wrapper {
-    display: grid;
     grid-template-columns: 1fr;
     justify-items: baseline;
   }
