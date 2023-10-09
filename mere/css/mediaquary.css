@@ -80,6 +80,9 @@
     width: auto;
     align-self: center;
   }
+  .blog-wrapper .blog-img-container {
+    max-width: 50%;
+  }
   .achive-img-wrapper {
     flex-wrap: wrap;
     gap: 2%;
@@ -128,6 +131,9 @@
   }
   .blog-section .section-padding.blog {
     padding-bottom: 0;
+  }
+  .blog-wrapper .blog-img-container {
+    max-width: 80%;
   }
   .footer-wrapper {
     row-gap: 38;
