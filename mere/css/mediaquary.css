@@ -59,7 +59,7 @@
     align-self: center;
   }
   .hero-text-container {
-    gap: 10px;
+    gap: 24px;
   }
   .hero-title {
     font-size: 49px;
@@ -82,6 +82,9 @@
   }
   .blog-wrapper .blog-img-container {
     max-width: 50%;
+  }
+  .btn-img-container img {
+    height: 90px;
   }
   .achive-img-wrapper {
     flex-wrap: wrap;
@@ -157,12 +160,19 @@
   }
   .hero-title {
     font-size: 39px;
+    margin-bottom: 10px;
   }
   .tartiary-title {
     font-size: 25px;
   }
   .blog-section .section-padding.blog {
-    padding-top: 20px 0 0 0;
+    padding: 32px 0 0 0;
+  }
+  .blog-wrapper {
+    gap: 24px;
+  }
+  .blog-content p {
+    margin-bottom: 24px;
   }
   .blog-content .btn-container {
     height: auto;
