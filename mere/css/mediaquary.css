@@ -49,11 +49,19 @@
     top: 20px;
     margin: 0;
   }
-  .hero-img-container-1 {
-    margin-top: 60px;
+  .hero-wrapper {
+    padding-top: 80px;
   }
   .hero-img-container-2 {
-    margin-top: -10px;
+    margin-top: 0;
+  }
+  .hero-text-container,
+  .hero-img-container-2,
+  .hero-img-container-1 {
+    align-self: center;
+  }
+  .hero-text-container {
+    gap: 10px;
   }
   .hero-title {
     font-size: 49px;
@@ -70,5 +78,11 @@
 @media (max-width: 576px) {
   .section-padding {
     padding: 50px 0;
+  }
+  .hero-title {
+    font-size: 39px;
+  }
+  .tartiary-title {
+    font-size: 25px;
   }
 }
