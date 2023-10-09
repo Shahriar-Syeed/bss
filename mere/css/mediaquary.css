@@ -18,9 +18,6 @@
 }
 
 @media (max-width: 1200px) {
-  .section-padding {
-    padding: 60px 0;
-  }
   .hero-img-container-1,
   .hero-img-container-2 {
     width: 80%;
@@ -37,7 +34,7 @@
 }
 @media (max-width: 992px) {
   .section-padding {
-    padding: 58px 0;
+    padding: 64px 0;
   }
 
   nav .logo {
@@ -72,14 +69,16 @@
   }
   .blog-wrapper {
     flex-direction: column;
+    justify-content: center;
   }
   .blog-content p {
     margin-bottom: 40px;
   }
   .blog-wrapper .blog-content,
   .blog-wrapper .blog-img-container {
-    max-width: 100%;
+    max-width: 80%;
     width: auto;
+    align-self: center;
   }
   .achive-img-wrapper {
     flex-wrap: wrap;
@@ -97,16 +96,25 @@
   .testimonial-id {
     justify-content: space-between;
   }
+  .logo-wrapper {
+    flex-wrap: wrap;
+  }
+  .logo-container {
+    width: 190px;
+  }
   .footer-wrapper {
     display: grid;
     grid-template-columns: 60% 40%;
     column-gap: 70px;
     row-gap: 48px;
   }
+  .footer-heading {
+    margin-bottom: 32px;
+  }
 }
 @media (max-width: 768px) {
   .section-padding {
-    padding: 54px 0;
+    padding: 64px 0;
   }
   .testimonial-wrapper {
     grid-template-columns: 1fr;
@@ -118,13 +126,22 @@
   .testimonial-id {
     justify-content: unset;
   }
+  .blog-section .section-padding.blog {
+    padding-bottom: 0;
+  }
+  .footer-wrapper {
+    row-gap: 38;
+  }
+  .footer-nav {
+    gap: 16px;
+  }
 }
 @media (max-width: 576px) {
   header {
     margin-bottom: 0;
   }
   .section-padding {
-    padding: 50px 0;
+    padding: 60px 0;
   }
   .hero-wrapper {
     grid-template-columns: 100%;
@@ -138,6 +155,9 @@
   .tartiary-title {
     font-size: 25px;
   }
+  .blog-section .section-padding.blog {
+    padding-top: 20px 0 0 0;
+  }
   .blog-content .btn-container {
     height: auto;
     flex-direction: column;
@@ -150,6 +170,10 @@
     flex: none;
     width: 100%;
   }
+
+  .achive-img-wrapper div:nth-child(odd) {
+    order: 1;
+  }
   .rating-logo {
     margin-left: 0;
   }
@@ -160,5 +184,8 @@
   .footer-wrapper > div:not(:last-child) {
     padding-bottom: 28px;
     border-bottom: 1px dotted #9c9c9c;
+  }
+  .footer-wrapper {
+    row-gap: 32;
   }
 }

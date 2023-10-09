@@ -133,6 +133,9 @@ nav li a:hover {
   gap: 40px;
   flex-wrap: wrap;
 }
+.blog-title.section-padding {
+  padding-bottom: 0;
+}
 .blog-wrapper.revarse {
   flex-direction: row-reverse;
 }
@@ -208,13 +211,16 @@ nav li a:hover {
   justify-content: space-around;
   gap: 2%;
   align-items: center;
-  margin-bottom: 48px;
+  margin: 40px 0;
 }
 .achive-img-container img {
   object-fit: cover;
   aspect-ratio: 1 / 1;
   width: 100%;
   border-radius: 15px;
+}
+.achive-img-wrapper div:nth-child(odd) img {
+  transform: scale(0.9);
 }
 .achive-img-container {
   background: var(--light-shade-color);
@@ -236,13 +242,15 @@ nav li a:hover {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   flex: 1;
-  min-width: 170px;
+  min-width: 230px;
+  margin-bottom: 20px;
 }
 .achiv-count {
   font-size: 39px;
   font-weight: 600;
+  line-height: 1;
 }
 .achive-discription {
   font-size: 25px;
