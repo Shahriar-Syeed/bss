@@ -39,6 +39,7 @@
   .section-padding {
     padding: 58px 0;
   }
+
   nav .logo {
     margin-left: 0;
   }
@@ -119,8 +120,17 @@
   }
 }
 @media (max-width: 576px) {
+  header {
+    margin-bottom: 0;
+  }
   .section-padding {
     padding: 50px 0;
+  }
+  .hero-wrapper {
+    grid-template-columns: 100%;
+  }
+  .hero-wrapper > div:not(:last-child) {
+    margin-bottom: 20px;
   }
   .hero-title {
     font-size: 39px;
@@ -144,7 +154,11 @@
     margin-left: 0;
   }
   .footer-wrapper {
-    grid-template-columns: 1fr;
-    justify-items: baseline;
+    grid-template-columns: 100%;
+    /* justify-items: baseline; */
+  }
+  .footer-wrapper > div:not(:last-child) {
+    padding-bottom: 28px;
+    border-bottom: 1px dotted #9c9c9c;
   }
 }
