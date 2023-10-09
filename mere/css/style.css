@@ -1,6 +1,6 @@
 header {
   line-height: 1.2;
-  /* height: 100vh; */
+
   position: relative;
   margin-bottom: 64px;
 }
@@ -31,7 +31,7 @@ nav .logo {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: -90px;
+  margin-left: -80px;
 }
 nav .logo a h2,
 footer .footer-logo h2 {
@@ -82,7 +82,7 @@ nav li a:hover {
 .hero-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 32px;
+  column-gap: 26px;
 }
 .hero-title {
   font-size: 61px;
@@ -94,7 +94,7 @@ nav li a:hover {
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 22px;
 }
 .hero-img-container-1,
 .hero-img-container-2 {
