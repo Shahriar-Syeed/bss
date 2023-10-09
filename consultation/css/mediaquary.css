@@ -114,7 +114,7 @@
 }
 @media (max-width: 576px) {
   .section-padding {
-    padding: 54px 0;
+    padding: 46px 0;
   }
   .btn {
     /* width: 100%;
@@ -126,29 +126,39 @@
   }
   .tartiary-title {
     font-size: 33px;
+    margin-bottom: 24px;
   }
   .hero-img {
-    background: url(../img/hero-img.webp) no-repeat right bottom/content;
+    background: url(../img/hero-img.webp) no-repeat right bottom/50vh;
   }
   .hero-content {
     align-items: end;
   }
   .hero-content .text-area .btn-container {
-    gap: 4px;
+    gap: 12px;
   }
   .hero-img,
   header {
     height: 120vh;
   }
   .hero-content .text-area {
-    gap: 4px;
+    gap: 8px;
   }
   .work-title {
     margin-bottom: 0;
   }
+  .achive-title-area {
+    margin-bottom: 24px;
+  }
   .doctor-card {
     flex-direction: column;
     align-items: center;
+  }
+  .about-text-area {
+    gap: 24px;
+  }
+  .work-card {
+    padding: 24px 44px;
   }
   .doctor-img-container {
     width: 100%;
@@ -164,5 +174,8 @@
   .footer-wrapper {
     grid-template-columns: 1fr;
     justify-items: baseline;
+  }
+  .footer-heading {
+    margin-bottom: 24px;
   }
 }
