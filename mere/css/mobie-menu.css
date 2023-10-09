@@ -1,0 +1,114 @@
+nav .nav-content {
+  display: none;
+}
+
+/* hamburger menu */
+.menu-wrap {
+  display: block;
+}
+/* creating hamburger */
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 12;
+  width: 52px;
+  height: 52px;
+  opacity: 0;
+  cursor: pointer;
+}
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  width: 60px;
+  height: 52px;
+  padding: 12px 16px;
+}
+/* hamburger lines */
+.hamburger > div {
+  height: 2px;
+  width: 100%;
+  background: var(--dark-color);
+  transition: all 0.4s ease;
+  position: relative;
+}
+.hamburger > div:before,
+.hamburger > div:after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  height: 2px;
+  width: 100%;
+  background: var(--dark-color);
+}
+.hamburger > div:after {
+  top: 8px;
+}
+/* Cross animation */
+.toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+.toggler:checked + .hamburger > div:before,
+.toggler:checked + .hamburger > div:after {
+  transform: rotate(90deg);
+  top: 0;
+}
+/* rotate when checheked and hover */
+.toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+nav .menu-content div ul li {
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+nav .menu-content {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 200vh;
+  width: 200vw;
+  z-index: 9;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(225, 225, 225, 0.8)
+  );
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+nav .menu-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+nav .menu-content div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+nav .menu-content div ul li a {
+  font-size: 25px;
+}
+nav .menu-content div .btn {
+  font-size: 25px;
+}
+
+nav .menu-content div {
+  position: absolute;
+  width: 90vw;
+  height: 100vh;
+  z-index: 12;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  border-radius: 50%;
+}
+nav .menu-wrap .toggler:checked ~ .menu-content {
+  visibility: visible;
+}
+nav .menu-wrap .toggler:checked ~ .menu-content div {
+  transform: scale(1);
+}
