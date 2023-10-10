@@ -68,7 +68,7 @@ nav li a:hover {
   gap: 12px;
 }
 ul li a i sup {
-  padding: 3px 5px;
+  padding: 4px 5px;
   color: var(--white-color);
   background: var(--primary-color);
   border-radius: 50%;
