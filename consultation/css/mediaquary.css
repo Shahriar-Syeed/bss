@@ -71,6 +71,9 @@
   .hero-title .hero-title-small-font {
     font-size: 40px;
   }
+  .hero-content .text-area {
+    gap: 32px;
+  }
   .section-padding {
     padding: 50px 0;
   }
@@ -149,7 +152,7 @@
     height: 100vh;
   }
   .hero-content .text-area {
-    gap: 8px;
+    gap: 20px;
   }
   .work-title {
     margin-bottom: 0;
