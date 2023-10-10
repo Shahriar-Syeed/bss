@@ -78,7 +78,7 @@
     padding: 50px 0;
   }
   .achive-item {
-    width: 50%;
+    width: 37%;
   }
   .about-wrapper {
     flex-direction: column;
@@ -130,7 +130,7 @@
     padding: 0 8px;
   }
   .achive-item {
-    width: 50%;
+    width: 100%;
   }
   .section-padding {
     padding: 46px 0;
