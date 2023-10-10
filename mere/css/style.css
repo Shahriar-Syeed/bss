@@ -230,7 +230,7 @@ ul li a i sup {
   border-radius: 15px;
 }
 .achive-img-wrapper div:nth-child(odd) img {
-  transform: scale(0.7);
+  transform: scale(0.68);
 }
 .achive-img-container {
   background: var(--light-shade-color);

@@ -148,7 +148,7 @@
     margin-bottom: 24px;
   }
   .hero-img {
-    background: url(../img/hero-img.webp) no-repeat right bottom/contain;
+    background: url(../img/hero-img.webp) no-repeat left bottom/80vh;
   }
   .hero-content {
     align-items: center;
