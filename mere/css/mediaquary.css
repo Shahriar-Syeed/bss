@@ -197,6 +197,12 @@
   .rating-logo {
     margin-left: 0;
   }
+  .achiv-count {
+    font-size: 32px;
+  }
+  .testimonial-title.section-padding {
+    padding: 48px 0 20px 0;
+  }
   .footer-wrapper {
     grid-template-columns: 100%;
     /* justify-items: baseline; */
