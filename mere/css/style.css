@@ -203,6 +203,10 @@ ul li a i sup {
   /* height: 200px; */
   gap: 20px;
 }
+/* about-us */
+.hero-title.about-us-title {
+  margin-bottom: 32px;
+}
 
 /* <!-- -------------- -->
 <!-- achive-section -->
@@ -225,18 +229,18 @@ ul li a i sup {
 }
 .achive-img-container img {
   object-fit: cover;
-  aspect-ratio: 1 / 1;
+
   width: 100%;
   border-radius: 15px;
 }
-.achive-img-wrapper div:nth-child(odd) img {
-  transform: scale(0.68);
-}
+
 .achive-img-container {
   background: var(--light-shade-color);
-  padding: 5% 2.5%;
+  padding: 10% 2%;
   overflow: hidden;
+  height: 50%;
 }
+
 .achive-background {
   background: var(--light-dark-shade-color);
 }
@@ -255,7 +259,7 @@ ul li a i sup {
   gap: 10px;
   flex: 1;
   width: 25%;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 .achiv-count {
   font-size: 39px;

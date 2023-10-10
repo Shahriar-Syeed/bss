@@ -122,6 +122,9 @@
   .section-padding {
     padding: 64px 0;
   }
+  .achive-wrapper {
+    padding: 64px 0 32px 0;
+  }
   .achive-item {
     flex-basis: 45%;
   }
@@ -185,13 +188,15 @@
     height: auto;
     flex-direction: column;
   }
+
   .blog-content .btn-container .btn-img-container {
     height: 100px;
     flex: 1;
   }
   .achive-img-wrapper .achive-img-container {
     flex: none;
-    width: 100%;
+    width: 88%;
+    padding: 23% 14%;
   }
 
   .achive-img-wrapper div:nth-child(odd) {
