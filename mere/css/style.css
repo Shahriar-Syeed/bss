@@ -67,6 +67,16 @@ nav li a:hover {
   flex-direction: column;
   gap: 12px;
 }
+ul li a i sup {
+  padding: 3px 5px;
+  color: var(--white-color);
+  background: var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  bottom: 5px;
+  right: 2px;
+  font-size: 8px;
+}
 #navbar.top .header-button ul li:nth-child(2),
 #navbar.top .header-button ul li:nth-child(3) {
   background: rgba(255, 255, 255, 0.8);
