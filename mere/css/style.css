@@ -230,7 +230,7 @@ ul li a i sup {
   border-radius: 15px;
 }
 .achive-img-wrapper div:nth-child(odd) img {
-  transform: scale(0.9);
+  transform: scale(0.7);
 }
 .achive-img-container {
   background: var(--light-shade-color);
@@ -254,7 +254,7 @@ ul li a i sup {
   align-items: center;
   gap: 10px;
   flex: 1;
-  min-width: 230px;
+  width: 25%;
   margin-bottom: 28px;
 }
 .achiv-count {
@@ -327,6 +327,7 @@ ul li a i sup {
 }
 .logo-container img {
   height: 50px;
+  width: 100px;
   stroke: #333;
   fill: #000;
 }

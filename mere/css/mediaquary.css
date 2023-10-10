@@ -122,6 +122,9 @@
   .section-padding {
     padding: 64px 0;
   }
+  .achive-item {
+    flex-basis: 45%;
+  }
   .testimonial-wrapper {
     grid-template-columns: 1fr;
   }
@@ -196,6 +199,9 @@
   }
   .rating-logo {
     margin-left: 0;
+  }
+  .achive-item {
+    flex-basis: 100%;
   }
   .achiv-count {
     font-size: 32px;
