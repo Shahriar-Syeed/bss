@@ -310,7 +310,6 @@ nav .btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   border-radius: 20px;
 }
 .newsletter {
