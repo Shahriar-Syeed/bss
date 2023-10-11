@@ -2,19 +2,52 @@
   .section-padding {
     padding: 6.4rem 0;
   }
+  .tartiary-title {
+    margin-bottom: 3.8rem;
+  }
 }
 @media (max-width: 992px) {
   .section-padding {
     padding: 6rem 0;
+  }
+  .tartiary-title {
+    margin-bottom: 3.6rem;
+  }
+  .feature-wrapper {
+    flex-wrap: wrap;
+  }
+  .feature-wrapper h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+  .feature-container {
+    flex: 1;
   }
 }
 @media (max-width: 768px) {
   .section-padding {
     padding: 5.6rem 0;
   }
+  .tartiary-title {
+    margin-bottom: 3.4rem;
+  }
+  .feature-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-container {
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
 }
 @media (max-width: 578px) {
   .section-padding {
     padding: 5.2rem 0;
+  }
+  .tartiary-title {
+    margin-bottom: 3.2rem;
   }
 }

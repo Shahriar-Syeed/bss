@@ -9,7 +9,7 @@ header {
       transparent,
       rgba(255, 255, 255)
     ),
-    url(../img/Rectangle\ 1441.jpg) no-repeat center center/cover;
+    url(../img/hero-img.jpg) no-repeat center center/cover;
   /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #fff 100%),
     url(../img/Rectangle\ 1441.jpg) lightgray 50% / cover no-repeat;
   line-height: 1.2; */
@@ -34,6 +34,7 @@ nav {
 nav div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav .logo {
   display: flex;
@@ -92,7 +93,16 @@ nav ul li:hover > ul {
 nav .btn {
   margin-left: 12px;
 }
-
+a i sup {
+  padding: 4px 5px;
+  color: var(--white-color);
+  background: var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  bottom: 5px;
+  right: 2px;
+  font-size: 8px;
+}
 .menu-wrap {
   display: none;
   position: relative;
@@ -158,11 +168,12 @@ nav .btn {
 /* //////////////// */
 /* Feature Section  */
 /* //////////////// */
+
 .feature-wrapper {
   display: flex;
   gap: 1.2rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 .feature-wrapper h2 {
   /* width: 21.9rem; */
@@ -176,7 +187,51 @@ nav .btn {
   display: flex;
   flex-direction: column;
   max-width: 31.2rem;
+  gap: 1.6rem;
+  justify-content: space-between;
+  align-items: stretch;
 }
 .feature-container h3 {
   font-size: 2.5rem;
+}
+/* //////////////// */
+/* Product Section  */
+/* //////////////// */
+.product-section {
+  background: var(--light-color);
+}
+
+.pils-tab {
+  margin: 0.8rem auto;
+  background: var(--light-shade-color);
+  max-width: 36rem;
+  border-radius: 4.6rem;
+  padding: 0.8rem;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.pils-tab li {
+  border-radius: 1.6rem;
+  position: relative;
+}
+.pils-tab li input {
+  position: absolute;
+  opacity: 0;
+}
+.pils-tab li label {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  height: 100%;
+  cursor: pointer;
+}
+.pils-tab li input:checked + label {
+  background: var(--white-color);
+  border-radius: 3.2rem;
+}
+/* product slider */
+.product-slider-wrapper {
+  display: flex;
 }
