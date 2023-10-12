@@ -93,14 +93,18 @@ nav ul li:hover > ul {
 nav .btn {
   margin-left: 12px;
 }
+a i {
+  line-height: 1;
+}
 a i sup {
-  padding: 4px 5px;
+  padding: 0.4rem 0.56rem;
+  line-height: 1;
   color: var(--white-color);
   background: var(--primary-color);
   border-radius: 50%;
   position: relative;
   bottom: 5px;
-  right: 2px;
+  right: 4px;
   font-size: 8px;
 }
 .menu-wrap {
@@ -191,9 +195,7 @@ a i sup {
   justify-content: space-between;
   align-items: stretch;
 }
-.feature-container h3 {
-  font-size: 2.5rem;
-}
+
 /* //////////////// */
 /* Product Section  */
 /* //////////////// */
@@ -232,6 +234,55 @@ a i sup {
   border-radius: 3.2rem;
 }
 /* product slider */
+.product-slider {
+  margin: 12rem 0;
+}
 .product-slider-wrapper {
   display: flex;
+  justify-content: space-between;
+}
+.product-card {
+  border-radius: 16px;
+}
+.product-card .card-img-container {
+  background: #fafafa;
+  position: relative;
+  border-radius: 16px 16px 0 0;
+  z-index: 2;
+  perspective: 215px;
+  padding: 0 1.6rem;
+}
+.product-card .card-img-container img {
+  position: relative;
+  bottom: 44px;
+  z-index: 4;
+}
+.product-card .card-img-container:after {
+  content: "";
+  position: absolute;
+  bottom: 71px;
+  left: 124px;
+  width: 101px;
+  height: 69px;
+  background: rgba(0, 0, 0, 0.09);
+  filter: blur(6.4px);
+  z-index: 3;
+  transform: rotateX(-126deg) rotateY(4deg) translate3d(-40px, -3px, 0px)
+    skew(-39deg, 13deg);
+}
+
+.product-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  padding: 1.6rem;
+  border-radius: 0 0 16px 16px;
+}
+.product-card figcaption .card-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-card .sub-title {
+  min-width: 210px;
 }

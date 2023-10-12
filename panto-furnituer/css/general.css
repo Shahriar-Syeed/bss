@@ -12,6 +12,7 @@
   --light-color: #f7f7f7;
   --light-shade-color: #eeeeee;
   --white-color: #fff;
+  --light-text-color: #c8c8c8;
 }
 
 * {
@@ -79,12 +80,19 @@ img {
   transition: all 0.8s ease;
   margin-top: -0.8rem;
 }
+
 .btn-ghost:hover {
   color: var(--primary-shade-color);
   gap: 1.6rem;
 }
 .btn-ghost:hover .fa-arrow-right-long {
-  transform: rotate(360deg);
+  transform: rotateZ(360deg);
+}
+.btn-plus {
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  line-height: 1;
 }
 .btn-rounded {
   border-radius: 8px;
@@ -176,6 +184,13 @@ img {
   line-height: 1.2;
   margin-bottom: 4rem;
 }
+.sub-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.catd-tag {
+  color: #c8c8c8;
+}
 .detail-text {
   font-weight: 400;
   line-height: 1.6;
@@ -187,6 +202,9 @@ img {
 }
 .text-left {
   text-align: left !important;
+}
+.bg-white {
+  background: var(--white-color);
 }
 .section-padding {
   padding: 6.8rem 0;
@@ -201,4 +219,8 @@ img {
   height: 4px;
   width: 9rem;
   background: var(--primary-color);
+}
+
+.rating-logo {
+  color: var(--primary-color);
 }
