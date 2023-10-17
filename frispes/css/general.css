@@ -6,7 +6,7 @@
   --bs-primary-text: #ff5722;
   --bs-secondary-text-primary: #10375c;
   --bs-primary: #ff5722;
-  --bs-primary-rgb: rgb(255, 87, 34);
+  /* --bs-primary-rgb: rgb(255, 87, 34); */
   --bs-primary-border: #ff5722;
   --primary-shade-color: #dd2c00;
   --secondary-color: #10375c;
@@ -16,6 +16,7 @@
   --light-dark-shade-color: #9a9a9a;
   --light-color: #f8f8f8;
   --white-color: #fff;
+  --dark-tint-text-color:#6a6a6a;
   --light-text-color: #dbdcdc;
 }
 .btn-primary {
@@ -73,7 +74,42 @@
  .text-secondary-color{
   color:var(--secondary-color)
  }
- .long-dash{
-  width: 16px;
-  height: 2px;
+ .text-dark-color{
+
+   color: var(--dark-color);
  }
+ .text-dark-tint-color{
+
+   color: var(--dark-tint-text-color);
+ }
+
+
+ .bg-secondary-color{
+  background-color:var(--secondary-color);
+  color: var(--white-color);
+  
+}
+.bg-secondary-shade-color{
+  background-color: var(--secondary-shade-color);
+  color: var(--white-color);
+  fill:#fff;
+  stroke:#fff ;
+ }
+ 
+ .long-dash{
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--dark-color);
+ }
+ select + i {
+  color:#fff;
+  float: right;
+  margin-top: -30px;
+  margin-right: 5px;
+  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+  pointer-events: none;
+  /* everything after this is just to cover up the original arrow */
+  /* (for browsers that don't support the syntax used above) */
+  padding-right: 5px;
+}
