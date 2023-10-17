@@ -73,3 +73,7 @@
  .text-secondary-color{
   color:var(--secondary-color)
  }
+ .long-dash{
+  width: 16px;
+  height: 2px;
+ }
