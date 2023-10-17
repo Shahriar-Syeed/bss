@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --primary-color: #ff5722;
+  --bs-primary-text: #ff5722;
+  --bs-secondary-text-primary: #10375c;
+  --bs-primary: #ff5722;
+  --bs-primary-rgb: rgb(255, 87, 34);
+  --bs-primary-border: #ff5722;
+  --primary-shade-color: #dd2c00;
+  --secondary-color: #10375c;
+  --secondary-shade-color: #0d2c4a;
+  --secondary-background-color: #0d2c4a;
+  --dark-color: #222831;
+  --light-dark-shade-color: #9a9a9a;
+  --light-color: #f8f8f8;
+  --white-color: #fff;
+  --light-text-color: #dbdcdc;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ff5722;
+  --bs-btn-border-color: #ff5722;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #dd2c00;
+  --bs-btn-hover-border-color: #dd2c00;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #dd2c00;
+  --bs-btn-active-border-color: #dd2c00;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #ff5722;
+  --bs-btn-disabled-border-color: #ff5722;
+}
+.btn-outline-primary {
+  --bs-btn-color: #ff5722;
+  --bs-btn-border-color: #ff5722;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ff5722;
+  --bs-btn-hover-border-color: #ff5722;
+  --bs-btn-focus-shadow-rgb: 13,110,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ff5722;
+  --bs-btn-active-border-color: #ff5722;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #ff5722;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #ff5722;
+  --bs-gradient: none;
+}
+ html,
+ body{
+  font-family: 'Lato', sans-serif;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6{
+  font-family: 'Lora', serif;
+ }
+ .navbar-brand{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+ }
+
+ .text-primary-color{
+  color:var(--primary-color)
+ }
+ .text-secondary-color{
+  color:var(--secondary-color)
+ }

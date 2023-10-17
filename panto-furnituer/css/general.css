@@ -140,7 +140,7 @@ img {
 }
 .container {
   max-width: 1320px;
-  width: 88%;
+  width: 90%;
   margin: 0 auto;
 }
 .container-outer {
@@ -181,15 +181,21 @@ img {
 .tartiary-title {
   font-size: 3.9rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 4rem;
 }
 .sub-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 .catd-tag {
   color: #c8c8c8;
+}
+.tag-primary{
+  color:var(--primary-color);
+  letter-spacing: 1.2px;
+  margin-top: 2.4rem;
+
 }
 .detail-text {
   font-weight: 400;
@@ -222,5 +228,43 @@ img {
 }
 
 .rating-logo {
-  color: var(--primary-color);
+  color: #f5b76e;
 }
+.my-auto{
+ margin-left:auto; 
+ margin-right:auto; 
+}
+.w-25{
+  width:25%;
+}
+.w-33{
+  width: 33%;
+}
+.w-50{
+  width:50%;
+}
+.w-66{
+  width:66%;
+}
+.w-75{
+  width:75%;
+}
+.w-100{
+  width:100%;
+}
+.flex{
+  display: flex;
+}
+.justify-content-center{
+  justify-content: centter;
+}
+  .align-items-center{
+    align-items: center;
+  }
+
+  .position-relative{
+    position: relative;
+  }
+  .z-2{
+    z-index: 2;
+  }

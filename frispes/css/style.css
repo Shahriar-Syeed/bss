@@ -1,0 +1,8 @@
+/* Navvbar */
+header .nav-link{
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+header .nav-link:hover{
+  border-bottom: 2px solid var(--primary-color);
+}

@@ -8,6 +8,7 @@ nav .nav-content {
 /* hamburger menu */
 .menu-wrap {
   display: block;
+  min-height: 3.64rem;
 }
 /* creating hamburger */
 .menu-wrap .toggler {
@@ -66,33 +67,40 @@ nav .menu-content div ul li {
   display: block;
   text-align: center;
   justify-content: center;
+  padding:0;
+
 }
 nav .menu-content {
   position: fixed;
   top: 0%;
   left: 0%;
-  height: 200vh;
+  height: 100vh;
   width: 200vw;
   z-index: 9;
   background: rgba(0, 0, 0, 0.8);
   visibility: hidden;
   transition: all 0.4s ease;
+  
 }
 nav .menu-content div {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 12px;
 }
 nav .menu-content div > ul {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
+  overflow-y: scroll;
+  padding-top: 16px;
 }
 nav .menu-content div ul li a {
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 1;
 }
 nav .menu-content div .btn {
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 1;
 }
 
 nav .menu-content div {
@@ -117,4 +125,11 @@ nav ul li:hover > ul {
   position: relative;
   width: 100%;
   border: 1px dotted var(--primary-color);
+ 
+}
+@media (max-height:440px) {
+  nav .menu-content{
+    overflow-y: scroll;
+  }
+  
 }
