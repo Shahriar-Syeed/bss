@@ -6,3 +6,20 @@ header .nav-link{
 header .nav-link:hover{
   border-bottom: 2px solid var(--primary-color);
 }
+
+/* Hero section */
+.hero-section{
+  padding: 3rem 0 4rem;
+}
+.ms-negetive{
+  margin-left: -6rem;
+  margin-right: -4rem;
+}
+.hero-idicator.carousel-indicators [data-bs-target] {
+  width: 8px;
+}
+
+.hero-idicator.carousel-indicators .active{
+  width:30px;
+  background-color: var(--primary-color);
+}
