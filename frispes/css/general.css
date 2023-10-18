@@ -113,4 +113,6 @@
   /* (for browsers that don't support the syntax used above) */
   padding-right: 5px;
 }
-
+.section-padding {
+  padding: 68px 0;
+}

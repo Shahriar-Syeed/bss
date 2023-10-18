@@ -23,3 +23,96 @@ header .nav-link:hover{
   width:30px;
   background-color: var(--primary-color);
 }
+/* experience-section */
+.experience-section{
+  
+}
+.experience-card{
+ max-width: 24rem;
+}
+.experience-card-hover-conent{
+  opacity: 0;
+  transition: all 0.4s ease;
+  
+}
+.experience-card:hover img.card-img-top{
+  opacity: 0;
+}
+.experience-card:hover .experience-card-hover-conent{
+  opacity: 1;
+}
+.btn-experiance{
+  padding: 1rem 2rem;
+  top:65.2%;
+  overflow-y: hidden;
+}
+.btn-experiance:hover{
+  background-color: var(--primary-color);
+}
+.experience-card:hover .btn-experiance{
+  top:auto;
+  bottom:28px;
+}
+.btn-experiance span{
+ margin-left: -149px;
+  transition: margin-left 0.5s ease 0.1s;
+}
+.btn-experiance:hover span{
+  margin-left: 0;
+}
+.experience-card-hover-conent::after{
+  content: '';
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background: url(../img/experience-bg-pattern.png) no-repeat 100% 0%/50%;
+  z-index: 3;
+  top:12px;
+  right:12px
+}
+
+.experiance-slider .carousel-indicators{
+  right:auto;
+  bottom:auto;
+  top: 56px;
+  left: -236px;
+  z-index: 4;
+  transform: rotate(90deg);
+}
+  .experiance-slider .carousel-indicators [data-bs-target]{
+    background-color: #dfdfdf;
+    margin:0;
+  }
+  .experiance-slider .carousel-indicators .active {
+    opacity: 1;
+    background-color: var(--primary-color);
+}
+.experiance-slider .carousel-control-next, .experiance-slider .carousel-control-prev{
+  opacity: 1;
+  z-index: 4;
+  bottom: auto;
+  left: auto;
+  right:50px;
+  top:-50px;
+  width:4%;
+  transition: all 3s ease;
+}
+.experiance-slider .carousel-control-prev{
+  right: 120px;
+}
+.experiance-slider .carousel-control-prev .carousel-control-prev-icon {
+  
+  background-image: url(../img/icon/left-arrow-svgrepo-com.svg);
+}
+.experiance-slider .carousel-control-next .carousel-control-next-icon {
+  
+  background-image: url(../img/icon/right-arrow-svgrepo-com.svg);
+}
+.experiance-slider .carousel-control-prev{
+}
+  .experiance-slider .carousel-control-prev:hover .carousel-control-prev-icon {
+  background-image: url(../img/icon/left-arrow-long-svgrepo-com.svg);
+}
+  .experiance-slider .carousel-control-next:hover .carousel-control-next-icon {
+  background-image: url(../img/icon/right-arrow-long-svgrepo-com.svg);
+}
