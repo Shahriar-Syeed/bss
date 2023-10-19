@@ -8,11 +8,17 @@
   .experiance-slider .carousel-indicators{
 
     left: -200px;}
+    .btn-help{
+      padding: 50px 64px 30px;
+    }
 }
 @media (max-width: 992px){
   .experiance-slider .carousel-indicators{
 
     left: -167px;}
+    .btn-help{
+      padding: 50px 30px 30px;
+    }
 }
 @media (max-width: 768px){
   .experiance-slider .carousel-indicators{

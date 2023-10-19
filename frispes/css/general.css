@@ -127,24 +127,37 @@
 .tartiary-padding{
   padding-bottom: 32px;
 }
-.btn-help{
+.btn-help {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.096);
-  padding: 16px 32px;
+  padding: 50px 80px 30px;
   display: flex;
   flex-direction: column;
-  gap:8px;
-  position:relative;
+  gap: 35px;
+  position: relative;
   z-index: 1;
   flex-grow: 0;
   flex-shrink: 1;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
 }
-.btn-help i{
+.btn-help i {
   background-color: var(--primary-color);
   color: var(--white-color);
   position: relative;
   z-index: 2;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.096);
-  /* margin-bottom: -68px; */
+  margin-bottom: -65px;
   line-height: 1.5;
-  padding:8px 1px;
+  padding: 8px 16px;
+  display: block;
+}
+.btn-help:hover{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.btn-help:hover i{
+  box-shadow: 0 2px 12px rgba(255, 86, 34, 0.3);
+  background-color: var(--white-color);
+  color: var(--dark-color);
 }
