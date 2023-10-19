@@ -127,3 +127,24 @@
 .tartiary-padding{
   padding-bottom: 32px;
 }
+.btn-help{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.096);
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  position:relative;
+  z-index: 1;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.btn-help i{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.096);
+  /* margin-bottom: -68px; */
+  line-height: 1.5;
+  padding:8px 1px;
+}
