@@ -55,6 +55,10 @@
  body{
   font-family: 'Lato', sans-serif;
  }
+ a{
+  text-decoration: none;
+  color:inherit;
+ }
  h1,
  h2,
  h3,
@@ -95,7 +99,10 @@
   fill:#fff;
   stroke:#fff ;
  }
- 
+ .bg-dark-color{
+  color: var(--dark-color);
+  color: var(--white-color);
+ }
  .long-dash{
   display: inline-block;
   width: 60px;

@@ -116,3 +116,44 @@ header .nav-link:hover{
   .experiance-slider .carousel-control-next:hover .carousel-control-next-icon {
   background-image: url(../img/icon/right-arrow-long-svgrepo-com.svg);
 }
+
+/* Feature */
+
+/* feature-tab */
+.facility-tab-nav.nav-tabs .nav-link{
+  color:var(--dark-color);
+  font-weight: 600;
+  /* padding: 1rem; */
+}
+.facility-tab-nav.nav-tabs .nav-link:hover{
+  box-shadow: 2px 2px 4px rgba(255, 86, 34, 0.4);
+  transform: translate(1px, -1px);
+}
+.facility-tab-nav.nav-tabs .nav-link.active{
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  box-shadow: 2px 2px 4px rgba(255, 86, 34, 0.4);
+  transform: translate(1px, -1px);
+}
+/* Gallery section */
+.gallery-section{
+  padding-bottom: 0;
+}
+.margin-bottom-negetive{
+  margin-bottom: -40px;
+}
+
+.gallery-wrapper{
+  
+  top:-240px;
+}
+
+
+
+/* blog section */
+.blog-section{
+  background-color: #F8F8F8;
+}
+
+
+
