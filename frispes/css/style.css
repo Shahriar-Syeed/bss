@@ -139,20 +139,32 @@ header .nav-link:hover{
 .gallery-section{
   padding-bottom: 0;
 }
-.margin-bottom-negetive{
+/* .margin-bottom-negetive{
   margin-bottom: -40px;
-}
+} */
 
 .gallery-wrapper{
   
-  top:-240px;
+  top:-140px;
 }
 
+/* Logo Section */
+.logo-section{
+  margin-top: -40px;
+}
 
+/* testimonial-section */
+.testimonial-content{
+  gap: 48px;
+}
 
 /* blog section */
 .blog-section{
   background-color: #F8F8F8;
+}
+.testimonial-card{
+  
+  max-width: 420px;
 }
 
 
