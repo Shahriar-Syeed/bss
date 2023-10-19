@@ -1,0 +1,28 @@
+@media (max-width: 1400px){
+  .experiance-slider .carousel-indicators{
+
+    top: 37px;
+    left: -240px;}
+}
+@media (max-width: 1200px){
+  .experiance-slider .carousel-indicators{
+
+    left: -200px;}
+}
+@media (max-width: 992px){
+  .experiance-slider .carousel-indicators{
+
+    left: -167px;}
+}
+@media (max-width: 768px){
+  .experiance-slider .carousel-indicators{
+
+    left: -138px;}
+}
+
+@media (max-width: 578px){
+
+  .experiance-slider .carousel-indicators{
+
+    left: -117px;}
+}

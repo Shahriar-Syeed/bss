@@ -74,8 +74,8 @@ header .nav-link:hover{
 .experiance-slider .carousel-indicators{
   right:auto;
   bottom:auto;
-  top: 56px;
-  left: -236px;
+  top: 37px;
+  left: -268px;
   z-index: 4;
   transform: rotate(90deg);
 }
@@ -165,6 +165,7 @@ header .nav-link:hover{
 .testimonial-card{
   
   max-width: 420px;
+  min-width: 400px;
 }
 
 
