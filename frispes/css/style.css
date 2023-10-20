@@ -43,7 +43,8 @@ header .nav-link:hover{
 }
 .btn-experiance{
   padding: 1rem 2rem;
-  top:65.2%;
+  top:63.2%;
+  
   overflow-y: hidden;
 }
 .btn-experiance:hover{
@@ -165,8 +166,18 @@ header .nav-link:hover{
 .testimonial-card{
   
   max-width: 420px;
-  min-width: 400px;
+  min-width: 337px;
 }
+.blog-container .row > div:not(:first-child) .card .card-body{
+  min-height: 159px;
+}
+/* CTA section */
+.cta-img-container{
+  background: url(../img/icon/Pattern.png) no-repeat center center/contain;
+}
+/* Footer section */
 
+.footer-social-logo li:hover{
+  color:var(--primary-color);
 
-
+}

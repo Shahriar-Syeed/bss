@@ -91,7 +91,7 @@
 
         <div class="d-grid">
           <div class="hero-content row align-items-center">
-            <div class="col-md-7">
+            <div class="col-md-7 order-0">
               <p class="text-dark-color d-flex align-items-center gap-3">Introducing <span class="long-dash"></span></p>
             <h1 class="hero-title ">
               <span class="text-primary-color">Revolutionary</span><span class="text-secondary-color"> co-working
@@ -101,18 +101,15 @@
                 innovation</span> 
             </h1>
             </div>
-            <div class="col-md-5 align-self-end">
+            <div class="col-md-5 align-self-end order-1">
               <p class="pb-5">
                 In frispes, we spearhead new initiatives and
     provide mentorship to a new startup, and
     help grow their opportunities in key local,
     regional and global markets
               </p>
-            </div>
-            
-    
-    
-            <div class="col-md-4 position-relative z-2">
+            </div>   
+            <div class="col-md-4 position-relative z-2 order-3 ms-1 me-1 ms-md-auto me-md-auto">
               <form>
                 <fieldset class="bg-secondary-color p-3">
                   <h4 class="mb-3">Find your space now</h4>
@@ -152,7 +149,7 @@
                 </fieldset>
               </form>
             </div>
-            <div class="col-md-8 flex-grow-1 ms-negetive">
+            <div class="col-md-8 flex-grow-1 ms-negetive order-2 order-md-4">
               <div id="heroSlider" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-indicators hero-idicator">
                   <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -188,7 +185,7 @@
     </div>
   </header>
   <!-- --------------- -->
-  <!-- feature section -->
+  <!-- experiance section -->
   <!-- --------------- -->
 
 
@@ -211,7 +208,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="d-flex gap-2 justify-content-between">
+          <div class="d-flex flex-column flex-md-row gap-2 justify-content-between">
             <div class="card experience-card position-relative border-0 rounded-0">
               <div class="position-absolute start-0 top-0 w-100 h-100 z-2 experience-card-hover-conent d-flex justify-content-center align-items-center flex-column p-2 bg-secondary-color">
                 <h2 >Work with team
@@ -368,7 +365,7 @@
         <div class="col-md-6">
           <div class="d-gid gap-1">
             <div class="row text-secondary-color">
-              <div class="col-md-6 d-flex gap-3">
+              <div class="col-6 d-flex gap-3">
                 
                 <div class="logo-container">
                   <img src="./img/icon/meeting-room 1.svg" alt="">
@@ -378,7 +375,7 @@
                   <p>Meeting rooms</p>
                 </div>
               </div>
-              <div class="col-md-6 d-flex gap-3">
+              <div class="col-6 d-flex gap-3">
                 
                 <div class="logo-container">
                   <img src="./img/icon/circus 1.svg" alt="">
@@ -388,7 +385,7 @@
                   <p>Evnt space</p>
                 </div>
               </div>
-              <div class="col-md-6 d-flex gap-3">               
+              <div class="col-6 d-flex gap-3">               
                 <div class="logo-container">
                   <img src="./img/icon/circus 1.svg" alt="">
                 </div>
@@ -397,7 +394,7 @@
                   <p>Countries</p>
                 </div>
               </div>
-              <div class="col-md-6 d-flex gap-3">               
+              <div class="col-6 d-flex gap-3">               
                 <div class="logo-container">
                   <img src="./img/icon/wifi 1.svg" alt="">
                 </div>
@@ -406,7 +403,7 @@
                   <p>Interner speed</p>
                 </div>
               </div>
-              <div class="col-md-6 d-flex gap-3">               
+              <div class="col-6 d-flex gap-3">               
                 <div class="logo-container">
                   <img src="./img/icon/User 24px.svg" alt="">
                 </div>
@@ -415,7 +412,7 @@
                   <p>Startup mentors</p>
                 </div>
               </div>
-              <div class="col-md-6 d-flex gap-3">               
+              <div class="col-6 d-flex gap-3">               
                 <div class="logo-container">
                   <img src="./img/icon/User 24pxdouble.svg" alt="">
                 </div>
@@ -459,10 +456,10 @@
   </div>
   <div class="container">
     <div class="row w-100 facility-tab">
-      <div class="col-3 ">
+      <div class="col-md-3">
         <!-- Tab navs -->
         <div
-          class="nav flex-column nav-tabs facility-tab-nav border-0 gap-2"
+          class="nav flex-md-column nav-tabs facility-tab-nav border-0 gap-2"
           id="v-tabs-tab"
           role="tablist"
           aria-orientation="vertical"
@@ -601,16 +598,16 @@ co-working space gallery
     </div>
     <div class=" gallery-wrapper position-relative">
       <div class="gallery-container d-flex align-items-end justify-content-between gap-2 w-100">
-        <div class="gallery-img-container">
+        <div class="gallery-img-container d-none d-xl-block">
           <img src="./img/galary-img-1.png" alt="">
         </div>
-        <div class="gallery-img-container">
-          <img src="./img/galary-img-2.png" alt="">
+        <div class="gallery-img-container w-75 w-sm-auto">
+          <img src="./img/galary-img-2.png" alt="" class="w-100">
         </div>
-        <div class="gallery-img-container">
+        <div class="gallery-img-container d-none d-sm-block">
           <img src="./img/gallery-img-3.png" alt="">
         </div>
-        <div class="gallery-img-container">
+        <div class="gallery-img-container d-none d-sm-block">
           <img src="./img/gallery-img-4.png" alt="">
         </div>
       </div>
@@ -632,22 +629,22 @@ co-working space gallery
   <div class="container">
     <div class="d-grid">
       <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-4 col-sm-6 text-center pb-4">
           <img src="./img/icon/Logo.svg" alt="">
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-4 col-sm-6 text-center pb-4">
           <img src="./img/icon/Logo-1.svg" alt="">
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-4 col-sm-6 text-center pb-4">
           <img src="./img/icon/Logo-2.svg" alt="">
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-4 col-sm-6 text-center pb-4">
           <img src="./img/icon/Logo-3.svg" alt="">
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-4 col-sm-6 text-center pb-4">
           <img src="./img/icon/Logo-4.svg" alt="">
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-4 col-sm-6 text-center pb-4">
           <img src="./img/icon/Logo-5.svg" alt="">
         </div>
       </div>
@@ -931,7 +928,7 @@ are saying
       </div>
     </div>
     <div class="container">
-      <div class="help-container d-flex gap-md-2 w-100 justify-content-between flex-column flex-md-row gap-4 mb-4 mb-md-0">
+      <div class="help-container d-flex gap-md-2 col-sm-4 w-100 justify-content-between flex-column flex-md-row gap-4 mb-4 mb-md-0">
         <div class="btn-help mb-4 mb-md-0">
           <span class="text-center ">
             How do i book a
@@ -974,9 +971,10 @@ work?
 <!-- --------------- -->
   <!-- Blog section -->
   <!-- --------------- -->
+
   <section class="blog-section section-padding">
     <div class="container">
-      <div class="section-title tartiary-padding d-flex justify-content-between">
+      <div class="section-title tartiary-padding d-md-flex justify-content-between">
         
         <h2 class="text-secondary-color mb-4">
           News, events and insights for you
@@ -989,14 +987,14 @@ work?
       </div>
       <div class="blog-container">
         <div class="d-grid">
-          <div class="row mb-4">
-            <div class="col-md-8">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mb-2 ">
               <div class="card flex-md-row rounded-0  align-items-center border-0" >
               <img class="card-img-top" src="./img/blog-img-1.png" alt="Card image cap">
               <div class="card-body bg-white">
                 <h3 class="card-title text-dark-color pb-1">Google I / 0 2020
                   news update</h3>
-                <p class="card-text text-dark-tint-color pb-4 mb-4">Out of concern for the health and safety of  
+                <p class="card-text text-dark-tint-color mb-4">Out of concern for the health and safety of  
                   our developers, employees, and local  
                   communities — and in line with recent ...</p>
                 <a href="#" class="d-flex w-100 gap-3 align-items-center">
@@ -1015,22 +1013,21 @@ work?
               </div>
               </div>
             </div>
-            <div class="col-md-4 ">
+            <div class="col-lg-4 col-md-6 mb-2">
             <div class="card rounded-0 border-0" >
               <img src="./img/blog-img-2.png" class="card-img-top rounded-0" alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column justify-content-between d-flex flex-column justify-content-between ">
                 <h4 class="card-title">Minimal workspace for inspirations</h4>
                 <p class="text-dark-tint-color">Anthony Masional</p>
                 
               </div>
             </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 ">
+        
+            <div class="col-lg-4 col-md-6 mb-2">
             <div class="card rounded-0 border-0" >
               <img src="./img/blog-img-3.png" class="card-img-top rounded-0" alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column justify-content-between">
                 <h4 class="card-title">Does productivity increase
                   when working remotely ?</h4>
                 <p class=" text-dark-tint-color">Franck Martin</p>
@@ -1038,19 +1035,19 @@ work?
               </div>
             </div>
             </div>
-            <div class="col-md-4 ">
+            <div class="col-lg-4 col-md-6 mb-2">
             <div class="card rounded-0 border-0" >
               <img src="./img/blog-img-4.png" class="card-img-top rounded-0" alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column justify-content-between">
                 <h4 class="card-title">Morning routine to boost your mood</h4>
                 <p class=" text-dark-tint-color">Elizabeth swan</p>                
               </div>
             </div>
             </div>
-            <div class="col-md-4 ">
+            <div class="col-lg-4 col-md-6 mb-2">
             <div class="card rounded-0 border-0">
               <img src="./img/blog-img-5.png" class="card-img-top rounded-0 alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column justify-content-between">
                 <h4 class="card-title">5+ tips to find comfortable co-working space</h4>
                 <p class=" text-dark-tint-color">Mykola Ilschenko</p>                
               </div>
@@ -1059,40 +1056,161 @@ work?
           </div>
         </div>
       </div>
-      
-      
-      
     </div>
   </section>
+
+<!-- --------------- -->
+<!-- CTA section -->
+<!-- --------------- -->
+
 
 <section class="cta-section bg-secondary-color ">
   <div class="container">
     <div class="d-grid">
-      <div class="col-md-6">
-        <div class="cta-content section-padding">
-          <div class="section-title tartiary-padding ">
-            <p class="d-flex align-items-center gap-3">Became a member <span class="long-dash bg-white"></span></p>
-            <h2 class=" mb-4">
-              Ready to try different
-              <br class="d-md-block d-none">
-work experience now?      
-            </h2>           
+      <div class="row">
+        <div class="col-md-6">
+          <div class="cta-content section-padding">
+            <div class="section-title tartiary-padding ">
+              <p class="d-flex align-items-center gap-3">Became a member <span class="long-dash bg-white"></span></p>
+              <h2 class=" mb-4">
+                Ready to try different
+                <br class="d-md-block d-none">
+  work experience now?      
+              </h2>           
+            </div>
+            <p>Get the best working experience that you never
+              feel before
+            </p>
+            <a href="#" class="btn btn-primary rounded-0">SIGN UP NOW</a>
           </div>
-          <p>Get the best working experience that you never
-            feel before
-          </p>
-          <a href="#" class="btn btn-primary rounded-0">SIGN UP NOW</a>
         </div>
-      </div>
-      <div class="col-md-6 position-relative">
-        <div class="cta-img-container ">
-          <img src="./img/icon/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004 1.png" alt="" class="position-relative bottom-0">
+        <div class="col-md-6 position-relative">
+          <div class="cta-img-container position-relative ">
+            <img src="./img/icon/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004 1.png" alt="" class="position-relative bottom-0 left-0 right-0">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- --------------- -->
+  <!-- Footer section -->
+  <!-- --------------- -->
+
+<footer class="bg-secondary-shade-color">
+  <div class="container">
+  <div class="d-grid">
+      <div class="row section-padding pb-0">
+        <div class="footer-col col-md-4 col-sm-8">
+          <h2 class="footer-heading footer-logo">Frispes.</h2>
+          <p class="opacity-75">
+            We offer comfortable spaces, cozy  
+  cafe, high-speed internet, spacious  
+  parking area and many more for  
+  your best workspaces and meetings
+          </p>
+          <ul class="footer-social-logo d-flex gap-2 pb-4">
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+            </li>
+            <li>
+              <a href="#">
+              <i
+              class="fa-brands fa-facebook fa-xl">
+              </i>
+            </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col col-md-2 col-sm-4">
+          <p class="footer-heading opacity-75">
+            
+            Spaces</p>
+          <ul class="footer-nav pb-4">
+            <li>
+              <a href="#">Co-working spaces</a>
+            </li>
+            <li>
+              <a href="#">Meeting rooms</a>
+            </li>
+            <li>
+              <a href="#">Event spaces</a>
+            </li>
+            <li>
+              <a href="#">Child playground</a>
+            </li>
+            <li>
+              <a href="#">Cafe & resto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col col-md-2 col-sm-4">
+          <p class="footer-heading opacity-75">Company</p>
+          <ul class="footer-nav pb-4">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Press</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col col-md-2 col-sm-4 ps-sm-0 pe-sm-0">
+          <p class="footer-heading opacity-75">Support</p>
+          <ul class="footer-nav pb-4">
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy  </a>
+            </li>
+            <li>
+              <a href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col col-md-2 col-sm-4 ps-sm-0">
+          <p class="footer-heading opacity-75">Contact Us</p>
+          <ul class="footer-nav pb-4">
+            <li>
+              <a href="emailto:Hellow@frispes.com" class="d-flex gap-1">
+                <span>E.</span> 
+                <span>Hello@frispes.com</span>
+                 </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex gap-1">
+                <span>A.</span>
+                <span>Jalan Jayakatwang No.301  
+                  Ngasem, Kediri</span> 
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex gap-1">
+                <span>p.</span> 
+                <span>(+62) 82334670000</span></a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="copy-section text-center p-1">
+    <p>Copyright &copy; 2023, All Rights Reserved</p>
+  </div>
+</footer>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>

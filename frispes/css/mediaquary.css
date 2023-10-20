@@ -11,22 +11,51 @@
     .btn-help{
       padding: 50px 64px 30px;
     }
-}
-@media (max-width: 992px){
-  .experiance-slider .carousel-indicators{
-
-    left: -167px;}
+  }
+  @media (max-width: 992px){
+    .section-padding {
+      padding: 64px 0;
+    }
+    .experiance-slider .carousel-indicators{
+      
+      left: -167px;}
+      .btn-experiance{
+        top:52.2%;
+      }
     .btn-help{
       padding: 50px 30px 30px;
     }
+    .gallery-wrapper {
+      top: 0px;
+  }
+  .logo-section {
+    margin-top: 64px;
+}
 }
 @media (max-width: 768px){
+  .ms-negetive{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .section-padding {
+    padding: 60px 0;
+  }
   .experiance-slider .carousel-indicators{
 
     left: -138px;}
+    .btn-experiance{
+      top:67.2%;
+    }
+    .experiance-slider .carousel-control-next, .experiance-slider .carousel-control-prev{
+      top:-46px;
+    }
 }
 
 @media (max-width: 578px){
+  .section-padding {
+    padding: 56px 0;
+  }
 
   .experiance-slider .carousel-indicators{
 
