@@ -50,6 +50,10 @@
     .experiance-slider .carousel-control-next, .experiance-slider .carousel-control-prev{
       top:-46px;
     }
+    .cta-img-container img{
+      left:119px;
+      width: 50%;
+    }
 }
 
 @media (max-width: 578px){
@@ -60,4 +64,8 @@
   .experiance-slider .carousel-indicators{
 
     left: -117px;}
+    .cta-img-container img{
+      left:50px;
+      width: 50%;
+    }
 }
