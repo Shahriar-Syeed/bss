@@ -64,8 +64,14 @@
   .experiance-slider .carousel-indicators{
 
     left: -117px;}
+    .gallery-img-container{
+      width: 100%;
+    }
     .cta-img-container img{
       left:50px;
       width: 50%;
+    }
+    .gallery-img-container img{
+      width: 75%;
     }
 }
