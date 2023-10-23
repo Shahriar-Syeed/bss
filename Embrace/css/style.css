@@ -1,0 +1,58 @@
+/* Hero-section */
+.hero-title{
+  font-size: 96px;
+  letter-spacing: -1.5;
+  font-weight: 500;
+  line-height: 1;
+
+}
+.hero-text{
+  font-size: 20px;
+  letter-spacing: 0.15px;
+  line-height: 1.5;
+
+}
+
+/* work- section */
+.work-text{
+  max-width: 768px;
+}
+/* CTA section */
+.cta-container{
+  background: url(../img/CTA-Banner.png) no-repeat right center/cover;
+}
+.cta-text{
+  font-size: 20px;
+  max-width: 500px;
+}
+/* Testimonial */
+.testimonial-slider{
+  position: relative;
+}
+/* .testimonial-slider .owl-nav{
+  position: absolute;
+  top: -58px;
+  right: 8px;
+}
+.testimonial-slider .owl-nav span:after{
+
+} */
+.btns-wrapper{
+  min-height: 75px;;
+}
+.customNextBtn,
+.customPreviousBtn{
+  transition: all 0.5s ease;
+}
+.customNextBtn:hover,
+.customPreviousBtn:hover{
+  background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity)) !important;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+
+.cta-section.cta-2-section{
+  background-image: url();
+}
