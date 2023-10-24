@@ -1,4 +1,8 @@
 @import url(../GeneralSans_Complete/Fonts/WEB/css/general-sans.css);
+.accordion{
+  --bs-accordion-btn-active-icon:url(../img/sub.png);
+  --bs-accordion-btn-icon:url(../img/plusblue.png);
+}
 
 *{
   box-sizing: border-box;

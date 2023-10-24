@@ -53,6 +53,24 @@
 }
 
 
-.cta-section.cta-2-section{
-  background-image: url();
+.cta-section.cta-2-section .container .cta-container{
+  background-image: url(../img/Mask\ group.png) !important;
+  background-color: #242039 !important;
 }
+
+
+/* help section  */
+
+.help-btn.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/minus-blue.png);
+}
+.help-btn.accordion-button{
+  background-color: #fff;
+}
+.help-btn.accordion-button::after {
+ 
+  background-image: url(../img/plus-blue.png);}
+  #help .accordion-item{
+    border-left: 0;
+    border-right: none;
+  }
