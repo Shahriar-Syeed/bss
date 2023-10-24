@@ -1,15 +1,43 @@
 @media (max-width:1400px){
+  .hero-title{
+    font-size: 76px;
+  }
   
 }
 @media (max-width:1200px){
-
+.hero-title{
+    font-size: 61px;
+  }
 }
 @media (max-width:992px){
-
+  .section-padding {
+      padding: 64px 0;
+    }
+.hero-title{
+    font-size: 57px;
+  }
 }
 @media (max-width:768px){
+  .section-padding {
+      padding: 60px 0;
+    }
+  .hero-content form{
+    width: 100% !important;
+    padding-bottom: 24px;
+  }
+  .cta-container > *,
+  .team-content > div:last-child{
+    width:100% !important;
+  }
+}
+@media (max-width:578px){
+  .section-padding {
+      padding: 56px 0;
+    }
 
 }
-@media (max-width:768px){
-
+@media (max-width:320px){
+ input{
+  width: 100%;
+ }
 }
