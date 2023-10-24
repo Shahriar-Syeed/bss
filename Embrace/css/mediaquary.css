@@ -21,23 +21,34 @@
   .section-padding {
       padding: 60px 0;
     }
-  .hero-content form{
+  .hero-content form,
+  .help-cta form{
     width: 100% !important;
     padding-bottom: 24px;
   }
   .cta-container > *,
-  .team-content > div:last-child{
+  .team-content > div:last-child,
+  .cta-2-section > div h1{
     width:100% !important;
+  }
+  .btns-wrapper > div:last-child{
+    position: static !important;
+  }
+  .testimonial-card > div{
+    min-height: 200px;
   }
 }
 @media (max-width:578px){
   .section-padding {
-      padding: 56px 0;
+      padding: 48px 0;
+    }
+    .hero-img-container img{
+      max-width: 75%;
     }
 
 }
 @media (max-width:320px){
  input{
-  width: 100%;
+  width: 100% !important;
  }
 }

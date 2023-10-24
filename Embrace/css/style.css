@@ -1,3 +1,12 @@
+/* Navvbar */
+header .nav-link{
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s;
+}
+header .nav-link:hover{
+  border-bottom: 2px solid var(--bs-primary);
+}
+
 /* Hero-section */
 .hero-title{
   font-size: 96px;
@@ -29,14 +38,9 @@
 .testimonial-slider{
   position: relative;
 }
-/* .testimonial-slider .owl-nav{
-  position: absolute;
-  top: -58px;
-  right: 8px;
+.testimonial-card > div{
+  min-height: 268px;
 }
-.testimonial-slider .owl-nav span:after{
-
-} */
 .btns-wrapper{
   min-height: 75px;;
 }
@@ -53,6 +57,7 @@
 }
 
 
+/* CTA 2 section */
 .cta-section.cta-2-section .container .cta-container{
   background-image: url(../img/Mask\ group.png) !important;
   background-color: #242039 !important;
@@ -69,7 +74,9 @@
 }
 .help-btn.accordion-button::after {
  
-  background-image: url(../img/plus-blue.png);}
+  background-image: url(../img/plus-blue.png);
+  border-radius: 50%;
+}
   #help .accordion-item{
     border-left: 0;
     border-right: none;
