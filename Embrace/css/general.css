@@ -6,6 +6,7 @@
 
 *{
   box-sizing: border-box;
+  
 }
 
 html,
@@ -48,3 +49,10 @@ html,
 /* h1{
   font-size: calc(2rem + 1.5vw);
 } */
+.btn{
+  --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0.6rem
+}
+.new-form-control-padding{
+  padding: 0.375rem 0.85rem;
+}

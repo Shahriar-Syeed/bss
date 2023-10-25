@@ -21,6 +21,15 @@ header .nav-link:hover{
   line-height: 1.5;
 
 }
+/* feature section */
+
+.feature-btn{
+  transition: all 0.4s ease;
+}
+.feature-btn:hover{
+  gap:1.25rem !important;
+}
+
 
 /* work- section */
 .work-text{
@@ -28,7 +37,7 @@ header .nav-link:hover{
 }
 /* CTA section */
 .cta-container{
-  background: url(../img/CTA-Banner.png) no-repeat right center/cover;
+  background: linear-gradient(rgba(13, 109, 253, 0.5), rgba(13, 109, 253, 0.5)), url(../img/CTA-Banner.png) no-repeat right center/cover;
 }
 .cta-text{
   font-size: 20px;
@@ -38,8 +47,13 @@ header .nav-link:hover{
 .testimonial-slider{
   position: relative;
 }
-.testimonial-card > div{
-  min-height: 268px;
+.testimonial-card{
+  min-height: 256px;
+  transition: all 0.4s ease;
+}
+.testimonial-card:hover{
+  background: var(--bs-primary) !important;
+  color: #fff;
 }
 .btns-wrapper{
   min-height: 75px;;
@@ -61,6 +75,12 @@ header .nav-link:hover{
 .cta-section.cta-2-section .container .cta-container{
   background-image: url(../img/Mask\ group.png) !important;
   background-color: #242039 !important;
+}
+.cta-2-img-container img{
+    max-width: 70%;
+}
+.cta-2-text{
+  max-width: 470px;
 }
 
 
