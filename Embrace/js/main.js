@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
- var owl= $(".owl-carousel");
+ var owl= $("#testimonial-slider");
  owl.owlCarousel({
     loop:true,
   margin:10,
@@ -26,3 +26,45 @@ $('.customPreviousBtn').click(function() {
   owl.trigger('prev.owl.carousel');
 });
 })
+
+// $('.owl-carousel').owlCarousel({
+//   loop:true,
+//   margin:10,
+//   nav:true,
+//   responsive:{
+//       0:{
+//           items:1
+//       },
+//       600:{
+//           items:3
+//       },
+//       1000:{
+//           items:5
+//       }
+//   }
+// })
+
+// $('#testimonial').owlCarousel({
+//   loop:false,
+//   stagePadding: 0,
+//   margin:10,
+//   dots:false,
+//   nav:true,
+//   slideBy:1,
+//   merge:true,
+//   navText: [
+//       '<i class="fa-solid fa-caret-left"></i>',
+//       '<i class="fa-solid fa-caret-right"></i>'
+//   ],
+//   responsive:{
+//       0:{
+//           items:2
+//       },
+//       370:{
+//           items:2
+//       },
+//       1100:{
+//           items:3
+//       }
+//   }
+// })
