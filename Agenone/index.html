@@ -34,7 +34,7 @@
     <!-- --------------- -->
     <!-- Nav bar section -->
     <!-- --------------- -->
-    <div class="container">
+    <div>
   
       <nav class="navbar navbar-expand-lg navbar-light p-3  bg-none" data-bs-theme="dark">
         <div class="container">
@@ -53,31 +53,34 @@
             </a>
             
             <ul class="navbar-nav ">
-              <li class="nav-item text-end">
+              <li class="nav-item text-end d-md-flex flex-column justify-content-center align-items-center">
                 <a class="nav-link mx-2 active d-inline-block d-lg-block text-white" aria-current="page" href="#">
                   Home
                 </a>
                 <span class="hover-line"></span>
               </li>
-              <li class="nav-item text-end">
-                <a class="nav-link mx-2 d-inline-block d-lg-block" href="#">Services  
+              <li class="nav-item text-end d-md-flex flex-column justify-content-center align-items-center">
+                <a class="nav-link mx-2 d-inline-block d-lg-block text-white" href="#">Services  
                   </a>
+                  <span class="hover-line"></span>
               </li>
-              <li class="nav-item text-end">
-                <a class="nav-link d-inline-block mx-2 d-lg-block" href="#">Pricing</a>
+              <li class="nav-item text-end d-md-flex flex-column justify-content-center align-items-center">
+                <a class="nav-link mx-2 d-inline-block d-lg-block text-white" href="#">Project</a>
+                <span class="hover-line"></span>
               </li>
               
-              <li class="nav-item text-end">
-                <a class="nav-link mx-2 d-inline-block d-lg-block" href="#">
+              <li class="nav-item text-end d-md-flex flex-column justify-content-center align-items-center">
+                <a class="nav-link mx-2 d-inline-block d-lg-block text-white" href="#">
                   About Us
                 </a> 
+                <span class="hover-line"></span>
               </li>
               
             </ul>
             <div class="navbar-nav gap-2 align-items-end">
               
               
-                <a class="btn btn-primary rounded-pill ">Book A Call</a>
+                <a class="btn btn-primary-color rounded-pill ">Contact Us</a>
             </div>
           </div>
           
@@ -87,45 +90,82 @@
     <!-- --------------- -->
     <!-- Hero    section -->
     <!-- --------------- -->
-    <div class="hero-section pt-4 section-padding">
+    <div class="hero-section pt-5 mt-5 section-padding">
       <div class="container ">
 
-        <div class=" d-flex flex-column flex-md-row align-items-center justify-content-between">
-          <div class="hero-content text-center text-md-start">
+        <div class=" d-flex flex-column align-items-center justify-content-between">
+          <div class="hero-content text-center ">
+            <p class=" text-white"><strong class="py-3 px-4 rounded-pill " style="background: rgba(255, 255, 255, 0.10);"><small>ONE CREATIVE DIGITAL AGENCY</small></strong></p>
             <h1 class="hero-title mb-4">
-              We Take
-              <br class="d-lg-block d-none">
-              Care Of
-              <br class="d-lg-block d-none">
-              Your Brand
+              <span class="text-primary-color">Smart Choices</span> 
+              <br >
+              <span class="text-white">For Your Business Growth</span>
+              
             </h1>
             
-              <p class="mb-4 hero-text">
-                We care about our work and we care about our clients.
+              <p class="mb-4 hero-text text-white">
+                We're a team of experienced designers, developers,
+                <br class="d-md-block d-none"> 
+                and marketers, passionate about delivering exceptional digital solutions.
               </p>
-              <form class="d-flex gap-4 w-75">
-                <input
-                  type="email"
-                  class="form-control new-form-control-padding  rounded-pill"
-                  placeholder="Enter Your Email"
-                  aria-label="Email"
-                 
-                />
-                <input type="submit" value="Late's Talk" class="btn btn-primary rounded-pill" >
-                
-              </form>
-            
+              <div class="text-center my-5 py-4">
+              
+              
+                <a class="btn btn-hero btn-primary-color rounded-pill ">Contact Us &nbsp;<i class="fa-solid fa-arrow-right fa-lg"></i></a>
+            </div>
           </div>
           <div class="hero-img-container text-center">
             <img src="./img/Hero.png" alt="" class="img-fluid">
           </div>
         </div>
+        <div class="hero-icon-area">
+          <h2 class=" hero-icon-title text-white text-center py-2">Benefit of improving your business</h2>
+          <div class=" pt-3 hero-icon-slider owl-carousel owl-theme" id="heroSlider">
+            <div class="item d-flex justify-content-center">
+              <div class="hero-icon-content d-flex flex-column justify-content-center align-items-center gap-3 p-2">
+                <div class="hero-icon-img-container ">
+                  <img src="./img/hero-icon-1.png" alt="">
+                </div>
+                <p class="text-white">Expanding the Market</p>
+    
+              </div>
+            </div>
+            <div class="item d-flex justify-content-center">
+              <div class="hero-icon-content d-flex flex-column justify-content-center align-items-center gap-3 p-2">
+                <div class="hero-icon-img-container ">
+                  <img src="./img/hero-icon-2.png" alt="">
+                </div>
+                <p class="text-white">Cost-Effective</p>
+    
+              </div>
+            </div>
+            <div class="item d-flex justify-content-center">
+              <div class="hero-icon-content d-flex flex-column justify-content-center align-items-center gap-3 p-2">
+                <div class="hero-icon-img-container ">
+                  <img src="./img/hero-icon-3.png" alt="">
+                </div>
+                <p class="text-white">More Professional</p>
+    
+              </div>
+            </div>
+            <div class="item">
+              <div class="hero-icon-content d-flex flex-column justify-content-center align-items-center gap-3 p-2">
+                <div class="hero-icon-img-container ">
+                  <img src="./img/hero-icon-4.png" alt="">
+                </div>
+                <p class="text-white">Attract Client</p>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
 
 
-<footer class="bg-light">
+<footer class="bg-dark ">
   <div class="container">
   <div class="d-grid">
       <div class="row section-padding pb-0">
