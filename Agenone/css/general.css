@@ -27,6 +27,10 @@ html,
   text-decoration: none;
   color:inherit;
  }
+ h2,
+ h3{
+  font-weight: 600;
+ }
  footer ul {
   list-style: none;
   padding: 0;
@@ -89,4 +93,25 @@ html,
   background: var(--primary-500, linear-gradient(280deg, #00796D 0%, #38C682 100%));
 background-clip: text;
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;}
+-webkit-text-fill-color: transparent;
+}
+/* Background color */
+
+.bg-primary-500{
+  background: var(--primary-color-500);
+}
+.bg-primary-400{
+  background: var(--primary-color-400);
+}
+.bg-primary-300{
+  background: var(--primary-color-300);
+}
+.bg-primary-200{
+  background: var(--primary-color-200);
+}
+.bg-primary-100{
+  background: var(--primary-color-100);
+}
+.bg-primary-50{
+  background: var(--primary-color-50);
+}

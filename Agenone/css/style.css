@@ -8,14 +8,14 @@ header{
   width: 28px;
 height: 2px;
 background: transparent;
-transition: all 5s ease;
+transition: all .3s ease;
 }
 .nav-link{
-  transition: all 5s ease;
+  transition: all .3s ease;
   
 }
 .nav-link:hover + .hover-line{
-transition: all 5s ease;
+transition: all .3s ease;
 
   background: var(--primary-color-500);
 }
@@ -29,21 +29,32 @@ transition: all 5s ease;
   letter-spacing: -1.44px;
 }
 .hero-icon-area{
-  background-image: url(../img/hero-icon-background.png);
+  background-image: url("../img/hero-icon-background-1.png");
   background-repeat: no-repeat;
   background-size: 100% 334px;
   background-position: center top;
   /* background-attachment: fixed; */
   min-height: 334px;
-  position: relative;
+  /* position: relative; */
+}
+.hero-icon-area:before{
+  content: "";
+  width: 288px;
+    height:288px;
+    background:url("../img/hero-Ornament-1-1.png") no-repeat center center / contain;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+   
 }
 .hero-icon-area:after{
   content: "";
-  width: 154px;
-    height:175px;
+  width: 288px;
+    height:288px;
     background:url("../img/hero-Ornament-1.png") no-repeat center center / contain;
-    bottom: 0;
-    right: 0;
+    bottom: -64px;
+    right: -67px;
     position: absolute;
     z-index: 1;
    
@@ -52,4 +63,98 @@ transition: all 5s ease;
  
 width: 290px;
 
+}
+
+/* Service-section */
+
+.service-btn.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/arrow-active.png);
+  transform: rotate(0deg);
+}
+.service-btn.accordion-button{
+  background-color:transparent;
+  font-size: 20px;
+}
+.service-btn.accordion-button::after {
+ 
+  background-image: url(../img/arrow-inactive.png);
+}
+
+.accordion.service-accordion{
+  --bs-accordion-border-width: 0;
+}
+
+.service-btn.accordion-button:not(.collapsed),
+.service-btn.accordion-button:not(.collapsed)::marker{
+  background: var(--primary-500, linear-gradient(280deg, #00796D 0%, #38C682 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.service-btn.accordion-button:focus{
+  box-shadow: none;
+}
+
+/* achiv-section */
+.achive-section{
+  background: var(--primary-color-50);
+
+}
+.achive-section::before{
+  content: '';
+  width: 144px;
+  height: 144px;
+  background: url(../img/achiv-bg-rnament-1.png);
+  position: absolute;
+  top:16px;
+  left: 16px;
+  z-index: 1;
+}
+.achive-section::after{
+  content: '';
+  width: 1019px;
+  height: 474px;
+  background: url(../img/achiv-bg-rnament-2.png) no-repeat center center / cover;
+  position: absolute;
+  bottom:0;
+  right: -133px;
+  z-index: 1;
+}
+/* Project Section  */
+.project-section{
+  background: url(../img/project-bg.png) no-repeat center center / cover;
+}
+.project-section::before{
+  content: '';
+  width: 259px;
+  height: 489px;
+  background: url(../img/project-ornament-1.png) no-repeat center center / cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+.project-section::after{
+  content: '';
+  width: 305px;
+  height: 300px;
+  background: url(../img/project-ornament-2.png) no-repeat center center / cover;
+  position: absolute;
+  bottom:0;
+  right: 0;
+  z-index: 1;
+}
+.project-section-title p{
+  max-width:928px;
+}
+.project-tab-nav.nav-tabs.nav-tabs .nav-link.active {
+  color: #fff !important;
+  background: var(--primary-color-500);
+  border: var(--primary-color-400);
+}
+.project-card-container .card{
+ 
+  border: 1px solid #3D414C;
+  background: #181D2A;
 }
