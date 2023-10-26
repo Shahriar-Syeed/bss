@@ -43,7 +43,7 @@ transition: all .3s ease;
   width: 288px;
     height:288px;
     background:url("../img/hero-Ornament-1-1.png") no-repeat center center / contain;
-    top: 0;
+    top: -20px;
     left: 0;
     position: absolute;
     z-index: 1;
