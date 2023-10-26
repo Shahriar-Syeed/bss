@@ -34,6 +34,7 @@ transition: all .3s ease;
   background-size: 100% 334px;
   background-position: center top;
   /* background-attachment: fixed; */
+  background-overflow:hidden;
   min-height: 334px;
   /* position: relative; */
 }
