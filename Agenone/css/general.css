@@ -115,3 +115,6 @@ background-clip: text;
 .bg-primary-50{
   background: var(--primary-color-50);
 }
+.bg-dark-color{
+  background: #0C111F;
+}

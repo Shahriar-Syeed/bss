@@ -1,4 +1,10 @@
 @media (max-width:1400px){
+  .section-padding {
+    padding: 64px 0;
+  }
+  .cta-section.section-padding{
+    padding: 74px 0;
+  }
   .hero-title{
     font-size: 66px;
   }  
@@ -8,8 +14,11 @@
   }
 }
 @media (max-width:1200px){
+  .section-padding {
+    padding: 62px 0;
+  }
   .hero-title{
-    font-size: 58px;
+    font-size: 60px;
   }  
   .hero-icon-title{
     font-size: 29px;
@@ -20,6 +29,9 @@
   }
 }
 @media (max-width:992px){
+  .section-padding {
+    padding: 56px 0;
+  }
   .hero-title{
     font-size: 52px;
   }  
@@ -31,6 +43,9 @@
 }
 }
 @media (max-width:768px){
+  .section-padding {
+    padding: 52px 0;
+  }
   .hero-title{
     font-size: 46px;
   }  
@@ -42,6 +57,9 @@
 }
 }
 @media (max-width:578px){
+  .section-padding {
+    padding: 48px 0;
+  }
   .hero-title{
     font-size: 41px;
   }  
@@ -53,5 +71,12 @@
   }
   .hero-icon-area:before {
     left: -161px;
-}
+  }
+  .cta-title{
+    font-size: 25px;
+    padding: 0 32px;
+  }
+  .footer-text{
+    max-width: 100%;
+  }
 }
