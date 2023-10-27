@@ -54,7 +54,10 @@
   }
   .hero-icon-area:before {
     left: -139px;
-}
+  }
+  .btns{
+    position: static !important;;
+  }
 }
 @media (max-width:578px){
   .section-padding {
