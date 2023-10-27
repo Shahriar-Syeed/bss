@@ -159,6 +159,16 @@ background-clip: text;
   border: 1px solid #3D414C;
   background: #181D2A;
 }
+.overrlay{
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.project-img-container{
+  cursor: pointer;
+}
+.project-img-container:hover .overrlay{
+  opacity: 1 !important;
+}
 
 /* Testimonial */
 .testimonial-slider{
