@@ -3,7 +3,7 @@
     padding: 64px 0;
   }
   .cta-section.section-padding{
-    padding: 74px 0;
+    padding: 79px 0;
   }
   .hero-title{
     font-size: 66px;
@@ -27,6 +27,9 @@
    
     left: -64px;
   }
+  .cta-section.section-padding{
+    padding: 79px 0;
+  }
 }
 @media (max-width:992px){
   .section-padding {
@@ -40,6 +43,9 @@
   }
   .hero-icon-area:before {
     left: -107px;
+}
+.cta-section.section-padding{
+  padding:63px 0;
 }
 }
 @media (max-width:768px){
@@ -57,6 +63,9 @@
   }
   .btns{
     position: static !important;;
+  }
+  .cta-section.section-padding{
+    padding:49px 0;
   }
 }
 @media (max-width:578px){
@@ -79,7 +88,39 @@
     font-size: 25px;
     padding: 0 32px;
   }
+  .cta-section.section-padding{
+    padding:43px 0;
+  }
   .footer-text{
     max-width: 100%;
   }
 }
+@media (max-width:456px){
+  .cta-section.section-padding{
+    padding:37px 0;
+  }
+      
+      .cta-title{
+        font-size: 20px;
+        
+      }
+
+    }
+@media (max-width:356px){
+      
+      .cta-title{
+        font-size: 18px;
+     
+      }
+
+    }
+@media (max-width:356px){
+      
+    
+      
+      .cta-title{
+        font-size: 16px;
+       
+      }
+    }
+    
