@@ -104,6 +104,12 @@
         font-size: 20px;
         
       }
+      .nav-tabs.project-tab-nav{
+        flex-direction: column;
+      }
+      .hero-icon-title{
+        max-width: 180px;
+      }
 
     }
 @media (max-width:356px){
