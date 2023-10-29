@@ -33,7 +33,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     var owl= $("#testimonial-slider");
     owl.owlCarousel({
-       loop:true,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
      margin:10,
      nav:false,
      // navText: ["<img src='myprevimage.png'>","<img src='mynextimage.png'>"],
