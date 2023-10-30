@@ -92,12 +92,15 @@
   .hero-icon-area:before {
     left: -161px;
   }
+  .cta-section.section-padding{
+    padding:16px 0;
+  }
+  .nav-tabs.project-tab-nav{
+    width: 90%;
+  }
   .cta-title{
     font-size: 25px;
     padding: 0 32px;
-  }
-  .cta-section.section-padding{
-    padding:43px 0;
   }
   .footer-text{
     max-width: 100%;
@@ -105,7 +108,7 @@
 }
 @media (max-width:456px){
   .cta-section.section-padding{
-    padding:37px 0;
+    padding:4px 0;
   }
       
       .cta-title{
@@ -116,6 +119,7 @@
       .hero-icon-title{
         max-width: 180px;
       }
+      
 
     }
 @media (max-width:356px){
@@ -127,17 +131,12 @@
 
     }
 @media (max-width:340px){
-      
-    
-      
+  .nav-tabs.project-tab-nav{
+    width: 100%;
+  }
       .cta-title{
         font-size: 16px;
        
-      }
-      .nav-tabs.project-tab-nav{
-        /* flex-direction: column; */
-        /* border-radius: 24px !important; */
-        /* padding: 8px; */
       }
       .nav-tabs.project-tab-nav .nav-link{
         font-size: 14px;
