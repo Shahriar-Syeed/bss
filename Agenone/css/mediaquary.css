@@ -112,9 +112,7 @@
         font-size: 20px;
         
       }
-      /* .nav-tabs.project-tab-nav{
-        flex-direction: column;
-      } */
+      
       .hero-icon-title{
         max-width: 180px;
       }
@@ -128,13 +126,21 @@
       }
 
     }
-@media (max-width:356px){
+@media (max-width:340px){
       
     
       
       .cta-title{
         font-size: 16px;
        
+      }
+      .nav-tabs.project-tab-nav{
+        /* flex-direction: column; */
+        /* border-radius: 24px !important; */
+        /* padding: 8px; */
+      }
+      .nav-tabs.project-tab-nav .nav-link{
+        font-size: 14px;
       }
     }
     
