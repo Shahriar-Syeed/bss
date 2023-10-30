@@ -33,7 +33,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
    media="screen and (max-width: 1400px)"
    href="./css/mediaquary.css"
  />
-  <title>Agenone</title>
+  <title>Traveler</title>
 </head>
 <body>
   <header >
@@ -41,69 +41,43 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <!-- Nav bar section -->
     <!-- --------------- -->
     <div>
-  
-      <nav class="navbar navbar-expand-lg navbar-light p-3  bg-none" data-bs-theme="dark">
+      <nav id="navbar-tr">
         <div class="container">
-          
-          
-          <a class="navbar-brand d-block d-lg-none" href="#">
-            <img src="./img/Logo.png" alt="">
-              
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class=" collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-            <a class="navbar-brand d-lg-block d-none" href="#">
-              <img src="./img/Logo.png" alt="">
-            </a>
-            
-            <ul class="navbar-nav ">
-              <li class="nav-item text-end d-flex justify-content-end  ">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                  <a class="nav-link mx-2 active d-inline-block d-lg-block text-white" aria-current="page" href="#">
-                    Home
-                  </a>
-                  <span class="hover-line"></span>
-                </div>
-              </li>
-              <li class="nav-item text-end d-flex justify-content-end">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                  <a class="nav-link mx-2 d-inline-block d-lg-block text-white" aria-current="page" href="#">
-                    
-                    Services  
-                    </a>
-                    <span class="hover-line"></span>
-                  </div>
-              </li>
-              <li class="nav-item text-end d-flex justify-content-end">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                  <a class="nav-link mx-2 d-inline-block d-lg-block text-white" aria-current="page" href="#">
-                    
-                    Project  
-                    </a>
-                    <span class="hover-line"></span>
-                  </div>
-              </li>
-              <li class="nav-item text-end d-flex justify-content-end">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                  <a class="nav-link mx-2 d-inline-block d-lg-block text-white" aria-current="page" href="#">
-                    
-                    About Us  
-                    </a>
-                    <span class="hover-line mb-2 mb-lg-0"></span>
-                  </div>
-              </li>              
-            </ul>
-            <div class="navbar-nav gap-2 align-items-end">
-              
-              
-                <button class="btn btn-primary-color rounded-pill"  data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Contact Us</button>
+          <div class="logo-tr">
+            <h3><a href="#">Travel<span class="text-primary-color">er</span></a></h3>
+          </div>
+          <!-- <div class="nav-content">
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Psckages</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler-tr" />
+            <div class="hamburger-tr">
+              <div></div>
+            </div>
+            <div class="menu-content">
+              <div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Psckages</a></li>
+                  <li><a href="#">Destination</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          
         </div>
-      </nav>
+      </nav>      
     </div>
     <!-- --------------- -->
     <!-- Hero    section -->
@@ -183,7 +157,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   </header>
 
     <!-- --------------- -->
-    <!-- Service section -->
+    <!-- Best section -->
     <!-- --------------- -->
 <section class="service-section section-padding">
   <div class="container">
@@ -265,8 +239,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </section>
 
 <!-- --------------- -->
-<!-- Achive   section -->
+<!-- Feature   section -->
 <!-- --------------- -->
+
 <section class="achive-section section-padding position-relative bg-primary-50 overflow-hidden">
   <div class="container">
     <div class="position-relative z-2">
@@ -299,9 +274,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 </section>
 
+
 <!-- --------------- -->
-<!-- Project section -->
+<!-- CTA section -->
 <!-- --------------- -->
+
+<section class="cta-section section-padding">
+  <div class="container">
+    <div class="footer-cta d-flex justify-content-around px-5 mx-2 flex-column flex-sm-row align-items-center gap-2">
+      <div class="">
+        <h2 class=" text-white cta-title text-center text-sm-start">
+          Let’s discuss and bring your vision to life.
+        </h2>
+      </div>
+      <div class="cta-btn-containeer">
+        <button type="button" class="btn btn-primary-color rounded-pill d-flex align-items-center gap-2"> <span>Late's Talk</span> <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ------------------- -->
+<!-- Destination section -->
+<!-- ------------------- -->
 
 <section class="project-section position-relative section-padding">
   <div class="container">
@@ -383,7 +380,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
               <div class="card rounded-4 p-3">
                 <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.p" class="card-img-top img-fluid rounded-4" alt="...">
+                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
                   <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://frispace.netlify.app/','mywindow')">
                     <img src="./img/project-icon.png" class="w-20" alt="" >
                   </div>
@@ -419,7 +416,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
               <div class="card rounded-4 p-3">
                 <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.p" class="card-img-top img-fluid rounded-4" alt="...">
+                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
                   <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://frispace.netlify.app/','mywindow')">
                     <img src="./img/project-icon.png" class="w-20" alt="">
                   </div>
@@ -455,7 +452,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
               <div class="card rounded-4 p-3">
                 <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.p" class="card-img-top img-fluid rounded-4" alt="...">
+                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
                   <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://frispace.netlify.app/','mywindow')">
                     <img src="./img/project-icon.png" class="w-20" alt="">
                   </div>
@@ -491,7 +488,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
               <div class="card rounded-4 p-3">
                 <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.p" class="card-img-top img-fluid rounded-4" alt="...">
+                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
                   <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center">
                     <img src="./img/project-icon.png" class="w-20" alt="">
                   </div>
@@ -528,35 +525,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     </div>
   </div>
 
-</section>
-
-
-<!-- --------------- -->
-<!-- Company section -->
-<!-- --------------- -->
-<section class="companny-section bg-dark-color" >
-  <div class="container">
-    <div class="row justify-content-sm-between justify-content-center text-center">
-      <div class="col-md-2 col-sm-4">
-        <img src="./img/Logo-1.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-4">
-        <img src="./img/Logo-2.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-4">
-        <img src="./img/Logo-3.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-4">
-        <img src="./img/Logo-4.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-4">
-        <img src="./img/Logo-5.png" alt="">
-      </div>
-      <div class="col-md-2 col-sm-4">
-        <img src="./img/Logo-6.png" alt="">
-      </div>
-    </div>
-  </div>
 </section>
 
 
@@ -648,24 +616,46 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   </div>
 </section>
 
-<!-- --------------- -->
-<!-- CTA section -->
-<!-- --------------- -->
 
-<section class="cta-section section-padding">
+
+<!-- --------------- -->
+<!-- Company section -->
+<!-- --------------- -->
+<section class="companny-section bg-dark-color" >
   <div class="container">
-    <div class="footer-cta d-flex justify-content-around px-5 mx-2 flex-column flex-sm-row align-items-center gap-2">
-      <div class="">
-        <h2 class=" text-white cta-title text-center text-sm-start">
-          Let’s discuss and bring your vision to life.
-        </h2>
+    <div class="row justify-content-sm-between justify-content-center text-center">
+      <div class="col-md-2 col-sm-4">
+        <img src="./img/Logo-1.png" alt="">
       </div>
-      <div class="cta-btn-containeer">
-        <button type="button" class="btn btn-primary-color rounded-pill d-flex align-items-center gap-2"> <span>Late's Talk</span> <i class="fa-solid fa-arrow-right"></i></button>
+      <div class="col-md-2 col-sm-4">
+        <img src="./img/Logo-2.png" alt="">
+      </div>
+      <div class="col-md-2 col-sm-4">
+        <img src="./img/Logo-3.png" alt="">
+      </div>
+      <div class="col-md-2 col-sm-4">
+        <img src="./img/Logo-4.png" alt="">
+      </div>
+      <div class="col-md-2 col-sm-4">
+        <img src="./img/Logo-5.png" alt="">
+      </div>
+      <div class="col-md-2 col-sm-4">
+        <img src="./img/Logo-6.png" alt="">
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- --------------- -->
+<!-- Gellary section -->
+<!-- --------------- -->
+<section class="gellary-section section-padding">
+  <div class="container">
+
+  </div>
+</section>
+
 
 <!-- --------------- -->
 <!-- footer section -->

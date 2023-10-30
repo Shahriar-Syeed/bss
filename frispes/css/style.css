@@ -24,9 +24,7 @@ header .nav-link:hover{
   background-color: var(--primary-color);
 }
 /* experience-section */
-.experience-section{
-  
-}
+
 .experience-card{
  max-width: 24rem;
 }
@@ -108,8 +106,6 @@ header .nav-link:hover{
 .experiance-slider .carousel-control-next .carousel-control-next-icon {
   
   background-image: url(../img/icon/right-arrow-svgrepo-com.svg);
-}
-.experiance-slider .carousel-control-prev{
 }
   .experiance-slider .carousel-control-prev:hover .carousel-control-prev-icon {
   background-image: url(../img/icon/left-arrow-long-svgrepo-com.svg);

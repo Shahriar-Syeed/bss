@@ -1,0 +1,220 @@
+
+/* Navbar */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+#navbar-tr.top {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(15px);
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* nav .logo-tr a h2,
+footer .footer-logo h2 {
+  width: 100%;
+  color: var(--white-color);
+} */
+
+nav .nav-content div {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 1.6rem 0;
+  transition: all 0.3s;
+}
+nav ul li a {
+  padding: 8px 16px;
+  margin: 0 5px;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+nav li a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+nav ul li > ul {
+  display: none;
+}
+nav ul li > ul > li {
+  padding: 8px 0;
+  width: 100%;
+}
+nav ul li > ul > li > a {
+  width: 90%;
+}
+
+nav ul li:hover > ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-top: 16px;
+  background-color: var(--dark-color);
+  border-radius: 4px;
+}
+
+
+.menu-wrap {
+  position: relative;
+}
+nav {
+  padding: 1.6rem 0;
+}
+nav .nav-content {
+  display: none;
+}
+
+/* hamburger menu */
+.menu-wrap {
+  display: block;
+  min-height: 3.64rem;
+}
+/* creating hamburger */
+.menu-wrap .toggler-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 12;
+  width: 52px;
+  height: 52px;
+  opacity: 0;
+  cursor: pointer;
+}
+.menu-wrap .hamburger-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  width: 30px;
+  height: 52px;
+  padding: 12px 16px;
+}
+/* hamburger lines */
+.hamburger-tr > div {
+  height: 3px;
+  max-width: 15px;
+  min-width: 15px;
+  width:15px !important;
+  background: #000;
+  transition: all 0.4s ease;
+  position: relative;
+  margin-left: auto;
+  border-radius: 30% 0 0 30%;
+}
+.hamburger-tr > div:before,
+.hamburger-tr > div:after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right:0;
+  height: 3px;
+  width: 24px;
+  background: #000;
+  border-radius: 30% 0 0 30%;
+}
+.hamburger-tr > div:after {
+  top: 8px;
+  width:30px;
+}
+/* Cross animation */
+.toggler-tr:checked + .hamburger-tr > div {
+  transform: rotate(135deg);
+}
+.toggler-tr:checked + .hamburger-tr > div:before,
+.toggler-tr:checked + .hamburger-tr > div:after {
+  transform: rotate(90deg);
+  top: 0;
+}
+/* rotate when checheked and hover */
+.toggler-tr:checked:hover + .hamburger-tr > div {
+  transform: rotate(225deg);
+}
+nav .menu-content div ul li {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding:0;
+
+}
+nav .menu-content {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 200vw;
+  z-index: 9;
+  background: rgba(255, 255, 255, 0.8);
+  visibility: hidden;
+  transition: all 0.4s ease;
+  
+}
+nav .menu-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+nav .menu-content div > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: scroll;
+  padding-top: 16px;
+}
+nav .menu-content div ul li a {
+  font-size: 20px;
+  line-height: 1;
+}
+nav .menu-content div .btn {
+  font-size: 20px;
+  line-height: 1;
+}
+
+nav .menu-content div {
+  position: absolute;
+  width: 90vw;
+  height: 100vh;
+  z-index: 12;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  border-radius: 50%;
+}
+nav .menu-wrap .toggler-tr:checked ~ .menu-content {
+  visibility: visible;
+}
+nav .menu-wrap .toggler-tr:checked ~ .menu-content div {
+  transform: scale(1);
+}
+
+nav ul li:hover > ul {
+  position: relative;
+  width: 100%;
+  border: 1px dotted var(--primary-color);
+ 
+}
+@media (max-height:440px) {
+  nav .menu-content{
+    overflow-y: scroll;
+  }
+  
+}
