@@ -201,6 +201,7 @@ background-clip: text;
   padding: 74px 0;
   background-color: #0C111F;
   clip-path: polygon(calc(100% - 80.5px) 40px, calc(100% - 80.5px) 40px, calc(100% - 81.02357px) 33.5117898px, calc(100% - 82.53936px) 27.3569024px, calc(100% - 84.96499px) 21.6176926px, calc(100% - 88.21808px) 16.3765152px, calc(100% - 92.21625px) 11.715725px, calc(100% - 96.87712px) 7.7176768px, calc(100% - 102.11831px) 4.4647254px, calc(100% - 107.85744px) 2.0392256px, calc(100% - 114.01213px) 0.5235322px, calc(100% - 120.5px) 6.6222161283942E-31px, 120.5px 0px, 120.5px 0px, 114.0117898px 0.5235322px, 107.8569024px 2.0392256px, 102.1176926px 4.4647254px, 96.8765152px 7.7176768px, 92.215725px 11.715725px, 88.2176768px 16.3765152px, 84.9647254px 21.6176926px, 82.5392256px 27.3569024px, 81.0235322px 33.5117898px, 80.5px 40px, 80.5px 144px, 80.5px 144px, 79.9764678px 150.488113px, 78.4607744px 156.642944px, 76.0352746px 162.382131px, 72.7823232px 167.623312px, 68.784275px 172.284125px, 64.1234848px 176.282208px, 58.8823074px 179.535199px, 53.1430976px 181.960736px, 46.9882102px 183.476457px, 40.5px 184px, 0.5px 184px, 0.5px 205px, 698px 205px, calc(100% - 0.5px) 205px, calc(100% - 0.5px) 184px, calc(100% - 40.5px) 184px, calc(100% - 40.5px) 184px, calc(100% - 46.98787px) 183.476457px, calc(100% - 53.14256px) 181.960736px, calc(100% - 58.88169px) 179.535199px, calc(100% - 64.12288px) 176.282208px, calc(100% - 68.78375px) 172.284125px, calc(100% - 72.78192px) 167.623312px, calc(100% - 76.03501px) 162.382131px, calc(100% - 78.46064px) 156.642944px, calc(100% - 79.97643px) 150.488113px, calc(100% - 80.5px) 144px, calc(100% - 80.5px) 40px); 
+  margin-bottom: -2px;
 }
 .cta-section.section-padding{
   padding: 73px 0;
@@ -215,12 +216,7 @@ background-clip: text;
 .cta-btn-containeer{
   min-width: 167px;
 }
-footer{
-  
-  background-color: #0C111F;
- 
-  color:#fff;
-}
+
 footer:before{
   content: "";
   width: 356px;

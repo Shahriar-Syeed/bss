@@ -121,3 +121,7 @@ background-clip: text;
 .bg-dark-color{
   background: #0C111F;
 }
+/* width */
+.w-20{
+  width:20%;
+}
