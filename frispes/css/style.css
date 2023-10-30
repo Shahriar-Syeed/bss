@@ -128,7 +128,6 @@ header .nav-link:hover{
 }
 .facility-tab-nav.nav-tabs .nav-link:hover{
   box-shadow: 2px 2px 4px rgba(255, 86, 34, 0.4);
-  transform: translate(1px, -1px);
 }
 .facility-tab-nav.nav-tabs .nav-link.active{
   color: var(--white-color);
