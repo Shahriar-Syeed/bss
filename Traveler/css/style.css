@@ -138,12 +138,18 @@ nav .nav-content {
 /* Cross animation */
 .toggler-tr:checked + .hamburger-tr > div {
   transform: rotate(135deg);
+  width: 30px !important;
+  max-width: 30px;
+  min-width: 30px;
 }
 .toggler-tr:checked + .hamburger-tr > div:before,
 .toggler-tr:checked + .hamburger-tr > div:after {
-  transform: rotate(90deg);
+  width:30px;
   top: 0;
+  transform: rotate(90deg);
 }
+
+
 /* rotate when checheked and hover */
 .toggler-tr:checked:hover + .hamburger-tr > div {
   transform: rotate(225deg);
@@ -217,4 +223,47 @@ nav ul li:hover > ul {
     overflow-y: scroll;
   }
   
+}
+/* hero section */
+
+.hero-play-btn-position{
+
+  top:40px;
+  right:40px
+}
+.hero-cta-container{
+  width:60%;
+  margin-top: -86px;
+}
+.hero-form select label{
+  font-size: 12px;
+  color: var(--typography-paragraph-color, #5C6666);
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.6px;
+text-transform: uppercase;
+}
+.hero-form select{
+
+}
+.hero-form select,
+.hero-form select:focus,
+.hero-form select option,
+.hero-form input{
+  font-family: 'El Messiri', sans-serif;
+  font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%; /* 20px */
+letter-spacing: 0.8px;
+background: var(--primary-color--25);
+box-shadow: none;
+}
+
+/* best sectoion  */
+.best-content{
+  max-width: 590px;
 }
