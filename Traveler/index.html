@@ -111,8 +111,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
         <div class="hero-cta-area">
          <form action="post">
-          <div class="d-flex p-3 gap-2 justify-content-between align-items-center rounded-4 bg-white hero-cta-container">
-            <div class="d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3">
+          <div class="row p-3 justify-content-between align-items-center rounded-4 bg-white hero-cta-container">
+            <div class=" col-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2">
               <img src="./img/hero-cta-1.png" alt="">
               <div>
                 <label class="form-label text-primary-color" for="countries">LOCATION</label>
@@ -126,8 +126,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <label for="countries"><i class="fa-solid fa-chevron-down fa-xs text-primary-color"></i></label>    
               
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3">
-              <img src="./img/hero-cta-2.png" alt="">
+            <div class=" col-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3 ">
+              <div>
+                <img src="./img/hero-cta-2.png" alt="" class="w-75">
+              </div>
               <div>
                 <label class="form-label text-primary-color" for="date">DATE</label>
                     <input type="date" name="date" id="date" value="2018-07-22" min="2018-01-01" max="2018-12-31" class="form-control bg-primary-25 border-0 ps-0">
@@ -135,7 +137,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                  
               
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3">
+            <div class=" col-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3">
               <img src="./img/hero-cta-3.png" alt="">
               <div>
                 <label class="form-label text-primary-color" for="persons">PARTICIPANT</label>
@@ -150,7 +152,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <label for="countries"><i class="fa-solid fa-chevron-down fa-xs text-primary-color"></i></label>    
               
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3" style="height: 77px; width: 130px">
+            <div class=" ccol-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3 " style="height: 77px; width: 130px">
               
               
                 
@@ -206,121 +208,256 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <section class="feature-section section-padding">
  
     <div class="container">
-      <div class="row w-100 facility-tab">
-        <div class="col-6">
+      <div class="feature-heading mb-3 pb-3">
+        <p class="subtitle">About Us</p>
+        <h1>Embark on our Exclusive Package</h1>
+      </div>
+      <div class="row w-100 facility-tab align-items-stretch">
+        <div class="col-lg-6 col-md-7 col-8">
           <!-- Tab content -->
           <div class="tab-content" id="v-tabs-tabContent">
             <div
-              class="tab-pane fade"
-              id="v-tabs-parking"
-              role="tabpanel"
-              aria-labelledby="v-tabs-parking-tab"
-            >
-            <div class="facilities-img-container">
-              <img src="./img/feature-parking.jpg" alt="">
-            </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-tabs-comfortable"
-              role="tabpanel"
-              aria-labelledby="v-tabs-comfortable-tab"
-            >
-            <div class="facilities-img-container">
-              <img src="./img/feature-comfortable.jpg" alt="">
-            </div>
-            </div>
-            <div
               class="tab-pane fade show active"
-              id="v-tabs-cafe"
+              id="v-tabs-iland"
               role="tabpanel"
-              aria-labelledby="v-tabs-cafe-tab"
+              aria-labelledby="v-tabs-iland-tab"
             >
-              <div class="facilities-img-container">
-                <img src="./img/feature-img.jpg" alt="">
-              </div>
+            
+            <div class="feature-img-container pb-3 mb-3">
+              <img src="./img/feature-img.png" alt="" class="w-100">
+            </div>
+            <p class="mb-2 pb-2 d-flex gap-3 align-items-center">
+              <span>24 - 28  july</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+              </svg>
+              <span>4 day 3 Night</span>
+            </p>
+            <h2 class="mb-3">Island Hopping Paradise</h2>
+            <p class="mb-3 pb-3">
+              Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida. Quis quis scelerisque ultrices at vulputate ultrices velit. Odio et porta nulla egestas velit porttitor sit. Augue duis felis augue interdum dolor turpis ut.
+            </p>
+            <div class="btn-container d-flex gap-3">
+              <a href="#" class="btn btn-primaty-color rounded-0">Book Now</a>
+              <a href="" class="btn btn-outline-primary-color rounded-0">Explore More</a>
+            </div>
             </div>
             <div
               class="tab-pane fade"
-              id="v-tabs-playground"
+              id="v-tabs-mountain"
               role="tabpanel"
-              aria-labelledby="v-tabs-playground-tab"
+              aria-labelledby="v-tabs-mountain-tab"
             >
-              <div class="facilities-img-container">
-                <img src="./img/feature-playgorund.jpg" alt="">
-              </div>
+            <div class="feature-img-container pb-3 mb-3">
+              <img src="./img/mountain-feature.jpg" alt="" class="w-100">
+            </div>
+            <p class="mb-2 pb-2 d-flex gap-3 align-items-center">
+              <span>24 - 28  july</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+              </svg>
+              <span>4 day 3 Night</span>
+            </p>
+            <h2 class="mb-3">>Mountain Majesty Expedition</h2>
+            <p class="mb-3 pb-3">
+              Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida. Quis quis scelerisque ultrices at vulputate ultrices velit. Odio et porta nulla egestas velit porttitor sit. Augue duis felis augue interdum dolor turpis ut.
+            </p>
+            <div class="btn-container d-flex gap-3">
+              <a href="#" class="btn btn-primaty-color rounded-0">Book Now</a>
+              <a href="" class="btn btn-outline-primary-color rounded-0">Explore More</a>
+            </div>
             </div>
             <div
               class="tab-pane fade"
-              id="v-tabs-outdoor"
+              id="v-tabs-road"
               role="tabpanel"
-              aria-labelledby="v-tabs-outdoor-tab"
+              aria-labelledby="v-tabs-road-tab"
             >
-              <div class="facilities-img-container">
-                <img src="./img/feature-outdoor.jpg" alt="">
-              </div>
+            <div class="feature-img-container pb-3 mb-3">
+              <img src="./img/road-trip-facility.jpg" alt="" class="w-100">
+            </div>
+            <p class="mb-2 pb-2 d-flex gap-3 align-items-center">
+              <span>24 - 28  july</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+              </svg>
+              <span>4 day 3 Night</span>
+            </p>
+            <h2 class="mb-3">>Epic Road Trip Adventure</h2>
+            <p class="mb-3 pb-3">
+              Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida. Quis quis scelerisque ultrices at vulputate ultrices velit. Odio et porta nulla egestas velit porttitor sit. Augue duis felis augue interdum dolor turpis ut.
+            </p>
+            <div class="btn-container d-flex gap-3">
+              <a href="#" class="btn btn-primaty-color rounded-0">Book Now</a>
+              <a href="" class="btn btn-outline-primary-color rounded-0">Explore More</a>
+            </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-tabs-culture"
+              role="tabpanel"
+              aria-labelledby="v-tabs-culture-tab"
+            >
+            <div class="feature-img-container pb-3 mb-3">
+              <img src="./img/cultural-feature.jpg" alt="" class="w-100">
+            </div>
+            <p class="mb-2 pb-2 d-flex gap-3 align-items-center">
+              <span>24 - 28  july</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+              </svg>
+              <span>4 day 3 Night</span>
+            </p>
+            <h2 class="mb-3">>Cultural Treasures Tour</h2>
+            <p class="mb-3 pb-3">
+              Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida. Quis quis scelerisque ultrices at vulputate ultrices velit. Odio et porta nulla egestas velit porttitor sit. Augue duis felis augue interdum dolor turpis ut.
+            </p>
+            <div class="btn-container d-flex gap-3">
+              <a href="#" class="btn btn-primaty-color rounded-0">Book Now</a>
+              <a href="" class="btn btn-outline-primary-color rounded-0">Explore More</a>
+            </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-tabs-history"
+              role="tabpanel"
+              aria-labelledby="v-tabs-history-tab"
+            >
+            <div class="feature-img-container pb-3 mb-3">
+              <img src="./img/history-feature.jpg" alt="" class="w-100">
+            </div>
+            <p class="mb-2 pb-2 d-flex gap-3 align-items-center">
+              <span>24 - 28  july</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+              </svg>
+              <span>4 day 3 Night</span>
+            </p>
+            <h2 class="mb-3">>Historical Heritage Journey</h2>
+            <p class="mb-3 pb-3">
+              Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida. Quis quis scelerisque ultrices at vulputate ultrices velit. Odio et porta nulla egestas velit porttitor sit. Augue duis felis augue interdum dolor turpis ut.
+            </p>
+            <div class="btn-container d-flex gap-3">
+              <a href="#" class="btn btn-primaty-color rounded-0">Book Now</a>
+              <a href="" class="btn btn-outline-primary-color rounded-0">Explore More</a>
+            </div>
             </div>
           </div>
           <!-- Tab content -->
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-5 col-4">
           <!-- Tab navs -->
           <div
-            class="nav flex-md-column nav-tabs facility-tab-nav border-0 gap-2"
+            class="nav flex-md-column nav-tabs facility-tab-nav gap-2"
             id="v-tabs-tab"
             role="tablist"
             aria-orientation="vertical"
           >
-            <a
-              class="nav-link rounded-0 py-3 border-0"
-              id="v-tabs-parking-tab"
+            <div
+              class="nav-link rounded-0 py-3 pe-auto active"
+              id="v-tabs-iland-tab"
               data-bs-toggle="tab"
-              href="#v-tabs-parking"
+              href="#v-tabs-iland"
               role="tab"
-              aria-controls="v-tabs-parking"
-              aria-selected="false"
-              >Spacious parking area</a
-            >
-            <a
-              class="nav-link rounded-0 py-3 border-0"
-              id="v-tabs-comfortable-tab"
-              data-bs-toggle="tab"
-              href="#v-tabs-comfortable"
-              role="tab"
-              aria-controls="v-tabs-comfortable"
-              aria-selected="false"
-              >Comfortable spaces</a
-            >
-            <a
-              class="nav-link rounded-0 py-3 border-0 active"
-              id="v-tabs-cafe-tab"
-              data-bs-toggle="tab"
-              href="#v-tabs-cafe"
-              role="tab"
-              aria-controls="v-tabs-cafe"
+              aria-controls="v-tabs-iland"
               aria-selected="true"
-              >Cozy cafe</a
-            >
-            <a
-              class="nav-link rounded-0 py-3 border-0"
-              id="v-tabs-playground-tab"
+              >
+              <p class="mb-2 d-flex gap-3 align-items-center">
+                <span>24 - 28  july</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                  <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+                </svg>
+                <span>4 day 3 Night</span>
+              </p>
+              <h3>Island Hopping Paradise</h3>
+              <p class="d-none d-lg-block">
+                Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida.
+              </p>
+            </div>
+            <div
+              class="nav-link rounded-0 py-3"
+              id="v-tabs-mountain-tab"
               data-bs-toggle="tab"
-              href="#v-tabs-playground"
+              href="#v-tabs-mountain"
               role="tab"
-              aria-controls="v-tabs-playground"
+              aria-controls="v-tabs-mountain"
               aria-selected="false"
-              >Child playground</a
-            >
-            <a
-              class="nav-link rounded-0 py-3 border-0"
-              id="v-tabs-outdoor-tab"
+              >
+              <p class="mb-2 d-flex gap-3 align-items-center">
+                <span>24 - 28  july</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                  <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+                </svg>
+                <span>4 day 3 Night</span>
+              </p>
+              <h3>Mountain Majesty Expedition</h3>
+              <p class="d-none d-lg-block">
+                Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida.
+              </p>
+            </div>
+            <div
+              class="nav-link rounded-0 py-3 "
+              id="v-tabs-road-tab"
               data-bs-toggle="tab"
-              href="#v-tabs-outdoor"
+              href="#v-tabs-road"
               role="tab"
-              aria-controls="v-tabs-outdoor"
+              aria-controls="v-tabs-road"
               aria-selected="false"
-              >Outdoor spaces</a
-            >
+              >
+              <p class="mb-2 d-flex gap-3 align-items-center">
+                <span>24 - 28  july</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                  <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+                </svg>
+                <span>4 day 3 Night</span>
+              </p>
+              <h3>Epic Road Trip Adventure</h3>
+              <p class="d-none d-lg-block">
+                Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida.
+              </p>
+            </div>
+            <div
+              class="nav-link rounded-0 py-3"
+              id="v-tabs-culture-tab"
+              data-bs-toggle="tab"
+              href="#v-tabs-culture"
+              role="tab"
+              aria-controls="v-tabs-culture"
+              aria-selected="false"
+              >
+              <p class="mb-2 d-flex gap-3 align-items-center">
+                <span>24 - 28  july</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                  <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+                </svg>
+                <span>4 day 3 Night</span>
+              </p>
+              <h3>Cultural Treasures Tour</h3>
+              <p class="d-none d-lg-block">
+                Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida.
+              </p>              
+            </div>
+            <div
+              class="nav-link rounded-0 py-3 border-0"
+              id="v-tabs-history-tab"
+              data-bs-toggle="tab"
+              href="#v-tabs-history"
+              role="tab"
+              aria-controls="v-tabs-history"
+              aria-selected="false"
+              >
+              <p class="mb-2 d-flex gap-3 align-items-center">
+                <span>24 - 28  july</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                  <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
+                </svg>
+                <span>4 day 3 Night</span>
+              </p>
+              <h3>Historical Heritage Journey</h3>
+              <p class="d-none d-lg-block">
+                Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida.
+              </p>             
+            </div>
           </div>
           <!-- Tab navs -->
         </div>
@@ -360,229 +497,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <!-- ------------------- -->
 
 <section class="project-section position-relative section-padding">
-  <div class="container">
-    <div class="tartiary-padding project-section-title position-relative z-4">
-      <h2 class="text-center ">
-        <span class="text-white">Our Project Have Been</span>
-        <span class="text-primary-color">Done</span>
-      </h2>
-      <p class="text-center text-white mx-auto">
-        Take a look at some of our recent projects and see how we've helped other businesses elevate their brand and drive business growth.
-      </p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="position-relative z-3">
-      <div class="w-100 project-tab">
-        <div class="d-flex justify-content-center">
-          <!-- Tab navs -->
-          <div
-            class="nav nav-tabs project-tab-nav border-0 bg-light rounded-pill mb-4 align-items-center justify-content-center"
-            id="v-tabs-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <a
-              class="nav-link py-2 mx-sm-3 my-2 ms-1 rounded-pill text-dark active"
-              id="v-tabs-parking-tab"
-              data-bs-toggle="tab"
-              href="#v-tabs-parking"
-              role="tab"
-              aria-controls="v-tabs-parking"
-              aria-selected="false"
-              >UI/UX<span class="d-none d-lg-inline"> Design</span></a
-            >
-            <a
-              class="nav-link rounded-pill py-2 mx-sm-3 my-2 text-dark"
-              id="v-tabs-comfortable-tab"
-              data-bs-toggle="tab"
-              href="#v-tabs-comfortable"
-              role="tab"
-              aria-controls="v-tabs-comfortable"
-              aria-selected="false"
-              >Digital<span class="d-none d-lg-inline"> Marketing</span></a
-            >
-            <a
-              class="nav-link rounded-pill py-2 mx-sm-3 my-2 text-dark"
-              id="v-tabs-cafe-tab"
-              data-bs-toggle="tab"
-              href="#v-tabs-cafe"
-              role="tab"
-              aria-controls="v-tabs-cafe"
-              aria-selected="true"
-              ><span class="d-none d-lg-inline">Sosmed Management</span><span class="d-lg-none d-inline">SMM</span></a
-            >
-            <a
-              class="nav-link rounded-pill py-2 mx-sm-3 my-2 text-dark me-1"
-              id="v-tabs-playground-tab"
-              data-bs-toggle="tab"
-              href="#v-tabs-playground"
-              role="tab"
-              aria-controls="v-tabs-playground"
-              aria-selected="false"
-              >Dev<span class="d-none d-lg-inline">elopment</span></a
-            >
-           
-          </div>
-          <!-- Tab navs -->
-        </div>
-      
-        <div class="">
-          <!-- Tab content -->
-          <div class="tab-content mt-3" id="v-tabs-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="v-tabs-parking"
-              role="tabpanel"
-              aria-labelledby="v-tabs-parking-tab"
-            >
-            <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
-              <div class="card rounded-4 p-3">
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://frispace.netlify.app/','mywindow')">
-                    <img src="./img/project-icon.png" class="w-20" alt="" >
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-              <div class="card rounded-4 p-3 position-relative">
-                
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-2.png" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://embrace-bss.netlify.app','mywindow')">
-                    <img src="./img/project-icon.png" class="w-20" alt="">
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-            </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-tabs-comfortable"
-              role="tabpanel"
-              aria-labelledby="v-tabs-comfortable-tab"
-            >
-            <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
-              <div class="card rounded-4 p-3">
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://frispace.netlify.app/','mywindow')">
-                    <img src="./img/project-icon.png" class="w-20" alt="">
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-              <div class="card rounded-4 p-3 position-relative">
-                
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-2.png" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://embrace-bss.netlify.app','mywindow')">
-                    <img src="./img/project-icon.png" class="w-20" alt="">
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-            </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-tabs-cafe"
-              role="tabpanel"
-              aria-labelledby="v-tabs-cafe-tab"
-            >
-            <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
-              <div class="card rounded-4 p-3">
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://frispace.netlify.app/','mywindow')">
-                    <img src="./img/project-icon.png" class="w-20" alt="">
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-              <div class="card rounded-4 p-3 position-relative">
-                
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-2.png" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center" onclick="window.open('https://embrace-bss.netlify.app','mywindow')">
-                    <img src="./img/project-icon.png" class="w-20" alt="">
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-            </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-tabs-playground"
-              role="tabpanel"
-              aria-labelledby="v-tabs-playground-tab"
-            >
-            <div class="project-card-container d-flex flex-column flex-md-row gap-2 justify-content-between w-100">
-              <div class="card rounded-4 p-3">
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-1.jpg" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center">
-                    <img src="./img/project-icon.png" class="w-20" alt="">
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-              <div class="card rounded-4 p-3 position-relative">
-                
-                <div class="project-img-container position-relative">
-                  <img src="./img/project-img-2.png" class="card-img-top img-fluid rounded-4" alt="...">
-                  <div class="overrlay position-absolute top-0 left-0 w-100 h-100 opacity-0 d-flex justify-content-center align-items-center">
-                    <img src="./img/project-icon.png" class="w-20" alt="">
-                  </div>
-                </div>
-                <div class="card-body mt-3">
-                  <h4 class="card-title text-white">Title</h4>
-                  <p class="card-text text-white">We are designed to help your business thrive in the online world.</p>
-                  
-                </div>
-              </div>
-            </div>
-            </div>
-            
-          </div>
-          <!-- Tab content -->
-        </div>
-      </div>
 
-
-    </div>
-  </div>
 
 </section>
 

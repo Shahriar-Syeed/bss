@@ -267,3 +267,11 @@ box-shadow: none;
 .best-content{
   max-width: 590px;
 }
+/* feature-section */
+.facility-tab-nav .nav-link,
+.facility-tab-nav .nav-link.active{
+  border:none;
+  border-bottom: 1px solid #000; 
+  border-top: 1px solid rgba(0, 0, 0, 0.063); 
+  color:#000;
+}
