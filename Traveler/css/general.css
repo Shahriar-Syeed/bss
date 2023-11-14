@@ -123,7 +123,6 @@ html,
   .btn-outline-primary-color:hover{
     border: solid 2px var(--primary-color-100);
     background-color: var(--primary-color-25);
-    padding: 16px 32px;
     
    }
 
@@ -139,13 +138,13 @@ html,
   animation:rotate-text 50s linear infinite;
   
 }
-.best-btn{
+.rotate-btn{
  width: 90px;
  height: 90px;
  position: relative;
 }
-.best-btn::after{
-  content: url('../img/feature-outer-btn.png');
+.rotate-btn::after{
+  content: "";
   position: absolute;
   animation:rotate-text 50s linear infinite;
   
@@ -154,6 +153,12 @@ html,
 
 .hero-play-btn:hover:after{
   animation-play-state: paused;
+}
+.rotate-btn.best-btn::after{
+content: url('../img/feature-outer-btn.png');
+}
+.rotate-btn.cta-btn::after{
+content: url('../img/cta-btn.png');
 }
 /* textcolor */
 .text-primary-color{

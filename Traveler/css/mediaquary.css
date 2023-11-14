@@ -64,5 +64,15 @@
 }
 }
 @media (max-width:768px){
+  .hero-cta-container > div{
+    width:100%;
+  }
+  .btn-primaty-color,
+  .btn-outline-primary-color{
+    padding: 14px 28px;
+  }
   
+}
+@media (max-width:578px){
+
 }

@@ -275,3 +275,14 @@ box-shadow: none;
   border-top: 1px solid rgba(0, 0, 0, 0.063); 
   color:#000;
 }
+
+/* destinaton section */
+.paris-detination::after{
+  content: "";
+}
+
+.star-tag{
+  box-shadow: 0px 6px 30px 0px rgba(27, 72, 90, 0.06);
+  top:24px;
+  right:24px;
+}

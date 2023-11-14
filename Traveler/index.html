@@ -25,6 +25,14 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+<!-- light box css -->
+<link rel="stylesheet" href="./css/lightbox.min.css">
+
+<!-- Fancybox css -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
 
 <link rel="icon" type="image/x-icon" href="./favicon.ico">
  <!-- <link rel="stylesheet" href="./GeneralSans_Complete/Fonts/WEB/css/general-sans.css"> -->
@@ -111,55 +119,59 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
         <div class="hero-cta-area">
          <form action="post">
-          <div class="row p-3 justify-content-between align-items-center rounded-4 bg-white hero-cta-container">
-            <div class=" col-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2">
-              <img src="./img/hero-cta-1.png" alt="">
-              <div>
-                <label class="form-label text-primary-color" for="countries">LOCATION</label>
-                    <select name="country" id="countries" class="form-control form-control-sm border-0 bg-primary-25 ps-0">
-                      <option selected="">Dubai Marina</option>
-                      <option value="India">India Mumbay</option>
-                      <option value="USA">USA Newyork</option>
-                      <option value="Canada">Canada</option>
-                    </select>
-              </div>
-              <label for="countries"><i class="fa-solid fa-chevron-down fa-xs text-primary-color"></i></label>    
-              
-            </div>
-            <div class=" col-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3 ">
-              <div>
-                <img src="./img/hero-cta-2.png" alt="" class="w-75">
-              </div>
-              <div>
-                <label class="form-label text-primary-color" for="date">DATE</label>
-                    <input type="date" name="date" id="date" value="2018-07-22" min="2018-01-01" max="2018-12-31" class="form-control bg-primary-25 border-0 ps-0">
-              </div>
-                 
-              
-            </div>
-            <div class=" col-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3">
-              <img src="./img/hero-cta-3.png" alt="">
-              <div>
-                <label class="form-label text-primary-color" for="persons">PARTICIPANT</label>
-                    <select name="persons" id="persons" class="form-control form-control-sm border-0 bg-primary-25 ps-0">
-                      <option selected="" value="4">4 adult</option>
-                      <option value="2">2 adult</option>
-                      <option value="1">1 adult</option>
-                      <option value="1.5">1 adult 1 child</option>
-                      <option value="2.5">2 adult 1 child</option>
-                    </select>
-              </div>
-              <label for="countries"><i class="fa-solid fa-chevron-down fa-xs text-primary-color"></i></label>    
-              
-            </div>
-            <div class=" ccol-md-3 col-6 d-flex justify-content-center align-items-center gap-3 hero-form rounded-3 bg-primary-25 py-2 px-3 " style="height: 77px; width: 130px">
-              
-              
+          <div class="d-flex flex-column flex-md-row gap-2 p-3 justify-content-between align-items-center rounded-4 bg-white hero-cta-container">
+            <div class="d-flex gap-2 flex-column flex-sm-row justify-content-around justify-content-lg-between">
+              <div class=" d-flex justify-content-around align-items-center gap-2 hero-form rounded-3 bg-primary-25 p-2">
+                <img src="./img/hero-cta-1.png" alt="">
+                <div>
+                  <label class="form-label text-primary-color" for="countries">LOCATION</label>
+                      <select name="country" id="countries" class="form-control form-control-sm border-0 bg-primary-25 ps-0">
+                        <option selected="">Dubai Marina</option>
+                        <option value="India">India Mumbay</option>
+                        <option value="USA">USA Newyork</option>
+                        <option value="Canada">Canada</option>
+                      </select>
+                </div>
+                <label for="countries"><i class="fa-solid fa-chevron-down fa-xs text-primary-color"></i></label>    
                 
-                <input type="image" src="./img/submit.png" alt="Submit" >
-              
-                 
-              
+              </div>
+              <div class=" d-flex justify-content-around align-items-center gap-2 hero-form rounded-3 bg-primary-25 p-2 ">
+                <div>
+                  <img src="./img/hero-cta-2.png" alt="" class="w-75">
+                </div>
+                <div>
+                  <label class="form-label text-primary-color" for="date">DATE</label>
+                      <input type="date" name="date" id="date" value="2018-07-22" min="2018-01-01" max="2018-12-31" class="form-control bg-primary-25 border-0 ps-0">
+                </div>
+                   
+                
+              </div>
+            </div>
+            <div class="d-flex gap-2 flex-column flex-sm-row justify-content-around justify-content-lg-between align-items-center">
+              <div class=" d-flex justify-content-around align-items-center gap-2 hero-form rounded-3 bg-primary-25 py-2 px-3">
+                <img src="./img/hero-cta-3.png" alt="">
+                <div>
+                  <label class="form-label text-primary-color" for="persons">PARTICIPANT</label>
+                      <select name="persons" id="persons" class="form-control form-control-sm border-0 bg-primary-25 ps-0">
+                        <option selected="" value="4">4 adult</option>
+                        <option value="2">2 adult</option>
+                        <option value="1">1 adult</option>
+                        <option value="1.5">1 adult 1 child</option>
+                        <option value="2.5">2 adult 1 child</option>
+                      </select>
+                </div>
+                <label for="countries"><i class="fa-solid fa-chevron-down fa-xs text-primary-color"></i></label>    
+                
+              </div>
+              <div class="  d-flex justify-content-around align-items-center hero-form rounded-3 bg-primary-25 py-2 px-3 " style="height: 77px; width: 130px">
+                
+                
+                  
+                  <input type="image" src="./img/submit.png" alt="Submit" >
+                
+                   
+                
+              </div>
             </div>
 
           </div>
@@ -184,7 +196,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <h1>We are the best
           travel agency</h1>
           <div class="d-flex align-items-center gap-5">
-            <a href="#" class="btn best-btn d-flex align-items-center justify-content-center">
+            <a href="#" class="btn rotate-btn best-btn d-flex align-items-center justify-content-center">
               <img src="./img/long-arrow-img.png" alt="" class="">
             </a>
             <div>
@@ -237,7 +249,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <p class="mb-3 pb-3">
               Arcu suscipit sapien purus et in non. Pellentesque tempor enim et dignissim diam. Cursus egestas eget sed nascetur gravida. Quis quis scelerisque ultrices at vulputate ultrices velit. Odio et porta nulla egestas velit porttitor sit. Augue duis felis augue interdum dolor turpis ut.
             </p>
-            <div class="btn-container d-flex gap-3">
+            <div class="btn-container d-flex gap-3 flex-column flex-sm-row">
               <a href="#" class="btn btn-primaty-color rounded-0">Book Now</a>
               <a href="" class="btn btn-outline-primary-color rounded-0">Explore More</a>
             </div>
@@ -362,7 +374,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               aria-controls="v-tabs-iland"
               aria-selected="true"
               >
-              <p class="mb-2 d-flex gap-3 align-items-center">
+              <p class="mb-2 d-md-flex gap-3 align-items-center d-none">
                 <span>24 - 28  july</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
                   <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
@@ -383,7 +395,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               aria-controls="v-tabs-mountain"
               aria-selected="false"
               >
-              <p class="mb-2 d-flex gap-3 align-items-center">
+              <p class="mb-2 d-md-flex gap-3 align-items-center d-none">
                 <span>24 - 28  july</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
                   <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
@@ -404,7 +416,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               aria-controls="v-tabs-road"
               aria-selected="false"
               >
-              <p class="mb-2 d-flex gap-3 align-items-center">
+              <p class="mb-2 d-md-flex gap-3 align-items-center d-none">
                 <span>24 - 28  july</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
                   <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
@@ -425,7 +437,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               aria-controls="v-tabs-culture"
               aria-selected="false"
               >
-              <p class="mb-2 d-flex gap-3 align-items-center">
+              <p class="mb-2 d-md-flex gap-3 align-items-center d-none">
                 <span>24 - 28  july</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
                   <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
@@ -446,7 +458,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               aria-controls="v-tabs-history"
               aria-selected="false"
               >
-              <p class="mb-2 d-flex gap-3 align-items-center">
+              <p class="mb-2 d-md-flex gap-3 align-items-center d-none">
                 <span>24 - 28  july</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
                   <circle cx="2" cy="2.5" r="2" fill="#C6D1D6"/>
@@ -477,14 +489,50 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 <section class="cta-section section-padding">
   <div class="container">
-    <div class="footer-cta d-flex justify-content-around px-5 mx-2 flex-column flex-sm-row align-items-center gap-2">
-      <div class="">
-        <h2 class=" text-white cta-title text-center text-sm-start">
-          Let’s discuss and bring your vision to life.
-        </h2>
-      </div>
-      <div class="cta-btn-containeer">
-        <button type="button" class="btn btn-primary-color rounded-pill d-flex align-items-center gap-2"> <span>Late's Talk</span> <i class="fa-solid fa-arrow-right"></i></button>
+    <div class="cta-container position-relative">
+      <div id="ctaSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators cta-idicator">
+          <button type="button" data-bs-target="#ctaSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#ctaSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#ctaSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active " data-bs-interval="2000">
+            <img src="./img/CTA-bg-img.png" class="d-block w-100" alt="..." >
+            <div class="carousel-caption d-flex  gap-2 justify-content-around align-items-center">
+              <h1>Start Saving on Your <br class="d-md-block d-none"> Travel Budget.</h1>
+              <a href="#" class="btn rotate-btn cta-btn d-flex align-items-center justify-content-center">
+                <img src="./img/long-arrow-white-img.png" alt="" class="">
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./img/cta-img-2.jpg" class="d-block w-100" alt="..." >
+            <div class="carousel-caption d-flex  gap-2 justify-content-around align-items-center">
+              <h1>Start Saving on Your <br class="d-md-block d-none"> Travel Budget.</h1>
+              <a href="#" class="btn rotate-btn cta-btn d-flex align-items-center justify-content-center">
+                <img src="./img/long-arrow-white-img.png" alt="" class="">
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./img/cta-img-3.jpg" class="d-block w-100" alt="..." >
+            <div class="carousel-caption d-flex  gap-2 justify-content-around align-items-center">
+              <h1>Start Saving on Your <br class="d-md-block d-none"> Travel Budget.</h1>
+              <a href="#" class="btn rotate-btn cta-btn d-flex align-items-center justify-content-center">
+                <img src="./img/long-arrow-white-img.png" alt="" class="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
       </div>
     </div>
   </div>
@@ -496,8 +544,133 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <!-- Destination section -->
 <!-- ------------------- -->
 
-<section class="project-section position-relative section-padding">
-
+<section class="destination-section section-padding">
+<div class="container">
+  <div class="destination-title text-center">
+    <p class="subtitle">Destination</p>
+    <h1>Find you best destination</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+    <div class="col">
+      <a class="gallery-item" href="./img/destination-img-1.png" data-lightbox="img-1">
+          <div class="position-relative">
+            <div class="bg-white rounded-4 rounded-start-0 rounded-bottom-0 d-flex gap-2 star-tag align-items-center py-1 ps-2 pe-3 position-absolute z-1">
+                <img src="./img/star.png" alt="">
+                <h6 class="text-primary-color mb-0 lh-1" >4.5</h6>
+              </div>
+          <img src="./img/destination-img-1.png" class="img-fluid" alt="Lorem ipsum dolor sit amet">
+        </div>
+      </a>
+      <div class="destination-content mt-3">
+        <h2>mountain range</h2>
+        <div class="d-flex gap-3">
+          <div><img src="./img/map-marker-alt.png" alt=""></div>
+            
+          <p>East End of Rundle (EEOR) Trail, Canada</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+        <a class="gallery-item" href="./img/destination-img-2.png" data-lightbox="img-2">
+          <div class="position-relative">
+            <div class="bg-white rounded-4 rounded-start-0 rounded-bottom-0 d-flex gap-2 star-tag align-items-center py-1 ps-2 pe-3 position-absolute z-1">
+                <img src="./img/star.png" alt="">
+                <h6 class="text-primary-color mb-0 lh-1" >4.5</h6>
+              </div>
+          <img src="./img/destination-img-2.png" class="img-fluid" alt="Ipsum lorem dolor sit amet">
+        </div>
+      </a>
+      <div class="destination-content mt-3">
+        <h2>stunning alpine lake</h2>
+        <div class="d-flex gap-3">
+          <div><img src="./img/map-marker-alt.png" alt=""></div>
+            
+          <p>Pragser Wildsee, Italy</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      
+      <a class="gallery-item" href="./img/destination-img-3.png" data-lightbox="img-3">
+        <div class="position-relative">
+          <div class="bg-white rounded-4 rounded-start-0 rounded-bottom-0 d-flex gap-2 star-tag align-items-center py-1 ps-2 pe-3 position-absolute z-1">
+              <img src="./img/star.png" alt="">
+              <h6 class="text-primary-color mb-0 lh-1" >4.5</h6>
+            </div>
+          <img src="./img/destination-img-3.png" class="img-fluid" alt="Dolor lorem ipsum sit amet">
+        </div>
+      </a>
+      <div class="destination-content mt-3">
+        <h2>City of Light</h2>
+        <div class="d-flex gap-3">
+          <div><img src="./img/map-marker-alt.png" alt=""></div>
+            
+          <p>Paris, France</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <a class="gallery-item" href="./img/destination-img-4.png" data-lightbox="img-4">
+        <div class="position-relative">
+          <div class="bg-white rounded-4 rounded-start-0 rounded-bottom-0 d-flex gap-2 star-tag align-items-center py-1 ps-2 pe-3 position-absolute z-1">
+            <img src="./img/star.png" alt="">
+            <h6 class="text-primary-color mb-0 lh-1" >4.5</h6>
+          </div>
+          <img src="./img/destination-img-4.png" class="img-fluid" alt="Sit amet lorem ipsum dolor">
+        </div>
+      </a>
+      <div class="destination-content mt-3">
+        <h2>Chamonix Town</h2>
+        <div class="d-flex gap-3">
+          <div><img src="./img/map-marker-alt.png" alt=""></div>
+            
+          <p>Chamonix-Mont-Blanc, France</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <a href="https://www.youtube.com/watch?v=g7HAdc24KF0" class="" data-fancybox="destination-5">
+        <div class="position-relative paris-detination">
+          <div class="bg-white rounded-4 rounded-start-0 rounded-bottom-0 d-flex gap-2 star-tag align-items-center py-1 ps-2 pe-3 position-absolute z-1">
+            <img src="./img/star.png" alt="">
+            <h6 class="text-primary-color mb-0 lh-1" >4.5</h6>
+          </div>
+          <img src="./img/destination-img-5.png" class="img-fluid" alt="Aut ipsam deserunt nostrum quo">
+          <img src="./img/play.png" alt="" class="position-absolute top-50 start-50 translate-middle z-1 img-fluid" >
+        </div>
+      </a>
+      <div class="destination-content mt-3">
+        <h2>mountain range</h2>
+        <div class="d-flex gap-3">
+          <div><img src="./img/map-marker-alt.png" alt=""></div>
+          
+          <p>Mont Blanc</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <a class="gallery-item" href="./img/destination-img-6.png" data-lightbox="img-6">
+        <div class="position-relative">
+          <div class="bg-white rounded-4 rounded-start-0 rounded-bottom-0 d-flex gap-2 star-tag align-items-center py-1 ps-2 pe-3 position-absolute z-1">
+            <img src="./img/star.png" alt="">
+            <h6 class="text-primary-color mb-0 lh-1" >4.5</h6>
+          </div>
+          <img src="./img/destination-img-6.png" class="img-fluid" alt="Nulla ex nihil eligendi tempora">
+        </div>
+      </a>
+      <div class="destination-content mt-3">
+        <h2>vibrant culture</h2>
+        <div class="d-flex gap-3">
+          <div><img src="./img/map-marker-alt.png" alt=""></div>
+            
+          <p>Dal Lake, Srinagar</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
 
 </section>
 
@@ -824,6 +997,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- owl carosoul -->
   <script src="./js/owl.carousel.min.js"></script>
+  <!-- light house -->
+  <script src="./js/lightbox-plus-jquery.min.js"></script>
+  <script src="./js/lightbox.min.js"></script>
+  <!-- fancy-box -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
    <!--  bootsrap datepicker js -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Custom javascript -->
