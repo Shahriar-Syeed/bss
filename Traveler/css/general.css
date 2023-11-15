@@ -151,14 +151,19 @@ html,
 }
 @keyframes rotate-text { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-.hero-play-btn:hover:after{
+.hero-play-btn:hover:after,
+.rotate-btn:hover:after{
   animation-play-state: paused;
 }
 .rotate-btn.best-btn::after{
 content: url('../img/feature-outer-btn.png');
 }
 .rotate-btn.cta-btn::after{
-content: url('../img/cta-btn.png');
+  content: url('../img/cta-btn.png');
+}
+.rotate-btn.testimonial-book-btn::after{
+  content: url('../img/testimonial-book-btn.png');
+  
 }
 /* textcolor */
 .text-primary-color{
@@ -182,6 +187,9 @@ content: url('../img/cta-btn.png');
 }
 .bg-primary-25{
   background: var(--primary-color-25);
+}
+.bg-secondary-100{
+  background: var(--secondary-color-100);
 }
 .bg-dark-color{
   background: #0C111F;
