@@ -67,6 +67,9 @@
   width: 100%;
   margin-top: 1.75rem;
 }
+.w-lg-130{
+  width: 130px;
+}
 }
 @media (max-width:768px){
   .hero-cta-container > div{
@@ -76,7 +79,9 @@
   .btn-outline-primary-color{
     padding: 14px 28px;
   }
-  
+  .w-md-190{
+    width: 190px;
+  } 
 }
 @media (max-width:578px){
   /* body::before, */
