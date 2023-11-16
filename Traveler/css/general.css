@@ -28,29 +28,53 @@ html,
   /* background: url(../img/body-bg.png) no-repeat top center/contain; */
   /* position: relative; */
   /* overflow-x: hidden; */
-  background:url("../img/MAP.png") no-repeat top center/cover;
+}
+
+
+.bg-body{
+   background:url("../img/MAP.png") no-repeat top center/cover;
+  overflow-x: hidden;
+  
  }
- body::before{
+.bg-body::before{
   content:url('../img/bg-hero-top-left-color.png')  ;
   position: absolute;
-    top: 0;  
+    top: -48px;  
     right: 0; 
    
-    z-index: -1;
-    object-fit: cover;
-    
 
+    object-fit: cover;
  }
- body::after{
-  content: url("../img/bg-left-mid-hero.png") ;
+  .bg-body::after{
+    content: '';
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 400px;
+    background: var(--primary-primary-80, #496D7B);
+    filter: blur(232.5px);
+    position: absolute;
+    top: 493px;
+    left: -157px;
+ 
+  }
+ /* .bg-body::after{
+  content: '';
+  background-image: url("../img/bg-left-mid-hero.png");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100px;
+  height: 100%;
   position: absolute;
-    top: 115%;  
+    top: 0;  
     left: 0; 
     transform: translate(0, -50%);
     z-index: -1;
-   
     
- }
+    
+ } */
  a{
   text-decoration: none;
   color:inherit;

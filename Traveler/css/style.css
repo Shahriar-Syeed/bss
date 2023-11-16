@@ -264,9 +264,7 @@ box-shadow: none;
 }
 
 /* best sectoion  */
-.best-content{
-  max-width: 590px;
-}
+
 /* feature-section */
 .facility-tab-nav .nav-link,
 .facility-tab-nav .nav-link.active{
@@ -289,7 +287,7 @@ box-shadow: none;
 
 /* Testimonial section */
 .testimonial-section{
-  background: url("../img/testimoniaol-bg.png");
+  background: url("../img/testimoniaol-bg.png") no-repeat center center/contain;
 }
 
 .testimonial-content hr{
