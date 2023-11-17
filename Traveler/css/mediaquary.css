@@ -1,5 +1,5 @@
 
-@media screen and (min-width:1200px){
+/* @media screen and (min-width:1200px){
   h1{
     font-size: 3.375rem;
    }
@@ -18,7 +18,7 @@
    h6{
     font-size: 1.125rem;
    }
-}
+} */
 @media (max-width:1400px){
   .hero-title{
     font-size: calc(48px + (76 - 48) * ((100vw - 280px) / (1440 - 280)));
@@ -70,6 +70,9 @@
 }
 .blog-img-container::before{
   display: none;
+}
+.blog-img-container{
+  overflow:visible !important;
 }
 }
 @media (max-width:768px){
