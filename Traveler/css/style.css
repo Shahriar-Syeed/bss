@@ -265,7 +265,21 @@ box-shadow: none;
 
 
 /* best sectoion  */
+.cta-img-continer {
+  height:506px ;
+}
+.cta-img-1{
+background: linear-gradient(rgba(13, 109, 253, 0.1), rgba(13, 109, 253, 0.1)), url("../img/CTA-bg-img.png") no-repeat center center / cover;
 
+}
+.cta-img-2{
+background: linear-gradient(rgba(13, 253, 65, 0.1), rgba(13, 253, 65, 0.1)), url("../img/cta-img-2.jpg") no-repeat center center / cover;
+
+}
+.cta-img-3{
+background: linear-gradient(rgba(13, 109, 253, 0.1), rgba(13, 109, 253, 0.1)), url("../img/cta-img-3.jpg") no-repeat center center / cover;
+
+}
 /* feature-section */
 .facility-tab-nav .nav-link,
 .facility-tab-nav .nav-link.active{
@@ -288,7 +302,7 @@ box-shadow: none;
 
 /* Testimonial section */
 .testimonial-section{
-  background: url("../img/testimoniaol-bg.png") no-repeat center center/contain;
+  background: url("../img/testimoniaol-bg.png") no-repeat bottom left/cover;
 }
 
 .testimonial-content hr{

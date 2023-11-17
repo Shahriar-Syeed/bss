@@ -10,7 +10,6 @@ $('#testimonial-slider').owlCarousel({
   autoplayHoverPause:true,
 margin:20,
 nav:true,
-navText: ["<img src='myprevimage.png'>","<img src='mynextimage.png'>"],
 responsive:{
     0:{
         items:1

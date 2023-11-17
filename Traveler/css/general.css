@@ -89,14 +89,10 @@ html,
   font-family: 'El Messiri', sans-serif;
   text-transform: capitalize;
   line-height: 1.2;
-  leading-trim: both;
-  text-edge: cap;
   font-weight: 700p;
  }
  .hero-title{
   font-size: 4.625rem;
-
-  leading-trim:both;
  }
 
  footer ul {
