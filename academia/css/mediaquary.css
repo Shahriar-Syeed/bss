@@ -35,57 +35,33 @@
   
 }
 @media (max-width:1200px){
-  .hero-content{
-    width:80% !important;
-  }
-  /* .hero-title{
-    font-size: 3.875rem;
-  } */
+  
+  .ftco-navbar-light .container-xl {
+    padding-left: 0;
+    padding-right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 1300px; }
   
  
-  .hero-cta-container {
-    width: 71%;
-    margin-top: -13px;
-  }
+ 
 }
 
 
-@media (max-width:992px){
+@media (max-width:991.98px){
   
   /* .hero-title{
     font-size: 3.625rem;
   } */
-  .hero-play-btn-position {
-    top: 0px;
-    right: 0px;
+  .ftco-navbar-light {
+    background: #22c8ba !important;
 }
 
 
-.hero-cta-container {
-  width: 100%;
-  margin-top: 1.75rem;
 }
-.w-lg-130{
-  width: 130px;
-}
-.blog-img-container::before{
-  display: none;
-}
-.blog-img-container{
-  overflow:visible !important;
-}
-}
-@media (max-width:768px){
-  .hero-cta-container > div{
-    width:100%;
-  }
-  .btn-primaty-color,
-  .btn-outline-primary-color{
-    padding: 14px 28px;
-  }
-  .w-md-190{
-    width: 190px;
-  } 
+@media (max-width:767.98px){
+  .ftco-navbar-light .navbar-brand {
+    color: #fff; }
+  
   
 }
 @media (max-width:578px){
