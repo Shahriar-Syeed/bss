@@ -29,6 +29,19 @@
   display: block;
   font-weight: 500;
 }
+.top-wrap .con .icon span {
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+}
+.top-wrap .con .text {
+  padding-left: 10px;
+}
+.top-wrap .con .text span, .top-wrap .con .text strong {
+  display: block;
+  line-height: 1.4;
+  color: #fff;
+}
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
