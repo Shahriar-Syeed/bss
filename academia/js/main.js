@@ -1,3 +1,6 @@
+AOS.init();
+
+
 $(function(){
   $('#datepicker').datepicker();
 });
@@ -44,3 +47,4 @@ $('#gallery-slider').owlCarousel({
   }
   
 });
+

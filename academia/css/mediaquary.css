@@ -36,11 +36,7 @@
 }
 @media (max-width:1200px){
   
-  .ftco-navbar-light .container-xl {
-    padding-left: 0;
-    padding-right: 0;
-    background: rgba(255, 255, 255, 0.1);
-    max-width: 1300px; }
+  
   
  
  
@@ -52,14 +48,14 @@
   /* .hero-title{
     font-size: 3.625rem;
   } */
-  .ftco-navbar-light {
+  .main-navbar-light {
     background: #22c8ba !important;
 }
 
 
 }
 @media (max-width:767.98px){
-  .ftco-navbar-light .navbar-brand {
+  .main-navbar-light .navbar-brand {
     color: #fff; }
   
   

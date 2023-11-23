@@ -3,7 +3,7 @@
 
 
 /* Navbar */
-.top-wrap {
+.top-navbar {
   background: transparent !important;
   position: absolute;
   top: 0px;
@@ -29,20 +29,36 @@
   display: block;
   font-weight: 500;
 }
-.top-wrap .con .icon span {
+.top-navbar .con .icon span {
   color: #fff;
   font-size: 38px;
   line-height: 1;
 }
-.top-wrap .con .text {
+.top-navbar .con .text {
   padding-left: 10px;
 }
-.top-wrap .con .text span, .top-wrap .con .text strong {
+.top-navbar .con .text span, .top-navbar .con .text strong {
   display: block;
   line-height: 1.4;
   color: #fff;
 }
-.ftco-navbar-light {
+.top-navbar .social-media > div a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.top-navbar .social-media > div a:hover {
+  background: #1eb2a6;
+}
+.top-navbar .social-media > div a .fa-brands {
+  color:#1eb2a6
+}
+.top-navbar .social-media > div a:hover .fa-brands {
+  color:#fff;
+}
+.main-navbar-light {
   background: transparent !important;
   position: absolute;
   top: 95px;
@@ -51,13 +67,13 @@
   z-index: 3;
   padding: 0;
 }
-  .ftco-navbar-light .container-xl{
+  .main-navbar-light .container-xl{
 padding-left: 0;
     padding-right: 0;
     background: rgba(255, 255, 255, 0.1);
     max-width: 1300px;
   }
-.ftco-navbar-light .btn-custom:before {
+.main-navbar-light .btn-custom:before {
   position: absolute;
   top: -1px;
   bottom: -1px;
@@ -70,7 +86,29 @@ padding-left: 0;
   z-index: -1;
   content: '';
 }
+.main-navbar-light .navbar-nav > .nav-item > .nav-link.active {
+  color: #1eb2a6;
+  position: relative;
+  z-index: 0;
+}
 
+.main-navbar-light .navbar-nav > .nav-item > .nav-link {
+  font-size: 15px;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+.main-navbar-light .navbar-toggler {
+  border: none;
+  color: rgba(255, 255, 255, 0.9) !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: .1em;
+}
 /* hero section */
 
 .hero-section{
