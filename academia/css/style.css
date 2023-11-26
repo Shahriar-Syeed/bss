@@ -129,6 +129,14 @@ padding-left: 0;
   color: rgba(255, 255, 255, 0.8);
   z-index: 3;
 }
+/* About section */
+
+.img, .blog-img, .user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* feature-section */
 .facility-tab-nav .nav-link,
 .facility-tab-nav .nav-link.active{
