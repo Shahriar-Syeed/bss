@@ -2,9 +2,8 @@
 
 :root{
 
-  --gradient-color:linear-gradient(90deg, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
-  --gradient-color-hover:linear-gradient(90deg, #FFA84B 9.2%, #B16CEA 44.06%, #FF5E69 62.79%, #FF8A56 92.87%, #FFA84B 100%);
-  --primary-color:#161513;
+  
+  --primary-color:#1eb2a6;
   
   --primary-color-25:#F0F2F5;
   --secondary-color:#1C1C22;
@@ -13,7 +12,9 @@
 
 
 
-*{
+*,
+*:before,
+*:after{
   box-sizing: border-box;
   
 }
@@ -37,6 +38,11 @@ html,
   text-decoration: none;
   color:inherit;
  }
+ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+}
  .hero-title{
   font-size: 4.625rem;
  }
@@ -86,14 +92,14 @@ html,
   letter-spacing: 2px;
 }
 .btn.btn-primary {
-  background: #1eb2a6 !important;
-  border: 1px solid #1eb2a6 !important;
+  background: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
   color: #fff !important;
 }
 .btn.btn-white {
   background: #fff !important;
   border: 1px solid #fff !important;
-  color: #1eb2a6 !important;
+  color: var(--primary-color) !important;
 }
  .btn-primary-color{
    color:#fff;
@@ -109,19 +115,7 @@ html,
     font-weight: 700;
     color:#fff;
   }
- .btn-gradient{
-   color:#fff;
-   background: var(--gradient-color);
-   width:12.26rem;
-   height: 3.26rem;
-   transition: all 0.4s ease;
-   
-  }
-  .btn-gradient:hover{
-    color:#fff;
-    font-weight: 700;
-    
-  }
+ 
   .btn-outline-primary-color{
     color:var(--primary-color);
     border: solid 2px var(--primary-color);

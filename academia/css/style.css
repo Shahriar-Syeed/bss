@@ -137,6 +137,77 @@ padding-left: 0;
   background-position: center center;
 }
 
+.heading-section .subheading {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  color: #1eb2a6;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.heading-section h2, .heading-section .h2 {
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.services-wrap .services {
+  padding: 25px;
+  display: block;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.services {
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.services:hover, .services.active {
+  background: #1eb2a6;
+  -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
+}
+.services-wrap .services .text h2, .services-wrap .services .text .h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services .icon {
+  margin: 0 auto;
+}
+.services .icon svg {
+  width: 60px;
+  height: 60px;
+  line-height: 1.2;
+  background-image:var(--primary-color);
+}
+.services:hover .icon svg, .services.active .icon svg {
+  fill: #fff;
+}
+.services-wrap .services .text {
+  padding: 0;
+  padding-left: 20px;
+  width: 100%;
+}
+.services:hover .text, .services.active .text {
+  color: rgba(255, 255, 255, 0.9);
+}
+.services:hover .text h2, .services:hover .text .h2, .services.active .text h2, .services.active .text .h2 {
+  color: #fff;
+}
+/* achiv-section */
+.achive-section{
+    padding: 6rem 0;
+    
+
+}
 /* feature-section */
 .facility-tab-nav .nav-link,
 .facility-tab-nav .nav-link.active{
@@ -144,6 +215,11 @@ padding-left: 0;
   border-bottom: 1px solid #000; 
   border-top: 1px solid rgba(0, 0, 0, 0.063); 
   color:#000;
+}
+.heading-section h2, .heading-section .h2 {
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 /* destinaton section */
