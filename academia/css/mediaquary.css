@@ -1,24 +1,4 @@
 
-/* @media screen and (min-width:1200px){
-  h1{
-    font-size: 3.375rem;
-   }
-   h2{
-    font-size: 2.375rem;
-   }
-   h3{
-    font-size: 2rem;
-   }
-   h4{
-    font-size: 1.5rem;
-   }
-   h5{
-    font-size: 1.25rem;
-   }
-   h6{
-    font-size: 1.125rem;
-   }
-} */
 @media (max-width:1400px){
   .hero-title{
     font-size: calc(48px + (76 - 48) * ((100vw - 280px) / (1440 - 280)));
@@ -57,7 +37,8 @@
 @media (max-width:767.98px){
   .main-navbar-light .navbar-brand {
     color: #fff; }
-  
+    .block-7 {
+      margin-top: 30px; }
   
 }
 @media (max-width:578px){

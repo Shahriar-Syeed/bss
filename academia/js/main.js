@@ -28,26 +28,25 @@ responsive:{
     }
 }
 });
-// gallery Section
-$('#gallery-slider').owlCarousel({
+// testimonial Section
+$('#testimonial-slider').owlCarousel({
   loop:true,
   autoplay:true,
-  slideTransition: 'linear',
-  autoplaySpeed: 300,
-  autoplayHoverPause: true,
-  margin:10,
-  nav:true,
-  responsive:{
+  autoplayTimeout:5000,
+  autoplayHoverPause:true,
+margin:20,
+nav:true,
+responsive:{
     0:{
         items:1
     },
     768:{
-        items:3
+        items:2
     },
     1400:{
-        items:5
+        items:3
     }
-  }
+}
   
 });
 
