@@ -1,12 +1,15 @@
 
 
 
+ 
+
+
 $(function(){
   $('#datepicker').datepicker();
 });
 
-// Testimonial Section
-$('#testimonial-slider').owlCarousel({
+// courses Section
+$('#courses-slider').owlCarousel({
   loop:true,
   autoplay:true,
   autoplayTimeout:5000,
@@ -21,7 +24,7 @@ responsive:{
         items:2
     },
     1400:{
-        items:2
+        items:3
     }
 }
 });

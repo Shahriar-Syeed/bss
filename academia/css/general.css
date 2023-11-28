@@ -34,10 +34,13 @@ html,
  }
 
 
- a{
+ a, button {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  color: #1eb2a6;
   text-decoration: none;
-  color:inherit;
- }
+}
  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);

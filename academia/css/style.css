@@ -205,8 +205,30 @@ padding-left: 0;
 /* achiv-section */
 .achive-section{
     padding: 6rem 0;
-    
-
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bg_3.jpg)no-repeat center center/cover ;
+}
+.section-counter .icon svg {
+  width: 60px;
+  height: 60px;
+  line-height: 1;
+  
+}
+.section-counter .text {
+  padding-left: 20px;
+}
+.section-counter .number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 5px;
+  display: block;
+}
+.section-counter .caption {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
 }
 /* feature-section */
 .facility-tab-nav .nav-link,
@@ -222,17 +244,148 @@ padding-left: 0;
   line-height: 1.4;
 }
 
-/* destinaton section */
-.paris-detination::after{
-  content: "";
+/* courses section */
+.courses-section{
+  padding: 8rem 0;
+}
+.courses {
+  width: 100%;
+  background: #fff;
+  padding: 30px 30px 40px 30px;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.courses .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #1eb2a6;
+  position: relative;
+}.courses .icon svg {
+  width: 50px;
+  height: 50px;
+  line-height: 1.2;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.courses .text {
+  width: calc(100% - 80px);
+  padding-left: 20px;
+}
+.courses .text h2, .courses .text .h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.courses .text p.rate {
+  margin-bottom: 5px;
+}
+.courses .text p.rate i,
+.courses .text p.rate span {
+  color: #1eb2a6;
+  font-size: 14px;
+}
+.courses .text .author-wrap .img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.courses .text .author-wrap span.author {
+  font-weight: 500;
+  padding-left: 10px;
+}
+.courses .text p.lec {
+  font-weight: 500;
+  font-size: 13px;
+}
+.courses .course-price {
+  color: #1eb2a6;
+}
+.courses .course-price span{
+  color: #1eb2a6;
+  font-weight: 500;
+}
+.btn.btn-primary.btn-outline-primary {
+  border: 1px solid #1eb2a6 !important;
+  background: transparent !important;
+  color: #1eb2a6 !important;
+}
+.btn.btn-primary.btn-outline-primary:hover {
+  border: 1px solid transparent !important;
+  background: #1eb2a6 !important;
+  color: #fff !important;
 }
 
-.star-tag{
-  box-shadow: 0px 6px 30px 0px rgba(27, 72, 90, 0.06);
-  top:24px;
-  right:24px;
-}
+/* outline section */
+.outline-section{
 
+    padding: 8em 0;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+.services-2 {
+  width: 100%;
+  background: #fff;
+  padding: 30px 20px;
+  margin-bottom: 0;
+  border-radius: 4px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
+}
+.services-2 .icon {
+  margin-bottom: 8px;
+}
+.services-2 .icon svg {
+  width: 70px;
+  height: 79px;
+  line-height: 1.2;
+  fill: #1eb2a6;
+}
+.services-2 .text {
+  width: 100%;
+}
+.services-2 .text h2, .services-2 .text .h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+ 
+}
+.services-2 .text span {
+  font-size: 13px;
+  font-weight: 500;
+  background: #f8f8f8;
+  padding: 5px;
+  border-radius: 4px;
+}
+.services-2:hover, .services-2.active {
+  background: #1eb2a6;
+  -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
+}
+.services-2:hover .icon svg, .services-2.active .icon svg {
+  fill:#fff;
+}
+.services-2:hover .text h2, .services-2:hover .text .h2, .services-2.active .text h2, .services-2.active .text .h2 {
+  color: #fff;
+}
 /* Testimonial section */
 .testimonial-section{
   background: url("../img/testimoniaol-bg.png") no-repeat bottom left/cover;
