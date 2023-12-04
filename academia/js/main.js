@@ -15,7 +15,7 @@ $('#courses-slider').owlCarousel({
   autoplayTimeout:5000,
   autoplayHoverPause:true,
 margin:20,
-nav:true,
+nav:false,
 responsive:{
     0:{
         items:1
@@ -35,7 +35,7 @@ $('#testimonial-slider').owlCarousel({
   autoplayTimeout:5000,
   autoplayHoverPause:true,
 margin:20,
-nav:true,
+nav:false,
 responsive:{
     0:{
         items:1
@@ -44,7 +44,7 @@ responsive:{
         items:2
     },
     1400:{
-        items:3
+        items:3 
     }
 }
   

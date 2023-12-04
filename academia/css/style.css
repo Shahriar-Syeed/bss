@@ -20,6 +20,11 @@
   position: relative;
   line-height: 1.1;
   text-transform: uppercase;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
 }
 .navbar-brand span {
   color: #fff;
@@ -321,7 +326,10 @@ padding-left: 0;
   background: #1eb2a6 !important;
   color: #fff !important;
 }
-
+.courses-section .owl-item:not(.active) + .active + .active .courses div .btn-outline-primary  {
+  background: #1eb2a6 !important;
+  color:#fff !important;
+}
 /* outline section */
 .services-2 {
   width: 100%;
@@ -422,9 +430,23 @@ padding-left: 0;
   color: #1eb2a6;
   font-weight: 500;
 }
-.testimony-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap, .courses-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap {
+.carousel-testimony .owl-item:not(.active) + .active + .active .testimony-wrap {
   background: #1eb2a6;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-courses.owl-theme .owl-dots .owl-dot span,
+.carousel-testimony.owl-theme .owl-dots .owl-dot span{
+  width: 30px !important;
+  height: 2px !important;
+  padding: 0;
+  margin: 0 5px !important;
+  background: #ddd !important;
+  border: 0;
+}
+.carousel-courses.owl-theme .owl-dots .owl-dot.active span,
+.carousel-testimony.owl-theme .owl-dots .owl-dot.active span{
+  background:#1eb2a6 !important;
 }
 /* Blog section */
 

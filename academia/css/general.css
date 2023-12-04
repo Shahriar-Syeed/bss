@@ -79,14 +79,13 @@ html,
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.3);
   background: #1eb2a6;
   padding: 1.5rem;
   color: #fff;
   border-radius: 0;
   position: relative;
   display: inline-block;
-  width: 250px;
+  width: 215.69px;;
   z-index: 0;
   text-align: center;
   border: 1px solid transparent;
