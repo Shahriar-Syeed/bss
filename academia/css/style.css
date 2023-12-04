@@ -586,6 +586,9 @@ footer .navbar-brand,
     font-weight: 400; 
   }
 /* cta section */
+.cta-section{
+  color:rgba(255, 255, 255, 0.8);
+}
 .cta-section h2 {
   color: #fff;
   font-size: 27px;
@@ -608,6 +611,7 @@ footer .navbar-brand,
   padding: 0;
   border-radius: 5px 0px 0px 5px;
   border: none !important;
+  height:45px;
 }
 .cta-section .subscribe-form .form-group input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -670,9 +674,14 @@ footer .footer-col ul li {
 footer .footer-col ul li a {
   color: #666666;
 }
-.footer-col a i,
+.footer-col a i{
+  font-size: 14px;
+ 
+  color: #1eb2a6;
+
+}
 .footer-col li a:hover {
-  font-size: 9px;
+
   color: #1eb2a6;
 }
 footer .footer-blog .blog-img {
@@ -708,6 +717,9 @@ footer .footer-col h2 {
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 500;
+}
+footer .footer-contact ul li a span{
+  font-size: 14px;
 }
 footer .footer-contact ul li .icon {
   width: 40px;
