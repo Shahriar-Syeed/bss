@@ -1,0 +1,10 @@
+.blog-hero{
+  min-height: auto;
+    height: 700px;
+    background-position: top center;
+    background-attachment: fixed;
+}
+.blog-hero .slider-text {
+  min-height: auto;
+  height: 700px;
+}
