@@ -125,6 +125,7 @@ a:hover, a:focus, button:hover, button:focus {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border-top-width: 2px;
 }
 
 .btn.btn-white {
@@ -140,7 +141,7 @@ a:hover, a:focus, button:hover, button:focus {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+  border-top-width: 2px;
 }
 .btn i {
   font-size: 11px;

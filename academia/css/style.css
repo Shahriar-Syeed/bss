@@ -61,10 +61,11 @@ footer .navbar-brand,
 .top-navbar .social-media > div a:hover {
   background: #1eb2a6;
 }
-.top-navbar .social-media > div a .fa-brands {
-  color:#1eb2a6
+.top-navbar .social-media > div a i {
+  color:#1eb2a6;
+  font-size: 14px;
 }
-.top-navbar .social-media > div a:hover .fa-brands {
+.top-navbar .social-media > div a:hover i {
   color:#fff;
 }
 .main-navbar-light {
