@@ -1,22 +1,26 @@
 
+
+
 @media (max-width:1400px){
-  .hero-title{
+  /* .hero-title{
     font-size: calc(48px + (76 - 48) * ((100vw - 280px) / (1440 - 280)));
   }
   .section-padding {
     padding: calc(48px + (64 - 48) * ((100vw - 280px) / (1440 - 280))) 0;
-  }
-  .hero-cta-container label{
+  } */
+  /* .hero-cta-container label{
     font-size: 12px;
   }
     .blog-date{
       font-size: calc(8px + (16 - 8) * ((100vw - 280px) / (1440 - 280)));
     }
-  
+   */
 }
 @media (max-width:1200px){
   
-  
+  .services-2 {
+    margin-bottom: 20px;
+}
   
  
  
@@ -25,25 +29,68 @@
 
 @media (max-width:991.98px){
   
-  /* .hero-title{
-    font-size: 3.625rem;
-  } */
+  .main-navbar-light .btn-custom {
+    width:250px
+  }
   .main-navbar-light {
     background: #22c8ba !important;
 }
+.main-navbar-light .btn-custom:before{
+  display: none;
+}
+.main-navbar-light .navbar-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main-navbar-light .navbar-nav > .nav-item > .nav-link {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 1rem;
+  padding-top: 0;
+  color: #fff;
+}
 
+.heading-section h2 {
+  font-size: 40px;
+}
+.achive-section .counter-wrap-2 {
+  margin-bottom: 20px !important; }
 
 }
 @media (max-width:767.98px){
   .main-navbar-light .navbar-brand {
     color: #fff; }
-    .block-7 {
-      margin-top: 30px; }
-  
+  .block-7 {
+    margin-top: 30px; 
+  }
+  .services-2 {
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width:578px){
   .section-padding {
-    padding: 48px 0;
+    padding: 6rem 0;
   }
+  .blog-content {
+    margin-bottom: 30px;
+  }
+  .hero-btn-container .btn {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
 }
- 
+}
+@media (min-width: 768px) {
+  .blog-content {
+    margin-bottom: 40px;
+   } 
+  }
+@media (min-width: 1200px) {
+  .main-navbar-light .container-xl{
+    padding-left: 0;
+        padding-right: 0;
+        background: rgba(255, 255, 255, 0.1);
+        max-width: 1300px;
+      }
+  }

@@ -41,28 +41,49 @@ html,
   color: #1eb2a6;
   text-decoration: none;
 }
+a:hover, a:focus, button:hover, button:focus {
+  text-decoration: none;
+  color: #1eb2a6;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
 }
  .hero-title{
-  font-size: 4.625rem;
+  font-weight: 600;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.2;
  }
 
  footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+   list-style: none;
+   padding: 0;
+   margin-right: 0;
+   margin-left: 0;
+  }
  p{
  margin-bottom: 1rem;
 }
-.subtitle{
-  font-family: 'Montez', cursive;
-  font-size: 28px;
-  color:var(--secondary-color-100);
-
+.subheading{
+  text-transform: uppercase;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1eb2a6;
+  margin-bottom: 5px;
+}
+.hero-section .subheading{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 0;
+  letter-spacing: 2px;
+  display: inline-block;
 }
 /* Padding */
 .section-padding {
@@ -95,11 +116,36 @@ html,
   background: var(--primary-color) !important;
   border: 1px solid var(--primary-color) !important;
   color: #fff !important;
+  padding: 9px 12px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
 .btn.btn-white {
   background: #fff !important;
   border: 1px solid #fff !important;
   color: var(--primary-color) !important;
+  padding: 9px 12px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.btn i {
+  font-size: 11px;
+  line-height: 1;
+  margin-left: 10px;
 }
  .btn-primary-color{
    color:#fff;
@@ -141,7 +187,7 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 .text-primary-color{
-  color:var(--primary-color);
+  color:var(--primary-color)  !important;
 }
 .text-secondary-color{
   color:var(--secondary-color-100);
