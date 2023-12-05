@@ -1,0 +1,32 @@
+.accordion.fqa-accordion .accordion-button:not(.collapsed) {
+  background: #1eb2a6;
+  color: #111111;
+}
+.accordion.fqa-accordion .accordion-button:not(.collapsed):focus, .accordion.fqa-accordion .accordion-button:not(.collapsed):hover {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.accordion.fqa-accordion .accordion-button {
+  background: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.accordion.fqa-accordion .accordion-button:after {
+  line-height: 1;
+  color: #111111;
+  background: none;
+  font-family: 'Ionicons';
+  content: '\f3d8';
+}
+.accordion.fqa-accordion .accordion-button:not(.collapsed):after {
+  line-height: 1;
+  color: #fff;
+  background: none;
+  font-family: 'Ionicons';
+  content: '\f3d0';
+}
+.accordion.fqa-accordion .accordion-item {
+  color: #999;
+}
