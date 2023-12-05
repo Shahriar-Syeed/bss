@@ -684,32 +684,32 @@ footer .footer-col ul li a {
 
   color: #1eb2a6;
 }
-footer .footer-blog .blog-img {
+.footer-blog .blog-img {
   display: block;
   height: 50px;
   width: 50px;
 }
-footer .footer-blog .text {
+.footer-blog .text {
   width: calc(100% - 50px);
   padding-left: 20px;
 }
-footer .footer-blog .text .meta > div {
+.footer-blog .text .meta > div {
   display: inline-block;
   font-size: 12px;
   margin-right: 5px;
 }
-footer .footer-blog .text .heading {
+.footer-blog .text .heading {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
 }
-footer .footer-blog .text .heading a {
+.footer-blog .text .heading a {
   color: #666666;
 }
-footer .footer-blog .text .meta a i {
+.footer-blog .text .meta a i {
   font-size: 12px;
 }
-footer .footer-blog .text .heading a:hover {
+.footer-blog .text .heading a:hover {
   color: #1eb2a6;
 }
 footer .footer-col h2 {

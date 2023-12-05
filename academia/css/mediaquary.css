@@ -67,6 +67,8 @@
     border-radius: 2px;
     margin-bottom: 10px;
   }
+  .dbox {
+    margin-bottom: 0; }
 }
 @media (max-width:578px){
   .section-padding {
