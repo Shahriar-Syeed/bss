@@ -67,8 +67,6 @@
     border-radius: 2px;
     margin-bottom: 10px;
   }
-  .dbox {
-    margin-bottom: 0; }
 }
 @media (max-width:578px){
   .section-padding {
@@ -86,8 +84,11 @@
 @media (min-width: 768px) {
   .blog-content {
     margin-bottom: 40px;
-   } 
+   }
+   .address-box {
+    margin-bottom: 0;
   }
+}
 @media (min-width: 1200px) {
   .main-navbar-light .container-xl{
     padding-left: 0;

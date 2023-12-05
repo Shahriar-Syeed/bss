@@ -95,6 +95,9 @@ a:hover, a:focus, button:hover, button:focus {
 .new-form-control-padding{
   padding: 0.375rem 0.85rem;
 }
+.pb-30{
+  padding-bottom: 30px !important;
+}
 /* button */
 .main-navbar-light .btn-custom {
   text-transform: uppercase;
@@ -181,12 +184,6 @@ a:hover, a:focus, button:hover, button:focus {
 
 
 /* textcolor */
-.text-gradient-color{
-  background: var(--gradient-color);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
 .text-primary-color{
   color:var(--primary-color)  !important;
 }
@@ -199,8 +196,6 @@ background-clip: text;
 .bg-primary-color{
   background: var(--primary-color);
 }
-
-
 .bg-primary-25{
   background: var(--primary-color-25);
 }

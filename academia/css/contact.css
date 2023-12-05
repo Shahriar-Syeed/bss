@@ -40,14 +40,14 @@
   margin-bottom: 10px; 
 }
 
-.dbox {
+.address-box {
   width: 100%;
   margin-bottom: 25px;
 }
 
-.dbox p {
+.address-box p {
   margin-bottom: 0; }
-.dbox p span {
+.address-box p span {
   font-weight: 400;
   color: #000000;
   display: block;
@@ -55,10 +55,10 @@
   font-size: 13px;
   font-weight: 700; 
 }
-.dbox p a {
+.address-box p a {
   color: black; 
 }
-.dbox .text {
+.address-box .text {
   width: 100%; 
 }
 .form-control:focus {
