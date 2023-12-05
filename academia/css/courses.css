@@ -1,0 +1,47 @@
+.course-hero{
+  min-height: auto;
+    height: 700px;
+    background-position: top center;
+    background-attachment: fixed;
+}
+.course-hero .slider-text {
+  min-height: auto;
+  height: 700px;
+}
+.course-hero .slider-text .breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+.course-hero .slider-text .breadcrumbs span a {
+  color: rgba(255, 255, 255, 0.8);
+}
+.course-hero .slider-text .breadcrumbs span a:hover {
+  color: var(--primary-color);
+}
+.course-hero .slider-text .bread {
+  font-weight: 400;
+  color: #fff;
+  font-size: 70px;
+}
+
+.courses .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #1eb2a6;
+    position: relative;
+}
+.courses .icon svg {
+  font-size: 50px;
+  line-height: 1.2;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
