@@ -256,7 +256,7 @@ footer .navbar-brand,
 .courses {
   width: 100%;
   background: #fff;
-  padding: 30px 30px 30px 30px;
+  padding: 30px 30px 40px 30px;
   margin-bottom: 20px;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -367,9 +367,10 @@ footer .navbar-brand,
 .services-2 .text {
   width: 100%;
 }
-.services-2 .text h2, .services-2 .text .h2 {
+.services-2 .text h2 {
   font-size: 20px;
   font-weight: 600;
+  padding-top: 5px;
   margin-bottom: 2px;
  
 }
