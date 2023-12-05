@@ -25,6 +25,10 @@
   font-weight: 400;
   color: #fff;
   font-size: 70px;
+  line-height: 1.2;
+}
+.breadcrumbs span a i{
+  font-size: 12px;
 }
 
 .courses .icon {
