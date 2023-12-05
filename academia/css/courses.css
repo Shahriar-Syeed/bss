@@ -58,6 +58,7 @@ padding:0;
 }
 .course-page .page-link:hover{
   background: var(--primary-color);
+  color:#fff;
 }
 .course-page .active > .page-link{
   background-color: var(--primary-color);

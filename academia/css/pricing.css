@@ -26,6 +26,9 @@
   background: none;
   font-family: 'Ionicons';
   content: '\f3d0';
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .accordion.fqa-accordion .accordion-item {
   color: #999;
