@@ -186,6 +186,25 @@ a:hover, a:focus, button:hover, button:focus {
 .text-secondary-color{
   color:var(--secondary-color-100);
 }
+/* text */
+.img, .blog-img, .user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.heading-section .subheading {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.heading-section h2 {
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.4;
+}
 /* Background color */
 
 
@@ -221,3 +240,4 @@ text-rendering: auto;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
+
