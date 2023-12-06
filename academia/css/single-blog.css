@@ -1,3 +1,8 @@
+.blog-single h2, .blog-single .h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+}
 .tagcloud-box .tag-cloud-link {
   text-transform: uppercase;
   display: inline-block;
@@ -105,11 +110,21 @@
 .search-form .form-group {
   position: relative;
 }
+.search-form .form-group .form-control{
+  height: 45px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  border-radius: 2px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
 .search-form .form-group input {
   padding-right: 50px;
   font-size: 14px;
   border: none;
 }
+
 .search-form .icon {
   position: absolute;
   top: 50%;
