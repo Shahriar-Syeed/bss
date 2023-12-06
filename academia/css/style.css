@@ -489,6 +489,11 @@ footer .navbar-brand, .top-navbar .navbar-brand {
 .blog-content .meta span i {
   color: var(--primary-color);
 }
+.blog-content h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
 .blog-content h3 a{
   color:#000;
 }

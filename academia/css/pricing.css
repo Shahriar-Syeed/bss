@@ -8,10 +8,15 @@
   box-shadow: none;
   outline: none;
 }
+.accordion.fqa-accordion .accordion-item{
+  border: none;
+}
 .accordion.fqa-accordion .accordion-button {
   background: #fff;
   font-weight: 600;
   font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  
 }
 .accordion.fqa-accordion .accordion-button:after {
   line-height: 1;
@@ -19,6 +24,9 @@
   background: none;
   font-family: 'Ionicons';
   content: '\f3d8';
+  -webkit-transform: translate(3px, 0);
+  -ms-transform: translate(3px, 0);
+  transform: translate(3px, 0);
 }
 .accordion.fqa-accordion .accordion-button:not(.collapsed):after {
   line-height: 1;
@@ -26,10 +34,28 @@
   background: none;
   font-family: 'Ionicons';
   content: '\f3d0';
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
+  -webkit-transform: rotate(540deg) translate(3px, 0);
+  -ms-transform: rotate(540deg) translate(3px, 0);
+  transform: rotate(540deg) translate(3px, 0);
 }
 .accordion.fqa-accordion .accordion-item {
   color: #999;
+}
+.accordion.fqa-accordion .accordion-item .accordion-body {
+  padding: 1rem 1.25rem;
+}
+.accordion.fqa-accordion .accordion-item .accordion-collapse {
+  padding: 20px 10px;
+    border: solid rgba(0, 0, 0, 0.125);
+    border-width: 0 1px;
+
+}
+.accordion.fqa-accordion .accordion-item .accordion-button.collapsed {
+  border-bottom-width: 0;
+}
+
+.accordion.fqa-accordion .accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-width: 1px;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
