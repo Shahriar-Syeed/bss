@@ -5,7 +5,7 @@
   margin-bottom: 7px;
   margin-right: 4px;
   border-radius: 4px;
-  color: #1eb2a6;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 12px;
   background: #fff;
@@ -37,7 +37,7 @@
 .comment-form-wrap .form-group label {
   font-size: 13px;
   text-transform: uppercase;
-  color: #1eb2a6;
+  color: var(--primary-color);
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -96,7 +96,7 @@
   letter-spacing: .1em;
   font-weight: 600;
   border-radius: 4px;
-  background: #1eb2a6;
+  background: var(--primary-color);
 }
 .comment-list li .comment-body .reply:hover {
   color: #fff;
@@ -117,7 +117,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #1eb2a6;
+  color: var(--primary-color);
 }
 .sidebar-sec {
   margin-bottom: 30px;
@@ -158,7 +158,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #1eb2a6;
+  color: var(--primary-color);
 }
 .categories li.active a {
   color: #000000;

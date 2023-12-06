@@ -16,7 +16,11 @@
 *:before,
 *:after{
   box-sizing: border-box;
-  
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 html,
@@ -35,15 +39,12 @@ html,
 
 
  a, button {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  color: #1eb2a6;
+  color: var(--primary-color);
   text-decoration: none;
 }
 a:hover, a:focus, button:hover, button:focus {
   text-decoration: none;
-  color: #1eb2a6;
+  color: var(--primary-color);
   outline: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -74,7 +75,7 @@ a:hover, a:focus, button:hover, button:focus {
   display: block;
   font-size: 16px;
   font-weight: 700;
-  color: #1eb2a6;
+  color: var(--primary-color);
   margin-bottom: 5px;
 }
 .hero-section .subheading{
@@ -103,7 +104,7 @@ a:hover, a:focus, button:hover, button:focus {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
-  background: #1eb2a6;
+  background: var(--primary-color);
   padding: 1.5rem;
   color: #fff;
   border-radius: 0;

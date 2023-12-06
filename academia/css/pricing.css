@@ -1,5 +1,5 @@
 .accordion.fqa-accordion .accordion-button:not(.collapsed) {
-  background: #1eb2a6;
+  background: var(--primary-color);
   color: #111111;
 }
 .accordion.fqa-accordion .accordion-button:not(.collapsed):focus, .accordion.fqa-accordion .accordion-button:not(.collapsed):hover {

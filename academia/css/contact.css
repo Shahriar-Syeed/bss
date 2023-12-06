@@ -6,7 +6,7 @@
   font-weight: 400; 
 }
 .wrapper .social-media p a {
-  color: #1eb2a6;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 600;
@@ -89,7 +89,7 @@
   color: rgba(0, 0, 0, 0.3) !important; 
 }
 .form-control:focus, .form-control:active {
-  border-color: #1eb2a6 !important; 
+  border-color: var(--primary-color) !important; 
 }
 .contactForm textarea.form-control {
   height: inherit !important;
