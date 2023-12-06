@@ -1,4 +1,4 @@
-.tagcloud a {
+.tagcloud-box .tag-cloud-link {
   text-transform: uppercase;
   display: inline-block;
   padding: 4px 10px;
@@ -9,6 +9,20 @@
   font-weight: 500;
   font-size: 12px;
   background: #fff;
+}
+.about-author .biodata {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+}
+.about-author .description {
+  width: calc(100% - 80px);
+}
+.about-author .description h3 {
+  font-size: 30px;
+  font-weight: 400;
 }
 .comment-form-wrap {
   clear: both;
@@ -48,11 +62,11 @@
   clear: both;
   list-style: none;
 }
-.comment-list li .vcard {
+.comment-list li .visitor {
   width: 80px;
   float: left;
 }
-.comment-list li .vcard img {
+.comment-list li .visitor img {
   width: 50px;
   border-radius: 50%;
 }
@@ -60,7 +74,7 @@
   float: right;
   width: calc(100% - 80px);
 }
-.comment-list li .comment-body h3, .comment-list li .comment-body .h3 {
+.comment-list li .comment-body h3 {
   font-size: 18px;
   font-weight: 500;
 }
@@ -105,16 +119,16 @@
   transform: translateY(-50%);
   color: #1eb2a6;
 }
-.sidebar-box {
+.sidebar-sec {
   margin-bottom: 30px;
   padding: 10px;
   font-size: 15px;
   width: 100%;
 }
-.sidebar-box *:last-child {
+.sidebar-sec *:last-child {
   margin-bottom: 0;
 }
-.sidebar-box h3, .sidebar-box .h3 {
+.sidebar-sec h3 {
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 600;
@@ -155,12 +169,12 @@
   height: 80px;
   width: 80px;
 }
-.sidebar-box .aside-blog .text .heading a {
+.sidebar-sec .aside-blog .text .heading a {
   font-size: 18px;
   color:#000;
   
 }
-.sidebar-box .aside-blog .text {
+.sidebar-sec .aside-blog .text {
 
   width: calc(100% - 90px);
   padding-left: 0;

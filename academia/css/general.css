@@ -151,20 +151,12 @@ a:hover, a:focus, button:hover, button:focus {
     line-height: 1;
     margin-left: 10px;
 }
- .btn-primary-color{
-   color:#fff;
-   border: none;
-   background-color: var(--primary-color);
-   padding: 16px auto;
-   width:9rem;
-   transition: all 0.4s ease;
-   
-  }
-  .btn-primary-color:hover{
-    background-color: var(--primary-color);
-    font-weight: 700;
-    color:#fff;
-  }
+ 
+.btn-primary-color:hover{
+  background-color: var(--primary-color);
+  font-weight: 700;
+  color:#fff;
+}
  
   .btn-outline-primary-color{
     color:var(--primary-color);
