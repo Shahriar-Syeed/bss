@@ -400,6 +400,12 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   background: var(--primary-color);
   color: rgba(255, 255, 255, 0.9);
 }
+.carousel-testimony .owl-item:not(.active) + .active + .active .testimony-wrap .text .user-img > div {
+  background:#fff ;
+}
+.carousel-testimony .owl-item:not(.active) + .active + .active .testimony-wrap .text .user-img > div i {
+  color: var(--primary-color) ;
+}
 .carousel-testimony .owl-item:not(.active) + .active + .active .testimony-wrap .name, .carousel-testimony .owl-item:not(.active) + .active + .active .testimony-wrap .position{
   color: rgba(255, 255, 255, 0.9);
 }
@@ -417,6 +423,8 @@ footer .navbar-brand, .top-navbar .navbar-brand {
 .carousel-testimony.owl-theme .owl-dots{
  margin-top: 20px !important;
 }
+
+
 /* Blog section */
 .blog-link {
   overflow: hidden;
