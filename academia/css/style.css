@@ -581,9 +581,12 @@ footer .navbar-brand, .top-navbar .navbar-brand {
 .cta-section .subscribe-form .form-group .btn-icon i {
   color: #fff;
 }
+.cta-section .subscribe-form .form-group input:focus {
+  box-shadow: none;
+}
 /* Footer */
 footer{
-  padding-top: 5rem;
+  padding-top: calc(5em - 0.5px);
   background: #eee;
 }
 footer h2 {
