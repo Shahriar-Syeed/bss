@@ -27,30 +27,22 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   color:var(--primary-color);
 }
 .navbar-brand span {
-  color: #fff;
   line-height: 1.1;
-  text-transform: uppercase;
   font-size: 12px;
-  display: block;
   font-weight: 500;
 }
-.top-navbar .con .icon span {
-  color: #fff;
-  font-size: 38px;
-  line-height: 1;
-}
-.top-navbar .con .text {
+
+.top-navbar .contact-information .text {
   padding-left: 10px;
 }
-.top-navbar .con .text span, .top-navbar .con .text strong {
-  display: block;
+.top-navbar .contact-information .text span, .top-navbar .contact-information .text strong {
+
   line-height: 1.4;
-  color: #fff;
+
 }
 .top-navbar .social-media > div a {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   margin-right: 4px;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -73,6 +65,7 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   padding: 0;
 }
 .main-navbar-light .btn-custom:before {
+  content: '';
   position: absolute;
   top: -1px;
   bottom: -1px;
@@ -83,54 +76,40 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   -ms-transform: skewX(-20deg);
   transform: skewX(-20deg);
   z-index: -1;
-  content: '';
 }
 .main-navbar-light .navbar-nav > .nav-item > .nav-link.active {
   color: var(--primary-color);
-  position: relative;
-  z-index: 0;
+ 
 }
 .main-navbar-light .navbar-nav > .nav-item > .nav-link {
   font-size: 15px;
-  padding-top: 1.4rem;
-  padding-bottom: 1.4rem;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 1.4rem 25px 1.4rem 25px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
 }
 .main-navbar-light .navbar-toggler {
-  border: none;
   color: rgba(255, 255, 255, 0.9) !important;
   cursor: pointer;
-  text-transform: uppercase;
   font-size: 16px;
   letter-spacing: .1em;
 }
 /* hero section */
 .hero-section{
-  height: 100vh;
   min-height: 100%;
-  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
-  z-index: 0;
   background-image: url('../img/bg_1.jpg');
 }
 .hero-section .page-hero-content {
-  height: 100vh;
   min-height: 750px;
   color: rgba(255, 255, 255, 0.8);
-  z-index: 3;
 }
 /* About section */
 
 .services-wrap .services {
   padding: 25px;
-  display: block;
-  width: 100%;
   margin-bottom: 0px;
 }
 .services {
