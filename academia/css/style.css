@@ -1,26 +1,20 @@
  
 /* Navbar */
 .top-navbar {
-  background: transparent !important;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  right: 0;
-  z-index: 3;
+ 
   padding: 1.2em 0;
 }
 footer .navbar-brand, .top-navbar .navbar-brand {
   font-weight: 800;
   font-size: 30px;
   color: #fff;
-  z-index: 3;
-  position: relative;
   line-height: 1.1;
+  position: relative;
+  z-index: 3;
   text-transform: uppercase;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  text-decoration: none;
   white-space: nowrap;
 }
 .top-navbar .navbar-brand:hover{
@@ -56,13 +50,8 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   color:#fff;
 }
 .main-navbar-light {
-  background: transparent !important;
-  position: absolute;
   top: 95px;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  padding: 0;
+ 
 }
 .main-navbar-light .btn-custom:before {
   content: '';

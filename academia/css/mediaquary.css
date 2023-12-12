@@ -56,6 +56,14 @@
     margin-bottom: 10px;
   }
 }
+@media (max-height: 750px){
+  .hero-section{
+    height: auto;
+  }
+  .hero-section .page-hero-content {
+    height: auto;
+  }
+}
 @media (max-width:578px){
   .section-padding {
     padding: 6rem 0;
@@ -85,11 +93,3 @@
         max-width: 1300px;
       }
   }
-@media (max-height: 750px){
-  .hero-section{
-    height: auto;
-  }
-  .hero-section .page-hero-content {
-    height: auto;
-  }
-}
