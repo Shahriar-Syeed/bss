@@ -117,47 +117,47 @@ footer .navbar-brand, .top-navbar .navbar-brand {
 
 /* About section */
 
-.services-wrap .services {
+.about-wrap .about {
   padding: 25px;
   margin-bottom: 0px;
 }
-.services {
+.about {
   background: #fff;
   padding: 30px;
   margin-bottom: 20px;
 }
-.services:hover, .services.active {
+.about:hover, .about.active {
   background: var(--primary-color) ;
   -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
   box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
 }
-.services-wrap .services .text h2 {
+.about-wrap .about .text h2 {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.services .icon {
+.about .icon {
   margin: 0 auto;
 }
-.services .icon svg {
+.about .icon svg {
   width: 60px;
   height: 60px;
   line-height: 1.2;
   background-image:var(--primary-color);
 }
-.services:hover .icon svg, .services.active .icon svg {
+.about:hover .icon svg, .about.active .icon svg {
   fill: #fff;
 }
-.services-wrap .services .text {
+.about-wrap .about .text {
   padding: 0;
   padding-left: 20px;
   width: 100%;
 }
-.services:hover .text, .services.active .text {
+.about:hover .text, .about.active .text {
   color: rgba(255, 255, 255, 0.9);
 }
-.services:hover .text h2, .services:hover .text .h2, .services.active .text h2, .services.active .text .h2 {
+.about:hover .text h2, .services.active .text h2 {
   color: #fff;
 }
 /* achiv-section */
