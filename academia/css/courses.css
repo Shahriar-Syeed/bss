@@ -4,11 +4,11 @@
   background-position: top center;
   background-attachment: fixed;
 }
-.other-hero .page-hero-content {
+.hero-section.other-hero .page-hero-content {
   min-height: auto;
   height: 700px;
 }
-.other-hero .page-hero-content .page-map {
+.hero-section.other-hero .page-hero-content .page-map {
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 600;
