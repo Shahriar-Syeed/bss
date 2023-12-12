@@ -1,27 +1,27 @@
-.course-hero{
+.hero-section.other-hero{
   min-height: auto;
   height: 700px;
   background-position: top center;
   background-attachment: fixed;
 }
-.course-hero .page-hero-content {
+.other-hero .page-hero-content {
   min-height: auto;
   height: 700px;
 }
-.course-hero .page-hero-content .page-map {
+.other-hero .page-hero-content .page-map {
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
 }
-.course-hero .page-hero-content .page-map span a {
+.other-hero .page-hero-content .page-map span a {
   color: rgba(255, 255, 255, 0.8);
 }
-.course-hero .page-hero-content .page-map span a:hover {
+.other-hero .page-hero-content .page-map span a:hover {
   color: var(--primary-color);
 }
-.course-hero .page-hero-content .main-title {
+.other-hero .page-hero-content .main-title {
   font-weight: 400;
   color: #fff;
   font-size: 70px;
