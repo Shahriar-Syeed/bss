@@ -152,7 +152,7 @@ footer .navbar-brand, .top-navbar .navbar-brand {
 /* achiv-section */
 .achive-section{
   padding: 6rem 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bg_3.jpg)no-repeat center center/cover ;
+  background: linear-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.3)), url(../img/bg_3.jpg)no-repeat center center/cover ;
 }
 .section-counter .icon svg {
   width: 60px;
