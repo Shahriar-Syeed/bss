@@ -93,19 +93,28 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   font-size: 16px;
   letter-spacing: .1em;
 }
+
 /* hero section */
+
 .hero-section{
-  min-height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
+      height: 100vh;
+    min-height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    z-index: 0;
   background-image: url('../img/bg_1.jpg');
+ 
 }
 .hero-section .page-hero-content {
+  height: 100vh;
   min-height: 750px;
   color: rgba(255, 255, 255, 0.8);
+  z-index: 3;
 }
+
 /* About section */
 
 .services-wrap .services {
