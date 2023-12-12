@@ -178,9 +178,7 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   font-weight: 700;
   color: #fff;
   line-height: 1;
-  display: inline-block;
   margin-bottom: 5px;
-  display: block;
 }
 .section-counter .caption {
   display: block;
