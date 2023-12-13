@@ -3,7 +3,7 @@
   line-height: 1.2;
   font-weight: 500;
 }
-.tagcloud-box .tag-cloud-link {
+.tagcloud .tag-cloud-link {
   text-transform: uppercase;
   display: inline-block;
   padding: 4px 10px;
