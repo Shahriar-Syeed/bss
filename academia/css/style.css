@@ -257,8 +257,8 @@ footer .navbar-brand, .top-navbar .navbar-brand {
 .carousel-courses .owl-nav.disabled+.owl-dots {
   margin-top: 0;
 }
-/* outline section */
-.services-2 {
+/* Service section */
+.services {
   background: #fff;
   padding: 30px 20px;
   margin-bottom: 0;
@@ -267,41 +267,41 @@ footer .navbar-brand, .top-navbar .navbar-brand {
   -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
 }
-.services-2 .icon {
+.services .icon {
   margin-bottom: 8px;
 }
-.services-2 .icon svg {
+.services .icon svg {
   width: 70px;
   height: 79px;
   line-height: 1.2;
   fill: var(--primary-color);
 }
-.services-2 .text {
+.services .text {
   width: 100%;
 }
-.services-2 .text h2 {
+.services .text h2 {
   font-size: 20px;
   font-weight: 600;
   padding-top: 5px;
   margin-bottom: 2px;
 }
-.services-2 .text span {
+.services .text span {
   font-size: 13px;
   font-weight: 500;
   background: #f8f8f8;
   padding: 5px;
   border-radius: 4px;
 }
-.services-2:hover, .services-2.active {
+.services:hover, .services.active {
   background: var(--primary-color);
   -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
   box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
 }
-.services-2:hover .icon svg, .services-2.active .icon svg {
+.services:hover .icon svg, .services.active .icon svg {
   fill:#fff;
 }
-.services-2:hover .text h2, .services-2:hover .text .h2, .services-2.active .text h2, .services-2.active .text .h2 {
+.services:hover .text h2, .services.active .text h2 {
   color: #fff;
 }
 /* Testimonial section */
