@@ -62,7 +62,26 @@ html body {
   font-family: "Manrope", sans-serif;
   background: #0B1425;
 }
+html body header .navabr-main {
+  background-color: pink;
+}
+html body header .navabr-main .navbar {
+  background-color: blue;
+}
+html body header .navabr-main .navbar .container {
+  background-color: green;
+}
+html body header .navabr-main .navbar .container .navbar-collapse {
+  background-color: red;
+}
+html body header .navabr-main .navbar .container .navbar-collapse .navbar-nav {
+  background-color: orange;
+}
+html body header .navabr-main .navbar .container .navbar-collapse .navbar-nav .nav-item {
+  background-color: white;
+}
 html body header .navabr-main .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  background-color: yellow;
   color: #fff;
 }
 html body header .section-hero h1 {

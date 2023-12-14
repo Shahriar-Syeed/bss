@@ -33,12 +33,19 @@ html{
     background: $main-bg;
     header{
       .navabr-main{
+        background-color: pink;
         .navbar{
+          background-color: blue;
           .container{
+            background-color: green;
             .navbar-collapse{
+              background-color: red;
               .navbar-nav{
+                background-color: orange;
                 .nav-item{
+                  background-color: white;
                   .nav-link{
+                    background-color: yellow;
                     color:#fff;
                   }
                 }
