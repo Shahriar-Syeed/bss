@@ -61,14 +61,13 @@ img {
 html body {
   font-family: "Manrope", sans-serif;
   background: #0B1425;
-  font-size: 62.5%;
 }
 html body header .navabr-main .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
 html body header .section-hero h1 {
   color: #E1E0E0;
-  font-size: 5.6rem;
+  font-size: 4rem;
   font-weight: 800;
   line-height: 1.13;
 }
