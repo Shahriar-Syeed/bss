@@ -1,0 +1,34 @@
+// Button
+
+.btn{
+  padding: 13px 51px;
+  border-radius: 8px;
+}
+
+.btn .btn-primary-color{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  width: 155px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: $primary-gradiant-color;
+}
+.btn .btn-ouline-color{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: $primary-gradiant-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 155px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid $primary-gradiant-color;
+}
+.text-primary-color{
+  color: $primary-color !important;
+}

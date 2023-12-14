@@ -1,0 +1,77 @@
+.btn {
+  padding: 13px 51px;
+  border-radius: 8px;
+}
+
+.btn .btn-primary-color {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  width: 155px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+}
+
+.btn .btn-ouline-color {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 155px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+}
+
+.text-primary-color {
+  color: #79E8FF !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+}
+
+html body {
+  font-family: "Manrope", sans-serif;
+  background: #0B1425;
+  font-size: 62.5%;
+}
+html body header .navabr-main .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+html body header .section-hero h1 {
+  color: #E1E0E0;
+  font-size: 5.6rem;
+  font-weight: 800;
+  line-height: 1.13;
+}
+html body header .section-hero p {
+  color: #F3F3F3;
+}/*# sourceMappingURL=style.css.map */

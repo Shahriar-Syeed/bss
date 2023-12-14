@@ -1,0 +1,68 @@
+
+
+@import "config";
+@import "utility";
+@import "function";
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform:capitalize;
+}
+img {
+  width: 100%;
+}
+
+html{
+  body{
+    font-family: 'Manrope', sans-serif;
+    background: $main-bg;
+    font-size: 62.5%;
+    header{
+      .navabr-main{
+        .navbar{
+          .container{
+            .navbar-collapse{
+              .navbar-nav{
+                .nav-item{
+                  .nav-link{
+                    color:#fff;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+      .section{
+        &-hero{
+          h1{
+            color: #E1E0E0;
+            font-size: 5.6rem;
+            font-weight: 800;
+            line-height: 1.13; 
+          }
+          p{
+            color: #F3F3F3;
+          }
+        }
+      }
+    }
+    
+  }
+}
