@@ -3,19 +3,17 @@
   border-radius: 8px;
 }
 
-.btn .btn-primary-color {
+.btn.btn-primary-color {
   color: #FFF;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
-  width: 155px;
-  height: 48px;
   flex-shrink: 0;
-  border-radius: 8px;
   background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+  border: none;
 }
 
-.btn .btn-ouline-color {
+.btn.btn-ouline-color {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -23,8 +21,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 155px;
-  height: 48px;
   border-radius: 8px;
   border: 1px solid linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
 }
@@ -33,9 +29,14 @@
   color: #79E8FF !important;
 }
 
+.section-padding {
+  padding: 80px 0;
+}
+
 * {
   padding: 0;
   margin: 0;
+  transition: all 0.3s ease;
 }
 
 a {
@@ -62,8 +63,22 @@ html body {
   font-family: "Manrope", sans-serif;
   background: #0B1425;
 }
+html body header .navbar-main .navbar .container .navbar-collapse .navbar-nav .nav-item {
+  margin-right: 24px;
+}
 html body header .navbar-main .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #E1E0E0;
+  border-bottom: 1px solid transparent;
+}
+html body header .navbar-main .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 1px solid #79E8FF;
+}
+html body header .section-hero {
+  padding-top: 146px;
+}
+html body header .section-hero .subheading {
+  color: #D1D0D0;
+  font-size: 14px;
 }
 html body header .section-hero h1 {
   color: #E1E0E0;
@@ -73,4 +88,10 @@ html body header .section-hero h1 {
 }
 html body header .section-hero p {
   color: #F3F3F3;
+}
+@media (max-width: 578px) {
+  .section html body-logo img {
+    width: 70%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */

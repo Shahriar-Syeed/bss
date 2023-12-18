@@ -8,6 +8,11 @@
 * {
   padding: 0;
   margin: 0;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a {
@@ -43,10 +48,14 @@ html{
               .navbar-nav{
            
                 .nav-item{
-               
+                  margin-right: 24px;
                   .nav-link{
               
                     color: #E1E0E0;
+                    border-bottom: 1px solid transparent;
+                    &:hover{
+                      border-bottom: 1px solid $primary-color;
+                    }
                   }
                 }
               }
@@ -57,6 +66,11 @@ html{
       }
       .section{
         &-hero{
+          padding-top: 146px;
+          .subheading{
+            color: #D1D0D0;
+            font-size: 14px;
+          }
           h1{
             color: #E1E0E0;
             font-size: 4rem;
@@ -69,6 +83,15 @@ html{
         }
       }
     }
+    .section
+      &-logo{
+        @media(max-width:578px) {
+          img{
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+      }
     
   }
 }
