@@ -89,20 +89,33 @@ html{
         @media(max-width:578px) {
           img{
             display: inline-block;
-            width: 70%;
-            margin: 0 15%;
+            width: 40%;
+            margin: 0 30%;
           }
         }
       }
     
-    }
-    &-feature{
-      article{
-        .feature-list{
-          ul{
-            li{
-              list-style: url(./img/tickcircle.png);
-            };
+      &-feature{
+        article{
+          .feature-list{
+            margin-left: 46px;
+            ul{
+              li{
+                list-style: url(./img/tickcircle.png);
+              };
+            }
+          }
+        }
+      }
+      &-service{
+        article{
+          .feature-list{
+            margin-left: 46px;
+            ul{
+              li{
+                list-style: url(./img/tickcircle.png);
+              };
+            }
           }
         }
       }

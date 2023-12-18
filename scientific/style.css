@@ -96,10 +96,19 @@ html body header .section-hero p {
 @media (max-width: 578px) {
   html body .section-logo img {
     display: inline-block;
-    width: 70%;
-    margin: 0 15%;
+    width: 40%;
+    margin: 0 30%;
   }
 }
-html body-feature article .feature-list ul li {
+html body .section-feature article .feature-list {
+  margin-left: 46px;
+}
+html body .section-feature article .feature-list ul li {
+  list-style: url(./img/tickcircle.png);
+}
+html body .section-service article .feature-list {
+  margin-left: 46px;
+}
+html body .section-service article .feature-list ul li {
   list-style: url(./img/tickcircle.png);
 }/*# sourceMappingURL=style.css.map */
