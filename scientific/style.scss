@@ -83,15 +83,29 @@ html{
         }
       }
     }
-    .section
+    .section{
+
       &-logo{
         @media(max-width:578px) {
           img{
+            display: inline-block;
             width: 70%;
-            margin: 0 auto;
+            margin: 0 15%;
           }
         }
       }
     
+    }
+    &-feature{
+      article{
+        .feature-list{
+          ul{
+            li{
+              list-style: url(./img/tickcircle.png);
+            };
+          }
+        }
+      }
+    }
   }
 }
