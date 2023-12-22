@@ -157,6 +157,11 @@ html body .section-service .row:after {
     padding-right: 2px;
   }
 }
+@media (max-width: 578px) {
+  html body .section-service .row .col-md {
+    margin-bottom: 24px;
+  }
+}
 html body .section-service .row .col-md .service {
   height: 464px;
 }
