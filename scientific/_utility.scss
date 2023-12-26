@@ -22,15 +22,45 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-radius: 8px;
-  border: 1px solid $primary-gradiant-color;
+  position: relative;
 }
+
+.btn-outline-border {
+  .btn.btn-ouline-color:after{
+    // box-sizing: content-box;
+    // border-radius: 8px;
+    // border-width: 1px ;
+    // border-style: solid;
+    // border-image:  $primary-gradiant-color;
+    // border-image-slice: 1;
+    content: "";
+    position:absolute;
+    inset: 0;
+    border-radius: 8px; /*1*/
+    border: 1px solid transparent; /*2*/
+    background: inherit; 
+    background-origin: border-box;
+    background-clip: border-box;
+    -webkit-mask: /*4*/
+       linear-gradient(#fff 0 0) padding-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+  }
+}
+
 // text color
 .text-primary-color{
   color: $primary-color !important;
 }
 .text-white-shade{
   color: #f3f3f3 !important;
+}
+.text-gradient-color{
+  background: linear-gradient(85deg, #5997FF 1.78%, #95ECFF 97.59%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 // padding

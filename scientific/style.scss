@@ -220,6 +220,120 @@ html{
         }
       }
       }
+      &-team{
+        .btn-container{
+
+        }
+      }
+      &-case{
+        clip-path: polygon(0px 20.4205px, 0px 20.4205px, 19.4475px 18.5533808px, 73.2px 14.0128824px, 154.3725px 8.3902936px, 256.08px 3.2769032px, 371.4375px 0.264px, 493.56px 0.9428728px, 615.5625px 6.9048104px, 730.56px 19.7411016px, 831.6675px 41.0430352px, 912px 72.4019px, 912px 72.4019px, 971.42553px 95.3074381px, 1037.45664px 105.4922568px, 1107.06411px 105.3846527px, 1177.21872px 97.4129224px, 1244.89125px 84.0053625px, 1307.05248px 67.5902696px, 1360.67319px 50.5959403px, 1402.72416px 35.4506712px, 1430.17617px 24.5827589px, 1440px 20.4205px, 1440px calc(100% - 55.4px), 1440px calc(100% - 55.4px), 1426.3335px calc(100% - 52.03445px), 1388.208px calc(100% - 43.4336px), 1329.9345px calc(100% - 31.84115px), 1255.824px calc(100% - 19.5008px), 1170.1875px calc(100% - 8.65625px), 1077.336px calc(100% - 1.5512px), 981.5805px calc(100% - 0.42934999999989px), 887.232px calc(100% - 7.5344px), 798.6015px calc(100% - 25.11005px), 720px calc(100% - 55.4px), 720px calc(100% - 55.4px), 641.3985px calc(100% - 85.68995px), 552.768px calc(100% - 103.2656px), 458.4195px calc(100% - 110.37065px), 362.664px calc(100% - 109.2488px), 269.8125px calc(100% - 102.14375px), 184.176px calc(100% - 91.2992px), 110.0655px calc(100% - 78.95885px), 51.792px calc(100% - 67.3664px), 13.6665px calc(100% - 58.76555px), 1.7730881440007E-29px calc(100% - 55.4px), 0px 20.4205px); 
+        background-color: #172133;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 846px;
+        .img-container{
+          height: 399px;
+          flex-shrink: 0;
+          border-radius: 16px;
+          &.case-study-1{
+            background: linear-gradient(0deg, rgba(13, 13, 13, 0.83) 29.32%, rgba(255, 255, 255, 0.00) 65.54%), url(./img/case-study-1.png) no-repeat center center/cover ;
+          }
+          &.case-study-2{
+            background: linear-gradient(0deg, rgba(13, 13, 13, 0.83) 29.32%, rgba(255, 255, 255, 0.00) 65.54%), url(./img/case-study-2.png) no-repeat center center/cover ;
+          }
+          a{
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+      &-blog{
+        .card{
+          background: transparent;
+          img{
+            border-radius: 12px;
+          }
+          .card-body{
+            .d-flex{
+              height: 192px;
+            }
+            .card-text{
+              color: #C8C8C8;
+            }
+            a{
+              font-family: inter;
+              text-decoration-line: underline;
+              background: $primary-gradiant-color;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              position: relative;
+              &:after{
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-clip: unset;
+                --webkit-background-clip: unset;
+                background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                z-index: 2
+              }
+              
+            }
+          }
+          &:hover{
+            img{
+              border-radius: 12px 12px 0px 0px;
+            }
+            .card-body{
+              border-radius: 0px 0px 12px 12px;
+              background: #172133;
+              box-shadow: 0px 12px 60px 0px rgba(0, 0, 0, 0.10);
+            }
+          }
+        }
+      }
+      &-cta{
+        background: url(./img/cta-bg.png) no-repeat center center/contain;
+        .info{
+          p{
+            color: #CCD0D6;
+          }
+            ul{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 24px;
+              li{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+                address{
+                  color: #CCD0D6;
+                }
+                a{
+                  display: block;
+                  color: #CCD0D6;
+                }
+              }
+            }
+        }
+        .cta-input{
+          width: 445px;
+          border-radius: 12px;
+          background: #0B1425;
+          box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
+          padding:50px;
+          .heading{
+            margin-bottom: 30px;
+          }
+        }
+      }
     }
   }
 }
