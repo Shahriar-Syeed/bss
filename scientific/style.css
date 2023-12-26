@@ -110,6 +110,16 @@ html body header .section-hero h1 {
   font-weight: 800;
   line-height: 1.13;
 }
+@media (max-width: 778px) {
+  html body header .section-hero h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 578px) {
+  html body header .section-hero h1 {
+    font-size: 2.8rem;
+  }
+}
 html body header .section-hero p {
   color: #F3F3F3;
 }
@@ -321,17 +331,69 @@ html body .section-blog .card:hover .card-body {
   background: #172133;
   box-shadow: 0px 12px 60px 0px rgba(0, 0, 0, 0.1);
 }
+html body .section-testimonial.section-padding {
+  padding: 100px 0 105px;
+}
+html body .section-testimonial .heading {
+  margin-bottom: 54px;
+}
+html body .section-testimonial .testimonial-content {
+  padding: 75px 35px 35px 35px;
+  border-radius: 6px;
+  background: #172133;
+}
+html body .section-testimonial .testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  left: 35px;
+  top: -40px;
+}
+html body .section-testimonial .testimonial-img.img-1 {
+  background: url(./img/testimonial_person_1.png), lightgray -37.971px 0px/149.927% 100% no-repeat;
+}
+html body .section-testimonial .testimonial-img.img-2 {
+  background: url(./img/testimonial_person_2.png), lightgray -37.971px 0px/149.927% 100% no-repeat;
+}
+html body .section-testimonial .testimonial-text {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 35px;
+  color: #E0E0E0;
+  line-height: 1.75;
+  letter-spacing: -0.24px;
+}
+html body .section-testimonial .testimonial-name {
+  color: #CCD0D6;
+  margin-bottom: 4px;
+}
+html body .section-testimonial .testimonial-title {
+  color: #9497A1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.21px;
+}
 html body .section-cta {
-  background: url(./img/cta-bg.png) no-repeat center center/contain;
+  -webkit-clip-path: polygon(0% 2.582%, 0% 2.582%, 1.351% 2.346%, 5.083% 1.772%, 10.72% 1.061%, 17.783% 0.414%, 25.794% 0.033%, 34.275% 0.119%, 42.747% 0.873%, 50.733% 2.496%, 57.755% 5.19%, 63.333% 9.156%, 63.333% 9.156%, 67.46% 12.052%, 72.046% 13.34%, 76.879% 13.327%, 81.751% 12.318%, 86.451% 10.623%, 90.768% 8.547%, 94.491% 6.398%, 97.411% 4.483%, 99.318% 3.109%, 100% 2.582%, 100% 99.976%, 50% 99.976%, 0% 99.976%, 0% 2.582%);
+          clip-path: polygon(0% 2.582%, 0% 2.582%, 1.351% 2.346%, 5.083% 1.772%, 10.72% 1.061%, 17.783% 0.414%, 25.794% 0.033%, 34.275% 0.119%, 42.747% 0.873%, 50.733% 2.496%, 57.755% 5.19%, 63.333% 9.156%, 63.333% 9.156%, 67.46% 12.052%, 72.046% 13.34%, 76.879% 13.327%, 81.751% 12.318%, 86.451% 10.623%, 90.768% 8.547%, 94.491% 6.398%, 97.411% 4.483%, 99.318% 3.109%, 100% 2.582%, 100% 99.976%, 50% 99.976%, 0% 99.976%, 0% 2.582%);
+  background: #172133;
+}
+html body .section-cta.section-padding {
+  padding-top: 180px;
+}
+html body .section-cta .info .heading {
+  margin-bottom: 24px;
 }
 html body .section-cta .info p {
   color: #CCD0D6;
+  margin-bottom: 80px;
 }
 html body .section-cta .info ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+  padding-left: 0;
 }
 html body .section-cta .info ul li {
   display: flex;
@@ -355,4 +417,49 @@ html body .section-cta .cta-input {
 }
 html body .section-cta .cta-input .heading {
   margin-bottom: 30px;
+}
+html body .section-cta .cta-input .form-group {
+  margin-bottom: 20px;
+}
+html body .section-cta .cta-input .form-group label {
+  color: #9497A1;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+html body .section-cta .cta-input .form-group input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #9497A1;
+  border-radius: 0;
+  padding-left: 0;
+}
+html body .section-cta .cta-input .form-group input::-moz-placeholder {
+  color: #CCD0D6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.21px;
+}
+html body .section-cta .cta-input .form-group input::placeholder {
+  color: #CCD0D6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.21px;
+}
+html body .section-cta .cta-input .btn-container {
+  margin-top: 63px;
+}
+@media (max-width: 578px) {
+  html body .section-cta .cta-input {
+    width: auto;
+    margin: 8px;
+    padding: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

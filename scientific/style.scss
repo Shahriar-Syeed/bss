@@ -75,7 +75,13 @@ html{
             color: #E1E0E0;
             font-size: 4rem;
             font-weight: 800;
-            line-height: 1.13; 
+            line-height: 1.13;
+            @media(max-width: 778px){
+              font-size: 3.5rem;
+            } 
+            @media(max-width: 578px){
+              font-size: 2.8rem;
+            } 
           }
           p{
             color: #F3F3F3;
@@ -297,17 +303,72 @@ html{
           }
         }
       }
+      &-testimonial{
+        &.section-padding{
+          padding: 100px 0 105px;
+        }
+        .heading{
+          margin-bottom: 54px;
+        }
+        .testimonial{
+          &-content{
+            padding: 75px 35px 35px 35px;
+            border-radius: 6px;
+            background: #172133;
+          }
+          &-img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            left: 35px;
+            top: -40px;
+            &.img-1{
+              background: url(./img/testimonial_person_1.png), lightgray -37.971px 0px / 149.927% 100% no-repeat;
+            }
+            &.img-2{
+              background: url(./img/testimonial_person_2.png), lightgray -37.971px 0px / 149.927% 100% no-repeat;
+            }
+          }
+          &-text{
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 35px;
+            color: #E0E0E0;
+            line-height: 1.75;
+            letter-spacing: -0.24px;
+          }
+          &-name{
+            color: #CCD0D6;
+            margin-bottom: 4px;
+          }
+          &-title{
+            color: #9497A1;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 24px; /* 171.429% */
+            letter-spacing: -0.21px;
+          }
+        }
+      }
       &-cta{
-        background: url(./img/cta-bg.png) no-repeat center center/contain;
+        clip-path: polygon( 0% 2.582%,0% 2.582%,1.351% 2.346%,5.083% 1.772%,10.72% 1.061%,17.783% 0.414%,25.794% 0.033%,34.275% 0.119%,42.747% 0.873%,50.733% 2.496%,57.755% 5.19%,63.333% 9.156%,63.333% 9.156%,67.46% 12.052%,72.046% 13.34%,76.879% 13.327%,81.751% 12.318%,86.451% 10.623%,90.768% 8.547%,94.491% 6.398%,97.411% 4.483%,99.318% 3.109%,100% 2.582%,100% 99.976%,50% 99.976%,0% 99.976%,0% 2.582% );
+        background: #172133;
+        &.section-padding{
+          padding-top: 180px;
+        }
         .info{
+          .heading{
+            margin-bottom: 24px;
+          }
           p{
             color: #CCD0D6;
+            margin-bottom: 80px;
           }
             ul{
               display: flex;
               flex-direction: column;
               align-items: flex-start;
               gap: 24px;
+              padding-left:0;
               li{
                 display: flex;
                 flex-direction: column;
@@ -331,6 +392,42 @@ html{
           padding:50px;
           .heading{
             margin-bottom: 30px;
+          }
+          .form-group{
+            margin-bottom: 20px;
+           
+            label{
+              color: #9497A1;
+              font-family: Open Sans;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 24px;
+              letter-spacing: -0.18px;
+            }
+            input{
+              background: transparent;
+              border: 0;
+              border-bottom: 1px solid #9497A1;
+              border-radius: 0;
+              padding-left: 0;
+              &::placeholder{
+                color: #CCD0D6;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; /* 171.429% */
+                letter-spacing: -0.21px;
+              }
+            }
+          }
+          .btn-container{
+            margin-top: 63px;
+          }
+          @media(max-width:578px){
+            width: auto;
+            margin:8px;
+            padding:24px;
           }
         }
       }
