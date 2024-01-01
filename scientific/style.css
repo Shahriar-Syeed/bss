@@ -57,6 +57,18 @@
   padding: 80px 0;
 }
 
+.box {
+  -webkit-clip-path: polygon(0% 2.414%, 0% 2.414%, 1.351% 2.193%, 5.083% 1.656%, 10.72% 0.992%, 17.783% 0.387%, 25.794% 0.031%, 34.275% 0.111%, 42.747% 0.816%, 50.733% 2.333%, 57.755% 4.851%, 63.333% 8.558%, 63.333% 8.558%, 67.46% 11.266%, 72.046% 12.47%, 76.879% 12.457%, 81.751% 11.515%, 86.451% 9.93%, 90.768% 7.989%, 94.491% 5.981%, 97.411% 4.19%, 99.318% 2.906%, 100% 2.414%, 100% 93.452%, 100% 93.452%, 99.051% 93.849%, 96.403% 94.866%, 92.357% 96.236%, 87.21% 97.695%, 81.263% 98.977%, 74.815% 99.817%, 68.165% 99.949%, 61.613% 99.109%, 55.458% 97.032%, 50% 93.452%, 50% 93.452%, 44.542% 89.871%, 38.387% 87.794%, 31.835% 86.954%, 25.185% 87.086%, 18.737% 87.926%, 12.79% 89.208%, 7.643% 90.667%, 3.597% 92.037%, 0.949% 93.054%, 0% 93.452%, 0% 2.414%);
+          clip-path: polygon(0% 2.414%, 0% 2.414%, 1.351% 2.193%, 5.083% 1.656%, 10.72% 0.992%, 17.783% 0.387%, 25.794% 0.031%, 34.275% 0.111%, 42.747% 0.816%, 50.733% 2.333%, 57.755% 4.851%, 63.333% 8.558%, 63.333% 8.558%, 67.46% 11.266%, 72.046% 12.47%, 76.879% 12.457%, 81.751% 11.515%, 86.451% 9.93%, 90.768% 7.989%, 94.491% 5.981%, 97.411% 4.19%, 99.318% 2.906%, 100% 2.414%, 100% 93.452%, 100% 93.452%, 99.051% 93.849%, 96.403% 94.866%, 92.357% 96.236%, 87.21% 97.695%, 81.263% 98.977%, 74.815% 99.817%, 68.165% 99.949%, 61.613% 99.109%, 55.458% 97.032%, 50% 93.452%, 50% 93.452%, 44.542% 89.871%, 38.387% 87.794%, 31.835% 86.954%, 25.185% 87.086%, 18.737% 87.926%, 12.79% 89.208%, 7.643% 90.667%, 3.597% 92.037%, 0.949% 93.054%, 0% 93.452%, 0% 2.414%);
+  background-color: #172133;
+}
+@media (max-width: 578px) {
+  .box {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -120,6 +132,11 @@ html body header .section-hero h1 {
     font-size: 2.8rem;
   }
 }
+@media (max-width: 310px) {
+  html body header .section-hero h1 {
+    font-size: 1.7rem;
+  }
+}
 html body header .section-hero p {
   color: #F3F3F3;
 }
@@ -136,19 +153,21 @@ html body .section-feature article .feature-list {
 html body .section-feature article .feature-list ul li {
   list-style: url(./img/tickcircle.png);
 }
-html body .section-service {
-  -webkit-clip-path: polygon(0px 20.4205px, 0px 20.4205px, 19.4475px 18.5533808px, 73.2px 14.0128824px, 154.3725px 8.3902936px, 256.08px 3.2769032px, 371.4375px 0.264px, 493.56px 0.9428728px, 615.5625px 6.9048104px, 730.56px 19.7411016px, 831.6675px 41.0430352px, 912px 72.4019px, 912px 72.4019px, 971.42553px 95.3074381px, 1037.45664px 105.4922568px, 1107.06411px 105.3846527px, 1177.21872px 97.4129224px, 1244.89125px 84.0053625px, 1307.05248px 67.5902696px, 1360.67319px 50.5959403px, 1402.72416px 35.4506712px, 1430.17617px 24.5827589px, 1440px 20.4205px, 1440px calc(100% - 55.4px), 1440px calc(100% - 55.4px), 1426.3335px calc(100% - 52.03445px), 1388.208px calc(100% - 43.4336px), 1329.9345px calc(100% - 31.84115px), 1255.824px calc(100% - 19.5008px), 1170.1875px calc(100% - 8.65625px), 1077.336px calc(100% - 1.5512px), 981.5805px calc(100% - 0.42935px), 887.232px calc(100% - 7.5344px), 798.6015px calc(100% - 25.11005px), 720px calc(100% - 55.4px), 720px calc(100% - 55.4px), 641.3985px calc(100% - 85.68995px), 552.768px calc(100% - 103.2656px), 458.4195px calc(100% - 110.37065px), 362.664px calc(100% - 109.2488px), 269.8125px calc(100% - 102.14375px), 184.176px calc(100% - 91.2992px), 110.0655px calc(100% - 78.95885px), 51.792px calc(100% - 67.3664px), 13.6665px calc(100% - 58.76555px), 0px calc(100% - 55.4px), 0px 20.4205px);
-          clip-path: polygon(0px 20.4205px, 0px 20.4205px, 19.4475px 18.5533808px, 73.2px 14.0128824px, 154.3725px 8.3902936px, 256.08px 3.2769032px, 371.4375px 0.264px, 493.56px 0.9428728px, 615.5625px 6.9048104px, 730.56px 19.7411016px, 831.6675px 41.0430352px, 912px 72.4019px, 912px 72.4019px, 971.42553px 95.3074381px, 1037.45664px 105.4922568px, 1107.06411px 105.3846527px, 1177.21872px 97.4129224px, 1244.89125px 84.0053625px, 1307.05248px 67.5902696px, 1360.67319px 50.5959403px, 1402.72416px 35.4506712px, 1430.17617px 24.5827589px, 1440px 20.4205px, 1440px calc(100% - 55.4px), 1440px calc(100% - 55.4px), 1426.3335px calc(100% - 52.03445px), 1388.208px calc(100% - 43.4336px), 1329.9345px calc(100% - 31.84115px), 1255.824px calc(100% - 19.5008px), 1170.1875px calc(100% - 8.65625px), 1077.336px calc(100% - 1.5512px), 981.5805px calc(100% - 0.42935px), 887.232px calc(100% - 7.5344px), 798.6015px calc(100% - 25.11005px), 720px calc(100% - 55.4px), 720px calc(100% - 55.4px), 641.3985px calc(100% - 85.68995px), 552.768px calc(100% - 103.2656px), 458.4195px calc(100% - 110.37065px), 362.664px calc(100% - 109.2488px), 269.8125px calc(100% - 102.14375px), 184.176px calc(100% - 91.2992px), 110.0655px calc(100% - 78.95885px), 51.792px calc(100% - 67.3664px), 13.6665px calc(100% - 58.76555px), 0px calc(100% - 55.4px), 0px 20.4205px);
-  background-color: #172133;
-  min-height: 846px;
+html body .section-service .section-padding {
+  padding: 80px 0 160px;
 }
-html body .section-service .heading {
+@media (max-width: 578px) {
+  html body .section-service .section-padding {
+    padding: 48px 0;
+  }
+}
+html body .section-service .box .heading {
   margin-top: 14px;
 }
-html body .section-service .row {
+html body .section-service .box .row {
   position: relative;
 }
-html body .section-service .row:after {
+html body .section-service .box .row:after {
   content: "";
   background-image: url(./img/service-line-bg.png);
   background-position: center center;
@@ -162,81 +181,87 @@ html body .section-service .row:after {
   height: 100%;
 }
 @media (max-width: 1200px) {
-  html body .section-service .row:after {
+  html body .section-service .box .row:after {
     top: -6%;
     left: 2%;
   }
 }
 @media (max-width: 992px) {
-  html body .section-service .row:after {
+  html body .section-service .box .row:after {
     top: -14%;
     left: 2%;
   }
 }
 @media (max-width: 778px) {
-  html body .section-service .row:after {
+  html body .section-service .box .row:after {
     display: none;
   }
 }
 @media (max-width: 778px) {
-  html body .section-service .row .col-md {
+  html body .section-service .box .row .col-md {
     padding-left: 2px;
     padding-right: 2px;
   }
 }
 @media (max-width: 578px) {
-  html body .section-service .row .col-md {
+  html body .section-service .box .row .col-md {
     margin-bottom: 24px;
   }
 }
-html body .section-service .row .col-md .service {
+html body .section-service .box .row .col-md .service {
   height: 464px;
 }
 @media (max-width: 992px) {
-  html body .section-service .row .col-md .service {
+  html body .section-service .box .row .col-md .service {
     height: 327px;
   }
 }
 @media (max-width: 778px) {
-  html body .section-service .row .col-md .service {
+  html body .section-service .box .row .col-md .service {
     height: 296px;
   }
 }
-html body .section-service .row .col-md .service .logo {
+@media (max-width: 578px) {
+  html body .section-service .box .row .col-md .service {
+    height: auto;
+    margin-bottom: 12px;
+  }
+}
+html body .section-service .box .row .col-md .service .logo {
   position: relative;
   width: 100%;
   z-index: 2;
 }
-html body .section-service .row .col-md .service .logo .circle {
+html body .section-service .box .row .col-md .service .logo .circle {
   width: 100%;
   aspect-ratio: 1/1;
   background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
   margin-bottom: 20px;
 }
-html body .section-service .row .col-md .service .logo .circle svg {
+html body .section-service .box .row .col-md .service .logo .circle svg {
   width: 50%;
 }
 @media (max-width: 578px) {
-  html body .section-service .row .col-md .service .logo .circle {
+  html body .section-service .box .row .col-md .service .logo .circle {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-html body .section-service .row .col-md .service .logo h3 {
+html body .section-service .box .row .col-md .service .logo h3 {
   margin-bottom: 8px;
 }
 @media (max-width: 992px) {
-  html body .section-service .row .col-md .service .logo h3 {
+  html body .section-service .box .row .col-md .service .logo h3 {
     font-size: 20px;
   }
 }
 @media (max-width: 778px) {
-  html body .section-service .row .col-md .service .logo h3 {
+  html body .section-service .box .row .col-md .service .logo h3 {
     font-size: 16px;
   }
 }
-html body .section-service .row .col-md .service .logo a {
+html body .section-service .box .row .col-md .service .logo a {
   font-family: inter;
   text-decoration-line: underline;
   background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
@@ -244,7 +269,7 @@ html body .section-service .row .col-md .service .logo a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-html body .section-service .row .col-md .service .logo a:after {
+html body .section-service .box .row .col-md .service .logo a:after {
   content: "";
   width: 100px;
   height: 2px;
@@ -254,22 +279,34 @@ html body .section-service .row .col-md .service .logo a:after {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: -2px;
   z-index: 3;
 }
 @media (max-width: 778px) {
-  html body .section-service .row .col-md .service .logo a {
+  html body .section-service .box .row .col-md .service .logo a {
     font-size: 14px;
   }
 }
-html body .section-case {
-  -webkit-clip-path: polygon(0px 20.4205px, 0px 20.4205px, 19.4475px 18.5533808px, 73.2px 14.0128824px, 154.3725px 8.3902936px, 256.08px 3.2769032px, 371.4375px 0.264px, 493.56px 0.9428728px, 615.5625px 6.9048104px, 730.56px 19.7411016px, 831.6675px 41.0430352px, 912px 72.4019px, 912px 72.4019px, 971.42553px 95.3074381px, 1037.45664px 105.4922568px, 1107.06411px 105.3846527px, 1177.21872px 97.4129224px, 1244.89125px 84.0053625px, 1307.05248px 67.5902696px, 1360.67319px 50.5959403px, 1402.72416px 35.4506712px, 1430.17617px 24.5827589px, 1440px 20.4205px, 1440px calc(100% - 55.4px), 1440px calc(100% - 55.4px), 1426.3335px calc(100% - 52.03445px), 1388.208px calc(100% - 43.4336px), 1329.9345px calc(100% - 31.84115px), 1255.824px calc(100% - 19.5008px), 1170.1875px calc(100% - 8.65625px), 1077.336px calc(100% - 1.5512px), 981.5805px calc(100% - 0.42935px), 887.232px calc(100% - 7.5344px), 798.6015px calc(100% - 25.11005px), 720px calc(100% - 55.4px), 720px calc(100% - 55.4px), 641.3985px calc(100% - 85.68995px), 552.768px calc(100% - 103.2656px), 458.4195px calc(100% - 110.37065px), 362.664px calc(100% - 109.2488px), 269.8125px calc(100% - 102.14375px), 184.176px calc(100% - 91.2992px), 110.0655px calc(100% - 78.95885px), 51.792px calc(100% - 67.3664px), 13.6665px calc(100% - 58.76555px), 0px calc(100% - 55.4px), 0px 20.4205px);
-          clip-path: polygon(0px 20.4205px, 0px 20.4205px, 19.4475px 18.5533808px, 73.2px 14.0128824px, 154.3725px 8.3902936px, 256.08px 3.2769032px, 371.4375px 0.264px, 493.56px 0.9428728px, 615.5625px 6.9048104px, 730.56px 19.7411016px, 831.6675px 41.0430352px, 912px 72.4019px, 912px 72.4019px, 971.42553px 95.3074381px, 1037.45664px 105.4922568px, 1107.06411px 105.3846527px, 1177.21872px 97.4129224px, 1244.89125px 84.0053625px, 1307.05248px 67.5902696px, 1360.67319px 50.5959403px, 1402.72416px 35.4506712px, 1430.17617px 24.5827589px, 1440px 20.4205px, 1440px calc(100% - 55.4px), 1440px calc(100% - 55.4px), 1426.3335px calc(100% - 52.03445px), 1388.208px calc(100% - 43.4336px), 1329.9345px calc(100% - 31.84115px), 1255.824px calc(100% - 19.5008px), 1170.1875px calc(100% - 8.65625px), 1077.336px calc(100% - 1.5512px), 981.5805px calc(100% - 0.42935px), 887.232px calc(100% - 7.5344px), 798.6015px calc(100% - 25.11005px), 720px calc(100% - 55.4px), 720px calc(100% - 55.4px), 641.3985px calc(100% - 85.68995px), 552.768px calc(100% - 103.2656px), 458.4195px calc(100% - 110.37065px), 362.664px calc(100% - 109.2488px), 269.8125px calc(100% - 102.14375px), 184.176px calc(100% - 91.2992px), 110.0655px calc(100% - 78.95885px), 51.792px calc(100% - 67.3664px), 13.6665px calc(100% - 58.76555px), 0px calc(100% - 55.4px), 0px 20.4205px);
-  background-color: #172133;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 846px;
+@media (max-width: 578px) {
+  html body .section-service .box .row .col-md .service:last-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 778px) {
+  html body .section-case .section-padding {
+    padding: 80px 0 160px;
+  }
+}
+@media (max-width: 578px) {
+  html body .section-case .section-padding {
+    padding: 48px 0;
+  }
+}
+@media (max-width: 778px) {
+  html body .section-case .box {
+    -webkit-clip-path: polygon(0px 20.4205px, 0px 20.4205px, 19.4475px 18.5533808px, 73.2px 14.0128824px, 154.3725px 8.3902936px, 256.08px 3.2769032px, 371.4375px 0.264px, 493.56px 0.9428728px, 615.5625px 6.9048104px, 730.56px 19.7411016px, 831.6675px 41.0430352px, 912px 72.4019px, 912px 72.4019px, 971.42553px 95.3074381px, 1037.45664px 105.4922568px, 1107.06411px 105.3846527px, 1177.21872px 97.4129224px, 1244.89125px 84.0053625px, 1307.05248px 67.5902696px, 1360.67319px 50.5959403px, 1402.72416px 35.4506712px, 1430.17617px 24.5827589px, 1440px 20.4205px, calc(100% - 0px) 790.6px, calc(100% - 0px) 790.6px, calc(100% - 13.6665px) 793.96555px, calc(100% - 51.792px) 802.5664px, calc(100% - 110.0655px) 814.15885px, calc(100% - 184.176px) 826.4992px, calc(100% - 269.8125px) 837.34375px, calc(100% - 362.664px) 844.4488px, calc(100% - 458.4195px) 845.57065px, calc(100% - 552.768px) 838.4656px, calc(100% - 641.3985px) 820.88995px, calc(100% - 720px) 790.6px, 720px 790.6px, 641.3985px 760.31005px, 552.768px 742.7344px, 458.4195px 735.62935px, 362.664px 736.7512px, 269.8125px 743.85625px, 184.176px 754.7008px, 110.0655px 767.04115px, 51.792px 778.6336px, 13.6665px 787.23445px, 0px 790.6px, 0px 20.4205px);
+            clip-path: polygon(0px 20.4205px, 0px 20.4205px, 19.4475px 18.5533808px, 73.2px 14.0128824px, 154.3725px 8.3902936px, 256.08px 3.2769032px, 371.4375px 0.264px, 493.56px 0.9428728px, 615.5625px 6.9048104px, 730.56px 19.7411016px, 831.6675px 41.0430352px, 912px 72.4019px, 912px 72.4019px, 971.42553px 95.3074381px, 1037.45664px 105.4922568px, 1107.06411px 105.3846527px, 1177.21872px 97.4129224px, 1244.89125px 84.0053625px, 1307.05248px 67.5902696px, 1360.67319px 50.5959403px, 1402.72416px 35.4506712px, 1430.17617px 24.5827589px, 1440px 20.4205px, calc(100% - 0px) 790.6px, calc(100% - 0px) 790.6px, calc(100% - 13.6665px) 793.96555px, calc(100% - 51.792px) 802.5664px, calc(100% - 110.0655px) 814.15885px, calc(100% - 184.176px) 826.4992px, calc(100% - 269.8125px) 837.34375px, calc(100% - 362.664px) 844.4488px, calc(100% - 458.4195px) 845.57065px, calc(100% - 552.768px) 838.4656px, calc(100% - 641.3985px) 820.88995px, calc(100% - 720px) 790.6px, 720px 790.6px, 641.3985px 760.31005px, 552.768px 742.7344px, 458.4195px 735.62935px, 362.664px 736.7512px, 269.8125px 743.85625px, 184.176px 754.7008px, 110.0655px 767.04115px, 51.792px 778.6336px, 13.6665px 787.23445px, 0px 790.6px, 0px 20.4205px);
+  }
 }
 html body .section-case .img-container {
   height: 399px;
