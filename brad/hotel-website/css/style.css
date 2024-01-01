@@ -160,7 +160,7 @@ p {
 /* Features */
 .box {
   float: left;
-  width: 33.333333%;
+  width: 33.3%;
   padding: 50px;
   text-align: center;
 }
@@ -236,5 +236,5 @@ p {
   padding: 20px 0;
 }
 #main-footer p {
-  margin: 0;
+  margin: 10px 0;
 }
