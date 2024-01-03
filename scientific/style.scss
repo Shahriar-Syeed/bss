@@ -109,11 +109,21 @@ html{
       &-feature{
         article{
           .feature-list{
-            margin-left: 46px;
+            
             ul{
+              list-style: none;
               li{
-                list-style: url(./img/tickcircle.png);
-              };
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                .tick-img{
+                  height: 24px;
+                  width: 24px;
+                  background: url(./img/tickcircle.png) no-repeat center center/contain;
+                  display: inline-block;
+                  margin-right: 6px;
+                }
+              }
             }
           }
         }
@@ -391,6 +401,12 @@ html{
           p{
             color: #CCD0D6;
             margin-bottom: 80px;
+            @media(max-width:768px) {
+              margin-bottom:50px ;
+            }
+            @media(max-width:576) {
+              margin-bottom:40px ;
+            }
           }
             ul{
               display: flex;

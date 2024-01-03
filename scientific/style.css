@@ -158,11 +158,20 @@ html body header .section-hero p {
     margin: 0 30%;
   }
 }
-html body .section-feature article .feature-list {
-  margin-left: 46px;
+html body .section-feature article .feature-list ul {
+  list-style: none;
 }
 html body .section-feature article .feature-list ul li {
-  list-style: url(./img/tickcircle.png);
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+html body .section-feature article .feature-list ul li .tick-img {
+  height: 24px;
+  width: 24px;
+  background: url(./img/tickcircle.png) no-repeat center center/contain;
+  display: inline-block;
+  margin-right: 6px;
 }
 html body .section-service .section-padding {
   padding: 80px 0 160px;
@@ -438,6 +447,16 @@ html body .section-cta .info .heading {
 html body .section-cta .info p {
   color: #CCD0D6;
   margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  html body .section-cta .info p {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 576) {
+  html body .section-cta .info p {
+    margin-bottom: 40px;
+  }
 }
 html body .section-cta .info ul {
   display: flex;
