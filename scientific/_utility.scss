@@ -66,6 +66,9 @@
 
 .section-padding{
   padding:80px 0;
+  @media(max-width:768){
+    padding: 56px 0;
+  }
 }
 
 // clip path

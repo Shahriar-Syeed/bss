@@ -56,6 +56,11 @@
 .section-padding {
   padding: 80px 0;
 }
+@media (max-width: 768) {
+  .section-padding {
+    padding: 56px 0;
+  }
+}
 
 .box {
   -webkit-clip-path: polygon(0% 2.414%, 0% 2.414%, 1.351% 2.193%, 5.083% 1.656%, 10.72% 0.992%, 17.783% 0.387%, 25.794% 0.031%, 34.275% 0.111%, 42.747% 0.816%, 50.733% 2.333%, 57.755% 4.851%, 63.333% 8.558%, 63.333% 8.558%, 67.46% 11.266%, 72.046% 12.47%, 76.879% 12.457%, 81.751% 11.515%, 86.451% 9.93%, 90.768% 7.989%, 94.491% 5.981%, 97.411% 4.19%, 99.318% 2.906%, 100% 2.414%, 100% 93.452%, 100% 93.452%, 99.051% 93.849%, 96.403% 94.866%, 92.357% 96.236%, 87.21% 97.695%, 81.263% 98.977%, 74.815% 99.817%, 68.165% 99.949%, 61.613% 99.109%, 55.458% 97.032%, 50% 93.452%, 50% 93.452%, 44.542% 89.871%, 38.387% 87.794%, 31.835% 86.954%, 25.185% 87.086%, 18.737% 87.926%, 12.79% 89.208%, 7.643% 90.667%, 3.597% 92.037%, 0.949% 93.054%, 0% 93.452%, 0% 2.414%);
@@ -195,21 +200,14 @@ html body .section-service .box .row:after {
   background-size: contain;
   display: inline-block;
   position: absolute;
-  top: -5%;
-  left: 1%;
+  top: -1%;
+  left: 2%;
   width: 95%;
   height: 100%;
 }
 @media (max-width: 1200px) {
   html body .section-service .box .row:after {
     top: -15%;
-    left: 2%;
-  }
-}
-@media (max-width: 992px) {
-  html body .section-service .box .row:after {
-    top: -14%;
-    left: 2%;
   }
 }
 @media (max-width: 778px) {
@@ -339,12 +337,46 @@ html body .section-case .img-container a {
 }
 html body .section-blog .card {
   background: transparent;
+  border-color: transparent;
 }
 html body .section-blog .card img {
   border-radius: 12px;
 }
+html body .section-blog .card .card-body {
+  padding: 24px 56px 33px 15px;
+}
+@media (max-width: 991px) {
+  html body .section-blog .card .card-body {
+    padding: 24px 16px 16px;
+  }
+}
 html body .section-blog .card .card-body .d-flex {
-  height: 192px;
+  height: 168px;
+}
+@media (max-width: 1400px) {
+  html body .section-blog .card .card-body .d-flex {
+    height: 192px;
+  }
+}
+@media (max-width: 1200px) {
+  html body .section-blog .card .card-body .d-flex {
+    height: 240px;
+  }
+}
+@media (max-width: 991px) {
+  html body .section-blog .card .card-body .d-flex {
+    height: 264px;
+  }
+}
+@media (max-width: 768px) {
+  html body .section-blog .card .card-body .d-flex {
+    height: 120px;
+  }
+}
+@media (max-width: 576px) {
+  html body .section-blog .card .card-body .d-flex {
+    height: auto;
+  }
 }
 html body .section-blog .card .card-body .card-text {
   color: #C8C8C8;
@@ -368,16 +400,28 @@ html body .section-blog .card .card-body a:after {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: 6px;
   z-index: 2;
 }
-html body .section-blog .card:hover img {
-  border-radius: 12px 12px 0px 0px;
+@media (hover: hover) {
+  html body .section-blog .card:hover img {
+    border-radius: 12px 12px 0px 0px;
+  }
+  html body .section-blog .card:hover .card-body {
+    border-radius: 0px 0px 12px 12px;
+    background: #172133;
+    box-shadow: 0px 12px 60px 0px rgba(0, 0, 0, 0.1);
+  }
 }
-html body .section-blog .card:hover .card-body {
-  border-radius: 0px 0px 12px 12px;
-  background: #172133;
-  box-shadow: 0px 12px 60px 0px rgba(0, 0, 0, 0.1);
+@media not all and (hover: hover) {
+  html body .section-blog .card img {
+    border-radius: 12px 12px 0px 0px;
+  }
+  html body .section-blog .card .card-body {
+    border-radius: 0px 0px 12px 12px;
+    background: #172133;
+    box-shadow: 0px 12px 60px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 html body .section-testimonial.section-padding {
   padding: 100px 0 105px;
@@ -576,10 +620,10 @@ html body .footer-cta-btn {
   background: #FFF;
 }
 html body .footer-cta-btn span {
-  font-weight: 700;
+  font-weight: 800;
 }
 html body .footer-cta-btn:hover {
-  background: #CCD0D6;
+  background: #f3f4f5;
 }
 html body .footer-main {
   padding: 78px 0 81px;

@@ -154,19 +154,18 @@ html{
               background-size: contain;
               display: inline-block;
               position: absolute;
-              top: -5%;
-              left: 1%;
+              top: -1%;
+              left: 2%;
               width: 95%;
               height: 100%;
               
                 @media (max-width:1200px){
                   top: -15%;
-                  left: 2%;
                 }
-                @media (max-width:992px){
-                  top: -14%;
-                  left: 2%;
-                }
+                // @media (max-width:992px){
+                //   top: -14%;
+                //   left: 2%;
+                // }
                 @media (max-width:778px){
                   display: none;
                 }
@@ -290,12 +289,35 @@ html{
       &-blog{
         .card{
           background: transparent;
+          border-color: transparent;
           img{
             border-radius: 12px;
           }
           .card-body{
+            padding: 24px 56px 33px 15px;
+            @media(max-width:991px) {
+              padding: 24px 16px 16px;
+            }
             .d-flex{
-              height: 192px;
+              height: 168px;
+              @media(max-width:1400px) {
+                height: 192px;
+                
+              }
+              @media(max-width:1200px) {
+                height: 240px;
+                
+              }
+              @media(max-width:991px) {
+                height: 264px;
+                
+              }
+              @media(max-width:768px) {
+                height: 120px; 
+              }
+              @media(max-width:576px) {
+                height: auto; 
+              }
             }
             .card-text{
               color: #C8C8C8;
@@ -308,6 +330,7 @@ html{
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               position: relative;
+             
               &:after{
                 content: "";
                 width: 100%;
@@ -318,13 +341,27 @@ html{
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                bottom: 0;
+                bottom: 6px;
                 z-index: 2
               }
               
             }
           }
-          &:hover{
+          // Styles for devices that support hover interactions
+          @media(hover:hover){
+            &:hover{
+              img{
+                border-radius: 12px 12px 0px 0px;
+              }
+              .card-body{
+                border-radius: 0px 0px 12px 12px;
+                background: #172133;
+                box-shadow: 0px 12px 60px 0px rgba(0, 0, 0, 0.10);
+              }
+            }
+          }
+            // Styles for devices that do not support hover interactions
+          @media not all and (hover:hover){
             img{
               border-radius: 12px 12px 0px 0px;
             }
@@ -512,10 +549,10 @@ html{
           border-radius: 6px;
           background: #FFF;
           span{
-            font-weight: 700;
+            font-weight: 800;
           }
           &:hover{
-            background:#CCD0D6 ;
+            background:#f3f4f5;
           }
         }
       }
