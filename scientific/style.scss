@@ -3,6 +3,7 @@
 @import "config";
 @import "utility";
 @import "function";
+@import "resopnsive";
 
 
 * {
@@ -64,34 +65,58 @@ html{
 
         }
       }
-      .section{
-        &-hero{
-          padding-top: 146px;
-          @media(max-width:1200px) {
-            padding-top: 0;
+      .section-hero{
+        padding-top: 146px;
+       
+        @media(max-width:1200px) {
+          padding-top: 0;
+        }
+        .container{
+
+          &:before{
+            content: "";
+            width: 33.96%;
+            aspect-ratio:489 / 547 ;
+            background: url(./img/hero-top-left-bg.png) no-repeat center center/contain;
+            position: absolute;
+            left:0;
+            top:0;
           }
-          .subheading{
-            color: #D1D0D0;
-            font-size: 14px;
+          &::after{
+            content: "";
+            width: 40.21%;
+            aspect-ratio: 579 / 676 ;
+            background: url(./img/hero-top-right-bg.png) no-repeat center center/contain;
+            position: absolute;
+            right:0;
+            top:0;
+            z-index: -1;
+            @media(max-width: 992px){
+              display: none;
+            }
           }
-          h1{
-            color: #E1E0E0;
-            font-size: 4rem;
-            font-weight: 800;
-            line-height: 1.13;
-            @media(max-width: 778px){
-              font-size: 3.5rem;
-            } 
-            @media(max-width: 578px){
-              font-size: 2.8rem;
-            } 
-            @media(max-width: 310px){
-              font-size: 1.7rem;
-            } 
-          }
-          p{
-            color: #F3F3F3;
-          }
+        }
+        .subheading{
+          color: #D1D0D0;
+          font-size: 14px;
+        }
+        h1{
+          color: #E1E0E0;
+          font-size: 4rem;
+          font-weight: 800;
+          line-height: 1.13;
+          @media(max-width: 778px){
+            font-size: 3.5rem;
+          } 
+          @media(max-width: 578px){
+            font-size: 2.8rem;
+          } 
+          @media(max-width: 310px){
+            font-size: 1.7rem;
+          } 
+        }
+        p{
+          color: #F3F3F3;
         }
       }
     }
@@ -255,8 +280,29 @@ html{
         }
       }
       &-team{
-        .btn-container{
-
+        &:before{
+          content: "";
+          width: 140px;
+          aspect-ratio:70 / 131 ;
+          background: url(./img/team-sec-top-right-bg.png) no-repeat center center/contain;
+          position: absolute;
+          right:0;
+          top: 130px;
+          @include md {
+            opacity:0.5;
+          }
+        }
+        .heading{
+          p{
+            max-width: 871px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .row{
+          max-width: 850px;
+          margin-left: auto;
+            margin-right: auto;
         }
       }
       &-case{
@@ -287,6 +333,31 @@ html{
         }
       }
       &-blog{
+        &:before{
+          content: "";
+          width: 375px;
+          aspect-ratio:311 / 420 ;
+          background: url(./img/blog-sec-top-left-bg.png) no-repeat center center/contain;
+          position: absolute;
+          left:0;
+          top: -300px;
+          
+          @include md {
+            opacity:0.5;
+          }
+        }
+        &::after{
+          content: "";
+          width: 253px;
+          aspect-ratio:253 / 609 ;
+          background: url(./img/blog-sec-bottom-right-bg.png) no-repeat center center/contain;
+          position: absolute;
+          right:0;
+          bottom: -140px;
+          @include md {
+            opacity:0.5;
+          }
+        }
         .card{
           background: transparent;
           border-color: transparent;
@@ -373,9 +444,25 @@ html{
           }
         }
       }
-      &-testimonial{
+      &-testimonial{    
         &.section-padding{
           padding: 100px 0 105px;
+        }
+        &:before{
+          content: "";
+          width: 218px;
+          aspect-ratio:109 / 199 ;
+          background: url(./img/cta-top-right-bg.png) no-repeat center center/contain;
+          position: absolute;
+          left: 0;
+          bottom: -307px;
+          z-index: 2;
+          @media(max-width:1500px){
+            left: -48px;
+          }
+          @include md {
+            opacity:0.5;
+          }
         }
         .heading{
           margin-bottom: 54px;
@@ -425,7 +512,7 @@ html{
         @media(max-width:992px){
           clip-path: polygon( 0% 3.128%,0% 3.128%,1.24% 2.941%,4.681% 2.464%,9.907% 1.821%,16.502% 1.137%,24.049% 0.535%,32.132% 0.141%,40.335% 0.079%,48.24% 0.473%,55.432% 1.448%,61.493% 3.128%,61.493% 3.128%,66.267% 4.558%,71.338% 5.388%,76.517% 5.724%,81.618% 5.671%,86.45% 5.335%,90.826% 4.823%,94.557% 4.24%,97.455% 3.693%,99.332% 3.287%,100% 3.128%,100% 99.976%,50% 99.976%,0% 99.976%,0% 3.128% );
         }
-        @media(max-width:768px){
+        @include md {
           clip-path: polygon( 0.09% 0.906%,0.09% 0.906%,0.97% 0.851%,3.453% 0.712%,7.306% 0.524%,12.295% 0.323%,18.187% 0.147%,24.747% 0.032%,31.743% 0.014%,38.94% 0.129%,46.105% 0.414%,53.004% 0.906%,53.004% 0.906%,58.79% 1.312%,64.941% 1.548%,71.228% 1.643%,77.421% 1.628%,83.29% 1.533%,88.607% 1.387%,93.141% 1.222%,96.664% 1.066%,98.946% 0.951%,99.758% 0.906%,99.758% 99.943%,49.924% 99.943%,0.09% 99.943%,0.09% 0.906% );
         }
         &.section-padding{
@@ -559,7 +646,7 @@ html{
       &-main{
         padding:78px 0 81px;
         background: #0B1425;
-        @media(max-width:768px){
+        @include md {
           padding:48px 0 20px;
           
         }
