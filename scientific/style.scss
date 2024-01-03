@@ -68,7 +68,7 @@ html{
       .section-hero{
         padding-top: 146px;
        
-        @media(max-width:1200px) {
+        @include xl {
           padding-top: 0;
         }
         .container{
@@ -91,7 +91,7 @@ html{
             right:0;
             top:0;
             z-index: -1;
-            @media(max-width: 992px){
+            @include lg {
               display: none;
             }
           }
@@ -105,10 +105,10 @@ html{
           font-size: 4rem;
           font-weight: 800;
           line-height: 1.13;
-          @media(max-width: 778px){
+          @include md {
             font-size: 3.5rem;
           } 
-          @media(max-width: 578px){
+          @include sm {
             font-size: 2.8rem;
           } 
           @media(max-width: 310px){
@@ -724,7 +724,7 @@ html{
         }
         .gap-76{
           gap:76px;
-          @media(max-width: 768px){
+          @include md{
             gap:12px;
           }
         }
