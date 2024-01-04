@@ -110,6 +110,55 @@ html body {
   font-family: "Manrope", sans-serif;
   background: #0B1425;
 }
+html body header .navbar-main.top .navbar {
+  background: rgba(0, 0, 0, 0.305);
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+@media (max-height: 578px) {
+  html body header .navbar-main.top .navbar {
+    padding-top: 0.01rem !important;
+    padding-bottom: 0.01rem !important;
+  }
+}
+@media (max-height: 578px) {
+  html body header .navbar-main.top .navbar .nvbar-brand {
+    width: 100px;
+  }
+}
+@media (max-height: 578px) {
+  html body header .navbar-main.top .navbar .navbar-toggler .toggle-text {
+    display: none;
+  }
+}
+@media (max-height: 578px) {
+  html body header .navbar-main .navbar {
+    padding-top: 0.01rem !important;
+    padding-bottom: 0.01rem !important;
+  }
+}
+@media (max-height: 578px) {
+  html body header .navbar-main .navbar .container .nvbar-brand {
+    width: 100px;
+  }
+}
+@media (max-width: 320px) {
+  html body header .navbar-main .navbar .container .nvbar-brand {
+    width: 100px;
+  }
+}
+@media (max-height: 578px) {
+  html body header .navbar-main .navbar .container .navbar-toggler .toggle-text {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  html body header .navbar-main .navbar .container .navbar-toggler .toggle-text {
+    display: none;
+  }
+}
 html body header .navbar-main .navbar .container .navbar-collapse .navbar-nav .nav-item {
   margin-right: 24px;
 }
@@ -132,7 +181,7 @@ html body header .section-hero .container:before {
   content: "";
   width: 33.96%;
   aspect-ratio: 489/547;
-  background: url(./img/hero-top-left-bg.png) no-repeat center center/contain;
+  background: url(../img/hero-top-left-bg.png) no-repeat center center/contain;
   position: absolute;
   left: 0;
   top: 0;
@@ -141,10 +190,10 @@ html body header .section-hero .container::after {
   content: "";
   width: 40.21%;
   aspect-ratio: 579/676;
-  background: url(./img/hero-top-right-bg.png) no-repeat center center/contain;
+  background: url(../img/hero-top-right-bg.png) no-repeat center center/contain;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -30px;
   z-index: -1;
 }
 @media only screen and (max-width: 992px) {
@@ -198,7 +247,7 @@ html body .section-feature article .feature-list ul li {
 html body .section-feature article .feature-list ul li .tick-img {
   height: 24px;
   width: 24px;
-  background: url(./img/tickcircle.png) no-repeat center center/contain;
+  background: url(../img/tickcircle.png) no-repeat center center/contain;
   display: inline-block;
   margin-right: 6px;
 }
@@ -218,7 +267,7 @@ html body .section-service .box .row {
 }
 html body .section-service .box .row:after {
   content: "";
-  background-image: url(./img/service-line-bg.png);
+  background-image: url(../img/service-line-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -338,7 +387,7 @@ html body .section-team:before {
   content: "";
   width: 140px;
   aspect-ratio: 70/131;
-  background: url(./img/team-sec-top-right-bg.png) no-repeat center center/contain;
+  background: url(../img/team-sec-top-right-bg.png) no-repeat center center/contain;
   position: absolute;
   right: 0;
   top: 130px;
@@ -374,10 +423,10 @@ html body .section-case .img-container {
   border-radius: 16px;
 }
 html body .section-case .img-container.case-study-1 {
-  background: linear-gradient(0deg, rgba(13, 13, 13, 0.83) 29.32%, rgba(255, 255, 255, 0) 65.54%), url(./img/case-study-1.png) no-repeat center center/cover;
+  background: linear-gradient(0deg, rgba(13, 13, 13, 0.83) 29.32%, rgba(255, 255, 255, 0) 65.54%), url(../img/case-study-1.png) no-repeat center center/cover;
 }
 html body .section-case .img-container.case-study-2 {
-  background: linear-gradient(0deg, rgba(13, 13, 13, 0.83) 29.32%, rgba(255, 255, 255, 0) 65.54%), url(./img/case-study-2.png) no-repeat center center/cover;
+  background: linear-gradient(0deg, rgba(13, 13, 13, 0.83) 29.32%, rgba(255, 255, 255, 0) 65.54%), url(../img/case-study-2.png) no-repeat center center/cover;
 }
 html body .section-case .img-container a {
   font-size: 20px;
@@ -387,7 +436,7 @@ html body .section-blog .container:before {
   content: "";
   width: 26.04167%;
   aspect-ratio: 311/420;
-  background: url(./img/blog-sec-top-left-bg.png) no-repeat center center/contain;
+  background: url(../img/blog-sec-top-left-bg.png) no-repeat center center/contain;
   position: absolute;
   left: 0;
   top: -300px;
@@ -401,7 +450,7 @@ html body .section-blog .container::after {
   content: "";
   width: 17.56944%;
   aspect-ratio: 253/609;
-  background: url(./img/blog-sec-bottom-right-bg.png) no-repeat center center/contain;
+  background: url(../img/blog-sec-bottom-right-bg.png) no-repeat center center/contain;
   position: absolute;
   right: 0;
   bottom: -140px;
@@ -506,7 +555,7 @@ html body .section-testimonial:before {
   content: "";
   width: 218px;
   aspect-ratio: 109/199;
-  background: url(./img/cta-top-right-bg.png) no-repeat center center/contain;
+  background: url(../img/cta-top-right-bg.png) no-repeat center center/contain;
   position: absolute;
   left: 0;
   bottom: -307px;
@@ -538,10 +587,10 @@ html body .section-testimonial .testimonial-img {
   top: -40px;
 }
 html body .section-testimonial .testimonial-img.img-1 {
-  background: url(./img/testimonial_person_1.png), lightgray -37.971px 0px/149.927% 100% no-repeat;
+  background: url(../img/testimonial_person_1.png), lightgray -37.971px 0px/149.927% 100% no-repeat;
 }
 html body .section-testimonial .testimonial-img.img-2 {
-  background: url(./img/testimonial_person_2.png), lightgray -37.971px 0px/149.927% 100% no-repeat;
+  background: url(../img/testimonial_person_2.png), lightgray -37.971px 0px/149.927% 100% no-repeat;
 }
 html body .section-testimonial .testimonial-text {
   font-family: "Open Sans", sans-serif;
