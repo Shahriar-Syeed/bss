@@ -17,7 +17,7 @@
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+  background: linear-gradient(85deg, #5997FF 1.78%, #95ECFF 97.59%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -379,7 +379,7 @@ html body .section-service .box .row .col-md .service .logo a:after {
   height: 2px;
   background-clip: unset;
   --webkit-background-clip: unset;
-  background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+  background: linear-gradient(85deg, #5997FF 1.78%, #95ECFF 97.59%);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -522,7 +522,7 @@ html body .section-blog .card .card-body .card-text {
 html body .section-blog .card .card-body a {
   font-family: inter;
   text-decoration-line: underline;
-  background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+  background: linear-gradient(85deg, #5997FF 1.78%, #95ECFF 97.59%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -534,7 +534,7 @@ html body .section-blog .card .card-body a:after {
   height: 2px;
   background-clip: unset;
   --webkit-background-clip: unset;
-  background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+  background: linear-gradient(85deg, #5997FF 1.78%, #95ECFF 97.59%);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

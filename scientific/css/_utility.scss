@@ -18,7 +18,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  background: $primary-gradiant-color;
+  background: $primary-gradiant-service-color;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,10 +87,4 @@
   //  @media(max-width:578px){
   //   clip-path: none;
   //  }
-  }
-
-
-  // line
-  .line-separator{
-    
   }

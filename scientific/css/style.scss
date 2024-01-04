@@ -313,12 +313,12 @@ html{
                       height: 2px;
                       background-clip: unset;
                       --webkit-background-clip: unset;
-                      background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+                      background: $primary-gradiant-service-color;
                       position: absolute;
                       left: 50%;
                       transform: translateX(-50%);
                       bottom: -2px;
-                      z-index: 3
+                      z-index: 3;
                     }
                     @include md {
                       font-size: 14px;
@@ -454,7 +454,7 @@ html{
             a{
               font-family: inter;
               text-decoration-line: underline;
-              background: $primary-gradiant-color;
+              background: $primary-gradiant-service-color;
               background-clip: text;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
@@ -466,7 +466,7 @@ html{
                 height: 2px;
                 background-clip: unset;
                 --webkit-background-clip: unset;
-                background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+                background: $primary-gradiant-service-color;
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
