@@ -39,16 +39,15 @@ html{
     background: $main-bg;
     header{
       .navbar-main{
-        &.top{
-         
+        &.top{        
           .navbar{
-            background: rgba(0, 0, 0, 0.305) ;
+            background: rgba(0, 0, 0, 0.8) ;
             padding-top: 0.25rem !important;
             padding-bottom: 0.25rem !important;
             backdrop-filter: blur(2px);
             @media(max-height:578px){
               padding-top: 0.01rem !important;
-            padding-bottom: 0.01rem !important;
+              padding-bottom: 0.01rem !important;
             }
             .nvbar-brand{
               @media(max-height:578px){
@@ -57,7 +56,7 @@ html{
             }
             .navbar-toggler{
               .toggle-text{
-
+                
                 @media(max-height:578px){
                   display: none;
                 }
@@ -65,11 +64,20 @@ html{
             }
           }
         }
+        &.blur{
+          background: rgba(0, 0, 0, 0.7) !important ;
+          backdrop-filter: blur(2px);
+          &.top{
+            background: transparent !important ;
+            backdrop-filter: blur(opx);
+
+          }
+        }
         .navbar{
           
           @media(max-height:578px){
             padding-top: 0.01rem !important;
-          padding-bottom: 0.01rem !important;
+            padding-bottom: 0.01rem !important;
           }
           .container{
               .nvbar-brand{
@@ -82,6 +90,10 @@ html{
                 }
               }
               .navbar-toggler{
+                &:focus{
+                  box-shadow: none;
+
+                }
                 .toggle-text{
   
                   @media(max-height:578px){
@@ -91,11 +103,16 @@ html{
                     display: none;
                   }
                 }
-              }
-            
-            
+              }            
             .navbar-collapse{
-             
+              // &.show{
+              //   background: rgba(0, 0, 0, 0.8) ;
+              //   backdrop-filter: blur(2px);
+              //   .navbar-nav{
+              //     background: rgba(0, 0, 0, 0.8) ;
+              //     backdrop-filter: blur(2px);
+              //   }
+              // }
               .navbar-nav{
            
                 .nav-item{
@@ -238,7 +255,7 @@ html{
                   top: -15%;
                 }
                 
-                @include md {
+                @media(max-width:767px) {
                   display: none;
                 }
               }
@@ -294,7 +311,7 @@ html{
                   a{
                     font-family: inter;
                     text-decoration-line: underline;
-                    background: $primary-gradiant-color;
+                    background: $primary-gradiant-service-color;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -432,7 +449,7 @@ html{
                 height: 264px;
                 
               }
-              @include md {
+              @media(max-width:767px) {
                 height: 120px; 
               }
               @include sm {

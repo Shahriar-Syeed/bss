@@ -42,7 +42,7 @@ responsive:{
   
 });
 
-const navbar = document.getElementById('navbar');
+var navbar = document.getElementById('navbar');
         window.onscroll = function(){
             if(window.pageYOffset > 100){
                 navbar.classList.add('top');
@@ -58,4 +58,12 @@ const navbar = document.getElementById('navbar');
                 navbar.classList.remove('top');
                 scrolled = false;
             }
-        }
+        };
+document.addEventListener("DOMContentLoaded", function() {
+  var navbar = document.getElementById('navbar');
+  const navbarCollapse = this.getElementById("navbarScience");
+  const toglerBtn = this.querySelector('.navbar-toggler');
+  toglerBtn.addEventListener('click', function () {
+    navbar.classList.toggle('blur');
+  });
+});

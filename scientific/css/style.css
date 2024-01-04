@@ -111,7 +111,7 @@ html body {
   background: #0B1425;
 }
 html body header .navbar-main.top .navbar {
-  background: rgba(0, 0, 0, 0.305);
+  background: rgba(0, 0, 0, 0.8);
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
   -webkit-backdrop-filter: blur(2px);
@@ -133,6 +133,16 @@ html body header .navbar-main.top .navbar {
     display: none;
   }
 }
+html body header .navbar-main.blur {
+  background: rgba(0, 0, 0, 0.7) !important;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+html body header .navbar-main.blur.top {
+  background: transparent !important;
+  -webkit-backdrop-filter: blur(opx);
+          backdrop-filter: blur(opx);
+}
 @media (max-height: 578px) {
   html body header .navbar-main .navbar {
     padding-top: 0.01rem !important;
@@ -148,6 +158,9 @@ html body header .navbar-main.top .navbar {
   html body header .navbar-main .navbar .container .nvbar-brand {
     width: 100px;
   }
+}
+html body header .navbar-main .navbar .container .navbar-toggler:focus {
+  box-shadow: none;
 }
 @media (max-height: 578px) {
   html body header .navbar-main .navbar .container .navbar-toggler .toggle-text {
@@ -283,7 +296,7 @@ html body .section-service .box .row:after {
     top: -15%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 767px) {
   html body .section-service .box .row:after {
     display: none;
   }
@@ -355,7 +368,7 @@ html body .section-service .box .row .col-md .service .logo h3 {
 html body .section-service .box .row .col-md .service .logo a {
   font-family: inter;
   text-decoration-line: underline;
-  background: linear-gradient(85deg, #104CAF 1.78%, #95ECFF 97.59%);
+  background: linear-gradient(85deg, #5997FF 1.78%, #95ECFF 97.59%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -493,7 +506,7 @@ html body .section-blog .card .card-body .d-flex {
     height: 264px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 767px) {
   html body .section-blog .card .card-body .d-flex {
     height: 120px;
   }
