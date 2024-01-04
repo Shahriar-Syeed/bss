@@ -383,9 +383,9 @@ html body .section-case .img-container a {
   font-size: 20px;
   font-weight: 700;
 }
-html body .section-blog:before {
+html body .section-blog .container:before {
   content: "";
-  width: 375px;
+  width: 26.04167%;
   aspect-ratio: 311/420;
   background: url(./img/blog-sec-top-left-bg.png) no-repeat center center/contain;
   position: absolute;
@@ -393,13 +393,13 @@ html body .section-blog:before {
   top: -300px;
 }
 @media only screen and (max-width: 768px) {
-  html body .section-blog:before {
+  html body .section-blog .container:before {
     opacity: 0.5;
   }
 }
-html body .section-blog::after {
+html body .section-blog .container::after {
   content: "";
-  width: 253px;
+  width: 17.56944%;
   aspect-ratio: 253/609;
   background: url(./img/blog-sec-bottom-right-bg.png) no-repeat center center/contain;
   position: absolute;
@@ -407,7 +407,7 @@ html body .section-blog::after {
   bottom: -140px;
 }
 @media only screen and (max-width: 768px) {
-  html body .section-blog::after {
+  html body .section-blog .container::after {
     opacity: 0.5;
   }
 }

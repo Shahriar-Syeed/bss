@@ -330,29 +330,31 @@ html{
         }
       }
       &-blog{
-        &:before{
-          content: "";
-          width: 375px;
-          aspect-ratio:311 / 420 ;
-          background: url(./img/blog-sec-top-left-bg.png) no-repeat center center/contain;
-          position: absolute;
-          left:0;
-          top: -300px;
-          
-          @include md {
-            opacity:0.5;
+        .container{
+          &:before{
+            content: "";
+            width: 26.04167%;
+            aspect-ratio:311 / 420 ;
+            background: url(./img/blog-sec-top-left-bg.png) no-repeat center center/contain;
+            position: absolute;
+            left:0;
+            top: -300px;
+            
+            @include md {
+              opacity:0.5;
+            }
           }
-        }
-        &::after{
-          content: "";
-          width: 253px;
-          aspect-ratio:253 / 609 ;
-          background: url(./img/blog-sec-bottom-right-bg.png) no-repeat center center/contain;
-          position: absolute;
-          right:0;
-          bottom: -140px;
-          @include md {
-            opacity:0.5;
+          &::after{
+            content: "";
+            width: 17.56944%;
+            aspect-ratio:253 / 609 ;
+            background: url(./img/blog-sec-bottom-right-bg.png) no-repeat center center/contain;
+            position: absolute;
+            right:0;
+            bottom: -140px;
+            @include md {
+              opacity:0.5;
+            }
           }
         }
         .card{
