@@ -148,7 +148,7 @@ html{
             background: url(../img/hero-top-right-bg.png) no-repeat center center/contain;
             position: absolute;
             right:0;
-            top:-30px;
+            top:-40px;
             z-index: -1;
             @include lg {
               display: none;
@@ -198,11 +198,12 @@ html{
               list-style: none;
               li{
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 margin-bottom: 16px;
                 .tick-img{
                   height: 24px;
                   width: 24px;
+                  flex-shrink: 0;
                   background: url(../img/tickcircle.png) no-repeat center center/contain;
                   display: inline-block;
                   margin-right: 6px;

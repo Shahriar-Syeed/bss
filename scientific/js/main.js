@@ -7,12 +7,12 @@ $(function(){
 $('#courses-slider').owlCarousel({
   loop:true,
   autoplay:true,
-            autoplayTimeout: 5000,
-            autoplaySpeed: 1000,
+  autoplayTimeout: 5000,
+  autoplaySpeed: 1000,
   autoplayHoverPause:true,
-margin:20,
-nav:false,
-responsive:{
+  margin:20,
+  nav:false,
+  responsive:{
     0:{
         items:1
     },
@@ -28,9 +28,9 @@ $('#testimonial-slider').owlCarousel({
   autoplayTimeout:5000,
   autoplaySpeed: 1000,
   autoplayHoverPause:true,
-margin:20,
-nav:false,
-responsive:{
+  margin:20,
+  nav:false,
+  responsive:{
     0:{
         items:1
     },

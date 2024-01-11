@@ -206,10 +206,10 @@ html body header .section-hero .container::after {
   background: url(../img/hero-top-right-bg.png) no-repeat center center/contain;
   position: absolute;
   right: 0;
-  top: -30px;
+  top: -40px;
   z-index: -1;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   html body header .section-hero .container::after {
     display: none;
   }
@@ -254,12 +254,13 @@ html body .section-feature article .feature-list ul {
 }
 html body .section-feature article .feature-list ul li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 16px;
 }
 html body .section-feature article .feature-list ul li .tick-img {
   height: 24px;
   width: 24px;
+  flex-shrink: 0;
   background: url(../img/tickcircle.png) no-repeat center center/contain;
   display: inline-block;
   margin-right: 6px;
@@ -315,7 +316,7 @@ html body .section-service .box .row:after {
 html body .section-service .box .row .col-md .service {
   height: 464px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   html body .section-service .box .row .col-md .service {
     height: 327px;
   }
@@ -355,7 +356,7 @@ html body .section-service .box .row .col-md .service .logo .circle svg {
 html body .section-service .box .row .col-md .service .logo h3 {
   margin-bottom: 8px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   html body .section-service .box .row .col-md .service .logo h3 {
     font-size: 20px;
   }
@@ -628,7 +629,7 @@ html body .section-cta {
           clip-path: polygon(0% 2.582%, 0% 2.582%, 1.351% 2.346%, 5.083% 1.772%, 10.72% 1.061%, 17.783% 0.414%, 25.794% 0.033%, 34.275% 0.119%, 42.747% 0.873%, 50.733% 2.496%, 57.755% 5.19%, 63.333% 9.156%, 63.333% 9.156%, 67.46% 12.052%, 72.046% 13.34%, 76.879% 13.327%, 81.751% 12.318%, 86.451% 10.623%, 90.768% 8.547%, 94.491% 6.398%, 97.411% 4.483%, 99.318% 3.109%, 100% 2.582%, 100% 99.976%, 50% 99.976%, 0% 99.976%, 0% 2.582%);
   background: #172133;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   html body .section-cta {
     -webkit-clip-path: polygon(0% 3.128%, 0% 3.128%, 1.24% 2.941%, 4.681% 2.464%, 9.907% 1.821%, 16.502% 1.137%, 24.049% 0.535%, 32.132% 0.141%, 40.335% 0.079%, 48.24% 0.473%, 55.432% 1.448%, 61.493% 3.128%, 61.493% 3.128%, 66.267% 4.558%, 71.338% 5.388%, 76.517% 5.724%, 81.618% 5.671%, 86.45% 5.335%, 90.826% 4.823%, 94.557% 4.24%, 97.455% 3.693%, 99.332% 3.287%, 100% 3.128%, 100% 99.976%, 50% 99.976%, 0% 99.976%, 0% 3.128%);
             clip-path: polygon(0% 3.128%, 0% 3.128%, 1.24% 2.941%, 4.681% 2.464%, 9.907% 1.821%, 16.502% 1.137%, 24.049% 0.535%, 32.132% 0.141%, 40.335% 0.079%, 48.24% 0.473%, 55.432% 1.448%, 61.493% 3.128%, 61.493% 3.128%, 66.267% 4.558%, 71.338% 5.388%, 76.517% 5.724%, 81.618% 5.671%, 86.45% 5.335%, 90.826% 4.823%, 94.557% 4.24%, 97.455% 3.693%, 99.332% 3.287%, 100% 3.128%, 100% 99.976%, 50% 99.976%, 0% 99.976%, 0% 3.128%);
@@ -811,7 +812,7 @@ html body .footer-main ul li {
 html body .footer-main ul li.right-reserved {
   margin-right: 87px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   html body .footer-main ul li.right-reserved {
     margin-right: 12px;
   }
