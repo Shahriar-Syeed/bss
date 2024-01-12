@@ -80,6 +80,27 @@
   }
 }
 
+.box-2 {
+  background-image: url(../img/CR-casestudy-bg.png);
+  background-position: top center;
+  background-size: 100% 76%;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 576px) {
+  .box-2 {
+    background-image: url(../img/CR-casestudy-bg-sm.png);
+  }
+}
+
+.tick-img {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  background: url(../img/tickcircle.png) no-repeat center center/contain;
+  display: inline-block;
+  margin-right: 6px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -249,21 +270,10 @@ html body header .section-hero p {
     margin: 0 30%;
   }
 }
-html body .section-feature article .feature-list ul {
-  list-style: none;
-}
 html body .section-feature article .feature-list ul li {
   display: flex;
   align-items: flex-start;
   margin-bottom: 16px;
-}
-html body .section-feature article .feature-list ul li .tick-img {
-  height: 24px;
-  width: 24px;
-  flex-shrink: 0;
-  background: url(../img/tickcircle.png) no-repeat center center/contain;
-  display: inline-block;
-  margin-right: 6px;
 }
 html body .section-service .section-padding {
   padding: 80px 0 160px;

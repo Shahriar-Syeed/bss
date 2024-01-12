@@ -1,9 +1,9 @@
 
 
 @import "config";
+@import "responsive";
 @import "utility";
 @import "function";
-@import "responsive";
 
 
 * {
@@ -195,19 +195,11 @@ html{
           .feature-list{
             
             ul{
-              list-style: none;
               li{
                 display: flex;
                 align-items: flex-start;
                 margin-bottom: 16px;
-                .tick-img{
-                  height: 24px;
-                  width: 24px;
-                  flex-shrink: 0;
-                  background: url(../img/tickcircle.png) no-repeat center center/contain;
-                  display: inline-block;
-                  margin-right: 6px;
-                }
+                
               }
             }
           }

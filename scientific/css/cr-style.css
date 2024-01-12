@@ -1,0 +1,66 @@
+.section-cr-blog:before {
+  content: "";
+  width: 140px;
+  aspect-ratio: 70/131;
+  background: url(../img/team-sec-top-right-bg.png) no-repeat center center/contain;
+  position: absolute;
+  right: 0;
+  top: -220px;
+}
+@media only screen and (max-width: 768px) {
+  .section-cr-blog:before {
+    opacity: 0.5;
+  }
+}
+.section-cr-blog-card .container::before {
+  content: "";
+  width: 26.04167%;
+  aspect-ratio: 311/420;
+  background: url(../img/blog-sec-bottom-right-bg.png) no-repeat 100% center/contain;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .section-cr-blog-card .container::before {
+    opacity: 0.5;
+  }
+}
+.section-cr-blog-card .container::after {
+  content: "";
+  width: 26.04167%;
+  aspect-ratio: 311/420;
+  background: url(../img/blog-sec-top-left-bg.png) no-repeat center center/contain;
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+}
+@media only screen and (max-width: 768px) {
+  .section-cr-blog-card .container::after {
+    opacity: 0.5;
+  }
+}
+.section-cr-blog-card .container .blog-content a {
+  max-width: 269px;
+}
+.section-cr-casestudy .container:before {
+  content: "";
+  width: 218px;
+  aspect-ratio: 109/199;
+  background: url(../img/cta-top-right-bg.png) no-repeat center center/contain;
+  position: absolute;
+  right: 0;
+  bottom: -307px;
+  z-index: 2;
+  transform: rotateY(180deg);
+}
+@media (max-width: 1500px) {
+  .section-cr-casestudy .container:before {
+    left: -48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-cr-casestudy .container:before {
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=cr-style.css.map */
