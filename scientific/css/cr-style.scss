@@ -62,11 +62,14 @@
         bottom: -307px;
         z-index: 2;
         transform: rotateY(180deg);
-        @media(max-width:1500px){
-          left: -48px;
+        @include lg {
+          width: 15.14%;
+          bottom: -210px;
         }
         @include md {
+          width: 15.14%;
           opacity:0.5;
+          bottom: -120px;
         }
       }
     }
