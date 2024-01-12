@@ -103,3 +103,14 @@
     display: inline-block;
     margin-right: 6px;
   }
+  .feature-list{
+            
+    ul{
+      li{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 16px;
+        
+      }
+    }
+  }
