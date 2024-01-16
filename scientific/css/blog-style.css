@@ -1,0 +1,10 @@
+html body header .section-hero .container::after {
+  display: none;
+}
+html body header .section-hero .container .author-info-position {
+  color: #9497a1;
+}
+html body header .section-hero .container .author-info-name {
+  color: #ccd0d6;
+  font-weight: 700;
+}/*# sourceMappingURL=blog-style.css.map */

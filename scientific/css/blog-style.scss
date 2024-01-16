@@ -1,0 +1,28 @@
+
+
+
+html{
+  body{
+    header{
+      .section-hero{
+        .container{
+          &::after{
+            display: none;
+          }
+
+          .author{
+            &-info{
+              &-position{
+                color: #9497a1;
+              }
+              &-name{
+                color: #ccd0d6;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

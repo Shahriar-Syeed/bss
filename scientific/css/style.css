@@ -245,6 +245,9 @@ html body header .section-hero .subheading {
   color: #D1D0D0;
   font-size: 14px;
 }
+html body header .section-hero .subheading img {
+  width: auto;
+}
 html body header .section-hero h1 {
   color: #E1E0E0;
   font-size: 4rem;
