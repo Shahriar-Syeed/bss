@@ -24,9 +24,13 @@
         min-width: 100svh;
         font-family: 'Salsa', cursive;
       }
+      .drop-shadow{
+         filter: drop-shadow(0px 1px 0px #348563);
+      }
       .hero-wrapper{
         clip-path: polygon( 0% 0%,100% 0%,100% 94.656%,100% 94.656%,92.513% 97.24%,83.134% 98.931%,72.365% 99.809%,60.703% 99.954%,48.65% 99.445%,36.705% 98.363%,25.367% 96.788%,15.138% 94.799%,6.515% 92.477%,0% 89.9%,0% 0% );
   background-color: #fff;
+ 
       }
       h1{
         color:#8E3AE2;
@@ -41,7 +45,7 @@
 
       .hero-img-container {
         right: -50px;
-        margin-top: -140px;
+     
         top:20px;
       }
       /* .clipping-div {
@@ -54,13 +58,13 @@
         
         box-shadow:0px 1.5px 1px 1px #51DA7F;
       } */
-      .down-border{
+      /* .down-border{
         clip-path: polygon( 0% 0%,100% 0%,100% 94.656%,100% 94.656%,92.513% 97.24%,83.134% 98.931%,72.365% 99.809%,60.703% 99.954%,48.65% 99.445%,36.705% 98.363%,25.367% 96.788%,15.138% 94.799%,6.515% 92.477%,0% 89.9%,0% 0% );
   
         top: 46px;
     bottom: 46px;
         background: linear-gradient(to bottom, #fff 20%, #51DA7F 20%);
-      }
+      } */
 
       svg {
        
@@ -74,9 +78,10 @@
   </head>
   <body>
     <section class="position-relative py-5 ">
-      <div class="hero-wrapper position-relative z-3">
+      <div class="drop-shadow">
+        <div class="hero-wrapper position-relative z-3">
         <div class="container">
-        <div class="">
+       
           <div class="hero-content">
             <h1 class="text-center">
               Welcome to <br />
@@ -96,7 +101,8 @@
               class="w-100"
             />
           </div>
-        </div>
+    
+      </div>
       </div>
       </div>
       
